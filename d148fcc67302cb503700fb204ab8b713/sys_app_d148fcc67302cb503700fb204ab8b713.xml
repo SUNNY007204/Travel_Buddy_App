@@ -23,7 +23,7 @@
         <runtime_access_tracking/>
         <scope>x_travel_buddy_app</scope>
         <scoped_administration>false</scoped_administration>
-        <short_description>case study for Travel Buddy App</short_description>
+        <short_description>case study for Travel Buddy Ashitosh</short_description>
         <source>x_travel_buddy_app</source>
         <store_correlation_id/>
         <store_url/>
@@ -33,9 +33,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-07-14 08:37:27</sys_created_on>
         <sys_id>d148fcc67302cb503700fb204ab8b713</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-22 10:06:18</sys_updated_on>
+        <sys_updated_on>2026-07-22 10:20:19</sys_updated_on>
         <template/>
         <trackable>true</trackable>
         <uninstall_blocked>false</uninstall_blocked>
