@@ -4,27 +4,27 @@
             <element>number</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-07-22 11:13:02</sys_created_on>
-            <sys_id>64f962e8839a031031ab6730ceaad3fb</sys_id>
+            <sys_created_on>2026-07-28 06:14:02</sys_created_on>
+            <sys_id>8f0f14e2475a831089b4a22f316d434a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_travel_buddy_app_trip_request" sys_domain="global" view="Default view">ac56a620835a031031ab6730ceaad32d</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-07-22 11:13:02</sys_updated_on>
+            <sys_updated_on>2026-07-28 06:14:02</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>assigned_to</element>
+            <element>u_traveler</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-07-22 11:13:02</sys_created_on>
-            <sys_id>20f962e8839a031031ab6730ceaad3fc</sys_id>
+            <sys_created_on>2026-07-28 06:14:02</sys_created_on>
+            <sys_id>0f0f14e2475a831089b4a22f316d434b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_travel_buddy_app_trip_request" sys_domain="global" view="Default view">ac56a620835a031031ab6730ceaad32d</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-07-22 11:13:02</sys_updated_on>
+            <sys_updated_on>2026-07-28 06:14:02</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>active</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-07-22 11:13:02</sys_created_on>
-            <sys_id>e8f962e8839a031031ab6730ceaad3fc</sys_id>
+            <sys_created_on>2026-07-28 06:14:02</sys_created_on>
+            <sys_id>8b0f14e2475a831089b4a22f316d434c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_travel_buddy_app_trip_request" sys_domain="global" view="Default view">ac56a620835a031031ab6730ceaad32d</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-07-22 11:13:02</sys_updated_on>
+            <sys_updated_on>2026-07-28 06:14:02</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -46,181 +46,153 @@
             <element>.split</element>
             <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-07-22 11:13:02</sys_created_on>
-            <sys_id>a4f962e8839a031031ab6730ceaad3fd</sys_id>
+            <sys_created_on>2026-07-28 06:14:02</sys_created_on>
+            <sys_id>0b0f14e2475a831089b4a22f316d434d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_travel_buddy_app_trip_request" sys_domain="global" view="Default view">ac56a620835a031031ab6730ceaad32d</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-07-22 11:13:02</sys_updated_on>
+            <sys_updated_on>2026-07-28 06:14:02</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>priority</element>
+            <element>state</element>
             <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-07-22 11:13:02</sys_created_on>
-            <sys_id>60f962e8839a031031ab6730ceaad3fe</sys_id>
+            <sys_created_on>2026-07-28 06:14:02</sys_created_on>
+            <sys_id>870f14e2475a831089b4a22f316d434e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_travel_buddy_app_trip_request" sys_domain="global" view="Default view">ac56a620835a031031ab6730ceaad32d</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-07-22 11:13:02</sys_updated_on>
+            <sys_updated_on>2026-07-28 06:14:02</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>state</element>
+            <element>assigned_to</element>
             <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-07-22 11:13:02</sys_created_on>
-            <sys_id>2cf962e8839a031031ab6730ceaad3fe</sys_id>
+            <sys_created_on>2026-07-28 06:14:02</sys_created_on>
+            <sys_id>070f14e2475a831089b4a22f316d434f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_travel_buddy_app_trip_request" sys_domain="global" view="Default view">ac56a620835a031031ab6730ceaad32d</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-07-22 11:13:02</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>parent</element>
-            <position>6</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-07-22 11:13:02</sys_created_on>
-            <sys_id>e4f962e8839a031031ab6730ceaad3ff</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_travel_buddy_app_trip_request" sys_domain="global" view="Default view">ac56a620835a031031ab6730ceaad32d</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-07-22 11:13:02</sys_updated_on>
+            <sys_updated_on>2026-07-28 06:14:02</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.end_split</element>
-            <position>7</position>
+            <position>6</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-07-22 11:13:03</sys_created_on>
-            <sys_id>a0f9a2e8839a031031ab6730ceaad300</sys_id>
+            <sys_created_on>2026-07-28 06:14:02</sys_created_on>
+            <sys_id>4b0f14e2475a831089b4a22f316d435c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_travel_buddy_app_trip_request" sys_domain="global" view="Default view">ac56a620835a031031ab6730ceaad32d</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-07-22 11:13:03</sys_updated_on>
+            <sys_updated_on>2026-07-28 06:14:02</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>short_description</element>
-            <position>8</position>
+            <element>.begin_split</element>
+            <position>7</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-07-22 11:13:03</sys_created_on>
-            <sys_id>6cf9a2e8839a031031ab6730ceaad300</sys_id>
+            <sys_created_on>2026-07-28 06:14:02</sys_created_on>
+            <sys_id>c70f14e2475a831089b4a22f316d435d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_travel_buddy_app_trip_request" sys_domain="global" view="Default view">ac56a620835a031031ab6730ceaad32d</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-07-22 11:13:03</sys_updated_on>
+            <sys_updated_on>2026-07-28 06:14:02</sys_updated_on>
             <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>description</element>
-            <position>9</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-07-22 11:13:03</sys_created_on>
-            <sys_id>28f9a2e8839a031031ab6730ceaad301</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_travel_buddy_app_trip_request" sys_domain="global" view="Default view">ac56a620835a031031ab6730ceaad32d</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-07-22 11:13:03</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>work_notes</element>
-            <position>10</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-07-22 11:13:03</sys_created_on>
-            <sys_id>e0f9a2e8839a031031ab6730ceaad302</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_travel_buddy_app_trip_request" sys_domain="global" view="Default view">ac56a620835a031031ab6730ceaad32d</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-07-22 11:13:03</sys_updated_on>
-            <sys_user/>
-            <type/>
+            <type>.begin_split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_destination</element>
-            <position>11</position>
+            <position>8</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-07-22 11:13:03</sys_created_on>
-            <sys_id>acf9a2e8839a031031ab6730ceaad302</sys_id>
+            <sys_created_on>2026-07-28 06:14:02</sys_created_on>
+            <sys_id>470f14e2475a831089b4a22f316d435e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_travel_buddy_app_trip_request" sys_domain="global" view="Default view">ac56a620835a031031ab6730ceaad32d</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-07-22 11:13:03</sys_updated_on>
+            <sys_updated_on>2026-07-28 06:14:02</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_group_size</element>
-            <position>12</position>
+            <element>u_destination_package</element>
+            <position>9</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-07-22 11:13:03</sys_created_on>
-            <sys_id>68f9a2e8839a031031ab6730ceaad303</sys_id>
+            <sys_created_on>2026-07-28 06:14:02</sys_created_on>
+            <sys_id>c30f14e2475a831089b4a22f316d435f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_travel_buddy_app_trip_request" sys_domain="global" view="Default view">ac56a620835a031031ab6730ceaad32d</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-07-22 11:13:03</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_travel_type</element>
-            <position>13</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-07-22 11:13:03</sys_created_on>
-            <sys_id>24f9a2e8839a031031ab6730ceaad304</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_travel_buddy_app_trip_request" sys_domain="global" view="Default view">ac56a620835a031031ab6730ceaad32d</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-07-22 11:13:03</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_selected_itinerary</element>
-            <position>14</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-07-22 11:13:03</sys_created_on>
-            <sys_id>ecf9a2e8839a031031ab6730ceaad304</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_travel_buddy_app_trip_request" sys_domain="global" view="Default view">ac56a620835a031031ab6730ceaad32d</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-07-22 11:13:03</sys_updated_on>
+            <sys_updated_on>2026-07-28 06:14:02</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_preferred_language</element>
-            <position>15</position>
+            <position>10</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-07-22 11:13:03</sys_created_on>
-            <sys_id>a8f9a2e8839a031031ab6730ceaad305</sys_id>
+            <sys_created_on>2026-07-28 06:14:02</sys_created_on>
+            <sys_id>430f14e2475a831089b4a22f316d4360</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_travel_buddy_app_trip_request" sys_domain="global" view="Default view">ac56a620835a031031ab6730ceaad32d</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-07-22 11:13:03</sys_updated_on>
+            <sys_updated_on>2026-07-28 06:14:02</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>11</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-07-28 06:14:02</sys_created_on>
+            <sys_id>cf0f14e2475a831089b4a22f316d4360</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_travel_buddy_app_trip_request" sys_domain="global" view="Default view">ac56a620835a031031ab6730ceaad32d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-07-28 06:14:02</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_travel_type</element>
+            <position>12</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-07-28 06:14:02</sys_created_on>
+            <sys_id>4f0f14e2475a831089b4a22f316d4361</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_travel_buddy_app_trip_request" sys_domain="global" view="Default view">ac56a620835a031031ab6730ceaad32d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-07-28 06:14:02</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_group_size</element>
+            <position>13</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-07-28 06:14:02</sys_created_on>
+            <sys_id>cb0f14e2475a831089b4a22f316d4362</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_travel_buddy_app_trip_request" sys_domain="global" view="Default view">ac56a620835a031031ab6730ceaad32d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-07-28 06:14:02</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
