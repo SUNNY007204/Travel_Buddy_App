@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_policy">
+    <sys_ui_policy action="DELETE">
+        <active>true</active>
+        <conditions table="x_travel_buddy_app_itinerary_package">u_main_locationISNOTEMPTY<item endquery="false" field="u_main_location" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+        </conditions>
+        <description/>
+        <global>true</global>
+        <inherit>false</inherit>
+        <isolate_script>true</isolate_script>
+        <model_id/>
+        <model_table/>
+        <on_load>true</on_load>
+        <order>100</order>
+        <reverse_if_false>true</reverse_if_false>
+        <run_scripts>false</run_scripts>
+        <script_false><![CDATA[function onCondition() {}]]></script_false>
+        <script_true><![CDATA[function onCondition() {}]]></script_true>
+        <set_values/>
+        <short_description>Location is not empty show destination points</short_description>
+        <sys_class_name>sys_ui_policy</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-28 08:02:10</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>17c7f0aa731e87d09734f61c4ab8b775</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Location is not empty show destination points</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name>sys_ui_policy_17c7f0aa731e87d09734f61c4ab8b775</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-28 08:02:10</sys_updated_on>
+        <table>x_travel_buddy_app_itinerary_package</table>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_ui_policy>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</application>
+        <file_path/>
+        <instance_id>d301215b3b3d4f1cbaf6048aa4e45a4e</instance_id>
+        <instance_name>dev424009</instance_name>
+        <name>sys_ui_policy_17c7f0aa731e87d09734f61c4ab8b775</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_policy"&gt;&lt;sys_ui_policy action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;conditions table="x_travel_buddy_app_itinerary_package"&gt;u_main_locationISNOTEMPTY&lt;item endquery="false" field="u_main_location" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/&gt;&lt;/conditions&gt;&lt;description/&gt;&lt;global&gt;true&lt;/global&gt;&lt;inherit&gt;false&lt;/inherit&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;model_id/&gt;&lt;model_table/&gt;&lt;on_load&gt;true&lt;/on_load&gt;&lt;order&gt;100&lt;/order&gt;&lt;reverse_if_false&gt;true&lt;/reverse_if_false&gt;&lt;run_scripts&gt;false&lt;/run_scripts&gt;&lt;script_false&gt;&lt;![CDATA[function onCondition() {}]]&gt;&lt;/script_false&gt;&lt;script_true&gt;&lt;![CDATA[function onCondition() {}]]&gt;&lt;/script_true&gt;&lt;set_values/&gt;&lt;short_description&gt;Location is not empty show destination points&lt;/short_description&gt;&lt;sys_class_name&gt;sys_ui_policy&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-07-28 08:02:10&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;17c7f0aa731e87d09734f61c4ab8b775&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Location is not empty show destination points&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Travel Buddy App" source="x_travel_buddy_app"&gt;d148fcc67302cb503700fb204ab8b713&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Travel Buddy App"&gt;d148fcc67302cb503700fb204ab8b713&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_policy_17c7f0aa731e87d09734f61c4ab8b775&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-07-28 08:02:10&lt;/sys_updated_on&gt;&lt;table&gt;x_travel_buddy_app_itinerary_package&lt;/table&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_ui_policy&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1883963578</payload_hash>
+        <record_name>Location is not empty show destination points</record_name>
+        <reverted_from/>
+        <source>b696e620731a0b909734f61c4ab8b7c7</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-28 08:02:10</sys_created_on>
+        <sys_id>dfc7f0aa731e87d09734f61c4ab8b778</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19fa7bedb5b0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-28 08:02:10</sys_updated_on>
+        <type>UI Policy</type>
+        <update_guid>9fc7f0aa2b1e87d075b0c830f2790c77</update_guid>
+        <update_guid_history>9fc7f0aa2b1e87d075b0c830f2790c77:1883963578</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-28 08:05:57</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_policy">sys_ui_policy</sys_db_object>
+        <sys_id>503da02e19a24530a51a15d178335c40</sys_id>
+        <sys_metadata>17c7f0aa731e87d09734f61c4ab8b775</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Location is not empty show destination points</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_parent display_value="Itinerary Package">5dc89b8e8316031031ab6730ceaad374</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_scope_delete display_value="">ce79bab18acc49f9bef811863b5939e1</sys_scope_delete>
+        <sys_update_name>sys_ui_policy_17c7f0aa731e87d09734f61c4ab8b775</sys_update_name>
+        <sys_update_version display_value="sys_ui_policy_17c7f0aa731e87d09734f61c4ab8b775">dfc7f0aa731e87d09734f61c4ab8b778</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-28 08:05:57</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

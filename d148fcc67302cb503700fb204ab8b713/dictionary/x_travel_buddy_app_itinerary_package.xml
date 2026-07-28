@@ -1,31 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="5dc89b8e8316031031ab6730ceaad374" label="Itinerary Package" max_length="40" name="x_travel_buddy_app_itinerary_package" type="collection">
-        <element label="Main Location" max_length="32" name="u_main_location" reference="cmn_location" type="reference"/>
+        <element label="Hotel Feedback" max_length="40" name="u_hotel_feedback" type="string"/>
+        <element label="Days" max_length="255" name="u_days" type="integer"/>
+        <element label="Short Description" max_length="40" name="short_description" type="string"/>
+        <element label="Main Location" mandatory="true" max_length="32" name="u_main_location" reference="cmn_location" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Hotel Name" max_length="40" name="u_hotel_name" type="string"/>
         <element choice="1" label="Transit Mode" max_length="255" name="u_transit_mode" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Bus" sequence="1" value="bus"/>
                 <element inactive_on_update="false" label="Walking" sequence="2" value="walking"/>
+                <element inactive_on_update="false" label="Bus" sequence="1" value="bus"/>
                 <element inactive_on_update="false" label="Car" sequence="0" value="car"/>
             </choice>
         </element>
+        <element label="Transit Charges" max_length="20" name="u_transit_charges" type="currency"/>
+        <element label="Total Package Price" max_length="20" name="u_total_package_price" type="currency"/>
         <element label="Destination Points" max_length="1024" name="u_destination_points" reference="cmn_location" type="glide_list"/>
         <element choice="1" label="Hotel Rating" max_length="255" name="u_hotel_rating" type="choice">
             <choice>
-                <element inactive_on_update="false" label="****" sequence="3" value="4"/>
-                <element inactive_on_update="false" label="**" sequence="1" value="2"/>
                 <element inactive_on_update="false" label="*" sequence="0" value="1"/>
-                <element inactive_on_update="false" label="***" sequence="2" value="3"/>
                 <element inactive_on_update="false" label="*****" sequence="4" value="5"/>
+                <element inactive_on_update="false" label="****" sequence="3" value="4"/>
+                <element inactive_on_update="false" label="***" sequence="2" value="3"/>
+                <element inactive_on_update="false" label="**" sequence="1" value="2"/>
             </choice>
         </element>
-        <element label="Hotel Feedback" max_length="40" name="u_hotel_feedback" type="string"/>
-        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
-        <element label="Total Package Price" max_length="20" name="u_total_package_price" type="currency"/>
-        <element label="Hote Price" max_length="20" name="u_hote_price" type="currency"/>
+        <element label="Work Notes" max_length="40" name="work_notes" type="string"/>
         <element display="true" label="Package Name" max_length="40" name="u_package_name" type="string"/>
-        <element label="Days" max_length="255" name="u_days" type="integer"/>
-        <element label="Hotel Name" max_length="40" name="u_hotel_name" type="string"/>
-        <element label="Transit Charges" max_length="20" name="u_transit_charges" type="currency"/>
+        <element label="Hote Price" max_length="20" name="u_hote_price" type="currency"/>
         <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
         <index name="index">
             <element name="sys_class_name"/>
