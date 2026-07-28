@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field>u_selected_itinerary</field>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-28 06:25:03</sys_created_on>
+        <sys_id>a091e02a475a831089b4a22f316d434a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_selected_itinerary</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name>sys_ui_policy_action_a091e02a475a831089b4a22f316d434a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-28 06:25:03</sys_updated_on>
+        <table>x_travel_buddy_app_trip_request</table>
+        <ui_policy display_value="Itinerary is visible when destination package is chosen.">6c91e02a475a831089b4a22f316d4345</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <visible>true</visible>
+    </sys_ui_policy_action>
+    <sys_translated_text action="delete_multiple" query="documentkey=a091e02a475a831089b4a22f316d434a"/>
+</record_update>
