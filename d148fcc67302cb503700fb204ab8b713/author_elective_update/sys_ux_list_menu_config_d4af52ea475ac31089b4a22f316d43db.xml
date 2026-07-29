@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_list_menu_config">
+    <sys_ux_list_menu_config action="DELETE">
+        <active>true</active>
+        <description/>
+        <name>Traveler workspace_menu_config</name>
+        <sys_class_name>sys_ux_list_menu_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-28 15:35:49</sys_created_on>
+        <sys_id>d4af52ea475ac31089b4a22f316d43db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Traveler workspace_menu_config</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name>sys_ux_list_menu_config_d4af52ea475ac31089b4a22f316d43db</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-28 15:35:49</sys_updated_on>
+    </sys_ux_list_menu_config>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</application>
+        <file_path/>
+        <instance_id>7a0f57d6eb9d8fd0c040fddacad0cdd9</instance_id>
+        <instance_name>dev400578</instance_name>
+        <name>sys_ux_list_menu_config_d4af52ea475ac31089b4a22f316d43db</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_list_menu_config"><sys_ux_list_menu_config action="INSERT_OR_UPDATE"><active>true</active><description/><name>Traveler workspace_menu_config</name><sys_class_name>sys_ux_list_menu_config</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-07-28 15:35:49</sys_created_on><sys_id>d4af52ea475ac31089b4a22f316d43db</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Traveler workspace_menu_config</sys_name><sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package><sys_policy/><sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope><sys_update_name>sys_ux_list_menu_config_d4af52ea475ac31089b4a22f316d43db</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-07-28 15:35:49</sys_updated_on></sys_ux_list_menu_config></record_update>]]></payload>
+        <payload_hash>-1208002256</payload_hash>
+        <record_name>Traveler workspace_menu_config</record_name>
+        <reverted_from/>
+        <source>348d9eac47d6031089b4a22f316d4392</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-28 15:35:49</sys_created_on>
+        <sys_id>1caf52ea475ac31089b4a22f316d43de</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19fa95e2e310000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-28 15:35:49</sys_updated_on>
+        <type>UX List Menu Configuration</type>
+        <update_guid>98af52ead45ac310940a4e04d1f3a8dd</update_guid>
+        <update_guid_history>98af52ead45ac310940a4e04d1f3a8dd:-1208002256</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-28 15:59:01</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_list_menu_config">sys_ux_list_menu_config</sys_db_object>
+        <sys_id>b4a7adefbb104f0ea62b109801b6a729</sys_id>
+        <sys_metadata>d4af52ea475ac31089b4a22f316d43db</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Traveler workspace_menu_config</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_scope_delete display_value="">ce79bab18acc49f9bef811863b5939e1</sys_scope_delete>
+        <sys_update_name>sys_ux_list_menu_config_d4af52ea475ac31089b4a22f316d43db</sys_update_name>
+        <sys_update_version display_value="sys_ux_list_menu_config_d4af52ea475ac31089b4a22f316d43db">1caf52ea475ac31089b4a22f316d43de</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-28 15:59:01</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
