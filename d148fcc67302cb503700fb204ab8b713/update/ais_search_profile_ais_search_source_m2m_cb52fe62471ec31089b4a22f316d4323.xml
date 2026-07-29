@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_search_profile_ais_search_source_m2m">
+    <ais_search_profile_ais_search_source_m2m action="INSERT_OR_UPDATE">
+        <exclude_attachments_in_now_assist_genius_results>false</exclude_attachments_in_now_assist_genius_results>
+        <exclude_in_now_assist_genius_results>false</exclude_in_now_assist_genius_results>
+        <exclude_in_regular_search>false</exclude_in_regular_search>
+        <profile display_value="travel-buddy-app Search Profile">6552fa62e21ec310d37ac64a0dd9ea93</profile>
+        <search_source display_value="Travel Trip Feedback">f8afd2ea475ac31089b4a22f316d4390</search_source>
+        <sys_class_name>ais_search_profile_ais_search_source_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-28 16:57:39</sys_created_on>
+        <sys_id>cb52fe62471ec31089b4a22f316d4323</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>travel-buddy-app Search Profile.Travel Trip Feedback</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name>ais_search_profile_ais_search_source_m2m_cb52fe62471ec31089b4a22f316d4323</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-28 16:57:39</sys_updated_on>
+    </ais_search_profile_ais_search_source_m2m>
+</record_update>
