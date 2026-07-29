@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><database>
-    <element attributes="all_tables.text_index_translations=true,file_root=true,no_labels=true,no_table_trace=true,ref_ac_columns=name,ref_ac_columns_search=true,ref_auto_completer=AJAXTableCompleter,update_synch=true" db_object_id="81e71231082003100a22e9371c04a4a4" extends="sys_metadata" label="Table" max_length="40" name="sys_db_object" text_index="true" type="collection">
-        <element label="IsBuddy" max_length="40" name="x_travel_buddy_app_isbuddy" type="boolean"/>
-    </element>
-</database>
