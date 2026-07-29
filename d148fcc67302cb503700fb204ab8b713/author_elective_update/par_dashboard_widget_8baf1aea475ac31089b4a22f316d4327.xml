@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget">
+    <par_dashboard_widget action="DELETE">
+        <canvas display_value="">baafd6ea475ac31089b4a22f316d43ec</canvas>
+        <component display_value="Heading">1f6e0643eca7a637e36bd7833549ec9e</component>
+        <component_props>{"variant":"header-primary","label":"Happening Now","wontWrap":false,"hasNoMargin":false,"level":"1","filterConfigurations":[],"noDebounce":"","contextMenuActions":[]}</component_props>
+        <h>3</h>
+        <name/>
+        <required_translations>[{"comment":"","message":"Happening Now","code":"PAR_DASHBOARD.baafd6ea475ac31089b4a22f316d43ec.8baf1aea475ac31089b4a22f316d4327"}]</required_translations>
+        <stored_component/>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-28 15:36:00</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8baf1aea475ac31089b4a22f316d4327</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name>par_dashboard_widget_8baf1aea475ac31089b4a22f316d4327</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-28 15:36:00</sys_updated_on>
+        <visualization/>
+        <w>47</w>
+        <widget_props/>
+        <x>0</x>
+        <y>0</y>
+    </par_dashboard_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</application>
+        <file_path/>
+        <instance_id>7a0f57d6eb9d8fd0c040fddacad0cdd9</instance_id>
+        <instance_name>dev400578</instance_name>
+        <name>par_dashboard_widget_8baf1aea475ac31089b4a22f316d4327</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget"><par_dashboard_widget action="INSERT_OR_UPDATE"><canvas display_value="">baafd6ea475ac31089b4a22f316d43ec</canvas><component display_value="Heading">1f6e0643eca7a637e36bd7833549ec9e</component><component_props>{"variant":"header-primary","label":"Happening Now","wontWrap":false,"hasNoMargin":false,"level":"1","filterConfigurations":[],"noDebounce":"","contextMenuActions":[]}</component_props><h>3</h><name/><required_translations>[{"comment":"","message":"Happening Now","code":"PAR_DASHBOARD.baafd6ea475ac31089b4a22f316d43ec.8baf1aea475ac31089b4a22f316d4327"}]</required_translations><stored_component/><sys_class_name>par_dashboard_widget</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-07-28 15:36:00</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>8baf1aea475ac31089b4a22f316d4327</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_overrides/><sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package><sys_policy/><sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope><sys_update_name>par_dashboard_widget_8baf1aea475ac31089b4a22f316d4327</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-07-28 15:36:00</sys_updated_on><visualization/><w>47</w><widget_props/><x>0</x><y>0</y></par_dashboard_widget></record_update>]]></payload>
+        <payload_hash>1320404567</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>348d9eac47d6031089b4a22f316d4392</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-28 15:36:00</sys_created_on>
+        <sys_id>c3af1aea475ac31089b4a22f316d432b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19fa95e58770000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-28 15:36:00</sys_updated_on>
+        <type>PAR Dashboard Widget</type>
+        <update_guid>83af1aea8f5ac310b0cfc7ede112a92a</update_guid>
+        <update_guid_history>83af1aea8f5ac310b0cfc7ede112a92a:1320404567</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">53af1aea475ac31089b4a22f316d43f5</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-28 15:36:01</sys_created_on>
+        <sys_db_object display_value="" name="par_dashboard_widget">par_dashboard_widget</sys_db_object>
+        <sys_id>3b3b9d3d999c4a06ba0d503fb9365304</sys_id>
+        <sys_metadata>8baf1aea475ac31089b4a22f316d4327</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_scope_delete display_value="">ce79bab18acc49f9bef811863b5939e1</sys_scope_delete>
+        <sys_update_name>par_dashboard_widget_8baf1aea475ac31089b4a22f316d4327</sys_update_name>
+        <sys_update_version display_value="par_dashboard_widget_8baf1aea475ac31089b4a22f316d4327">c3af1aea475ac31089b4a22f316d432b</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-28 15:36:01</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
