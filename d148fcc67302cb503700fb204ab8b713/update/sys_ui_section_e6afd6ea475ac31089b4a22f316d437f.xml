@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Summary" section_id="e6afd6ea475ac31089b4a22f316d437f" sys_domain="global" table="x_travel_buddy_app_itinerary_package" version="3" view="workspace-traveler-workspace-0">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>short_description</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-07-28 15:35:58</sys_created_on>
+            <sys_id>66afd6ea475ac31089b4a22f316d4390</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Summary" display_value="Summary" name="x_travel_buddy_app_itinerary_package" sys_domain="global" view="879fdeaacd5ac310681cbbc5026dd0b4">e6afd6ea475ac31089b4a22f316d437f</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-07-28 15:35:58</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>work_notes</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-07-28 15:35:58</sys_created_on>
+            <sys_id>e6afd6ea475ac31089b4a22f316d438f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Summary" display_value="Summary" name="x_travel_buddy_app_itinerary_package" sys_domain="global" view="879fdeaacd5ac310681cbbc5026dd0b4">e6afd6ea475ac31089b4a22f316d437f</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-07-28 15:35:58</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Summary</caption>
+            <header>false</header>
+            <name>x_travel_buddy_app_itinerary_package</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-07-28 15:35:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e6afd6ea475ac31089b4a22f316d437f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_travel_buddy_app_itinerary_package</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+            <sys_update_name>sys_ui_section_e6afd6ea475ac31089b4a22f316d437f</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-07-28 15:35:58</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Workspace Traveler workspace 0" name="workspace-traveler-workspace-0">879fdeaacd5ac310681cbbc5026dd0b4</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>
