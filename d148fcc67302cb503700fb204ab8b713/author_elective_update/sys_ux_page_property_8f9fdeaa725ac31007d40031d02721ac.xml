@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property">
+    <sys_ux_page_property action="DELETE">
+        <choices/>
+        <description>sys_ux_applicability sys_id for Workspace audience</description>
+        <name>wbApplicabilityConfigId</name>
+        <page display_value="Traveler workspace">c79fdeaaa35ac31068ee5a942c3bbabf</page>
+        <required_translations/>
+        <route/>
+        <suffix/>
+        <sys_class_name>sys_ux_page_property</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-28 15:35:45</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>global</sys_domain_path>
+        <sys_id>8f9fdeaa725ac31007d40031d02721ac</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>wbApplicabilityConfigId</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name>sys_ux_page_property_8f9fdeaa725ac31007d40031d02721ac</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-28 15:35:49</sys_updated_on>
+        <type>string</type>
+        <unique_name>x_travel_buddy_app.c79fdeaaa35ac31068ee5a942c3bbabf.root.global.wbApplicabilityConfigId</unique_name>
+        <value>98af52ea475ac31089b4a22f316d4390</value>
+    </sys_ux_page_property>
+    <sys_translated_text action="DELETE" query="documentkey=8f9fdeaa725ac31007d40031d02721ac"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</application>
+        <file_path/>
+        <instance_id>7a0f57d6eb9d8fd0c040fddacad0cdd9</instance_id>
+        <instance_name>dev400578</instance_name>
+        <name>sys_ux_page_property_8f9fdeaa725ac31007d40031d02721ac</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property"><sys_ux_page_property action="INSERT_OR_UPDATE"><choices/><description>sys_ux_applicability sys_id for Workspace audience</description><name>wbApplicabilityConfigId</name><page display_value="Traveler workspace">c79fdeaaa35ac31068ee5a942c3bbabf</page><required_translations/><route/><suffix/><sys_class_name>sys_ux_page_property</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-07-28 15:35:45</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>global</sys_domain_path><sys_id>8f9fdeaa725ac31007d40031d02721ac</sys_id><sys_mod_count>1</sys_mod_count><sys_name>wbApplicabilityConfigId</sys_name><sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package><sys_policy/><sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope><sys_update_name>sys_ux_page_property_8f9fdeaa725ac31007d40031d02721ac</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-07-28 15:35:49</sys_updated_on><type>string</type><unique_name>x_travel_buddy_app.c79fdeaaa35ac31068ee5a942c3bbabf.root.global.wbApplicabilityConfigId</unique_name><value>98af52ea475ac31089b4a22f316d4390</value></sys_ux_page_property><sys_translated_text action="delete_multiple" query="documentkey=8f9fdeaa725ac31007d40031d02721ac"/></record_update>]]></payload>
+        <payload_hash>305562300</payload_hash>
+        <record_name>wbApplicabilityConfigId</record_name>
+        <reverted_from/>
+        <source>348d9eac47d6031089b4a22f316d4392</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-28 15:35:49</sys_created_on>
+        <sys_id>54af52ea475ac31089b4a22f316d43da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19fa95e2e140000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-28 15:35:49</sys_updated_on>
+        <type>UX Page Property</type>
+        <update_guid>50af52eaf85ac310bf4e3d89456126d9</update_guid>
+        <update_guid_history>50af52eaf85ac310bf4e3d89456126d9:305562300,90af52ea995ac31002ddfe182d89f5d6:745145576</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-28 15:59:02</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_page_property">sys_ux_page_property</sys_db_object>
+        <sys_id>5cb59ef418d84363976c02244cdf6089</sys_id>
+        <sys_metadata>8f9fdeaa725ac31007d40031d02721ac</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>wbApplicabilityConfigId</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_scope_delete display_value="">ce79bab18acc49f9bef811863b5939e1</sys_scope_delete>
+        <sys_update_name>sys_ux_page_property_8f9fdeaa725ac31007d40031d02721ac</sys_update_name>
+        <sys_update_version display_value="sys_ux_page_property_8f9fdeaa725ac31007d40031d02721ac">54af52ea475ac31089b4a22f316d43da</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-28 15:59:02</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

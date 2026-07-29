@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Accommodation" section_id="0d62f2a2471ec31089b4a22f316d4368" sys_domain="global" table="x_travel_buddy_app_itinerary_package" version="3" view="workspace-travel-buddy-app-0">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_hotel_name</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-07-28 16:57:47</sys_created_on>
+            <sys_id>8d62f2a2471ec31089b4a22f316d436f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Accommodation" display_value="Accommodation" name="x_travel_buddy_app_itinerary_package" sys_domain="global" view="2952fa624d1ec31090fa4d7e7a1fc688">0d62f2a2471ec31089b4a22f316d4368</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-07-28 16:57:47</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_hotel_rating</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-07-28 16:57:47</sys_created_on>
+            <sys_id>0562f2a2471ec31089b4a22f316d436d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Accommodation" display_value="Accommodation" name="x_travel_buddy_app_itinerary_package" sys_domain="global" view="2952fa624d1ec31090fa4d7e7a1fc688">0d62f2a2471ec31089b4a22f316d4368</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-07-28 16:57:47</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_hote_price</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-07-28 16:57:47</sys_created_on>
+            <sys_id>0162f2a2471ec31089b4a22f316d436f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Accommodation" display_value="Accommodation" name="x_travel_buddy_app_itinerary_package" sys_domain="global" view="2952fa624d1ec31090fa4d7e7a1fc688">0d62f2a2471ec31089b4a22f316d4368</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-07-28 16:57:47</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-07-28 16:57:47</sys_created_on>
+            <sys_id>8562f2a2471ec31089b4a22f316d436c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Accommodation" display_value="Accommodation" name="x_travel_buddy_app_itinerary_package" sys_domain="global" view="2952fa624d1ec31090fa4d7e7a1fc688">0d62f2a2471ec31089b4a22f316d4368</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-07-28 16:57:47</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_hotel_feedback</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-07-28 16:57:47</sys_created_on>
+            <sys_id>8162f2a2471ec31089b4a22f316d436e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Accommodation" display_value="Accommodation" name="x_travel_buddy_app_itinerary_package" sys_domain="global" view="2952fa624d1ec31090fa4d7e7a1fc688">0d62f2a2471ec31089b4a22f316d4368</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-07-28 16:57:47</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Accommodation</caption>
+            <header>false</header>
+            <name>x_travel_buddy_app_itinerary_package</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-07-28 16:57:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0d62f2a2471ec31089b4a22f316d4368</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_travel_buddy_app_itinerary_package</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+            <sys_update_name>sys_ui_section_0d62f2a2471ec31089b4a22f316d4368</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-07-28 16:57:47</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Workspace Travel Buddy App 0" name="workspace-travel-buddy-app-0">2952fa624d1ec31090fa4d7e7a1fc688</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>
