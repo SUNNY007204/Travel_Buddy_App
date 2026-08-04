@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route">
+    <sys_ux_app_route action="DELETE">
+        <app_config display_value="Travel Buddy App App Config">2952fa62091ec3102712d1c0d55d4b92</app_config>
+        <description/>
+        <extension_point/>
+        <fields>table,sysId</fields>
+        <icon/>
+        <interoperable>false</interoperable>
+        <name>Create Trip Request</name>
+        <optional_parameters>query,views,activityLogs,extraParams,fields,screen,selectedTabIndex,userPrefs,sysparmView</optional_parameters>
+        <order>0</order>
+        <parent_macroponent display_value="Workspace App Shell">c276387cc331101080d6d3658940ddd2</parent_macroponent>
+        <parent_macroponent_composition_element_id/>
+        <route_type>create-trip-request</route_type>
+        <screen_type display_value="Create Trip Request">dab2aa76475a471089b4a22f316d4334</screen_type>
+        <sys_class_name>sys_ux_app_route</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-29 10:27:49</sys_created_on>
+        <sys_id>1ab2a63a479a471089b4a22f316d43c5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Create Trip Request</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name>sys_ux_app_route_1ab2a63a479a471089b4a22f316d43c5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-29 13:16:22</sys_updated_on>
+    </sys_ux_app_route>
+    <sys_translated_text action="DELETE" query="documentkey=1ab2a63a479a471089b4a22f316d43c5"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</application>
+        <file_path/>
+        <instance_id>7a0f57d6eb9d8fd0c040fddacad0cdd9</instance_id>
+        <instance_name>dev400578</instance_name>
+        <name>sys_ux_app_route_1ab2a63a479a471089b4a22f316d43c5</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route"><sys_ux_app_route action="INSERT_OR_UPDATE"><app_config display_value="Travel Buddy App App Config">2952fa62091ec3102712d1c0d55d4b92</app_config><description/><extension_point/><fields>table,sysId</fields><icon/><interoperable>false</interoperable><name>Create Trip Request</name><optional_parameters>query,views,activityLogs,extraParams,fields,screen,selectedTabIndex,userPrefs,sysparmView</optional_parameters><order>0</order><parent_macroponent display_value="Workspace App Shell">c276387cc331101080d6d3658940ddd2</parent_macroponent><parent_macroponent_composition_element_id/><route_type>create-trip-request</route_type><screen_type display_value="Create Trip Request">dab2aa76475a471089b4a22f316d4334</screen_type><sys_class_name>sys_ux_app_route</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-07-29 10:27:49</sys_created_on><sys_id>1ab2a63a479a471089b4a22f316d43c5</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Create Trip Request</sys_name><sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package><sys_policy/><sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope><sys_update_name>sys_ux_app_route_1ab2a63a479a471089b4a22f316d43c5</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-07-29 13:16:22</sys_updated_on></sys_ux_app_route><sys_translated_text action="delete_multiple" query="documentkey=1ab2a63a479a471089b4a22f316d43c5"/></record_update>]]></payload>
+        <payload_hash>940241125</payload_hash>
+        <record_name>Create Trip Request</record_name>
+        <reverted_from/>
+        <source>348d9eac47d6031089b4a22f316d4392</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-29 13:16:22</sys_created_on>
+        <sys_id>eb498b7a47de471089b4a22f316d43a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19fae04df800000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-29 13:16:22</sys_updated_on>
+        <type>UX App Route</type>
+        <update_guid>ab498b7adcde47101d531b605ed7bea8</update_guid>
+        <update_guid_history>ab498b7adcde47101d531b605ed7bea8:940241125,52b2a63ac49a4710ad5628b9cf36c6c9:1678616875</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-31 06:16:26</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_app_route">sys_ux_app_route</sys_db_object>
+        <sys_id>648cffd16ce34bd0be6148a161920640</sys_id>
+        <sys_metadata>1ab2a63a479a471089b4a22f316d43c5</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Create Trip Request</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_scope_delete display_value="">ce79bab18acc49f9bef811863b5939e1</sys_scope_delete>
+        <sys_update_name>sys_ux_app_route_1ab2a63a479a471089b4a22f316d43c5</sys_update_name>
+        <sys_update_version display_value="sys_ux_app_route_1ab2a63a479a471089b4a22f316d43c5">eb498b7a47de471089b4a22f316d43a9</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-31 06:16:26</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
