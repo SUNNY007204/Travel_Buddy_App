@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="d7d520184722435089b4a22f316d43ad" extends="sys_self_registered_user_profile" label="Buddy App Self Reg User Profile 898453" max_length="40" name="x_travel_buddy_app_self_reg_user_profile_898453" type="collection"/>
+</database>

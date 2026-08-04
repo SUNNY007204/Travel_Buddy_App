@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="39d5acd44722435089b4a22f316d4326" extends="sys_user_registration_request" label="Buddy App User Reg Req 898453" max_length="40" name="x_travel_buddy_app_user_reg_req_898453" type="collection"/>
+</database>
