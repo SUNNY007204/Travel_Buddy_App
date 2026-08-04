@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_travel_buddy_app.WeatherUtils</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>WeatherUtils</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var WeatherUtils = Class.create();
+WeatherUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    getWeatherForDestination: function() {
+
+        var destination = this.getParameter('sysparm_destination');
+
+        if (!destination)
+            return '';
+
+        try {
+
+            var rm = new sn_ws.RESTMessageV2('WeatherAPI', 'Default GET');
+
+            rm.setStringParameterNoEscape('q', destination);
+            rm.setStringParameterNoEscape('appid', '1b5c9d42971b5e89b3624438a7a40728');
+
+            var response = rm.execute();
+
+            return "Status: " + response.getStatusCode() +
+                "\nBody: " + response.getBody();
+
+            var result = JSON.parse(response.getBody());
+
+            var weather = result.weather[0].description;
+            var temp = (result.main.temp - 273.15).toFixed(1);
+
+            return weather + ", " + temp + " °C";
+
+        } catch (ex) {
+            return ex.message;
+        }
+    },
+
+    type: 'WeatherUtils'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-03 07:30:33</sys_created_on>
+        <sys_id>b688a35047e6835089b4a22f316d4359</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_name>WeatherUtils</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name>sys_script_include_b688a35047e6835089b4a22f316d4359</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-03 11:41:19</sys_updated_on>
+    </sys_script_include>
+</record_update>

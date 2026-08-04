@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route">
+    <sys_ux_app_route action="DELETE">
+        <app_config display_value="Travel Buddy App App Config">2952fa62091ec3102712d1c0d55d4b92</app_config>
+        <description/>
+        <extension_point/>
+        <fields>table,sysId,tabelName</fields>
+        <icon/>
+        <interoperable>false</interoperable>
+        <name>Trip Request Page</name>
+        <optional_parameters>query,views,activityLogs,extraParams,fields,screen,selectedTabIndex,userPrefs,sysparmView</optional_parameters>
+        <order>0</order>
+        <parent_macroponent display_value="Workspace App Shell">c276387cc331101080d6d3658940ddd2</parent_macroponent>
+        <parent_macroponent_composition_element_id/>
+        <route_type>trip-request-page</route_type>
+        <screen_type display_value="Trip Request Page">ce383db24756471089b4a22f316d436f</screen_type>
+        <sys_class_name>sys_ux_app_route</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-29 07:22:07</sys_created_on>
+        <sys_id>c23835f24756471089b4a22f316d4361</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Trip Request Page</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name>sys_ux_app_route_c23835f24756471089b4a22f316d4361</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-30 10:36:45</sys_updated_on>
+    </sys_ux_app_route>
+    <sys_translated_text action="DELETE" query="documentkey=c23835f24756471089b4a22f316d4361"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</application>
+        <file_path/>
+        <instance_id>7a0f57d6eb9d8fd0c040fddacad0cdd9</instance_id>
+        <instance_name>dev400578</instance_name>
+        <name>sys_ux_app_route_c23835f24756471089b4a22f316d4361</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route"><sys_ux_app_route action="INSERT_OR_UPDATE"><app_config display_value="Travel Buddy App App Config">2952fa62091ec3102712d1c0d55d4b92</app_config><description/><extension_point/><fields>table,sysId,tabelName</fields><icon/><interoperable>false</interoperable><name>Trip Request Page</name><optional_parameters>query,views,activityLogs,extraParams,fields,screen,selectedTabIndex,userPrefs,sysparmView</optional_parameters><order>0</order><parent_macroponent display_value="Workspace App Shell">c276387cc331101080d6d3658940ddd2</parent_macroponent><parent_macroponent_composition_element_id/><route_type>trip-request-page</route_type><screen_type display_value="Trip Request Page">ce383db24756471089b4a22f316d436f</screen_type><sys_class_name>sys_ux_app_route</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-07-29 07:22:07</sys_created_on><sys_id>c23835f24756471089b4a22f316d4361</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Trip Request Page</sys_name><sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package><sys_policy/><sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope><sys_update_name>sys_ux_app_route_c23835f24756471089b4a22f316d4361</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-07-30 10:36:45</sys_updated_on></sys_ux_app_route><sys_translated_text action="delete_multiple" query="documentkey=c23835f24756471089b4a22f316d4361"/></record_update>]]></payload>
+        <payload_hash>-2144072086</payload_hash>
+        <record_name>Trip Request Page</record_name>
+        <reverted_from/>
+        <source>348d9eac47d6031089b4a22f316d4392</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-30 10:36:45</sys_created_on>
+        <sys_id>cf5ee74747560b1089b4a22f316d43c3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19fb29917740000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-30 10:36:45</sys_updated_on>
+        <type>UX App Route</type>
+        <update_guid>cb5ee74720560b1093d77ca6c0d5b5c2</update_guid>
+        <update_guid_history>cb5ee74720560b1093d77ca6c0d5b5c2:-2144072086,538b724b539ec71029606c3a3cd22884:-1624923979,1e3835f2bd564710f6f97cbdc42dd764:546024257</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-31 07:18:06</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_app_route">sys_ux_app_route</sys_db_object>
+        <sys_id>14b6db8a50294f40a460abff10e8e490</sys_id>
+        <sys_metadata>c23835f24756471089b4a22f316d4361</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Trip Request Page</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_scope_delete display_value="">ce79bab18acc49f9bef811863b5939e1</sys_scope_delete>
+        <sys_update_name>sys_ux_app_route_c23835f24756471089b4a22f316d4361</sys_update_name>
+        <sys_update_version display_value="sys_ux_app_route_c23835f24756471089b4a22f316d4361">cf5ee74747560b1089b4a22f316d43c3</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-31 07:18:06</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -2,7 +2,7 @@
     <sys_ux_list action="INSERT_OR_UPDATE">
         <active>true</active>
         <category display_value="My Travel Hub">360d4f6a47dec31089b4a22f316d4377</category>
-        <columns>name,contact,phone,city,country,cmn_location_source</columns>
+        <columns/>
         <condition/>
         <configuration display_value="Travel Buddy App_menu_config">be527e62471ec31089b4a22f316d4386</configuration>
         <enable_column_calculations>true</enable_column_calculations>
@@ -66,7 +66,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>aad6e53e4792471089b4a22f316d432b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Manage Availability</sys_name>
         <sys_overrides/>
         <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
@@ -74,10 +74,10 @@
         <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
         <sys_update_name>sys_ux_list_aad6e53e4792471089b4a22f316d432b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-29 06:07:27</sys_updated_on>
-        <table>cmn_location</table>
+        <sys_updated_on>2026-07-29 16:47:13</sys_updated_on>
+        <table>cmn_schedule</table>
         <title>Manage Availability</title>
-        <view/>
+        <view display_value="Default view" name="NULL">Default view</view>
         <word_wrap>false</word_wrap>
     </sys_ux_list>
 </record_update>

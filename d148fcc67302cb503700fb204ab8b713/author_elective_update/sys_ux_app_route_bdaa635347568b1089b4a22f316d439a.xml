@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route">
+    <sys_ux_app_route action="DELETE">
+        <app_config display_value="Travel Buddy App App Config">2952fa62091ec3102712d1c0d55d4b92</app_config>
+        <description/>
+        <extension_point/>
+        <fields>tableName</fields>
+        <icon/>
+        <interoperable>false</interoperable>
+        <name>My Trips New Page</name>
+        <optional_parameters>sysId</optional_parameters>
+        <order>0</order>
+        <parent_macroponent display_value="Workspace App Shell">c276387cc331101080d6d3658940ddd2</parent_macroponent>
+        <parent_macroponent_composition_element_id/>
+        <route_type>my</route_type>
+        <screen_type display_value="My Trips New Page">a5aa635347568b1089b4a22f316d4395</screen_type>
+        <sys_class_name>sys_ux_app_route</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-31 04:59:02</sys_created_on>
+        <sys_id>bdaa635347568b1089b4a22f316d439a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>My Trips New Page</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name>sys_ux_app_route_bdaa635347568b1089b4a22f316d439a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-31 12:54:26</sys_updated_on>
+    </sys_ux_app_route>
+    <sys_translated_text action="DELETE" query="documentkey=bdaa635347568b1089b4a22f316d439a"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</application>
+        <file_path/>
+        <instance_id>7a0f57d6eb9d8fd0c040fddacad0cdd9</instance_id>
+        <instance_name>dev400578</instance_name>
+        <name>sys_ux_app_route_bdaa635347568b1089b4a22f316d439a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route"><sys_ux_app_route action="INSERT_OR_UPDATE"><app_config display_value="Travel Buddy App App Config">2952fa62091ec3102712d1c0d55d4b92</app_config><description/><extension_point/><fields>tableName</fields><icon/><interoperable>false</interoperable><name>My Trips New Page</name><optional_parameters>sysId</optional_parameters><order>0</order><parent_macroponent display_value="Workspace App Shell">c276387cc331101080d6d3658940ddd2</parent_macroponent><parent_macroponent_composition_element_id/><route_type>my</route_type><screen_type display_value="My Trips New Page">a5aa635347568b1089b4a22f316d4395</screen_type><sys_class_name>sys_ux_app_route</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-07-31 04:59:02</sys_created_on><sys_id>bdaa635347568b1089b4a22f316d439a</sys_id><sys_mod_count>1</sys_mod_count><sys_name>My Trips New Page</sys_name><sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package><sys_policy/><sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope><sys_update_name>sys_ux_app_route_bdaa635347568b1089b4a22f316d439a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-07-31 12:54:26</sys_updated_on></sys_ux_app_route><sys_translated_text action="delete_multiple" query="documentkey=bdaa635347568b1089b4a22f316d439a"/></record_update>]]></payload>
+        <payload_hash>316854107</payload_hash>
+        <record_name>My Trips New Page</record_name>
+        <reverted_from/>
+        <source>348d9eac47d6031089b4a22f316d4392</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-31 12:54:26</sys_created_on>
+        <sys_id>2977552f47d2cb1089b4a22f316d4338</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19fb83d80910000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-31 12:54:26</sys_updated_on>
+        <type>UX App Route</type>
+        <update_guid>2577552f42d2cb106e21bf82c9fe4f37</update_guid>
+        <update_guid_history>2577552f42d2cb106e21bf82c9fe4f37:316854107,b9aa63539a568b1078b52ff670bbe69e:-1776826971</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-31 13:02:31</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_app_route">sys_ux_app_route</sys_db_object>
+        <sys_id>0736fa9fd5ec4d9c804bea5aea8bc564</sys_id>
+        <sys_metadata>bdaa635347568b1089b4a22f316d439a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>My Trips New Page</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_scope_delete display_value="">ce79bab18acc49f9bef811863b5939e1</sys_scope_delete>
+        <sys_update_name>sys_ux_app_route_bdaa635347568b1089b4a22f316d439a</sys_update_name>
+        <sys_update_version display_value="sys_ux_app_route_bdaa635347568b1089b4a22f316d439a">2977552f47d2cb1089b4a22f316d4338</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-31 13:02:31</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
