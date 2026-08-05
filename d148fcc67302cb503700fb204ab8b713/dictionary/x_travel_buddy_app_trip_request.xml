@@ -15,8 +15,8 @@
         <element choice="1" label="Destination Package" max_length="40" name="u_destination_package" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Gold" sequence="1" value="gold"/>
-                <element inactive_on_update="false" label="Silver" sequence="2" value="silver"/>
                 <element inactive_on_update="false" label="Premium" sequence="0" value="premium"/>
+                <element inactive_on_update="false" label="Silver" sequence="2" value="silver"/>
             </choice>
         </element>
     </element>
