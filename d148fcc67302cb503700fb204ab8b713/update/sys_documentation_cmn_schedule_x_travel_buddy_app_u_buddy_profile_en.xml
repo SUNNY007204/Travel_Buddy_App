@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="x_travel_buddy_app_u_buddy_profile" label="Buddy Profile" language="en" table="cmn_schedule">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>x_travel_buddy_app_u_buddy_profile</element>
+            <help/>
+            <hint/>
+            <label>Buddy Profile</label>
+            <language>en</language>
+            <name>cmn_schedule</name>
+            <plural>Buddy Profiles</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-07-29 12:17:54</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Buddy Profile</sys_name>
+            <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+            <sys_update_name>sys_documentation_cmn_schedule_x_travel_buddy_app_u_buddy_profile_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-07-29 12:17:54</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
