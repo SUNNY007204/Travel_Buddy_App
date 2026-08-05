@@ -5,7 +5,7 @@
         <description/>
         <disable_auto_reflow>true</disable_auto_reflow>
         <disable_interoperable>false</disable_interoperable>
-        <event_mappings/>
+        <event_mappings>[]</event_mappings>
         <macroponent display_value="Login Page default">a8b3eaba479a471089b4a22f316d43d2</macroponent>
         <macroponent_config>{
     "bare": {
@@ -50,7 +50,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>e0b3eaba479a471089b4a22f316d43e8</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Login Page default</sys_name>
         <sys_overrides/>
         <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
@@ -58,7 +58,7 @@
         <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
         <sys_update_name>sys_ux_screen_e0b3eaba479a471089b4a22f316d43e8</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-29 10:32:04</sys_updated_on>
+        <sys_updated_on>2026-07-30 11:28:50</sys_updated_on>
     </sys_ux_screen>
     <sys_translated_text action="delete_multiple" query="documentkey=e0b3eaba479a471089b4a22f316d43e8"/>
 </record_update>

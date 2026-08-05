@@ -14,10 +14,20 @@
         <element label="Destination" mandatory="true" max_length="32" name="u_destination" reference="cmn_location" reference_qual="country=India^EQ" reference_qual_condition="country=India^EQ" type="reference"/>
         <element choice="1" label="Destination Package" max_length="40" name="u_destination_package" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Gold" sequence="1" value="gold"/>
-                <element inactive_on_update="false" label="Silver" sequence="2" value="silver"/>
                 <element inactive_on_update="false" label="Premium" sequence="0" value="premium"/>
+                <element inactive_on_update="false" label="Gold" sequence="1" value="gold"/>
+                <element inactive_on_update="false" label="Premium" sequence="0" value="premium"/>
+                <element inactive_on_update="false" label="Silver" sequence="2" value="silver"/>
             </choice>
         </element>
+        <element choice="1" label="Travel Type" max_length="255" name="u_travel_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Solo" sequence="0" value="solo"/>
+                <element inactive_on_update="false" label="Group" sequence="1" value="group"/>
+            </choice>
+        </element>
+        <element label="Preferred Language" max_length="1024" name="u_preferred_language" type="glide_list"/>
+        <element label="Destination" mandatory="true" max_length="32" name="u_destination" reference="cmn_location" type="reference"/>
+        <element label="Group Size" max_length="255" name="u_group_size" type="integer"/>
     </element>
 </database>
