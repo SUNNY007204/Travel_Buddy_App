@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_event">
+    <sys_ux_event action="INSERT_OR_UPDATE">
+        <description/>
+        <event_name>MODAL_SELECTED_RELAY_a8429094276e0350d27a1ba75c044760</event_name>
+        <explicit_api_name/>
+        <interfaces/>
+        <label>Open or close modal dialog Relay (Landing Page Default)</label>
+        <props>[
+    {
+        "fieldType": "string",
+        "interfaceApiName": "global.modal",
+        "label": "Modal",
+        "name": "modalId"
+    },
+    {
+        "fieldType": "boolean",
+        "interfaceApiName": null,
+        "label": "Open modal dialog",
+        "name": "showModal"
+    },
+    {
+        "fieldType": "json",
+        "interfaceApiName": null,
+        "label": "Display options (advanced)",
+        "name": "displayOptions"
+    },
+    {
+        "fieldType": "boolean",
+        "interfaceApiName": "global.modal",
+        "label": "Use bare modal",
+        "name": "bare"
+    },
+    {
+        "fieldType": "string",
+        "interfaceApiName": null,
+        "label": "Viewport ID",
+        "name": "viewportElementId"
+    },
+    {
+        "fieldType": "string",
+        "interfaceApiName": null,
+        "label": "Viewport Route",
+        "name": "viewportRoute"
+    },
+    {
+        "fieldType": "json",
+        "interfaceApiName": null,
+        "label": "Viewport Fields",
+        "name": "viewportFields"
+    }
+]</props>
+        <required_translations>[ {
+  "message" : "Display options (advanced)",
+  "comment" : ""
+}, {
+  "message" : "Modal",
+  "comment" : ""
+}, {
+  "message" : "Open modal dialog",
+  "comment" : ""
+}, {
+  "message" : "Use bare modal",
+  "comment" : ""
+}, {
+  "message" : "Viewport Fields",
+  "comment" : ""
+}, {
+  "message" : "Viewport ID",
+  "comment" : ""
+}, {
+  "message" : "Viewport Route",
+  "comment" : ""
+} ]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_event</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-02 15:47:33</sys_created_on>
+        <sys_id>a0429094dd6e0350fd08658b96765e2f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Open or close modal dialog Relay (Landing Page Default)</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name>sys_ux_event_a0429094dd6e0350fd08658b96765e2f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-02 15:47:33</sys_updated_on>
+    </sys_ux_event>
+    <sys_translated_text action="delete_multiple" query="documentkey=a0429094dd6e0350fd08658b96765e2f"/>
+</record_update>

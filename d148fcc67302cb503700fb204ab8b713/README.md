@@ -27,3 +27,4 @@ If you find yourself unable to import your repository due to the presence of fil
    * Advanced Schedules Support
    * Task table schema
    * Service Management Basics
+   * External User Self-Registration
