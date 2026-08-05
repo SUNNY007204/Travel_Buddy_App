@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen">
+    <sys_ux_screen action="DELETE">
+        <active>true</active>
+        <app_config display_value="Travel Buddy App App Config">2952fa62091ec3102712d1c0d55d4b92</app_config>
+        <description/>
+        <disable_auto_reflow>true</disable_auto_reflow>
+        <disable_interoperable>false</disable_interoperable>
+        <event_mappings>[
+    {
+        "eventMappingId": "UsGpnPoiiAEyffjjaYFFqqzfTxaa",
+        "isConfiguration": null,
+        "offRowStorageId": null,
+        "sourceEventApiName": "x_travel_buddy_app.NAV_ITEM_SELECTED_RELAY_28e27e07475ec71089b4a22f316d4378",
+        "sourceEventCorrelationId": null,
+        "sourceEventDefinition": {
+            "apiName": "x_travel_buddy_app.NAV_ITEM_SELECTED_RELAY_28e27e07475ec71089b4a22f316d4378",
+            "id": null,
+            "type": "UXEVENT"
+        },
+        "sourceEventSysId": null,
+        "targets": [
+            {
+                "broker": null,
+                "clientScript": null,
+                "clientTransformScript": null,
+                "clientTransformScriptUxValue": null,
+                "conditional": null,
+                "declarativeAction": null,
+                "event": {
+                    "apiName": "sn_canvas_core.NAV_ITEM_SELECTED",
+                    "payload": {
+                        "container": {
+                            "external": {
+                                "binding": {
+                                    "address": [
+                                        "external"
+                                    ]
+                                },
+                                "type": "EVENT_PAYLOAD_BINDING"
+                            },
+                            "fields": {
+                                "binding": {
+                                    "address": [
+                                        "fields"
+                                    ]
+                                },
+                                "type": "EVENT_PAYLOAD_BINDING"
+                            },
+                            "multiInstField": {
+                                "binding": {
+                                    "address": [
+                                        "multiInstField"
+                                    ]
+                                },
+                                "type": "EVENT_PAYLOAD_BINDING"
+                            },
+                            "navigationOptions": {
+                                "binding": {
+                                    "address": [
+                                        "navigationOptions"
+                                    ]
+                                },
+                                "type": "EVENT_PAYLOAD_BINDING"
+                            },
+                            "params": {
+                                "binding": {
+                                    "address": [
+                                        "params"
+                                    ]
+                                },
+                                "type": "EVENT_PAYLOAD_BINDING"
+                            },
+                            "passiveNavigation": {
+                                "binding": {
+                                    "address": [
+                                        "passiveNavigation"
+                                    ]
+                                },
+                                "type": "EVENT_PAYLOAD_BINDING"
+                            },
+                            "redirect": {
+                                "binding": {
+                                    "address": [
+                                        "redirect"
+                                    ]
+                                },
+                                "type": "EVENT_PAYLOAD_BINDING"
+                            },
+                            "route": {
+                                "binding": {
+                                    "address": [
+                                        "route"
+                                    ]
+                                },
+                                "type": "EVENT_PAYLOAD_BINDING"
+                            },
+                            "targetRoute": {
+                                "binding": {
+                                    "address": [
+                                        "targetRoute"
+                                    ]
+                                },
+                                "type": "EVENT_PAYLOAD_BINDING"
+                            },
+                            "title": {
+                                "binding": {
+                                    "address": [
+                                        "title"
+                                    ]
+                                },
+                                "type": "EVENT_PAYLOAD_BINDING"
+                            }
+                        },
+                        "type": "MAP_CONTAINER"
+                    },
+                    "sysId": "8b82bf18e5276c8e423b6e4e0889b463"
+                },
+                "operation": null,
+                "targetId": "XyfKNPIjjDUkWjjYaaOEVDPUibB",
+                "type": "EVENT"
+            }
+        ]
+    }
+]</event_mappings>
+        <macroponent display_value="Traveler Dashboard">28e27e07475ec71089b4a22f316d4378</macroponent>
+        <macroponent_config>{
+    "bare": {
+        "type": "JSON_LITERAL",
+        "value": true
+    },
+    "headerLevel": {
+        "type": "JSON_LITERAL",
+        "value": "1"
+    },
+    "headingOnlyVisibleToScreenReaders": {
+        "type": "JSON_LITERAL",
+        "value": false
+    },
+    "interceptNotifications": {
+        "type": "JSON_LITERAL",
+        "value": false
+    },
+    "label": {
+        "type": "JSON_LITERAL",
+        "value": ""
+    },
+    "propagateNotifications": {
+        "type": "JSON_LITERAL",
+        "value": false
+    },
+    "scrollable": {
+        "type": "JSON_LITERAL",
+        "value": "y"
+    }
+}</macroponent_config>
+        <name>Traveler Dashboard</name>
+        <order>0</order>
+        <parent_macroponent display_value="Workspace App Shell">c276387cc331101080d6d3658940ddd2</parent_macroponent>
+        <required_translations>[ ]</required_translations>
+        <rollback_screen/>
+        <screen_condition/>
+        <screen_type display_value="Dashboards">2952fa621b1ec3100592798614fa4684</screen_type>
+        <sys_class_name>sys_ux_screen</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-30 06:16:54</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6ce2b647475ec71089b4a22f316d4328</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Traveler Dashboard</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name>sys_ux_screen_6ce2b647475ec71089b4a22f316d4328</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-30 06:34:49</sys_updated_on>
+    </sys_ux_screen>
+    <sys_translated_text action="DELETE" query="documentkey=6ce2b647475ec71089b4a22f316d4328"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</application>
+        <file_path/>
+        <instance_id>7a0f57d6eb9d8fd0c040fddacad0cdd9</instance_id>
+        <instance_name>dev400578</instance_name>
+        <name>sys_ux_screen_6ce2b647475ec71089b4a22f316d4328</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen"><sys_ux_screen action="INSERT_OR_UPDATE"><active>true</active><app_config display_value="Travel Buddy App App Config">2952fa62091ec3102712d1c0d55d4b92</app_config><description/><disable_auto_reflow>true</disable_auto_reflow><disable_interoperable>false</disable_interoperable><event_mappings>[
+    {
+        "eventMappingId": "UsGpnPoiiAEyffjjaYFFqqzfTxaa",
+        "isConfiguration": null,
+        "offRowStorageId": null,
+        "sourceEventApiName": "x_travel_buddy_app.NAV_ITEM_SELECTED_RELAY_28e27e07475ec71089b4a22f316d4378",
+        "sourceEventCorrelationId": null,
+        "sourceEventDefinition": {
+            "apiName": "x_travel_buddy_app.NAV_ITEM_SELECTED_RELAY_28e27e07475ec71089b4a22f316d4378",
+            "id": null,
+            "type": "UXEVENT"
+        },
+        "sourceEventSysId": null,
+        "targets": [
+            {
+                "broker": null,
+                "clientScript": null,
+                "clientTransformScript": null,
+                "clientTransformScriptUxValue": null,
+                "conditional": null,
+                "declarativeAction": null,
+                "event": {
+                    "apiName": "sn_canvas_core.NAV_ITEM_SELECTED",
+                    "payload": {
+                        "container": {
+                            "external": {
+                                "binding": {
+                                    "address": [
+                                        "external"
+                                    ]
+                                },
+                                "type": "EVENT_PAYLOAD_BINDING"
+                            },
+                            "fields": {
+                                "binding": {
+                                    "address": [
+                                        "fields"
+                                    ]
+                                },
+                                "type": "EVENT_PAYLOAD_BINDING"
+                            },
+                            "multiInstField": {
+                                "binding": {
+                                    "address": [
+                                        "multiInstField"
+                                    ]
+                                },
+                                "type": "EVENT_PAYLOAD_BINDING"
+                            },
+                            "navigationOptions": {
+                                "binding": {
+                                    "address": [
+                                        "navigationOptions"
+                                    ]
+                                },
+                                "type": "EVENT_PAYLOAD_BINDING"
+                            },
+                            "params": {
+                                "binding": {
+                                    "address": [
+                                        "params"
+                                    ]
+                                },
+                                "type": "EVENT_PAYLOAD_BINDING"
+                            },
+                            "passiveNavigation": {
+                                "binding": {
+                                    "address": [
+                                        "passiveNavigation"
+                                    ]
+                                },
+                                "type": "EVENT_PAYLOAD_BINDING"
+                            },
+                            "redirect": {
+                                "binding": {
+                                    "address": [
+                                        "redirect"
+                                    ]
+                                },
+                                "type": "EVENT_PAYLOAD_BINDING"
+                            },
+                            "route": {
+                                "binding": {
+                                    "address": [
+                                        "route"
+                                    ]
+                                },
+                                "type": "EVENT_PAYLOAD_BINDING"
+                            },
+                            "targetRoute": {
+                                "binding": {
+                                    "address": [
+                                        "targetRoute"
+                                    ]
+                                },
+                                "type": "EVENT_PAYLOAD_BINDING"
+                            },
+                            "title": {
+                                "binding": {
+                                    "address": [
+                                        "title"
+                                    ]
+                                },
+                                "type": "EVENT_PAYLOAD_BINDING"
+                            }
+                        },
+                        "type": "MAP_CONTAINER"
+                    },
+                    "sysId": "8b82bf18e5276c8e423b6e4e0889b463"
+                },
+                "operation": null,
+                "targetId": "XyfKNPIjjDUkWjjYaaOEVDPUibB",
+                "type": "EVENT"
+            }
+        ]
+    }
+]</event_mappings><macroponent display_value="Traveler Dashboard">28e27e07475ec71089b4a22f316d4378</macroponent><macroponent_config>{
+    "bare": {
+        "type": "JSON_LITERAL",
+        "value": true
+    },
+    "headerLevel": {
+        "type": "JSON_LITERAL",
+        "value": "1"
+    },
+    "headingOnlyVisibleToScreenReaders": {
+        "type": "JSON_LITERAL",
+        "value": false
+    },
+    "interceptNotifications": {
+        "type": "JSON_LITERAL",
+        "value": false
+    },
+    "label": {
+        "type": "JSON_LITERAL",
+        "value": ""
+    },
+    "propagateNotifications": {
+        "type": "JSON_LITERAL",
+        "value": false
+    },
+    "scrollable": {
+        "type": "JSON_LITERAL",
+        "value": "y"
+    }
+}</macroponent_config><name>Traveler Dashboard</name><order>0</order><parent_macroponent display_value="Workspace App Shell">c276387cc331101080d6d3658940ddd2</parent_macroponent><required_translations>[ ]</required_translations><rollback_screen/><screen_condition/><screen_type display_value="Dashboards">2952fa621b1ec3100592798614fa4684</screen_type><sys_class_name>sys_ux_screen</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-07-30 06:16:54</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>6ce2b647475ec71089b4a22f316d4328</sys_id><sys_mod_count>4</sys_mod_count><sys_name>Traveler Dashboard</sys_name><sys_overrides/><sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package><sys_policy/><sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope><sys_update_name>sys_ux_screen_6ce2b647475ec71089b4a22f316d4328</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-07-30 06:34:49</sys_updated_on></sys_ux_screen><sys_translated_text action="delete_multiple" query="documentkey=6ce2b647475ec71089b4a22f316d4328"/></record_update>]]></payload>
+        <payload_hash>-871848825</payload_hash>
+        <record_name>Traveler Dashboard</record_name>
+        <reverted_from/>
+        <source>348d9eac47d6031089b4a22f316d4392</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-30 06:34:49</sys_created_on>
+        <sys_id>03f6be8f475ec71089b4a22f316d430e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19fb1bb989b0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-30 06:34:49</sys_updated_on>
+        <type>UX Screen</type>
+        <update_guid>4ff6be8f505ec7105052e4c8fd838b0c</update_guid>
+        <update_guid_history>4ff6be8f505ec7105052e4c8fd838b0c:-871848825,8983b647c15ec7100d6b24bd39cb9f73:956133997,20e2b6473f5ec710b3aa7f7f3e02502d:-290540613</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-30 06:41:56</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_screen">sys_ux_screen</sys_db_object>
+        <sys_id>24987aeb265549248efb3a5aa13de444</sys_id>
+        <sys_metadata>6ce2b647475ec71089b4a22f316d4328</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Traveler Dashboard</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_scope_delete display_value="">ce79bab18acc49f9bef811863b5939e1</sys_scope_delete>
+        <sys_update_name>sys_ux_screen_6ce2b647475ec71089b4a22f316d4328</sys_update_name>
+        <sys_update_version display_value="sys_ux_screen_6ce2b647475ec71089b4a22f316d4328">03f6be8f475ec71089b4a22f316d430e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-30 06:41:56</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

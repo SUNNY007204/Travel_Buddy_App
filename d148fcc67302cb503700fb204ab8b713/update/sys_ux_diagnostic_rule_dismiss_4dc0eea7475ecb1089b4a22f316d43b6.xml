@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_diagnostic_rule_dismiss">
+    <sys_ux_diagnostic_rule_dismiss action="INSERT_OR_UPDATE">
+        <dismiss_targets>{
+  "55b74c5270408210f877603d6fa53cf8": [
+    {
+      "open_record_button": {
+        "queryId": "",
+        "dismissTimestamp": "2026-07-31T18:14:15.118Z",
+        "dismissedBy": "6816f79cc0a8016401c5a33be04be441"
+      }
+    }
+  ]
+}</dismiss_targets>
+        <sys_class_name>sys_ux_diagnostic_rule_dismiss</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-31 18:14:42</sys_created_on>
+        <sys_id>4dc0eea7475ecb1089b4a22f316d43b6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name>sys_ux_diagnostic_rule_dismiss_4dc0eea7475ecb1089b4a22f316d43b6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-31 18:14:42</sys_updated_on>
+        <table_name>sys_ux_macroponent</table_name>
+        <target_id>40460b6a479ec31089b4a22f316d43d2</target_id>
+    </sys_ux_diagnostic_rule_dismiss>
+</record_update>

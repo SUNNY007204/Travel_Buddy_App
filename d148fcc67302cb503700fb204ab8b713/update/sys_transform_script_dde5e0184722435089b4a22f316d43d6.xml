@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_transform_script">
+    <sys_transform_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <map display_value="u_reg_xmap_354448">c9e5e0184722435089b4a22f316d4328</map>
+        <order>100</order>
+        <script><![CDATA[(function runTransformScript(source, map, log, target) { return new global.ExternalUserRegistrationUtil().updateUserDomainDetails(source, target); })(source, map, log, target);]]></script>
+        <sys_class_name>sys_transform_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-02 17:13:19</sys_created_on>
+        <sys_id>dde5e0184722435089b4a22f316d43d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>onAfter</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name>sys_transform_script_dde5e0184722435089b4a22f316d43d6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-02 17:13:19</sys_updated_on>
+        <when>onAfter</when>
+    </sys_transform_script>
+</record_update>
