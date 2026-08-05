@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="4856eea0839a031031ab6730ceaad31c" extends="task" label="Trip Request" max_length="40" name="x_travel_buddy_app_trip_request" text_index="true" type="collection">
         <element default="javascript:gs.getUserID();" dynamic_default_value="bdcb83a85f220100a9ad2572f2b4773d" label="Traveler" max_length="32" name="u_traveler" reference="sys_user" type="reference" use_dynamic_default="true"/>
+        <element label="Preferred Language" max_length="1024" name="u_preferred_language" type="glide_list"/>
         <element label="Group Size" max_length="255" name="u_group_size" type="integer"/>
         <element choice="1" label="Travel Type" max_length="255" name="u_travel_type" type="choice">
             <choice>
@@ -9,13 +10,12 @@
             </choice>
         </element>
         <element label="Selected Itinerary" max_length="40" name="u_selected_itinerary" type="string"/>
-        <element label="Preferred Language" max_length="1024" name="u_preferred_language" type="glide_list"/>
-        <element display="true" label="Destination" mandatory="true" max_length="32" name="u_destination" reference="cmn_location" type="reference"/>
+        <element label="Destination" mandatory="true" max_length="32" name="u_destination" reference="cmn_location" type="reference"/>
         <element choice="1" label="Destination Package" max_length="40" name="u_destination_package" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Gold" sequence="1" value="gold"/>
-                <element inactive_on_update="false" label="Silver" sequence="2" value="silver"/>
                 <element inactive_on_update="false" label="Premium" sequence="0" value="premium"/>
+                <element inactive_on_update="false" label="Silver" sequence="2" value="silver"/>
             </choice>
         </element>
     </element>
