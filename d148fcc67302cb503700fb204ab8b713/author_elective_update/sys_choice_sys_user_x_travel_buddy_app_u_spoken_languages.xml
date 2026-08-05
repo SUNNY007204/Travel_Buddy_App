@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="x_travel_buddy_app_u_spoken_languages" table="sys_user" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>x_travel_buddy_app_u_spoken_languages</element>
+            <name>sys_user</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-07-29 11:54:34</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_travel_buddy_app_u_spoken_languages</sys_name>
+            <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+            <sys_update_name>sys_choice_sys_user_x_travel_buddy_app_u_spoken_languages</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-07-29 11:54:34</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_travel_buddy_app_u_spoken_languages</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>English</label>
+            <language>en</language>
+            <name>sys_user</name>
+            <sequence>100</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-07-29 11:54:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-07-29 11:54:34</sys_updated_on>
+            <value>english</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_travel_buddy_app_u_spoken_languages</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Marathi</label>
+            <language>en</language>
+            <name>sys_user</name>
+            <sequence>200</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-07-29 11:55:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-07-29 11:55:42</sys_updated_on>
+            <value>marathi</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_travel_buddy_app_u_spoken_languages</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Hindi</label>
+            <language>en</language>
+            <name>sys_user</name>
+            <sequence>300</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-07-29 11:58:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-07-29 11:58:07</sys_updated_on>
+            <value>hindi</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>
