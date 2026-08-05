@@ -9,6 +9,7 @@
             <choice>
                 <element inactive_on_update="false" label="***" sequence="2" value="3"/>
                 <element inactive_on_update="false" label="**" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="*****" sequence="4" value="5"/>
                 <element inactive_on_update="false" label="*" sequence="0" value="1"/>
                 <element inactive_on_update="false" label="*****" sequence="4" value="5"/>
                 <element inactive_on_update="false" label="****" sequence="3" value="4"/>
