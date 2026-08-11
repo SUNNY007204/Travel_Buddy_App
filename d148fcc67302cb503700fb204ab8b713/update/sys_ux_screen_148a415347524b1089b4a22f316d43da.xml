@@ -5,7 +5,123 @@
         <description/>
         <disable_auto_reflow>true</disable_auto_reflow>
         <disable_interoperable>false</disable_interoperable>
-        <event_mappings>[]</event_mappings>
+        <event_mappings>[
+    {
+        "eventMappingId": "eehhYkVAvbbRCaaZBjjeELiUFeeddVuhhp",
+        "isConfiguration": null,
+        "offRowStorageId": null,
+        "sourceEventApiName": "x_travel_buddy_app.NAV_ITEM_SELECTED_RELAY_5c8a415347524b1089b4a22f316d43c2",
+        "sourceEventCorrelationId": null,
+        "sourceEventDefinition": {
+            "apiName": "x_travel_buddy_app.NAV_ITEM_SELECTED_RELAY_5c8a415347524b1089b4a22f316d43c2",
+            "id": null,
+            "type": "UXEVENT"
+        },
+        "sourceEventSysId": null,
+        "targets": [
+            {
+                "broker": null,
+                "clientScript": null,
+                "clientTransformScript": null,
+                "clientTransformScriptUxValue": null,
+                "conditional": null,
+                "declarativeAction": null,
+                "event": {
+                    "apiName": "sn_canvas_core.NAV_ITEM_SELECTED",
+                    "payload": {
+                        "container": {
+                            "external": {
+                                "binding": {
+                                    "address": [
+                                        "external"
+                                    ]
+                                },
+                                "type": "EVENT_PAYLOAD_BINDING"
+                            },
+                            "fields": {
+                                "binding": {
+                                    "address": [
+                                        "fields"
+                                    ]
+                                },
+                                "type": "EVENT_PAYLOAD_BINDING"
+                            },
+                            "multiInstField": {
+                                "binding": {
+                                    "address": [
+                                        "multiInstField"
+                                    ]
+                                },
+                                "type": "EVENT_PAYLOAD_BINDING"
+                            },
+                            "navigationOptions": {
+                                "binding": {
+                                    "address": [
+                                        "navigationOptions"
+                                    ]
+                                },
+                                "type": "EVENT_PAYLOAD_BINDING"
+                            },
+                            "params": {
+                                "binding": {
+                                    "address": [
+                                        "params"
+                                    ]
+                                },
+                                "type": "EVENT_PAYLOAD_BINDING"
+                            },
+                            "passiveNavigation": {
+                                "binding": {
+                                    "address": [
+                                        "passiveNavigation"
+                                    ]
+                                },
+                                "type": "EVENT_PAYLOAD_BINDING"
+                            },
+                            "redirect": {
+                                "binding": {
+                                    "address": [
+                                        "redirect"
+                                    ]
+                                },
+                                "type": "EVENT_PAYLOAD_BINDING"
+                            },
+                            "route": {
+                                "binding": {
+                                    "address": [
+                                        "route"
+                                    ]
+                                },
+                                "type": "EVENT_PAYLOAD_BINDING"
+                            },
+                            "targetRoute": {
+                                "binding": {
+                                    "address": [
+                                        "targetRoute"
+                                    ]
+                                },
+                                "type": "EVENT_PAYLOAD_BINDING"
+                            },
+                            "title": {
+                                "binding": {
+                                    "address": [
+                                        "title"
+                                    ]
+                                },
+                                "type": "EVENT_PAYLOAD_BINDING"
+                            }
+                        },
+                        "type": "MAP_CONTAINER"
+                    },
+                    "sysId": "8b82bf18e5276c8e423b6e4e0889b463"
+                },
+                "operation": null,
+                "targetId": "qdKNGvEjCUjnjjbbcELTkLqXKcc",
+                "type": "EVENT"
+            }
+        ]
+    }
+]</event_mappings>
         <macroponent display_value="Profile">5c8a415347524b1089b4a22f316d43c2</macroponent>
         <macroponent_config>{
     "bare": {
@@ -50,7 +166,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>148a415347524b1089b4a22f316d43da</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_name>Profile</sys_name>
         <sys_overrides/>
         <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
@@ -58,7 +174,7 @@
         <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
         <sys_update_name>sys_ux_screen_148a415347524b1089b4a22f316d43da</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-31 05:27:34</sys_updated_on>
+        <sys_updated_on>2026-08-11 04:39:59</sys_updated_on>
     </sys_ux_screen>
     <sys_translated_text action="delete_multiple" query="documentkey=148a415347524b1089b4a22f316d43da"/>
 </record_update>
