@@ -10,6 +10,7 @@
         <element default="javascript:gs.getUserID();" dynamic_default_value="90d1921e5f510100a9ad2572f2b477fe" dynamic_ref_qual="2fd8e97bef3221002841f7f775c0fbc1" label="Traveler" max_length="32" name="u_traveler" reference="sys_user" reference_qual="javascript:gs.getUserID();" type="reference" use_dynamic_default="true" use_reference_qualifier="dynamic"/>
         <element label="Destination" mandatory="true" max_length="32" name="u_destination" reference="cmn_location" reference_qual="country=India^EQ" reference_qual_condition="country=India^EQ" type="reference"/>
         <element label="Weather" max_length="40" name="weather" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Start Time" max_length="40" name="start_time" type="glide_date_time"/>
         <element label="Selected Itinerary" max_length="40" name="u_selected_itinerary" reference="x_travel_buddy_app_itinerary_package" reference_qual="javascript:new TBA_TravelReferenceUtils().getItinerariesForCity(current.u_destination);" type="reference" use_reference_qualifier="advanced"/>
         <element label="Preferred Language" max_length="1024" name="u_preferred_language" type="glide_list"/>
         <element label="Group Size" max_length="255" name="u_group_size" type="integer"/>
@@ -19,5 +20,6 @@
                 <element inactive_on_update="false" label="Solo" sequence="0" value="solo"/>
             </choice>
         </element>
+        <element attributes="edge_encryption_enabled=true" label="End Time" max_length="40" name="end_time" type="glide_date_time"/>
     </element>
 </database>
