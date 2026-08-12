@@ -404,7 +404,7 @@
 }</macroponent_config>
         <name>Landing Page Default</name>
         <order>0</order>
-        <parent_macroponent display_value="Portal App Shell (Deprecated)">b66bf1075b31101016fd7c1bf481c7a7</parent_macroponent>
+        <parent_macroponent display_value="UXR Base Experience Shell">76a83a645b122010b913030a1d81c780</parent_macroponent>
         <required_translations>[ ]</required_translations>
         <rollback_screen/>
         <screen_condition/>
@@ -415,7 +415,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>e4429094a36e0350f9ef46c38d2d6e18</sys_id>
-        <sys_mod_count>27</sys_mod_count>
+        <sys_mod_count>36</sys_mod_count>
         <sys_name>Landing Page Default</sys_name>
         <sys_overrides/>
         <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
@@ -423,7 +423,7 @@
         <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
         <sys_update_name>sys_ux_screen_e4429094a36e0350f9ef46c38d2d6e18</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-04 06:30:07</sys_updated_on>
+        <sys_updated_on>2026-08-11 16:37:45</sys_updated_on>
     </sys_ux_screen>
     <sys_translated_text action="delete_multiple" query="documentkey=e4429094a36e0350f9ef46c38d2d6e18"/>
 </record_update>

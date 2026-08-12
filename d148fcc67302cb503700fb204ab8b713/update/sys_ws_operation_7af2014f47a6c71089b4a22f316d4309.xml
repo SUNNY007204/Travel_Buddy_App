@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl/>
+        <http_method>POST</http_method>
+        <name>Update Password</name>
+        <operation_script><![CDATA[(function process(request, response) {
+    var requestBody = request.body.data;
+    var newPassword = requestBody ? requestBody.password : null;
+    var userSysId = gs.getUserID();
+
+    if (!newPassword) {
+        response.setStatus(400);
+        return { success: false, message: "Password is required." };
+    }
+
+    var userGr = new GlideRecord('sys_user');
+    if (userGr.get(userSysId)) {
+        // setDisplayValue automatically hashes the password for sys_user
+        userGr.user_password.setDisplayValue(newPassword);
+        userGr.update();
+        
+        return { success: true, message: "Password updated successfully!" };
+    }
+
+    response.setStatus(404);
+    return { success: false, message: "User record not found." };
+})();]]></operation_script>
+        <operation_uri>/api/x_travel_buddy_app/password_management_api/update</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/update</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <support_trailing_slash>false</support_trailing_slash>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-11 08:24:58</sys_created_on>
+        <sys_id>7af2014f47a6c71089b4a22f316d4309</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Update Password</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name>sys_ws_operation_7af2014f47a6c71089b4a22f316d4309</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-11 08:24:58</sys_updated_on>
+        <web_service_definition display_value="Password Management API">2590f40b4726c71089b4a22f316d43a5</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>

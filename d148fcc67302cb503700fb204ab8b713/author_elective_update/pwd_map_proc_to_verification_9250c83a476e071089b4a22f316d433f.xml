@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="pwd_map_proc_to_verification">
+    <pwd_map_proc_to_verification action="DELETE">
+        <mandatory>true</mandatory>
+        <order>100</order>
+        <process display_value="Travell Buddy Password Reset">6d8eb366476e071089b4a22f316d431d</process>
+        <sys_class_name>pwd_map_proc_to_verification</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-10 08:54:05</sys_created_on>
+        <sys_id>9250c83a476e071089b4a22f316d433f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Travell Buddy Password Reset.SMS Verification</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name>pwd_map_proc_to_verification_9250c83a476e071089b4a22f316d433f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-10 08:54:05</sys_updated_on>
+        <verification display_value="SMS Verification">12c34f0deb6001006a668c505206fefd</verification>
+    </pwd_map_proc_to_verification>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</application>
+        <file_path/>
+        <instance_id>7a0f57d6eb9d8fd0c040fddacad0cdd9</instance_id>
+        <instance_name>dev400578</instance_name>
+        <name>pwd_map_proc_to_verification_9250c83a476e071089b4a22f316d433f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="pwd_map_proc_to_verification"><pwd_map_proc_to_verification action="INSERT_OR_UPDATE"><mandatory>true</mandatory><order>100</order><process display_value="Travell Buddy Password Reset">6d8eb366476e071089b4a22f316d431d</process><sys_class_name>pwd_map_proc_to_verification</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-10 08:54:05</sys_created_on><sys_id>9250c83a476e071089b4a22f316d433f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Travell Buddy Password Reset.SMS Verification</sys_name><sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package><sys_policy/><sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope><sys_update_name>pwd_map_proc_to_verification_9250c83a476e071089b4a22f316d433f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-10 08:54:05</sys_updated_on><verification display_value="SMS Verification">12c34f0deb6001006a668c505206fefd</verification></pwd_map_proc_to_verification></record_update>]]></payload>
+        <payload_hash>-447654362</payload_hash>
+        <record_name>Travell Buddy Password Reset.SMS Verification</record_name>
+        <reverted_from/>
+        <source>348d9eac47d6031089b4a22f316d4392</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-10 08:54:05</sys_created_on>
+        <sys_id>9250c83a476e071089b4a22f316d435c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19feae10c830000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-10 08:54:05</sys_updated_on>
+        <type>Password Reset Process Verification</type>
+        <update_guid>1250c83a4b6e0710afefdc4af98a5d5b</update_guid>
+        <update_guid_history>1250c83a4b6e0710afefdc4af98a5d5b:-447654362</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Travell Buddy Password Reset.SMS Verification">0980807a476e071089b4a22f316d4318</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-10 08:54:48</sys_created_on>
+        <sys_db_object display_value="" name="pwd_map_proc_to_verification">pwd_map_proc_to_verification</sys_db_object>
+        <sys_id>5eea1b43f19240959b366997a643ef11</sys_id>
+        <sys_metadata>9250c83a476e071089b4a22f316d433f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Travell Buddy Password Reset.SMS Verification</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_scope_delete display_value="">ce79bab18acc49f9bef811863b5939e1</sys_scope_delete>
+        <sys_update_name>pwd_map_proc_to_verification_9250c83a476e071089b4a22f316d433f</sys_update_name>
+        <sys_update_version display_value="pwd_map_proc_to_verification_9250c83a476e071089b4a22f316d433f">9250c83a476e071089b4a22f316d435c</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-10 08:54:48</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

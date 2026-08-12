@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_no_mtom">
+    <sc_cat_item_user_criteria_no_mtom action="DELETE">
+        <sc_cat_item display_value="Password reset ">bf498cbe47ae071089b4a22f316d431f</sc_cat_item>
+        <sys_class_name>sc_cat_item_user_criteria_no_mtom</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-10 10:25:05</sys_created_on>
+        <sys_id>d32514ba4722471089b4a22f316d4350</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Password reset .SNC External</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name>sc_cat_item_user_criteria_no_mtom_d32514ba4722471089b4a22f316d4350</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-10 10:25:05</sys_updated_on>
+        <user_criteria display_value="SNC External">66c1b50e730333009508738234f6a7c9</user_criteria>
+    </sc_cat_item_user_criteria_no_mtom>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</application>
+        <file_path/>
+        <instance_id>7a0f57d6eb9d8fd0c040fddacad0cdd9</instance_id>
+        <instance_name>dev400578</instance_name>
+        <name>sc_cat_item_user_criteria_no_mtom_d32514ba4722471089b4a22f316d4350</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_no_mtom"><sc_cat_item_user_criteria_no_mtom action="INSERT_OR_UPDATE"><sc_cat_item display_value="Password reset ">bf498cbe47ae071089b4a22f316d431f</sc_cat_item><sys_class_name>sc_cat_item_user_criteria_no_mtom</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-10 10:25:05</sys_created_on><sys_id>d32514ba4722471089b4a22f316d4350</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Password reset .SNC External</sys_name><sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package><sys_policy/><sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope><sys_update_name>sc_cat_item_user_criteria_no_mtom_d32514ba4722471089b4a22f316d4350</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-10 10:25:05</sys_updated_on><user_criteria display_value="SNC External">66c1b50e730333009508738234f6a7c9</user_criteria></sc_cat_item_user_criteria_no_mtom></record_update>]]></payload>
+        <payload_hash>379888935</payload_hash>
+        <record_name>Password reset .SNC External</record_name>
+        <reverted_from/>
+        <source>f9657a314702031089b4a22f316d4385</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by/>
+        <sys_created_on>2026-07-13 22:59:48</sys_created_on>
+        <sys_id>43abd0f64762471089b4a22f316d4358</sys_id>
+        <sys_mod_count/>
+        <sys_recorded_at>19f5db542a00000000</sys_recorded_at>
+        <sys_updated_by/>
+        <sys_updated_on/>
+        <type>Catalog Item Not Available for</type>
+        <update_guid>03abd0f6f06247109236c269cdab1258</update_guid>
+        <update_guid_history>03abd0f6f06247109236c269cdab1258:379888935</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Password reset .SNC External">4fabd0f64762471089b4a22f316d4358</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-10 10:53:27</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_user_criteria_no_mtom">sc_cat_item_user_criteria_no_mtom</sys_db_object>
+        <sys_id>315cf91cd0f740b0910f05b210727990</sys_id>
+        <sys_metadata>d32514ba4722471089b4a22f316d4350</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Password reset .SNC External</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_scope_delete display_value="">ce79bab18acc49f9bef811863b5939e1</sys_scope_delete>
+        <sys_update_name>sc_cat_item_user_criteria_no_mtom_d32514ba4722471089b4a22f316d4350</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_user_criteria_no_mtom_d32514ba4722471089b4a22f316d4350">43abd0f64762471089b4a22f316d4358</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-10 10:53:27</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
