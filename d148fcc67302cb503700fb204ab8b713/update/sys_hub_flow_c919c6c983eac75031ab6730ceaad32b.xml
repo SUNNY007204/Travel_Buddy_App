@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=integrated,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from>9a41b6c2ff12101088e94ee9453bf1a4</copied_from>
+        <copied_from_name>FlowTemplate_Empty</copied_from_name>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority/>
+        <generation_source/>
+        <internal_name>trip_request_approval</internal_name>
+        <label_cache>[{"name":"Created_1.current.assigned_to.email","label":"Trigger - Record Created➛Trip Request Record➛Assigned to➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","choices":null,"usedInstances":{"f72187d9-fe78-4cc5-b14a-6b6538534e29":["ah_to"]},"attributes":null},{"name":"e37d78a5-5241-4a8c-b471-4b3aefc585cd.approval_state","label":"1 - Ask For Approval➛Approval State","reference":null,"reference_display":"Approval State","type":"choice","base_type":"choice","parent_table_name":null,"column_name":null,"choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"415d2bef-ecf9-451b-9f01-57338382cd6f":["condition"],"d5a0abd1-e903-4996-8ecf-657ef9971596":["condition"],"1de0c62b-add6-476d-a8f9-e4853f7cf280":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.short_description","label":"Trigger - Record Created➛Trip Request Record➛Short description","reference":"","reference_display":"Short description","type":"string","base_type":"string","parent_table_name":"x_travel_buddy_app_trip_request","column_name":"short_description","choices":null,"usedInstances":{"f72187d9-fe78-4cc5-b14a-6b6538534e29":[null]},"attributes":null},{"name":"Created_1.current.u_destination","label":"Trigger - Record Created➛Trip Request Record➛Destination","reference":"cmn_location","reference_display":"Destination","type":"reference","base_type":"reference","parent_table_name":"x_travel_buddy_app_trip_request","column_name":"u_destination","choices":[{"label":null,"value":null,"order":0}],"usedInstances":{"f1ac2d03-aa63-475c-a2e9-8ff3d557ecc0":[null]},"attributes":null},{"name":"Created_1.current.work_start","label":"Trigger - Record Created➛Trip Request Record➛Starting Date","reference":"","reference_display":"Starting Date","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_travel_buddy_app_trip_request","column_name":"work_start","choices":[{"label":null,"value":null,"order":0}],"usedInstances":{"f1ac2d03-aa63-475c-a2e9-8ff3d557ecc0":[null]},"attributes":null},{"name":"Created_1.current.assigned_to","label":"Trigger - Record Created➛Trip Request Record➛Assigned to","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_travel_buddy_app_trip_request","column_name":"assigned_to","choices":null,"usedInstances":{"e37d78a5-5241-4a8c-b471-4b3aefc585cd":["approval_conditions"]},"attributes":null},{"name":"Created_1.current.opened_by","label":"Trigger - Record Created➛Trip Request Record➛Opened by","reference":"sys_user","reference_display":"Opened by","type":"reference","base_type":"reference","parent_table_name":"x_travel_buddy_app_trip_request","column_name":"opened_by","choices":null,"usedInstances":{"f1ac2d03-aa63-475c-a2e9-8ff3d557ecc0":["ah_to"]},"attributes":null},{"name":"Created_1.current","label":"Trigger - Record Created➛Trip Request Record","reference":"x_travel_buddy_app_trip_request","reference_display":"Trip Request","type":"reference","base_type":"reference","parent_table_name":null,"column_name":null,"choices":null,"usedInstances":{"f72187d9-fe78-4cc5-b14a-6b6538534e29":["record"],"a42a7803-1040-4b85-84c1-88c1d745b569":["record"],"f1ac2d03-aa63-475c-a2e9-8ff3d557ecc0":["record"],"8c731819-b24f-4475-bfb6-3286cac1a7c2":["record"],"e37d78a5-5241-4a8c-b471-4b3aefc585cd":["record"],"f252f135-3dcf-431a-a268-310445d7ee02":["record"]},"attributes":{}},{"name":"Created_1.current.assigned_to.manager.manager","label":"Trigger - Record Created➛Trip Request Record➛Assigned to➛Manager➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"manager","choices":null,"usedInstances":{"f252f135-3dcf-431a-a268-310445d7ee02":["approval_conditions"]},"attributes":null},{"name":"Created_1.current.number","label":"Trigger - Record Created➛Trip Request Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_travel_buddy_app_trip_request","column_name":"number","choices":null,"usedInstances":{},"attributes":null}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <master_snapshot_digest/>
+        <name>Trip Request Approval</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-05 08:22:05</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c919c6c983eac75031ab6730ceaad32b</sys_id>
+        <sys_mod_count>39</sys_mod_count>
+        <sys_name>Trip Request Approval</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name>sys_hub_flow_c919c6c983eac75031ab6730ceaad32b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-05 11:44:23</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record>4257be4983620b5031ab6730ceaad304</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=c919c6c983eac75031ab6730ceaad32b"/>
+    <sys_variable_value action="delete_multiple" query="document_key=c919c6c983eac75031ab6730ceaad32b"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=c919c6c983eac75031ab6730ceaad32b"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=c919c6c983eac75031ab6730ceaad32b^sys_idNOT IN4919c6c983eac75031ab6730ceaad339"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>c919c6c983eac75031ab6730ceaad32b</id>
+        <name>Trip Request Approval</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-05 08:22:05</sys_created_on>
+        <sys_id>4919c6c983eac75031ab6730ceaad339</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-05 08:22:05</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=4919c6c983eac75031ab6730ceaad339"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=c919c6c983eac75031ab6730ceaad32b^sys_idNOT IN4449cec983eac75031ab6730ceaad335,48498ec983eac75031ab6730ceaad376"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Trip Request Approval">c919c6c983eac75031ab6730ceaad32b</model>
+        <model_id>c919c6c983eac75031ab6730ceaad32b</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_c919c6c983eac75031ab6730ceaad32b</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-05 08:22:51</sys_created_on>
+        <sys_id>4449cec983eac75031ab6730ceaad335</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-05 09:49:10</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=4449cec983eac75031ab6730ceaad335"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Trip Request Approval">c919c6c983eac75031ab6730ceaad32b</model>
+        <model_id>c919c6c983eac75031ab6730ceaad32b</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_c919c6c983eac75031ab6730ceaad32b</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-05 08:22:50</sys_created_on>
+        <sys_id>48498ec983eac75031ab6730ceaad376</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-05 09:49:10</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=48498ec983eac75031ab6730ceaad376"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=c919c6c983eac75031ab6730ceaad32b"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=c919c6c983eac75031ab6730ceaad32b"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=c919c6c983eac75031ab6730ceaad32b^sys_idNOT IN33398ec983eac75031ab6730ceaad36e"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Trip Request Approval">c919c6c983eac75031ab6730ceaad32b</flow>
+        <generation_source/>
+        <name>Created</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-05 08:22:50</sys_created_on>
+        <sys_id>33398ec983eac75031ab6730ceaad36e</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-05 09:53:00</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9VY227jNhD9FUFPLZAFdLHjOG/bJIsG2G5Q29s+BKlAiUNbKE15JUqJu8i/d6ibZV0cO1Z2nZcA4tDk4eGZM8Pcf9c5cYHrl/qMuBz0M90XEkJB+Gy9AhyWatgRZKliSyIokUG41i9lGMOZzsJgOYPlihOJkxnhEQ4GIYVQvzTP9ITwGKbr6JbiSvj7dJl8TT0P4/eTI0OSAHfcmNK1Q1YrHPBXTgjfYogkzqR+hHus/8p/MMOoNimj3sLnNAShX94/nOkrEuI2UkH4Xgv5CofHPDK2wPBs07Ysw7AuBqZ7brumRW0ChoEL1jmp4ZYt1GwODU8SBAVa8tFgLQRC7wRflzMWSHrG0JI8Rf5/uPqFoeYxQOweZLHy08npyIa9ReB7cLeSfiCykQxnFgx4vBRfMvyKSGAk5rIgEkfiCNeDlYKsQOSI2HQRPE6KDT/5Ij1dHuSBR3j5RSRelhtLiBThzOdIvZNxEwVxmKKf3FzdTa6dvz/Orn6/mTiTm+lscns1u7nWn9NzOd9itWKGMMfiZMd5Lm//kw9cXSCJIn8ugDoywPmRh2KQHz3pJ4UEn882sr4KBPVTahrS9opQtC3tgoJd2jaMTnV7lR0Lhf9z82dTxdngYeI9PyeEAukQr8sq4q2evAWabCGherpdMs5H9tHxwDB+kpJzh3qtkJcBBX69WU7H4HyO0vbFKpaKrUciZIQidAilToVHNRUxvaTs7GzPLyo4jAX+wCnvo6njlLaSv88+muLlPabiVDlkSvoH9CVWUJXugNPZ53yHSSy0AO8R/2heHCJTUiu8jt0uyTwnGBfk4MmKJtjXqPr1h4+pKeaVQ3RhSBlqQCh3R6lpxYEzKNGRWB76TPHmlSQ1bmupfnCemyZjLjDLGKksNw3bZaYxMoaEUdswPKuS500wnShlTTBvku+HZXuUSpXvocQ6xTl4o5ore8ko2dZgQYKSSG4qV/1AM3uCZiloNXO0D3LHUpbZ8PW2Oncdref2gNCE4C/ovia5pz8yHjyiMR/vjS7x/p2HQSxo3Z3UFpovtM0M7Zeczl/fzidZEMJuPNszTskhN5dSyJqIdQ/eaDPTHcMADLREG93QHY7HrkcsxkbnI7DMmjduYLRiexee+IL4kjb1dvljq3CSNr0d4IxHAGy45MEAj/fHXJit7pjF3ocPPi5AOAg1dLifPo1rdjjnPoUi1m+2N7ZONvl9bMazi7E3NEcjb4QvHsx4NgCXmANrSMajc/tiWMv4BpRdMGULMz/kHRStoxRIhxt8zUKn9bp/S9lGIKUqR0fXcIFNb7oEyfasFE51S1rqMUGofQnEh9vNPG0KWA/Tt/EbFfN9QKlr134oKjeQi0ZzgUh+w/EtJKpl7eDs5F5nNUUl22c9+nUGg4vhmNntfsTGbX60AdMN8+R7kT3zJ+nMxLamZF/9J61p1NlFvELCNZlU24sd/U9fpJi9k2K9HSn20T1XkYudT9LXgH1H9S5tQnosegoCOAGrevl1oGFAwz01n2n5fzCBau5akwtAhjn22ri/psAca+I7akwTWanvn4or6+0bpQ+Htbw1O72qVtNNv29roCMyHNodnfa4/rZuA/QC3pOvcQfnTNKWgjsL3WHr1tdsLXUVyW4rYs8i1uup2yvZcadurWUvnfr4KrXrPwMtKE60/jz8D4h4/4rpHwAA</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=c919c6c983eac75031ab6730ceaad32b^sys_idNOT IN5bae56c583aec75031ab6730ceaad33d,df5946c5832ac75031ab6730ceaad378,ead22e0183eec75031ab6730ceaad309,f895a68583eec75031ab6730ceaad3e8"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Trip Request Approval">c919c6c983eac75031ab6730ceaad32b</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-05 09:56:28</sys_created_on>
+        <sys_id>5bae56c583aec75031ab6730ceaad33d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-05 10:06:27</sys_updated_on>
+        <ui_id>f72187d9-fe78-4cc5-b14a-6b6538534e29</ui_id>
+        <updation_source/>
+        <values>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</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=5bae56c583aec75031ab6730ceaad33d"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Trip Request Approval">c919c6c983eac75031ab6730ceaad32b</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-05 08:23:20</sys_created_on>
+        <sys_id>df5946c5832ac75031ab6730ceaad378</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-05 09:53:00</sys_updated_on>
+        <ui_id>e37d78a5-5241-4a8c-b471-4b3aefc585cd</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Y32/aOhT+V6o8U65DSBp4q1ZV2rR7J7XdXkoVOfZJ8WScLHa6chH/+44TB1JoGWJM3aa9IPn4/PjOOd9xbG4XnuDe2DuLswGMRgOS+oQEhMQhI3EAaXAWnQWUEa/nKToD1CyB5SXH9QOVlRUsFm9KoAZ44vdZVZagzHKJ+1zoQtL5J6eGEjYVkuO+N76963kFLdGjgdIbLza2zLyARNIUJBpe5KyaodOTtxfoY1+0rfVVC3cTvo2Ba+68J8IKccviIT0PHg0oDhgto1JDz5tRxanJy7k3NmWFAkyaf1ByvtKYCmWaRGf0UYv/0X0wsHoZYGbMFWG1TFyB2trkgsGHwohcNRJDU9kWLpfVTP3XZGBLCxmtpOmUttLoDwoL2YJoEGbX0/zrVRvvUqg6OYdW5ozK1YoaU4q0MqBtN0BCXZMZLQqh7pOizB9EbYxQZv17iYt+JvOvGFOLe9WnzOLuY4Fo/xLlF7X4Ey2FTeJfdIPGyzr55Etl4zZpOMBJnXOTMGppVorCnKPPB3AIlz1H1JTtbD1bd7pxt+bpY2JK+gAySSvO5wliQoEokhK+VKDNNmNvcPfkarV7GHtvLIqTunW9vTN4YrydkaNuvUxU49ox19/NXCfZh7oxeR3qOkS/GXe/R1sYRkGIP2dZQPyBT2KI4piNCGVxFIXDYN1kjIeIqUReUo2+1wQ+4pl6jRVT9y0j9wDXGp47dDgXDt2LsB1LdRvKMXRwNIb60W9K0UrcbNSmkbzf7M7P4bIN91EJPNfe2u5HgzQakZif8oykp8M4CE8pA3IKkR9CyCMW+sEP85/4uw49Hj9DpEyA7N4z2o3tMejsHDYOlzbUk0N6D7xbI3HpAL+UiBuIerlxbB9vKGJCXmkq/tw7B9tJBugc3p/zqlQ7uJtMha5b+iKHOxrH4vIe8Fvjdw3+TSpvprWDycFfJv/CTB6GO6kAz5xeLFdcWHy6w+fmzAN9BZ+BGX2u5h9vn3kH9qm2maDI5Mvl3TbrD/Zz2Gysby+VBN3Oxx5FWb0mnd3OIrnpWN+InJGbkOGxHpevNyB/5h2d7eRBNlr3nVdYDqRo91+QideAnHjjiadyBROvN/GsVmIJUYtRA8GtNmrZYtmsq5I6c7+zXNtyOte1pmZT4EipWvpE0vDcyY/5F8y1C3Bygaj/uRGdb8v3a7b6H6dq7J8tY/tYaDNp6ia6X5bwaF+W4d+x2XgOJKsrNH5I8AA6eJbuvgFum8dBURQAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=df5946c5832ac75031ab6730ceaad378"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Trip Request Approval">c919c6c983eac75031ab6730ceaad32b</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>1de0c62b-add6-476d-a8f9-e4853f7cf280</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-05 10:14:42</sys_created_on>
+        <sys_id>ead22e0183eec75031ab6730ceaad309</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-05 10:16:25</sys_updated_on>
+        <ui_id>f252f135-3dcf-431a-a268-310445d7ee02</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Y0W7bOgz9lcLPaa4dx66Tt2JFgQ27d0Db7aUpDFmiEw2K7Ely19wg/z7KlhM3abOgy9Bt2EsCUSJ5SB1Skm+XHmfe2DtL8gGMRgM/C3w/9P0kon4SQhaexWchob7X8ySZA65UQAvFcHxPRGUFy+UbBcQAS4M+rZQCaVYrnGdcl4IsPrllKKEzLhjOe+Pbu55XEoUWDShvvNyaMosSUkEyEKh4UdBqjkZP3l6gjUPRttpXLdxt+NYHjpmznnIrxCmLx+958GBAMkBvOREaet6cSEZMoRbe2KgKBRg0+yDFYr1ixqVpAp2TB83/R/PhwK7LASOjLgnrYeoS1Oam4BQ+lIYXspEYkok2cYWo5vK/JgKbWshJJUwntZVGe1BayBZEgzC/nhVfr1p/l1zWwTm0oqBErEfEGMWzyoC2uwEC6pzMSVlyOU1LVdzzWhmhzPtTgYN+Loqv6FPzqewTanH3MUGkf4nyi1r8iShug/gXzaDyqg4+/VJZv00YDnBax9wEjKs0Vbw052jzHhzCVc8RNaN7t55udroxt+HpQ2oUuQeRZhVjixQxoYCXqYIvFWizy9gbnD25Ws++jL03FsVJvXW9gyN4pLwbkaNuPUxlY9oxN9jPXCc5hLqJ/zrUdYh+M+5+j7YwjMMIf87y0A8GgZ9AnCR05BOaxHE0DDebjP4QMRHIS6LR9obAR+yp15gxOW0ZeQC4VvHcocO6cOiehe1YqltXjqGDozE0iH9Tilb8Zis3jeT99u78HC5bdx8lx7721u5+PMjikZ+wU5b72ekwCaNTQsE/hTiIIGIxjYLwh/nvB/uaHkueIFLOQXTvGe3Ebhl0Zl5WDpfW1aMmfQDenZK4dICfC8QVRD3catvHK4rE91+pKv7cOwfdSwboNO/PRaXkHu6mM67rLX2Ww50Vx+LyAfBb5XcN/m0qb4e1h8nhXyb/wkweRnupAE90L1pIxi0+3eFz0/NAX8FnoEafy8XH2yfegX2ibSQoMkUfWUCmoNr/1eputwqOZvdltbO53VQCdFs/ByRt/dp0enuT6Kpnc2NySq6Chsd6fL5eAf2Zd3i6lwf5aLPvrMJ0IGW7X0kmXgNy4o0nniwkTLzexLOrUkuIWowrENx6opYtV824UsSpB53hRpeRha5XajoDhpSqpY8kDc+d/JifaK6dg5MLRP3PDe+cPd/P2fo7T9XoP5nG9jHRRtLkjXdPnuhoJ8/wb9lsPRfS9RUbDxpsQC+upbtv6CTMRHEUAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=ead22e0183eec75031ab6730ceaad309"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Trip Request Approval">c919c6c983eac75031ab6730ceaad32b</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>1de0c62b-add6-476d-a8f9-e4853f7cf280</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-05 10:26:36</sys_created_on>
+        <sys_id>f895a68583eec75031ab6730ceaad3e8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-05 11:44:12</sys_updated_on>
+        <ui_id>f1ac2d03-aa63-475c-a2e9-8ff3d557ecc0</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1bX2/bNhD/KoSeLVe2bMl2n7oGRQOsf7AaHYamECiSsrlIoipRSbzAwN73EQbsw+2T7ChRthw7rpykWRzoKRHJI3/H+92ddCa/XBucGhNjOB5Zjh8MsGvZfduyRv3x2LfHgTVyx1aPYqNjxDhiMBLPPSng8QKHuXq+vn6dMiwZ9Xpdkqcpi2VXJCyGBn+xXCIYSnmWhHjxubkEmfOQQocx+fK1YyQ4hbUlS43J9Y0uuUiYF2KfhTDxJ5nyeAbiTVWqBKdiWz81Mzxm1ZwipQqA3THYlWQxZbBGgMOMdYwIxxRLkS6MiUxzaAD16Ic4XNRGXGX8D5hvZFmW6g8YqEDUAkbt0dM7VTaTueCEfUgkF3HZIrEfahkiwjyK35eY1R6zAOehrPYYWvIM5mOJghrLFZLg01xc/lIt+IbHhVa6MxQEh6snLEF3P5csU/vOQhbBRF6EkwR2xEtSccELYcASdWchPHSDUFzCohmfxV1MFPAu7AzuvoH2k6L5M0650uIdTAPCCnjII14Y11C7ZyyLDfG+5QpKqZpWwiv3AQZkJOWJfAUrXDCNd9nRVLYcx/cdf+jaa7uPSUBdP3CwS+y1qS+BhGmE03OPRZiHNVL3tllbYLsrM6cg/OKNglmxswHKSvg0JmFOGfq1grtPA01bX4iQ4XjN2/5+3uqWLeLOueKOUZIQSYHAbOECYbRaWTXKOUMFAPgPS8QzlCmnRlOBuAZfk+ighchRlGcShknokTidwT8pIwC2a9TcZfAozqJNq1tPdtr9KLzpvq7To/tCJnM2oqRPSM1jth3mgcJ4A0yV4E+vX+9AeEsgH97NIdpI/niRfLDX9ISujV2Gjv1vJcvlA3L0RJBcbSI6PamI2gDtKh2UAe+XCvVNLTRlqV7E43TNW+tegfxVlgnCYWOyWtC+5HIOYXhH/LX7mxSHaM4LEu6m+um6+2EpX75W3ZnxBHJh6t1gnw7s/08kLjbDK+z+HSfAe2kV9DcjnqCLmhec5ZZlkwQprKbk8SIiLBVC+rBZ50UnPTPOymHsLe+U418kZcNZfJD8byJPEex6AkT6ljPI7nOcIZ+xGMGeEpZljCIgqnqFgD1mtHuv5aZqpRMmgcDZpJT007LLBM8qEbzPI5+lE1T2ZwmOEQlxllWTqZU88Hlll4SH4ZmBMrkI2aq/pPYEXmNCHrOX0E9EDN4HkYUXNqxGFkaD7gK7mqqwQdV7fR1QT6Y4zgKRRhOf9W17PB6a1sDumwPSc0x/zKjZI6PAJ5QGwzFdLitN94OHpRDChLBEZuslvCCPC55mgAmAKl+5qgStR1ZDGxQMwmk11Qk0fYT5T2kTNQsopsZc/MVgjvR7okoqazIIwF3JFVB4d5Y8Mddgi2/ConEqkpvDNKpqLPByNmMpMnV4RzoRFRzsOzP5EhXUrSiqR617S842Qp3Bm7OsOcTOhbWXqSkaTInTVFw2N0mR0UwCHiQPFdpY6d9//r4FZ62h2+0+MUSH7S0kgGp2beS7LgCZTcL32Jqh247vBZhgyrwmTqriQR3trbOhWNRijPoW5ExJq+RXbmI1xQdId2g1FFXzoISTcyApNKLbCAs7v8NDoLWZZ5Sh2ixzqsnBPXdI7I7ysShivCbAn381tk9pj8NsuG3UVfo6UaEyxmrDnlzu6rs0sAYONh2HMHMwwswcu3RkBs544AZjbGPsHkHuaqpGm7sOyV014rYJ7FknsLqlHyGLNXHXI8liB/jIM0hln5SHI4iY7MllMtfFrt+jgTmygUkDOhqafr/PTJsORz3XGrrB8BgyWVM12kx2SCYreMvjWUHdNpc961y2aetHyGZNXPZIstlBfnK0+eyuNco5js/Vr52dzbQ4TfEFC9E7HONZUX1GU4ajzaW2f6zQS5fdt1dry8cHq8au4tl2tRW9qLL8j6u3PkzyfTK5rc0jzziPtEW9tqi3/SW0jpI/qKzXhsg2RB5LiGzLRm3ZqFmw/DGFozZWtrHyWGJlW5ZoyxIHliW0l2+VHaqw2rDwcLczkW+n736uDkM2OLW2OrVbnlnbOsSmD0HOZRSuTz+69zy16wyHttMe260f200uaZ+mIkm0bg9ydLe3//LNYG3w2knI9cHFKxU6gKmen1O6UNHDU7UsT9eytmtj9Shw91saCgp6X0JpqsaG8C1qaSpvtGlC9+51nHc6Z5u3J5DUMGrn1Fu61+nOM68krtatWPzefB/uv6VANgJclvu/MyJrfC+qtRuZbFWt/VhVa7dJ31DqQS7TfV+/leBKu10a33Ibw2mv1T2li0B0b9xj1oZxH+ceUANIleCNa0D7bgEN2ltAT/UW0Nf/AAvMsZ2cPAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=f895a68583eec75031ab6730ceaad3e8"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=c919c6c983eac75031ab6730ceaad32b"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=c919c6c983eac75031ab6730ceaad32b^sys_idNOT IN58e1aa8d83aec75031ab6730ceaad31a"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">dce1aa8d83aec75031ab6730ceaad319</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Trip Request Approval">c919c6c983eac75031ab6730ceaad32b</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-05 10:10:27</sys_created_on>
+        <sys_id>58e1aa8d83aec75031ab6730ceaad31a</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-05 11:34:30</sys_updated_on>
+        <ui_id>1de0c62b-add6-476d-a8f9-e4853f7cf280</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VXW/aMBT9K8jPIcoHAcoboqo0qVulterLVkU3tgPWnDizHSiL+O+7zgegjm6r1se94XO/zrm5RzRE1baqrXlQS2PEuiSLL08eEaXD8HdDSig4WRCqSiasUGXaAh7ZgqxdoCvjbGTVaFlVWm05wzATppKwf/x9Ft0IyTTvp1agsbflmiyaFyHBsEkeQB5e0ZDG0TSOgiCaT8JsGmdhxGLgEGNDCRmXmLoa6I5uW8R7VYfdVw43Voty3b9v+y73A6g0c6zCwCP82fKSIftFDtJwjxRQMrBK74+I5sDuSnkCNqK02I645GcjfuDAKElcYs5RIuVd8PhM++11cH4NFpBKTW2t+1S6UYJy0y2H8RxqaVfnWJdwVzmpXYmFTA7VStZF+anbCDk2GD4WIrVBErxySh31Xkd+v1G7zwPLG1G2W+mDUlGQxxdY3F1WW8enIVzyAhulBVQVbjR1ByDaYuRS+GuJDz+XaodD3aH4QB1xHxcL/g3i1y38CFo4FR+xDRZ3NDMwgqbtxWI7XBMnB4+YvVlJMOYkErebfq8dxU5yLy7t9uNKqBaVXeLkLe91HLxfDXB2+03D4xmbzSEZJ9EkHE9gTsfZZIa/MrzInCbzhDIf2oMHmRoLlh8OX+sgiBm8apb3avs2d11BkidhkFx212R6yV0XfPVGS0V/sJT7nn/pqCAI/lvqny0lTNoZodfWDn9HRz05+3Qzj7umwiC1B4d9GP55XGCPxyXoObRT+psTdcIOPwEZtEw4wwYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=c919c6c983eac75031ab6730ceaad32b^sys_idNOT IN31f0aa0d83aec75031ab6730ceaad34f,3957fa4983620b5031ab6730ceaad397,7157fa4983620b5031ab6730ceaad398,75f0aa0d83aec75031ab6730ceaad34f,e157fa4983620b5031ab6730ceaad397,f1f0aa0d83aec75031ab6730ceaad34e"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>c919c6c983eac75031ab6730ceaad32b</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.opened_by}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-05 10:06:27</sys_created_on>
+        <sys_id>31f0aa0d83aec75031ab6730ceaad34f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-05 10:06:27</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>47c4bdf9-be6c-4219-bbe3-735913b7f1ac</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>c919c6c983eac75031ab6730ceaad32b</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.work_start}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-05 11:44:12</sys_created_on>
+        <sys_id>3957fa4983620b5031ab6730ceaad397</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-05 11:44:12</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>77a7b1df-83d8-4d85-b22e-3d5817057f57</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>c919c6c983eac75031ab6730ceaad32b</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.number}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-05 11:44:12</sys_created_on>
+        <sys_id>7157fa4983620b5031ab6730ceaad398</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-05 11:44:12</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>be233995-0432-4c16-b9ed-1c8fbcddf59d</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>c919c6c983eac75031ab6730ceaad32b</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.short_description}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-05 10:06:27</sys_created_on>
+        <sys_id>75f0aa0d83aec75031ab6730ceaad34f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-05 10:06:27</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>099f4a6d-c71e-42e1-81b9-f6ec4d61f94a</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>c919c6c983eac75031ab6730ceaad32b</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.u_destination}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-05 11:44:12</sys_created_on>
+        <sys_id>e157fa4983620b5031ab6730ceaad397</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-05 11:44:12</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>27df046a-66ce-48ae-97d8-f6947f9a3aa7</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>c919c6c983eac75031ab6730ceaad32b</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.number}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-05 10:06:27</sys_created_on>
+        <sys_id>f1f0aa0d83aec75031ab6730ceaad34e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-05 10:06:27</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>5161ec5f-f577-497c-a786-1dd20969fd10</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=c919c6c983eac75031ab6730ceaad32b"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_c919c6c983eac75031ab6730ceaad32b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-05 08:22:51</sys_created_on>
+        <sys_id>0849cec983eac75031ab6730ceaad33c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-05 08:22:51</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_c919c6c983eac75031ab6730ceaad32b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-05 08:22:51</sys_created_on>
+        <sys_id>8449cec983eac75031ab6730ceaad323</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-05 08:22:51</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_c919c6c983eac75031ab6730ceaad32b"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_c919c6c983eac75031ab6730ceaad32b"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=c919c6c983eac75031ab6730ceaad32b"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=c919c6c983eac75031ab6730ceaad32b"/>
+</record_update>

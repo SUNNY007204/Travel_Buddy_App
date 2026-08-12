@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>false</action_update>
+        <active>false</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>cmn_schedule</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>TBA_Prevent Duplicate Guide Schedule</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	// run this to check if a Buddy Profile is actually attached to the schedule
+    if (!current.x_travel_buddy_app_u_buddy_profile.nil()) {
+        
+        // database query on the Schedule table
+        var grSchedule = new GlideRecord('cmn_schedule');
+        
+        //Search for any existing schedule where the Guide Profile matches the one we are trying to insert
+        grSchedule.addQuery('x_travel_buddy_app_u_buddy_profile', current.x_travel_buddy_app_u_buddy_profile);
+        grSchedule.query();
+        
+        // 4. If the database finds a match, abort
+        if (grSchedule.hasNext()) {
+            
+            // 5. Show a red error message to the user on the screen
+            gs.addErrorMessage('Action aborted: This Travel Buddy already has an active calendar. A guide can only have one master schedule container.');
+            
+            // 6. Stop the database from saving the record
+            current.setAbortAction(true);
+        }
+    }
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-07 10:34:03</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ab4934f93b2a0390d14ef10f23e45a3b</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>TBA_Prevent Duplicate Guide Schedule</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name>sys_script_ab4934f93b2a0390d14ef10f23e45a3b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-11 05:52:29</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=ab4934f93b2a0390d14ef10f23e45a3b"/>
+</record_update>

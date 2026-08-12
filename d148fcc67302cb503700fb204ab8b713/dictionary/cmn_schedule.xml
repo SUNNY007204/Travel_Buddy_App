@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element attributes="kagami_csindex_enabled=true,update_synch=false" db_object_id="8a9c12f1086403100a22e9371c04a473" extends="business_calendar" label="Schedule" max_length="40" name="cmn_schedule" type="collection">
-        <element display="true" label="Buddy Profile" max_length="32" name="x_travel_buddy_app_u_buddy_profile" reference="sys_user" type="reference"/>
+    <element attributes="kagami_csindex_enabled=true,update_synch=false" db_object_id="6bd914e0f54403100a22c0b3dfa15150" extends="business_calendar" label="Schedule" max_length="40" name="cmn_schedule" type="collection">
+        <element label="Buddy Profile" max_length="32" name="x_travel_buddy_app_u_buddy_profile" reference="sys_user" type="reference"/>
     </element>
 </database>

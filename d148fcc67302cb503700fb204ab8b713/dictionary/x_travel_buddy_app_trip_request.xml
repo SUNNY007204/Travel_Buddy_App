@@ -1,33 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="4856eea0839a031031ab6730ceaad31c" extends="task" label="Trip Request" max_length="40" name="x_travel_buddy_app_trip_request" text_index="true" type="collection">
-        <element label="Weather" max_length="40" name="weather" type="string"/>
-        <element default="javascript:gs.getUserID();" dynamic_default_value="90d1921e5f510100a9ad2572f2b477fe" dynamic_ref_qual="2fd8e97bef3221002841f7f775c0fbc1" label="Traveler" max_length="32" name="u_traveler" reference="sys_user" reference_qual="javascript:gs.getUserID();" type="reference" use_dynamic_default="true" use_reference_qualifier="dynamic"/>
-        <element label="Group Size" max_length="255" name="u_group_size" type="integer"/>
-        <element choice="1" label="Travel Type" max_length="255" name="u_travel_type" type="choice">
-            <choice>
-                <element inactive_on_update="false" label="Solo" sequence="0" value="solo"/>
-                <element inactive_on_update="false" label="Group" sequence="1" value="group"/>
-            </choice>
-        </element>
-        <element label="Selected Itinerary" max_length="40" name="u_selected_itinerary" type="string"/>
-        <element label="Preferred Language" max_length="1024" name="u_preferred_language" type="glide_list"/>
-        <element label="Destination" mandatory="true" max_length="32" name="u_destination" reference="cmn_location" reference_qual="country=India^EQ" reference_qual_condition="country=India^EQ" type="reference"/>
         <element choice="1" label="Destination Package" max_length="40" name="u_destination_package" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Premium" sequence="0" value="premium"/>
                 <element inactive_on_update="false" label="Gold" sequence="1" value="gold"/>
                 <element inactive_on_update="false" label="Premium" sequence="0" value="premium"/>
                 <element inactive_on_update="false" label="Silver" sequence="2" value="silver"/>
             </choice>
         </element>
+        <element default="javascript:gs.getUserID();" dynamic_default_value="90d1921e5f510100a9ad2572f2b477fe" dynamic_ref_qual="2fd8e97bef3221002841f7f775c0fbc1" label="Traveler" max_length="32" name="u_traveler" reference="sys_user" reference_qual="javascript:gs.getUserID();" type="reference" use_dynamic_default="true" use_reference_qualifier="dynamic"/>
+        <element label="Destination" mandatory="true" max_length="32" name="u_destination" reference="cmn_location" reference_qual="country=India^EQ" reference_qual_condition="country=India^EQ" type="reference"/>
+        <element label="Weather" max_length="40" name="weather" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Start Time" max_length="40" name="start_time" type="glide_date_time"/>
+        <element label="Selected Itinerary" max_length="40" name="u_selected_itinerary" reference="x_travel_buddy_app_itinerary_package" reference_qual="javascript:new TBA_TravelReferenceUtils().getItinerariesForCity(current.u_destination);" type="reference" use_reference_qualifier="advanced"/>
+        <element label="Preferred Language" max_length="1024" name="u_preferred_language" type="glide_list"/>
+        <element label="Group Size" max_length="255" name="u_group_size" type="integer"/>
         <element choice="1" label="Travel Type" max_length="255" name="u_travel_type" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Solo" sequence="0" value="solo"/>
                 <element inactive_on_update="false" label="Group" sequence="1" value="group"/>
+                <element inactive_on_update="false" label="Solo" sequence="0" value="solo"/>
             </choice>
         </element>
-        <element label="Preferred Language" max_length="1024" name="u_preferred_language" type="glide_list"/>
-        <element label="Destination" mandatory="true" max_length="32" name="u_destination" reference="cmn_location" type="reference"/>
-        <element label="Group Size" max_length="255" name="u_group_size" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="End Time" max_length="40" name="end_time" type="glide_date_time"/>
     </element>
 </database>

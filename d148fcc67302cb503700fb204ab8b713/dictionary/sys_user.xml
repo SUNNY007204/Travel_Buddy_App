@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element attributes="all_tables.text_index_translations=true,allow_data_replicate=true,display_image=photo,global_search_config_handler=UserConfig,ih_process_sync_enabled=true,iterativeDelete=true,kagami_csindex_enabled=true,metadata_link_exempt=true,ref_ac_columns=email,ref_ac_columns_search=true,ref_ac_order_by=name,ref_auto_completer=AJAXTableCompleter,slushbucket_omit_embedded=true" create_roles="user_admin" db_object_id="7ff7da31082003100a22e9371c04a4d1" defaultsort="-1" dynamic_creation_script="dynamicUserCreation(current, value);" label="User" max_length="40" name="sys_user" text_index="true" type="collection">
         <element attributes="edge_encryption_enabled=true" label="Password Reset" max_length="40" name="x_travel_buddy_app_password_reset" type="string"/>
+        <element label="Total Rating" max_length="20" name="x_travel_buddy_app_u_total_rating" type="decimal"/>
+        <element label="isTravel" max_length="40" name="x_travel_buddy_app_istravel" type="boolean"/>
         <element label="isTravelBuddy" max_length="40" name="x_travel_buddy_app_u_istravelbuddy" type="boolean"/>
         <element choice="1" label="Spoken Languages" max_length="4000" name="x_travel_buddy_app_u_spoken_languages" type="glide_list">
             <choice>
-                <element inactive_on_update="false" label="English" sequence="100" value="english"/>
                 <element inactive_on_update="false" label="Hindi" sequence="300" value="hindi"/>
+                <element inactive_on_update="false" label="English" sequence="100" value="english"/>
                 <element inactive_on_update="false" label="Marathi" sequence="200" value="marathi"/>
             </choice>
         </element>
