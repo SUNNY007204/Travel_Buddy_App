@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="DELETE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="Landing Page">a8429094276e0350d27a1ba75c044760</macroponent>
+        <name>Card click redirection for My requests</name>
+        <preset/>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[function handler({
+    api,
+    event,
+    imports
+}) {
+    const {
+        setState,
+        emit
+    } = api;
+
+    const table = event.payload.table;
+    const sysId = event.payload.sysId;
+    const route = "record_request";
+
+    if (table === "sc_req_item") {
+        emit('NAV_ITEM_SELECTED', {
+            route,
+            fields: {
+                table,
+                sysId
+            }
+        });
+    } else if(table == "incident"){
+        emit('NAV_ITEM_SELECTED', {
+            route,
+            fields: {
+                table: "incident",
+                sysId
+            }
+        });
+    }
+    else{
+        emit('NAV_ITEM_SELECTED', {
+            route,
+            fields: {
+                table: "task",
+                sysId
+            }
+        });
+    }
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-02 15:47:35</sys_created_on>
+        <sys_id>a4429094686e03502539ef8d5af72c51</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Card click redirection for My requests</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name>sys_ux_client_script_a4429094686e03502539ef8d5af72c51</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-02 15:47:35</sys_updated_on>
+        <target/>
+        <type/>
+    </sys_ux_client_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</application>
+        <file_path/>
+        <instance_id>7a0f57d6eb9d8fd0c040fddacad0cdd9</instance_id>
+        <instance_name>dev400578</instance_name>
+        <name>sys_ux_client_script_a4429094686e03502539ef8d5af72c51</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_client_script"&gt;&lt;sys_ux_client_script action="INSERT_OR_UPDATE"&gt;&lt;controller_preset/&gt;&lt;includes/&gt;&lt;macroponent display_value="Landing Page"&gt;a8429094276e0350d27a1ba75c044760&lt;/macroponent&gt;&lt;name&gt;Card click redirection for My requests&lt;/name&gt;&lt;preset/&gt;&lt;required_translations&gt;[ ]&lt;/required_translations&gt;&lt;script&gt;&lt;![CDATA[function handler({
+    api,
+    event,
+    imports
+}) {
+    const {
+        setState,
+        emit
+    } = api;
+
+    const table = event.payload.table;
+    const sysId = event.payload.sysId;
+    const route = "record_request";
+
+    if (table === "sc_req_item") {
+        emit('NAV_ITEM_SELECTED', {
+            route,
+            fields: {
+                table,
+                sysId
+            }
+        });
+    } else if(table == "incident"){
+        emit('NAV_ITEM_SELECTED', {
+            route,
+            fields: {
+                table: "incident",
+                sysId
+            }
+        });
+    }
+    else{
+        emit('NAV_ITEM_SELECTED', {
+            route,
+            fields: {
+                table: "task",
+                sysId
+            }
+        });
+    }
+}]]&gt;&lt;/script&gt;&lt;script_api_version&gt;2.0.0&lt;/script_api_version&gt;&lt;sys_class_name&gt;sys_ux_client_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-02 15:47:35&lt;/sys_created_on&gt;&lt;sys_id&gt;a4429094686e03502539ef8d5af72c51&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Card click redirection for My requests&lt;/sys_name&gt;&lt;sys_package display_value="Travel Buddy App" source="x_travel_buddy_app"&gt;d148fcc67302cb503700fb204ab8b713&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Travel Buddy App"&gt;d148fcc67302cb503700fb204ab8b713&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_client_script_a4429094686e03502539ef8d5af72c51&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-02 15:47:35&lt;/sys_updated_on&gt;&lt;target/&gt;&lt;type/&gt;&lt;/sys_ux_client_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1037669438</payload_hash>
+        <record_name>Card click redirection for My requests</record_name>
+        <reverted_from/>
+        <source>f9657a314702031089b4a22f316d4385</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>current</state>
+        <sys_created_by/>
+        <sys_created_on>2026-07-13 22:59:48</sys_created_on>
+        <sys_id>6a03cb6f47e60f1089b4a22f316d43e0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19f5db542a00000000</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-13 13:20:12</sys_updated_on>
+        <type>UX Client Script</type>
+        <update_guid>2a03cb6f7ce60f1054b71567ba14f3e0</update_guid>
+        <update_guid_history>2a03cb6f7ce60f1054b71567ba14f3e0:1037669438</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-13 07:00:09</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_client_script">sys_ux_client_script</sys_db_object>
+        <sys_id>749e20909eca4f20beee8555a3bba440</sys_id>
+        <sys_metadata>a4429094686e03502539ef8d5af72c51</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Card click redirection for My requests</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_scope_delete display_value="">ce79bab18acc49f9bef811863b5939e1</sys_scope_delete>
+        <sys_update_name>sys_ux_client_script_a4429094686e03502539ef8d5af72c51</sys_update_name>
+        <sys_update_version display_value="sys_ux_client_script_a4429094686e03502539ef8d5af72c51">6a03cb6f47e60f1089b4a22f316d43e0</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-13 07:00:09</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
