@@ -3,23 +3,23 @@
         <active>true</active>
         <admin_panel>24429094546e0350d12a08dc693ab314</admin_panel>
         <admin_panel_table>sys_ux_app_config</admin_panel_table>
-        <auth_routes>{"login":"login","logout": "login"}</auth_routes>
+        <auth_routes>{"login":"landing","logout":"login"}</auth_routes>
         <page/>
-        <parent_app display_value="Portal UI Template Parent App">de0b852eb0c88210f8774b320398b357</parent_app>
+        <parent_app display_value="UXR Base Unified App">c4b650c2c702201072b211d4d8c260a4</parent_app>
         <path>travel-buddy-app-portal</path>
         <root_macroponent display_value="Portal App Shell (Deprecated)">b66bf1075b31101016fd7c1bf481c7a7</root_macroponent>
         <sys_class_name>sys_ux_page_registry</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-02 15:47:38</sys_created_on>
         <sys_id>20429094786e03504d76423d0a17db14</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Travel Buddy App</sys_name>
         <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
         <sys_policy/>
         <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
         <sys_update_name>sys_ux_page_registry_20429094786e03504d76423d0a17db14</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-02 15:47:38</sys_updated_on>
+        <sys_updated_on>2026-08-10 12:31:04</sys_updated_on>
         <title>Travel Buddy App</title>
     </sys_ux_page_registry>
 </record_update>

@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="e93d2e6083da031031ab6730ceaad329" label="Travel Trip Feedback" max_length="40" name="x_travel_buddy_app_travel_trip_feedback" text_index="true" type="collection">
-        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
-        <element label="Buddy Name" mandatory="true" max_length="32" name="u_buddy_name" reference="sys_user" type="reference"/>
-        <element choice="1" display="true" label="Trip Request" mandatory="true" max_length="32" name="u_trip_request" reference="x_travel_buddy_app_trip_request" type="reference">
-            <choice/>
-        </element>
         <element choice="1" label="Ratings" max_length="255" name="u_ratings" type="choice">
             <choice>
-                <element inactive_on_update="false" label="***" sequence="2" value="3"/>
                 <element inactive_on_update="false" label="**" sequence="1" value="2"/>
                 <element inactive_on_update="false" label="*" sequence="0" value="1"/>
                 <element inactive_on_update="false" label="*****" sequence="4" value="5"/>
                 <element inactive_on_update="false" label="****" sequence="3" value="4"/>
+                <element inactive_on_update="false" label="***" sequence="2" value="3"/>
             </choice>
         </element>
         <element label="Comments" max_length="500" name="u_comments" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="Number" max_length="40" name="number" type="string"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element label="Buddy Name" mandatory="true" max_length="32" name="u_buddy_name" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded()" display="true" label="Number" max_length="40" name="number" type="string"/>
+        <element choice="1" label="Trip Request" mandatory="true" max_length="32" name="u_trip_request" reference="x_travel_buddy_app_trip_request" type="reference">
+            <choice/>
+        </element>
         <index name="index">
             <element name="sys_class_name"/>
         </index>
