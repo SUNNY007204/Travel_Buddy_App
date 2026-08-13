@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pwd_map_proc_to_cred_store">
+    <pwd_map_proc_to_cred_store action="DELETE">
+        <cred_store display_value="Local ServiceNow Instance">6e51033fbf020100710071a7bf0739e0</cred_store>
+        <process display_value="">6d8eb366476e071089b4a22f316d431d</process>
+        <sys_class_name>pwd_map_proc_to_cred_store</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-10 08:47:53</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>efeeff66476e071089b4a22f316d432c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>6d8eb366476e071089b4a22f316d431d</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name>pwd_map_proc_to_cred_store_efeeff66476e071089b4a22f316d432c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-10 08:47:53</sys_updated_on>
+    </pwd_map_proc_to_cred_store>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</application>
+        <file_path/>
+        <instance_id>7a0f57d6eb9d8fd0c040fddacad0cdd9</instance_id>
+        <instance_name>dev400578</instance_name>
+        <name>pwd_map_proc_to_cred_store_efeeff66476e071089b4a22f316d432c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pwd_map_proc_to_cred_store"><pwd_map_proc_to_cred_store action="INSERT_OR_UPDATE"><cred_store display_value="Local ServiceNow Instance">6e51033fbf020100710071a7bf0739e0</cred_store><process display_value="">6d8eb366476e071089b4a22f316d431d</process><sys_class_name>pwd_map_proc_to_cred_store</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-10 08:47:53</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>efeeff66476e071089b4a22f316d432c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>6d8eb366476e071089b4a22f316d431d</sys_name><sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package><sys_policy/><sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope><sys_update_name>pwd_map_proc_to_cred_store_efeeff66476e071089b4a22f316d432c</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-10 08:47:53</sys_updated_on></pwd_map_proc_to_cred_store></record_update>]]></payload>
+        <payload_hash>-1826288102</payload_hash>
+        <record_name>6d8eb366476e071089b4a22f316d431d</record_name>
+        <reverted_from/>
+        <source>348d9eac47d6031089b4a22f316d4392</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-10 08:47:53</sys_created_on>
+        <sys_id>23eeff66476e071089b4a22f316d4333</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19feadb60d90000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-10 08:47:53</sys_updated_on>
+        <type>Password Reset Process Credential Store</type>
+        <update_guid>afeeff66586e071040c4087ef3279e31</update_guid>
+        <update_guid_history>afeeff66586e071040c4087ef3279e31:-1826288102</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">5650c43a476e071089b4a22f316d43dd</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-10 08:54:04</sys_created_on>
+        <sys_db_object display_value="" name="pwd_map_proc_to_cred_store">pwd_map_proc_to_cred_store</sys_db_object>
+        <sys_id>371760cb24d743568cfcfaac2d4278d1</sys_id>
+        <sys_metadata>efeeff66476e071089b4a22f316d432c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>6d8eb366476e071089b4a22f316d431d</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_scope_delete display_value="">ce79bab18acc49f9bef811863b5939e1</sys_scope_delete>
+        <sys_update_name>pwd_map_proc_to_cred_store_efeeff66476e071089b4a22f316d432c</sys_update_name>
+        <sys_update_version display_value="pwd_map_proc_to_cred_store_efeeff66476e071089b4a22f316d432c">23eeff66476e071089b4a22f316d4333</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-10 08:54:04</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

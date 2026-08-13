@@ -186,7 +186,12 @@
                     },
                     "isNonDestructive": false,
                     "overrides": null,
+                    "preset": null,
                     "propertyValues": {
+                        "align": {
+                            "type": "JSON_LITERAL",
+                            "value": "start"
+                        },
                         "hasNoMargin": {
                             "type": "JSON_LITERAL",
                             "value": true
@@ -230,12 +235,21 @@
                     },
                     "isNonDestructive": false,
                     "overrides": null,
+                    "preset": null,
                     "propertyValues": {
                         "config": {
                             "type": "JSON_LITERAL",
                             "value": null
                         },
                         "disableCollapse": {
+                            "type": "JSON_LITERAL",
+                            "value": true
+                        },
+                        "enableBgColorForUnsavedFieldIndicator": {
+                            "type": "JSON_LITERAL",
+                            "value": false
+                        },
+                        "enableUnsavedFieldIndicator": {
                             "type": "JSON_LITERAL",
                             "value": true
                         },
@@ -261,6 +275,18 @@
                             "type": "JSON_LITERAL",
                             "value": []
                         },
+                        "formParams": {
+                            "type": "JSON_LITERAL",
+                            "value": {}
+                        },
+                        "formTemplateConfigs": {
+                            "type": "JSON_LITERAL",
+                            "value": {
+                                "enableEmailInTemplate": true,
+                                "enableTemplateValueCondition": true,
+                                "enableTemplateValueVariablePicker": true
+                            }
+                        },
                         "inRecordPageTab": {
                             "type": "JSON_LITERAL",
                             "value": false
@@ -270,6 +296,14 @@
                             "value": true
                         },
                         "isContextMenuHidden": {
+                            "type": "JSON_LITERAL",
+                            "value": false
+                        },
+                        "isFieldContextMenuHidden": {
+                            "type": "JSON_LITERAL",
+                            "value": true
+                        },
+                        "isFirstSectionTitleHidden": {
                             "type": "JSON_LITERAL",
                             "value": false
                         },
@@ -293,6 +327,42 @@
                             "type": "JSON_LITERAL",
                             "value": false
                         },
+                        "isViewSectionHidden": {
+                            "type": "JSON_LITERAL",
+                            "value": false
+                        },
+                        "labelValueLayout": {
+                            "type": "JSON_LITERAL",
+                            "value": "stacked"
+                        },
+                        "labelWrappingLimit": {
+                            "type": "JSON_LITERAL",
+                            "value": null
+                        },
+                        "landmark": {
+                            "type": "JSON_LITERAL",
+                            "value": null
+                        },
+                        "nowDsDomainId": {
+                            "type": "JSON_LITERAL",
+                            "value": ""
+                        },
+                        "nowDsDomainScope": {
+                            "type": "JSON_LITERAL",
+                            "value": ""
+                        },
+                        "nowDsRecordId": {
+                            "type": "JSON_LITERAL",
+                            "value": ""
+                        },
+                        "nowDsRecordTable": {
+                            "type": "JSON_LITERAL",
+                            "value": ""
+                        },
+                        "recordMembers": {
+                            "type": "JSON_LITERAL",
+                            "value": []
+                        },
                         "relatedLists": {
                             "type": "JSON_LITERAL",
                             "value": ""
@@ -300,6 +370,10 @@
                         "scrollableHost": {
                             "type": "JSON_LITERAL",
                             "value": null
+                        },
+                        "sectionHeadingLevel": {
+                            "type": "JSON_LITERAL",
+                            "value": "2"
                         },
                         "sections": {
                             "binding": {
@@ -584,7 +658,16 @@
                                             },
                                             "isNonDestructive": false,
                                             "overrides": null,
+                                            "preset": null,
                                             "propertyValues": {
+                                                "active": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": false
+                                                },
+                                                "animatedIcon": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": null
+                                                },
                                                 "configAria": {
                                                     "container": {},
                                                     "type": "MAP_CONTAINER"
@@ -604,6 +687,10 @@
                                                         "comment": "",
                                                         "message": "Approve"
                                                     }
+                                                },
+                                                "landmark": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": null
                                                 },
                                                 "size": {
                                                     "type": "JSON_LITERAL",
@@ -658,6 +745,7 @@
                                         "version": "3.0.0"
                                     }
                                 },
+                                "preset": null,
                                 "propertyValues": {
                                     "ariaRegionHeadingLevel": {
                                         "type": "JSON_LITERAL",
@@ -675,9 +763,17 @@
                                         "type": "JSON_LITERAL",
                                         "value": ""
                                     },
+                                    "hideEmptyStateUi": {
+                                        "type": "JSON_LITERAL",
+                                        "value": true
+                                    },
                                     "includeAriaHeading": {
                                         "type": "JSON_LITERAL",
                                         "value": false
+                                    },
+                                    "slotWrapperBehavior": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "fullheight"
                                     },
                                     "type": {
                                         "type": "JSON_LITERAL",
@@ -1938,7 +2034,52 @@
                                 },
                                 "elementId": "button_14",
                                 "elementLabel": "Button 14",
-                                "eventMappings": [],
+                                "eventMappings": [
+                                    {
+                                        "eventMappingId": "bueehhkofJggBaaTpjjVeeNzZHDeeeehhbn",
+                                        "isConfiguration": false,
+                                        "offRowStorageId": null,
+                                        "sourceEventApiName": "sn_button.NOW_BUTTON#CLICKED",
+                                        "sourceEventCorrelationId": null,
+                                        "sourceEventDefinition": {
+                                            "apiName": "sn_button.NOW_BUTTON#CLICKED",
+                                            "id": null,
+                                            "type": "UXEVENT"
+                                        },
+                                        "sourceEventSysId": null,
+                                        "targets": [
+                                            {
+                                                "broker": null,
+                                                "clientScript": null,
+                                                "clientTransformScript": "",
+                                                "conditional": null,
+                                                "declarativeAction": null,
+                                                "event": {
+                                                    "apiName": "x_travel_buddy_app.NAV_ITEM_SELECTED_RELAY_a8429094276e0350d27a1ba75c044760",
+                                                    "payload": {
+                                                        "type": "JSON_LITERAL",
+                                                        "value": {
+                                                            "external": null,
+                                                            "fields": null,
+                                                            "multiInstField": null,
+                                                            "navigationOptions": null,
+                                                            "params": null,
+                                                            "passiveNavigation": null,
+                                                            "redirect": null,
+                                                            "route": "sign-up",
+                                                            "targetRoute": null,
+                                                            "title": null
+                                                        }
+                                                    },
+                                                    "sysId": "a4429094de6e035099dc4da31abc8633"
+                                                },
+                                                "operation": null,
+                                                "targetId": "uddRFffnFBaaviieeddIkMhhdNrUZGgg",
+                                                "type": "EVENT"
+                                            }
+                                        ]
+                                    }
+                                ],
                                 "isHidden": {
                                     "type": "JSON_LITERAL",
                                     "value": null
@@ -2690,7 +2831,7 @@
                                 "elementLabel": "Button 10",
                                 "eventMappings": [
                                     {
-                                        "eventMappingId": "CNnaameehhgeehhBETRjjpeeOYBvcxeXG",
+                                        "eventMappingId": "iiEFtnPoaAaaOajjhhQKWAciiffVgx",
                                         "isConfiguration": false,
                                         "offRowStorageId": null,
                                         "sourceEventApiName": "sn_button.NOW_BUTTON#CLICKED",
@@ -2711,64 +2852,24 @@
                                                 "event": {
                                                     "apiName": "x_travel_buddy_app.NAV_ITEM_SELECTED_RELAY_a8429094276e0350d27a1ba75c044760",
                                                     "payload": {
-                                                        "container": {
-                                                            "external": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": null
-                                                            },
-                                                            "fields": {
-                                                                "container": {
-                                                                    "tableName": {
-                                                                        "type": "JSON_LITERAL",
-                                                                        "value": "x_travel_buddy_app_trip_request"
-                                                                    }
-                                                                },
-                                                                "type": "MAP_CONTAINER"
-                                                            },
-                                                            "multiInstField": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": null
-                                                            },
-                                                            "navigationOptions": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": null
-                                                            },
-                                                            "params": {
-                                                                "container": {
-                                                                    "query": {
-                                                                        "type": "JSON_LITERAL",
-                                                                        "value": "u_travelerDYNAMIC90d1921e5f510100a9ad2572f2b477fe"
-                                                                    }
-                                                                },
-                                                                "type": "MAP_CONTAINER"
-                                                            },
-                                                            "passiveNavigation": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": null
-                                                            },
-                                                            "redirect": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": null
-                                                            },
-                                                            "route": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": "my-trips"
-                                                            },
-                                                            "targetRoute": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": null
-                                                            },
-                                                            "title": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": null
-                                                            }
-                                                        },
-                                                        "type": "MAP_CONTAINER"
+                                                        "type": "JSON_LITERAL",
+                                                        "value": {
+                                                            "external": null,
+                                                            "fields": null,
+                                                            "multiInstField": null,
+                                                            "navigationOptions": null,
+                                                            "params": null,
+                                                            "passiveNavigation": null,
+                                                            "redirect": null,
+                                                            "route": "demo-my-trips",
+                                                            "targetRoute": null,
+                                                            "title": null
+                                                        }
                                                     },
                                                     "sysId": "a4429094de6e035099dc4da31abc8633"
                                                 },
                                                 "operation": null,
-                                                "targetId": "cZwCevUCCUnVeeddFgKdimFggLbbp",
+                                                "targetId": "VeeggFifVnBUrccjjhhQIJmWtxdIbb",
                                                 "type": "EVENT"
                                             }
                                         ]
@@ -4236,14 +4337,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-02 15:47:34</sys_created_on>
         <sys_id>a8429094276e0350d27a1ba75c044760</sys_id>
-        <sys_mod_count>28</sys_mod_count>
+        <sys_mod_count>36</sys_mod_count>
         <sys_name>Landing Page</sys_name>
         <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
         <sys_policy/>
         <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
         <sys_update_name>sys_ux_macroponent_a8429094276e0350d27a1ba75c044760</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-04 06:30:07</sys_updated_on>
+        <sys_updated_on>2026-08-11 16:37:45</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=a8429094276e0350d27a1ba75c044760"/>
 </record_update>
