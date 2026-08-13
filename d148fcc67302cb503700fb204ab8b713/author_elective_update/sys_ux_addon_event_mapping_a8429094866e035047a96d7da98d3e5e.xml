@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_addon_event_mapping">
+    <sys_ux_addon_event_mapping action="DELETE">
+        <active>true</active>
+        <controller/>
+        <description/>
+        <name>Reject Mapping</name>
+        <parent_macroponent display_value="Landing Page">a8429094276e0350d27a1ba75c044760</parent_macroponent>
+        <source_component/>
+        <source_da display_value="reject">e8429094da6e03501eb9a02a5c300b74</source_da>
+        <source_element_id>data_row_1</source_element_id>
+        <sys_class_name>sys_ux_addon_event_mapping</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-02 15:47:37</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a8429094866e035047a96d7da98d3e5e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Reject Mapping</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name>sys_ux_addon_event_mapping_a8429094866e035047a96d7da98d3e5e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-02 15:47:37</sys_updated_on>
+        <target_event display_value="My tasks reject">a4429094c56e0350e89bf856b75d395d</target_event>
+        <target_payload_mapping>{
+  "type": "MAP_CONTAINER",
+  "container": {
+    "sysId": {
+      "type": "EVENT_PAYLOAD_BINDING",
+      "binding": {
+        "address": [
+          "sysId"
+        ]
+      }
+    },
+    "table": {
+      "type": "EVENT_PAYLOAD_BINDING",
+      "binding": {
+        "address": [
+          "table"
+        ]
+      }
+    }
+  }
+}</target_payload_mapping>
+    </sys_ux_addon_event_mapping>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</application>
+        <file_path/>
+        <instance_id>7a0f57d6eb9d8fd0c040fddacad0cdd9</instance_id>
+        <instance_name>dev400578</instance_name>
+        <name>sys_ux_addon_event_mapping_a8429094866e035047a96d7da98d3e5e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_addon_event_mapping"><sys_ux_addon_event_mapping action="INSERT_OR_UPDATE"><active>true</active><controller/><description/><name>Reject Mapping</name><parent_macroponent display_value="Landing Page">a8429094276e0350d27a1ba75c044760</parent_macroponent><source_component/><source_da display_value="reject">e8429094da6e03501eb9a02a5c300b74</source_da><source_element_id>data_row_1</source_element_id><sys_class_name>sys_ux_addon_event_mapping</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 15:47:37</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>a8429094866e035047a96d7da98d3e5e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Reject Mapping</sys_name><sys_overrides/><sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package><sys_policy/><sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope><sys_update_name>sys_ux_addon_event_mapping_a8429094866e035047a96d7da98d3e5e</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 15:47:37</sys_updated_on><target_event display_value="My tasks reject">a4429094c56e0350e89bf856b75d395d</target_event><target_payload_mapping>{
+  "type": "MAP_CONTAINER",
+  "container": {
+    "sysId": {
+      "type": "EVENT_PAYLOAD_BINDING",
+      "binding": {
+        "address": [
+          "sysId"
+        ]
+      }
+    },
+    "table": {
+      "type": "EVENT_PAYLOAD_BINDING",
+      "binding": {
+        "address": [
+          "table"
+        ]
+      }
+    }
+  }
+}</target_payload_mapping></sys_ux_addon_event_mapping></record_update>]]></payload>
+        <payload_hash>-941710198</payload_hash>
+        <record_name>Reject Mapping</record_name>
+        <reverted_from/>
+        <source>f9657a314702031089b4a22f316d4385</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>current</state>
+        <sys_created_by/>
+        <sys_created_on>2026-07-13 22:59:48</sys_created_on>
+        <sys_id>151303af47e60f1089b4a22f316d430b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19f5db542a00000000</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-13 13:20:12</sys_updated_on>
+        <type>UX Add-on Event Mapping</type>
+        <update_guid>d11303af45e60f1010c4fa8470bcc70b</update_guid>
+        <update_guid_history>d11303af45e60f1010c4fa8470bcc70b:-941710198</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-13 07:00:20</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_addon_event_mapping">sys_ux_addon_event_mapping</sys_db_object>
+        <sys_id>80ca53fcc8a74e8e89f37241e8fe2da4</sys_id>
+        <sys_metadata>a8429094866e035047a96d7da98d3e5e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Reject Mapping</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_scope_delete display_value="">ce79bab18acc49f9bef811863b5939e1</sys_scope_delete>
+        <sys_update_name>sys_ux_addon_event_mapping_a8429094866e035047a96d7da98d3e5e</sys_update_name>
+        <sys_update_version display_value="sys_ux_addon_event_mapping_a8429094866e035047a96d7da98d3e5e">151303af47e60f1089b4a22f316d430b</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-13 07:00:20</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

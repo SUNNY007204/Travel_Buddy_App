@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="DELETE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="Demo My Trips default">9ffe50b547a24f5089b4a22f316d4336</macroponent>
+        <name>text_link_1/now_default/href</name>
+        <preset/>
+        <required_translations>[]</required_translations>
+        <script><![CDATA[/**
+  * @param {params} params
+  * @param {api} params.api
+  * @param {TransformApiHelpers} params.helpers
+  */
+function evaluateProperty({api, helpers}) {
+  
+return '/x/travel/travel-buddy-app-portal/my-trip-record/x_travel_buddy_app_trip_request/' + api.item.value._row_data.uniqueValue;
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-08 14:04:07</sys_created_on>
+        <sys_id>b480360e47a2031089b4a22f316d43f9</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>text_link_1/now_default/href</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name>sys_ux_client_script_b480360e47a2031089b4a22f316d43f9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-08 14:40:52</sys_updated_on>
+        <target>macroponent</target>
+        <type>transform</type>
+    </sys_ux_client_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</application>
+        <file_path/>
+        <instance_id>7a0f57d6eb9d8fd0c040fddacad0cdd9</instance_id>
+        <instance_name>dev400578</instance_name>
+        <name>sys_ux_client_script_b480360e47a2031089b4a22f316d43f9</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_client_script"&gt;&lt;sys_ux_client_script action="INSERT_OR_UPDATE"&gt;&lt;controller_preset/&gt;&lt;includes/&gt;&lt;macroponent display_value="Demo My Trips default"&gt;9ffe50b547a24f5089b4a22f316d4336&lt;/macroponent&gt;&lt;name&gt;text_link_1/now_default/href&lt;/name&gt;&lt;preset/&gt;&lt;required_translations&gt;[]&lt;/required_translations&gt;&lt;script&gt;&lt;![CDATA[/**
+  * @param {params} params
+  * @param {api} params.api
+  * @param {TransformApiHelpers} params.helpers
+  */
+function evaluateProperty({api, helpers}) {
+  
+return '/x/travel/travel-buddy-app-portal/my-trip-record/x_travel_buddy_app_trip_request/' + api.item.value._row_data.uniqueValue;
+}]]&gt;&lt;/script&gt;&lt;script_api_version&gt;2.0.0&lt;/script_api_version&gt;&lt;sys_class_name&gt;sys_ux_client_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-08 14:04:07&lt;/sys_created_on&gt;&lt;sys_id&gt;b480360e47a2031089b4a22f316d43f9&lt;/sys_id&gt;&lt;sys_mod_count&gt;7&lt;/sys_mod_count&gt;&lt;sys_name&gt;text_link_1/now_default/href&lt;/sys_name&gt;&lt;sys_package display_value="Travel Buddy App" source="x_travel_buddy_app"&gt;d148fcc67302cb503700fb204ab8b713&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Travel Buddy App"&gt;d148fcc67302cb503700fb204ab8b713&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_client_script_b480360e47a2031089b4a22f316d43f9&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-08 14:40:52&lt;/sys_updated_on&gt;&lt;target&gt;macroponent&lt;/target&gt;&lt;type&gt;transform&lt;/type&gt;&lt;/sys_ux_client_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1534431792</payload_hash>
+        <record_name>text_link_1/now_default/href</record_name>
+        <reverted_from/>
+        <source>348d9eac47d6031089b4a22f316d4392</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-08 14:40:52</sys_created_on>
+        <sys_id>668c3a0e4726031089b4a22f316d431d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19fe1d1d2590000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-08 14:40:52</sys_updated_on>
+        <type>UX Client Script</type>
+        <update_guid>a28c3a0ea7260310592307ca7706ce1c</update_guid>
+        <update_guid_history>a28c3a0ea7260310592307ca7706ce1c:-1534431792,43caf60aa6260310bb287ac9203533b1:-486882307,6faaf20a2326031026a7babda442c394:-902696169,d9d97a468226031087ed188e9215e7b2:-1733742649,ce28328258260310c6f6365bade360c6:1658192889,05d7b642d026031085a4e227379a5323:2106292169,af867e8e93e20310cbe9005e2184dba7:-912646674,1424328a84e203101fb58c5f6ea75597:363925315</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-13 08:39:46</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_client_script">sys_ux_client_script</sys_db_object>
+        <sys_id>c969eb04935a4d8bbcec381d2fe91959</sys_id>
+        <sys_metadata>b480360e47a2031089b4a22f316d43f9</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>text_link_1/now_default/href</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_scope_delete display_value="">ce79bab18acc49f9bef811863b5939e1</sys_scope_delete>
+        <sys_update_name>sys_ux_client_script_b480360e47a2031089b4a22f316d43f9</sys_update_name>
+        <sys_update_version display_value="sys_ux_client_script_b480360e47a2031089b4a22f316d43f9">668c3a0e4726031089b4a22f316d431d</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-13 08:39:46</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
