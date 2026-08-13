@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege">
+    <sys_scope_privilege action="DELETE">
+        <operation>read</operation>
+        <source_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</source_scope>
+        <status>requested</status>
+        <sys_class_name>sys_scope_privilege</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-11 06:57:31</sys_created_on>
+        <sys_id>2d3f2cc34726c71089b4a22f316d43e0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Demo</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name>sys_scope_privilege_2d3f2cc34726c71089b4a22f316d43e0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-11 06:57:31</sys_updated_on>
+        <target_name>Demo</target_name>
+        <target_scope display_value="Global">global</target_scope>
+        <target_type>sys_db_object</target_type>
+    </sys_scope_privilege>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</application>
+        <file_path/>
+        <instance_id>7a0f57d6eb9d8fd0c040fddacad0cdd9</instance_id>
+        <instance_name>dev400578</instance_name>
+        <name>sys_scope_privilege_2d3f2cc34726c71089b4a22f316d43e0</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege"><sys_scope_privilege action="INSERT_OR_UPDATE"><operation>read</operation><source_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</source_scope><status>requested</status><sys_class_name>sys_scope_privilege</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-11 06:57:31</sys_created_on><sys_id>2d3f2cc34726c71089b4a22f316d43e0</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Demo</sys_name><sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package><sys_policy/><sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope><sys_update_name>sys_scope_privilege_2d3f2cc34726c71089b4a22f316d43e0</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-11 06:57:31</sys_updated_on><target_name>Demo</target_name><target_scope display_value="Global">global</target_scope><target_type>sys_db_object</target_type></sys_scope_privilege></record_update>]]></payload>
+        <payload_hash>1430137623</payload_hash>
+        <record_name>Demo</record_name>
+        <reverted_from/>
+        <source>348d9eac47d6031089b4a22f316d4392</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-11 06:57:31</sys_created_on>
+        <sys_id>284f6cc34726c71089b4a22f316d43d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19fef9caffc0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-11 06:57:31</sys_updated_on>
+        <type>Cross scope privilege</type>
+        <update_guid>e44f6cc36626c710e37774aab41873d4</update_guid>
+        <update_guid_history>e44f6cc36626c710e37774aab41873d4:1430137623</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-11 06:58:26</sys_created_on>
+        <sys_db_object display_value="" name="sys_scope_privilege">sys_scope_privilege</sys_db_object>
+        <sys_id>120cd94c6dc14962b9c11801ff780129</sys_id>
+        <sys_metadata>2d3f2cc34726c71089b4a22f316d43e0</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Demo</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_scope_delete display_value="">ce79bab18acc49f9bef811863b5939e1</sys_scope_delete>
+        <sys_update_name>sys_scope_privilege_2d3f2cc34726c71089b4a22f316d43e0</sys_update_name>
+        <sys_update_version display_value="sys_scope_privilege_2d3f2cc34726c71089b4a22f316d43e0">284f6cc34726c71089b4a22f316d43d5</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-11 06:58:26</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

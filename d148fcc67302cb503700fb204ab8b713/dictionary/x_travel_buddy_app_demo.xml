@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="adbc5c4b4762c71089b4a22f316d4341" label="Demo" max_length="40" name="x_travel_buddy_app_demo" type="collection">
+        <element label="Email" max_length="40" name="email" type="string"/>
+        <element label="Last name" max_length="40" name="last_name" type="string"/>
+        <element label="User Name" max_length="40" name="user_name" type="string"/>
+        <element label="Token" max_length="40" name="token" type="string"/>
+        <element label="First name" max_length="40" name="first_name" type="string"/>
+        <element label="Confirm password" max_length="40" name="password" type="string"/>
+        <element label="New Password" max_length="40" name="new_password" type="string"/>
+    </element>
+</database>
