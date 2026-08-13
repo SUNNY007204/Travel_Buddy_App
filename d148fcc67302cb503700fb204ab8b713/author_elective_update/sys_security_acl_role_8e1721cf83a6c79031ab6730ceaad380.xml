@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-11 11:01:27</sys_created_on>
+        <sys_id>8e1721cf83a6c79031ab6730ceaad380</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>TripRequestBuddiesNameUtils.x_travel_buddy_app.Admin</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_security_acl display_value="TripRequestBuddiesNameUtils">391721cf83a6c79031ab6730ceaad378</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_8e1721cf83a6c79031ab6730ceaad380</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-11 11:01:27</sys_updated_on>
+        <sys_user_role display_value="x_travel_buddy_app.Admin" name="x_travel_buddy_app.Admin">f8ff212e47d2c31089b4a22f316d43e7</sys_user_role>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</application>
+        <file_path/>
+        <instance_id>0c79e8a6ff8e8350c812f8e4fc4fd905</instance_id>
+        <instance_name>dev438223</instance_name>
+        <name>sys_security_acl_role_8e1721cf83a6c79031ab6730ceaad380</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-11 11:01:27</sys_created_on><sys_id>8e1721cf83a6c79031ab6730ceaad380</sys_id><sys_mod_count>0</sys_mod_count><sys_name>TripRequestBuddiesNameUtils.x_travel_buddy_app.Admin</sys_name><sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package><sys_policy/><sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope><sys_security_acl display_value="TripRequestBuddiesNameUtils">391721cf83a6c79031ab6730ceaad378</sys_security_acl><sys_update_name>sys_security_acl_role_8e1721cf83a6c79031ab6730ceaad380</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-11 11:01:27</sys_updated_on><sys_user_role display_value="x_travel_buddy_app.Admin" name="x_travel_buddy_app.Admin">f8ff212e47d2c31089b4a22f316d43e7</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>-803763069</payload_hash>
+        <record_name>TripRequestBuddiesNameUtils.x_travel_buddy_app.Admin</record_name>
+        <reverted_from/>
+        <source>4cce9620835a031031ab6730ceaad339</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-11 11:01:27</sys_created_on>
+        <sys_id>4a1721cf83a6c79031ab6730ceaad395</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19ff07c070c0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-11 11:01:27</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>c61721cf8ea6c790df5d00b819845094</update_guid>
+        <update_guid_history>c61721cf8ea6c790df5d00b819845094:-803763069</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="TripRequestBuddiesNameUtils.x_travel_buddy_app.Admin">28d8698383e6c79031ab6730ceaad382</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-11 11:09:00</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>329d84daa86a4de085a77c09e5d1ee64</sys_id>
+        <sys_metadata>8e1721cf83a6c79031ab6730ceaad380</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>TripRequestBuddiesNameUtils.x_travel_buddy_app.Admin</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_scope_delete display_value="">ce79bab18acc49f9bef811863b5939e1</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_8e1721cf83a6c79031ab6730ceaad380</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_8e1721cf83a6c79031ab6730ceaad380">4a1721cf83a6c79031ab6730ceaad395</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-11 11:09:00</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

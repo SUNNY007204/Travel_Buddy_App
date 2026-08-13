@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route">
+    <sys_ux_app_route action="DELETE">
+        <app_config display_value="Travel Buddy App App Config">24429094546e0350d12a08dc693ab314</app_config>
+        <description/>
+        <extension_point/>
+        <fields/>
+        <icon/>
+        <interoperable>false</interoperable>
+        <name>Create password</name>
+        <optional_parameters/>
+        <order>0</order>
+        <parent_macroponent display_value="Portal App Shell (Deprecated)">b66bf1075b31101016fd7c1bf481c7a7</parent_macroponent>
+        <parent_macroponent_composition_element_id/>
+        <route_type>create-password</route_type>
+        <screen_type display_value="Create password">f72cc76a47a6071089b4a22f316d4370</screen_type>
+        <sys_class_name>sys_ux_app_route</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-10 05:06:10</sys_created_on>
+        <sys_id>bf2c4f6a47a6071089b4a22f316d433f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Create password</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name>sys_ux_app_route_bf2c4f6a47a6071089b4a22f316d433f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-10 05:06:10</sys_updated_on>
+    </sys_ux_app_route>
+    <sys_translated_text action="DELETE" query="documentkey=bf2c4f6a47a6071089b4a22f316d433f"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</application>
+        <file_path/>
+        <instance_id>7a0f57d6eb9d8fd0c040fddacad0cdd9</instance_id>
+        <instance_name>dev400578</instance_name>
+        <name>sys_ux_app_route_bf2c4f6a47a6071089b4a22f316d433f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route"><sys_ux_app_route action="INSERT_OR_UPDATE"><app_config display_value="Travel Buddy App App Config">24429094546e0350d12a08dc693ab314</app_config><description/><extension_point/><fields/><icon/><interoperable>false</interoperable><name>Create password</name><optional_parameters/><order>0</order><parent_macroponent display_value="Portal App Shell (Deprecated)">b66bf1075b31101016fd7c1bf481c7a7</parent_macroponent><parent_macroponent_composition_element_id/><route_type>create-password</route_type><screen_type display_value="Create password">f72cc76a47a6071089b4a22f316d4370</screen_type><sys_class_name>sys_ux_app_route</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-10 05:06:10</sys_created_on><sys_id>bf2c4f6a47a6071089b4a22f316d433f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Create password</sys_name><sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package><sys_policy/><sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope><sys_update_name>sys_ux_app_route_bf2c4f6a47a6071089b4a22f316d433f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-10 05:06:10</sys_updated_on></sys_ux_app_route><sys_translated_text action="delete_multiple" query="documentkey=bf2c4f6a47a6071089b4a22f316d433f"/></record_update>]]></payload>
+        <payload_hash>1927439109</payload_hash>
+        <record_name>Create password</record_name>
+        <reverted_from/>
+        <source>348d9eac47d6031089b4a22f316d4392</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-10 05:06:10</sys_created_on>
+        <sys_id>bf2c4f6a47a6071089b4a22f316d4345</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19fea10639b0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-10 05:06:10</sys_updated_on>
+        <type>UX App Route</type>
+        <update_guid>3f2c4f6a11a60710305feed0a00e2a44</update_guid>
+        <update_guid_history>3f2c4f6a11a60710305feed0a00e2a44:1927439109</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-10 18:26:43</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_app_route">sys_ux_app_route</sys_db_object>
+        <sys_id>1065b0c1bdd1424c8129be02f2338e84</sys_id>
+        <sys_metadata>bf2c4f6a47a6071089b4a22f316d433f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Create password</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_scope_delete display_value="">ce79bab18acc49f9bef811863b5939e1</sys_scope_delete>
+        <sys_update_name>sys_ux_app_route_bf2c4f6a47a6071089b4a22f316d433f</sys_update_name>
+        <sys_update_version display_value="sys_ux_app_route_bf2c4f6a47a6071089b4a22f316d433f">bf2c4f6a47a6071089b4a22f316d4345</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-10 18:26:43</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
