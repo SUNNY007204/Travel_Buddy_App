@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="Demo My Trips default">9ffe50b547a24f5089b4a22f316d4336</macroponent>
+        <name>text_link_1/now_default/href</name>
+        <preset/>
+        <required_translations>[]</required_translations>
+        <script><![CDATA[
+/**
+ * @param {params} params
+ */
+function evaluateProperty({api, Helpers}) {
+    console.log(api);
+return '/x/travel/travel-buddy-app-portal/my-trip-record/x_travel_buddy_app_trip_request/' + api.item.value._row_data.uniqueValue
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-13 08:47:26</sys_created_on>
+        <sys_id>06bcfe2347e60f1089b4a22f316d4322</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>text_link_1/now_default/href</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name>sys_ux_client_script_06bcfe2347e60f1089b4a22f316d4322</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-13 09:10:58</sys_updated_on>
+        <target>macroponent</target>
+        <type>transform</type>
+    </sys_ux_client_script>
+</record_update>
