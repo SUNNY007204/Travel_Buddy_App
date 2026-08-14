@@ -1412,7 +1412,7 @@
                                                                             "value": "secondary"
                                                                         }
                                                                     },
-                                                                    "slot": null,
+                                                                    "slot": "identifier",
                                                                     "styles": {
                                                                         "default": {
                                                                             "align-self": "center"
@@ -1443,8 +1443,10 @@
                                                                     "root": null,
                                                                     "rules": null,
                                                                     "styles": {
+                                                                        "align-items": "center",
                                                                         "display": "flex",
-                                                                        "flex-direction": "column"
+                                                                        "flex-direction": "column",
+                                                                        "justify-content": "center"
                                                                     },
                                                                     "templateId": "5832fd4d53c31010e6bcddeeff7b12db",
                                                                     "type": "flex"
@@ -1488,7 +1490,21 @@
                                                             }
                                                         },
                                                         "slot": null,
-                                                        "styles": null
+                                                        "styles": {
+                                                            "default": {
+                                                                "background": "rgb(var(--now-color--link-1))",
+                                                                "margin": "var(--now-scalable-space--sm)",
+                                                                "margin-bottom": "var(--now-scalable-space--sm)",
+                                                                "margin-left": "var(--now-scalable-space--sm)",
+                                                                "margin-right": "var(--now-scalable-space--sm)",
+                                                                "margin-top": "var(--now-scalable-space--sm)",
+                                                                "padding": "var(--now-scalable-space--sm)",
+                                                                "padding-bottom": "var(--now-scalable-space--sm)",
+                                                                "padding-left": "var(--now-scalable-space--sm)",
+                                                                "padding-right": "var(--now-scalable-space--sm)",
+                                                                "padding-top": "var(--now-scalable-space--sm)"
+                                                            }
+                                                        }
                                                     }
                                                 ]
                                             },
