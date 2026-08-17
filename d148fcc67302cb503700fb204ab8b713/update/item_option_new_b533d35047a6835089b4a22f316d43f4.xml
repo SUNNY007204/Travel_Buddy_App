@@ -63,9 +63,8 @@
         <record/>
         <record_producer_table>x_travel_buddy_app_trip_request</record_producer_table>
         <reference>sys_user</reference>
-        <reference_qual>u_is_buddy=true</reference_qual>
-        <reference_qual_condition table="sys_user">u_is_buddy=true<item endquery="false" field="u_is_buddy" goto="false" newquery="false" operator="=" or="false" value="true"/>
-        </reference_qual_condition>
+        <reference_qual>javascript:new TBA_TravelBuddyFilterUtils().getOnlyBuddies();</reference_qual>
+        <reference_qual_condition table="sys_user">u_is_buddy=true</reference_qual_condition>
         <rich_text/>
         <roles_to_use_also_request_for/>
         <save_script><![CDATA[/** This script is executed before the Record is generated
@@ -85,14 +84,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-03 05:52:33</sys_created_on>
         <sys_id>b533d35047a6835089b4a22f316d43f4</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Assigned to</sys_name>
         <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
         <sys_policy/>
         <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
         <sys_update_name>item_option_new_b533d35047a6835089b4a22f316d43f4</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-03 05:53:16</sys_updated_on>
+        <sys_updated_on>2026-08-17 10:08:20</sys_updated_on>
         <table/>
         <tooltip/>
         <topic_block/>
@@ -100,7 +99,7 @@
         <ui_page/>
         <unique>false</unique>
         <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
+        <use_reference_qualifier>advanced</use_reference_qualifier>
         <validate_regex/>
         <variable_name/>
         <variable_set/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="u_days" table="x_travel_buddy_app_itinerary_package">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="u_duration" table="x_travel_buddy_app_itinerary_package">
         <active>true</active>
         <array>false</array>
         <attributes/>
@@ -8,7 +8,7 @@
         <choice>0</choice>
         <choice_field/>
         <choice_table/>
-        <column_label>Days</column_label>
+        <column_label>Duration</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -21,13 +21,13 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>u_days</element>
+        <element>u_duration</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <formula/>
         <function_definition/>
         <function_field>false</function_field>
-        <internal_type display_value="Integer">integer</internal_type>
+        <internal_type display_value="">glide_duration</internal_type>
         <mandatory>false</mandatory>
         <max_length>255</max_length>
         <name>x_travel_buddy_app_itinerary_package</name>
@@ -47,14 +47,14 @@
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-07-27 06:38:02</sys_created_on>
-        <sys_name>Days</sys_name>
+        <sys_created_on>2026-08-14 06:20:03</sys_created_on>
+        <sys_name>Duration</sys_name>
         <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
         <sys_policy/>
         <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
-        <sys_update_name>sys_dictionary_x_travel_buddy_app_itinerary_package_u_days</sys_update_name>
+        <sys_update_name>sys_dictionary_x_travel_buddy_app_itinerary_package_u_duration</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-27 06:38:08</sys_updated_on>
+        <sys_updated_on>2026-08-14 06:20:03</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
