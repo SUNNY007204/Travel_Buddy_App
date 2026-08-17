@@ -46,14 +46,14 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>6d8eb366476e071089b4a22f316d431d</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>Travell Buddy Password Reset</sys_name>
         <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
         <sys_policy/>
         <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
         <sys_update_name>pwd_process_6d8eb366476e071089b4a22f316d431d</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-10 08:55:34</sys_updated_on>
+        <sys_updated_on>2026-08-17 07:00:13</sys_updated_on>
         <unlock_account>true</unlock_account>
         <url_suffix/>
         <user_experience_entry/>

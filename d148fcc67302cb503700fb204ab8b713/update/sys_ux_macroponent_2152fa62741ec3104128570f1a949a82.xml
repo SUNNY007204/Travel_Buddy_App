@@ -1403,6 +1403,136 @@
         "selectable": false,
         "typeMetadata": null,
         "valueType": "string"
+    },
+    {
+        "description": "",
+        "fieldType": "string",
+        "id": "hhxNIXvFlBUjxjjzQBHbbyliapG",
+        "inherited": false,
+        "label": "table",
+        "mandatory": false,
+        "name": "table",
+        "readOnly": false,
+        "selectable": false,
+        "typeMetadata": null,
+        "valueType": "string"
+    },
+    {
+        "description": "",
+        "fieldType": "string",
+        "id": "eeddhaJbeehhSiCUZVeeddAwGeemccORpdhh",
+        "inherited": false,
+        "label": "query",
+        "mandatory": false,
+        "name": "query",
+        "readOnly": false,
+        "selectable": false,
+        "typeMetadata": null,
+        "valueType": "string"
+    },
+    {
+        "description": "",
+        "fieldType": "string",
+        "id": "vMhteehhfpCCaadBeeddMgLeehheehhuhhGnKa",
+        "inherited": false,
+        "label": "views",
+        "mandatory": false,
+        "name": "views",
+        "readOnly": false,
+        "selectable": false,
+        "typeMetadata": null,
+        "valueType": "string"
+    },
+    {
+        "description": "",
+        "fieldType": "string",
+        "id": "oJDofvZsBaaSzjjZMNhhKBeehhOcccaa",
+        "inherited": false,
+        "label": "activityLogs",
+        "mandatory": false,
+        "name": "activityLogs",
+        "readOnly": false,
+        "selectable": false,
+        "typeMetadata": null,
+        "valueType": "string"
+    },
+    {
+        "description": "",
+        "fieldType": "string",
+        "id": "ghDaaAPeehhzAkwffeeddMeeDeeddfDfiiuXg",
+        "inherited": false,
+        "label": "extraParams",
+        "mandatory": false,
+        "name": "extraParams",
+        "readOnly": false,
+        "selectable": false,
+        "typeMetadata": null,
+        "valueType": "string"
+    },
+    {
+        "description": "",
+        "fieldType": "string",
+        "id": "bcfUrvGpCaankeeddCcFTphhobmjG",
+        "inherited": false,
+        "label": "fields",
+        "mandatory": false,
+        "name": "fields",
+        "readOnly": false,
+        "selectable": false,
+        "typeMetadata": null,
+        "valueType": "string"
+    },
+    {
+        "description": "",
+        "fieldType": "string",
+        "id": "nfwJdPRNDkIfeeddPAHLBHtZbTD",
+        "inherited": false,
+        "label": "screen",
+        "mandatory": false,
+        "name": "screen",
+        "readOnly": false,
+        "selectable": false,
+        "typeMetadata": null,
+        "valueType": "string"
+    },
+    {
+        "description": "",
+        "fieldType": "string",
+        "id": "uiiUJcceehhbtBUmYjjcIEMmGMGDddE",
+        "inherited": false,
+        "label": "selectedTabIndex",
+        "mandatory": false,
+        "name": "selectedTabIndex",
+        "readOnly": false,
+        "selectable": false,
+        "typeMetadata": null,
+        "valueType": "string"
+    },
+    {
+        "description": "",
+        "fieldType": "string",
+        "id": "LDfddaafEJCEHpjjmIMfntckbtp",
+        "inherited": false,
+        "label": "userPrefs",
+        "mandatory": false,
+        "name": "userPrefs",
+        "readOnly": false,
+        "selectable": false,
+        "typeMetadata": null,
+        "valueType": "string"
+    },
+    {
+        "description": "",
+        "fieldType": "string",
+        "id": "sggiIffRgDEddzjjSsFZddaDqtyq",
+        "inherited": false,
+        "label": "sysparmView",
+        "mandatory": false,
+        "name": "sysparmView",
+        "readOnly": false,
+        "selectable": false,
+        "typeMetadata": null,
+        "valueType": "string"
     }
 ]</props>
         <required_sys_props/>
@@ -1454,14 +1584,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-07-28 16:57:35</sys_created_on>
         <sys_id>2152fa62741ec3104128570f1a949a82</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>21</sys_mod_count>
         <sys_name>Home</sys_name>
         <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
         <sys_policy/>
         <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
         <sys_update_name>sys_ux_macroponent_2152fa62741ec3104128570f1a949a82</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-03 06:43:00</sys_updated_on>
+        <sys_updated_on>2026-08-17 17:34:13</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=2152fa62741ec3104128570f1a949a82"/>
 </record_update>
