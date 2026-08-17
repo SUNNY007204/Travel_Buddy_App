@@ -4,27 +4,27 @@
             <element>u_main_location</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-07-28 06:25:12</sys_created_on>
-            <sys_id>3e91e062739a87d09734f61c4ab8b7dd</sys_id>
+            <sys_created_on>2026-08-14 08:54:10</sys_created_on>
+            <sys_id>beb6280c3bb68f90d14ef10f23e45a3a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Trip Details &amp; Duration" display_value="Trip Details &amp; Duration" name="x_travel_buddy_app_itinerary_package" sys_domain="global" view="Default view">287fd82e735a87d09734f61c4ab8b78b</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-07-28 06:25:12</sys_updated_on>
+            <sys_updated_on>2026-08-14 08:54:10</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_days</element>
+            <element>u_duration</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-07-28 06:25:12</sys_created_on>
-            <sys_id>ba91e062739a87d09734f61c4ab8b7de</sys_id>
+            <sys_created_on>2026-08-14 08:54:10</sys_created_on>
+            <sys_id>3eb6280c3bb68f90d14ef10f23e45a3b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Trip Details &amp; Duration" display_value="Trip Details &amp; Duration" name="x_travel_buddy_app_itinerary_package" sys_domain="global" view="Default view">287fd82e735a87d09734f61c4ab8b78b</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-07-28 06:25:12</sys_updated_on>
+            <sys_updated_on>2026-08-14 08:54:10</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>.split</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-07-28 06:25:13</sys_created_on>
-            <sys_id>0b91e062739a87d09734f61c4ab8b7df</sys_id>
+            <sys_created_on>2026-08-14 08:54:11</sys_created_on>
+            <sys_id>bab6280c3bb68f90d14ef10f23e45a3c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Trip Details &amp; Duration" display_value="Trip Details &amp; Duration" name="x_travel_buddy_app_itinerary_package" sys_domain="global" view="Default view">287fd82e735a87d09734f61c4ab8b78b</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-07-28 06:25:13</sys_updated_on>
+            <sys_updated_on>2026-08-14 08:54:11</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -46,13 +46,13 @@
             <element>u_destination_points</element>
             <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-07-28 06:25:13</sys_created_on>
-            <sys_id>8791e062739a87d09734f61c4ab8b7e0</sys_id>
+            <sys_created_on>2026-08-14 08:54:11</sys_created_on>
+            <sys_id>0bb6280c3bb68f90d14ef10f23e45a3d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Trip Details &amp; Duration" display_value="Trip Details &amp; Duration" name="x_travel_buddy_app_itinerary_package" sys_domain="global" view="Default view">287fd82e735a87d09734f61c4ab8b78b</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-07-28 06:25:13</sys_updated_on>
+            <sys_updated_on>2026-08-14 08:54:11</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

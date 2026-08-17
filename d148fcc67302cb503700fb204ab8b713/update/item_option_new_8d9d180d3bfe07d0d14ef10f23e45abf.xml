@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="item_option_new">
     <item_option_new action="INSERT_OR_UPDATE">
-        <active>true</active>
+        <active>false</active>
         <attributes/>
         <cat_item display_value="Request a Trip">b440fc5c4762435089b4a22f316d43a8</cat_item>
         <category/>
         <choice_direction>down</choice_direction>
-        <choice_field>u_preferred_language</choice_field>
-        <choice_table>x_travel_buddy_app_trip_request</choice_table>
+        <choice_field/>
+        <choice_table/>
         <conversational_label/>
         <create_roles/>
         <default_html_value/>
@@ -23,38 +23,38 @@
         <dynamic_value_field/>
         <enable_also_request_for>false</enable_also_request_for>
         <example_text/>
-        <field>u_preferred_language</field>
+        <field/>
         <global>false</global>
         <help_tag>More information</help_tag>
         <help_text/>
         <hidden>false</hidden>
         <hide_on_grid>false</hide_on_grid>
-        <include_none>true</include_none>
+        <include_none>false</include_none>
         <instructions/>
         <layout>normal</layout>
-        <list_table>x_travel_buddy_app_trip_request</list_table>
+        <list_table/>
         <lookup_dependent_question/>
         <lookup_label/>
         <lookup_price/>
-        <lookup_source>choices</lookup_source>
+        <lookup_source/>
         <lookup_table/>
         <lookup_unique>false</lookup_unique>
         <lookup_value/>
         <macro/>
         <macroponent/>
         <mandatory>false</mandatory>
-        <map_to_field>true</map_to_field>
+        <map_to_field>false</map_to_field>
         <mask_use_confirmation>false</mask_use_confirmation>
-        <mask_use_encryption>true</mask_use_encryption>
-        <name>u_preferred_language</name>
+        <mask_use_encryption>false</mask_use_encryption>
+        <name>formatter</name>
         <no_auto_populate_also_request_for>false</no_auto_populate_also_request_for>
         <not_available_conversation>false</not_available_conversation>
-        <order>600</order>
+        <order>1000</order>
         <post_insert_script/>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
         <published_ref/>
-        <question_text>Preferred language</question_text>
+        <question_text/>
         <read_only>false</read_only>
         <read_roles/>
         <read_script/>
@@ -82,20 +82,20 @@
         <summary_macro/>
         <sys_class_name>item_option_new</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-08-03 06:03:41</sys_created_on>
-        <sys_id>c70493d047a6835089b4a22f316d431e</sys_id>
+        <sys_created_on>2026-08-17 10:48:07</sys_created_on>
+        <sys_id>8d9d180d3bfe07d0d14ef10f23e45abf</sys_id>
         <sys_mod_count>2</sys_mod_count>
-        <sys_name>Preferred language</sys_name>
+        <sys_name>formatter</sys_name>
         <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
         <sys_policy/>
         <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
-        <sys_update_name>item_option_new_c70493d047a6835089b4a22f316d431e</sys_update_name>
+        <sys_update_name>item_option_new_8d9d180d3bfe07d0d14ef10f23e45abf</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-17 10:19:50</sys_updated_on>
+        <sys_updated_on>2026-08-17 10:52:09</sys_updated_on>
         <table/>
         <tooltip/>
         <topic_block/>
-        <type>18</type>
+        <type>24</type>
         <ui_page/>
         <unique>false</unique>
         <use_dynamic_default>false</use_dynamic_default>
@@ -111,22 +111,22 @@
         <visible_summary>true</visible_summary>
         <write_roles/>
     </item_option_new>
-    <sys_translated_text action="delete_multiple" query="documentkey=c70493d047a6835089b4a22f316d431e"/>
-    <fx_price action="delete_multiple" query="id=c70493d047a6835089b4a22f316d431e"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=8d9d180d3bfe07d0d14ef10f23e45abf"/>
+    <fx_price action="delete_multiple" query="id=8d9d180d3bfe07d0d14ef10f23e45abf"/>
     <fx_price action="INSERT_OR_UPDATE">
         <amount>0</amount>
         <currency display_value="USD">USD</currency>
         <field>price_if_checked</field>
-        <id>c70493d047a6835089b4a22f316d431e</id>
+        <id>8d9d180d3bfe07d0d14ef10f23e45abf</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-08-03 06:03:41</sys_created_on>
-        <sys_id>c2365f5847a6835089b4a22f316d43ae</sys_id>
+        <sys_created_on>2026-08-17 10:48:09</sys_created_on>
+        <sys_id>799d580d3bfe07d0d14ef10f23e45a39</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-03 06:03:41</sys_updated_on>
+        <sys_updated_on>2026-08-17 10:48:09</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>
@@ -134,16 +134,16 @@
         <amount>0</amount>
         <currency display_value="USD">USD</currency>
         <field>rec_price_if_checked</field>
-        <id>c70493d047a6835089b4a22f316d431e</id>
+        <id>8d9d180d3bfe07d0d14ef10f23e45abf</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-08-03 06:03:41</sys_created_on>
-        <sys_id>8e365f5847a6835089b4a22f316d43a0</sys_id>
+        <sys_created_on>2026-08-17 10:48:09</sys_created_on>
+        <sys_id>319d580d3bfe07d0d14ef10f23e45a39</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-03 06:03:41</sys_updated_on>
+        <sys_updated_on>2026-08-17 10:48:09</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>
