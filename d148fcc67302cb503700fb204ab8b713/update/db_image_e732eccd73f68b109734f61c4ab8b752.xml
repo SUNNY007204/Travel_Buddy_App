@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="db_image">
+    <db_image action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category/>
+        <format/>
+        <height/>
+        <image>1042ac0d73f68b109734f61c4ab8b7b7</image>
+        <name>upload_icons8-digital-buddies-64_1786964897762_ri3hhv.png</name>
+        <size_bytes/>
+        <sys_class_name>db_image</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-17 11:08:30</sys_created_on>
+        <sys_id>e732eccd73f68b109734f61c4ab8b752</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>upload_icons8-digital-buddies-64_1786964897762_ri3hhv.png</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name>db_image_e732eccd73f68b109734f61c4ab8b752</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-17 11:08:36</sys_updated_on>
+        <thumbnail/>
+        <width/>
+    </db_image>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color/>
+        <chunk_size_bytes>700000</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/png</content_type>
+        <file_name>icons8-digital-buddies-64.png</file_name>
+        <hash>c17e078e67ec8ece077d3c6ca1c8ba3f89f97b35752504a3c4db3ed0a6dab825</hash>
+        <image_height>64</image_height>
+        <image_width>64</image_width>
+        <size_bytes>2170</size_bytes>
+        <size_compressed>2193</size_compressed>
+        <state>available</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-17 11:08:33</sys_created_on>
+        <sys_id>1042ac0d73f68b109734f61c4ab8b7b7</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-17 11:08:33</sys_updated_on>
+        <table_name>db_image</table_name>
+        <table_sys_id>e732eccd73f68b109734f61c4ab8b752</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAA/w==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="icons8-digital-buddies-64.png" sys_id="1042ac0d73f68b109734f61c4ab8b7b7">1042ac0d73f68b109734f61c4ab8b7b7</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-17 11:08:33</sys_created_on>
+        <sys_id>d042ac0d73f68b109734f61c4ab8b7b7</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>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</data>
+        <length>2912</length>
+        <position>1</position>
+        <sys_attachment display_value="icons8-digital-buddies-64.png" sys_id="1042ac0d73f68b109734f61c4ab8b7b7">1042ac0d73f68b109734f61c4ab8b7b7</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-17 11:08:33</sys_created_on>
+        <sys_id>9442ac0d73f68b109734f61c4ab8b7b7</sys_id>
+    </sys_attachment_doc>
+</record_update>
