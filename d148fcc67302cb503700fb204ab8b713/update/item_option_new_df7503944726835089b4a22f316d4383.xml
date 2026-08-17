@@ -5,8 +5,8 @@
         <cat_item display_value="Request a Trip">b440fc5c4762435089b4a22f316d43a8</cat_item>
         <category/>
         <choice_direction>down</choice_direction>
-        <choice_field/>
-        <choice_table/>
+        <choice_field>u_travel_type</choice_field>
+        <choice_table>x_travel_buddy_app_trip_request</choice_table>
         <conversational_label/>
         <create_roles/>
         <default_html_value/>
@@ -36,9 +36,9 @@
         <lookup_dependent_question/>
         <lookup_label>u_travel_type</lookup_label>
         <lookup_price/>
-        <lookup_source/>
+        <lookup_source>choices</lookup_source>
         <lookup_table>x_travel_buddy_app_trip_request</lookup_table>
-        <lookup_unique>true</lookup_unique>
+        <lookup_unique>false</lookup_unique>
         <lookup_value>u_travel_type</lookup_value>
         <macro/>
         <macroponent/>
@@ -54,7 +54,7 @@
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
         <published_ref/>
-        <question_text>Travel type?</question_text>
+        <question_text>Traveling Solo Or In Group ?</question_text>
         <read_only>false</read_only>
         <read_roles/>
         <read_script/>
@@ -84,14 +84,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-03 04:51:17</sys_created_on>
         <sys_id>df7503944726835089b4a22f316d4383</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name>Travel type?</sys_name>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Traveling Solo Or In Group ?</sys_name>
         <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
         <sys_policy/>
         <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
         <sys_update_name>item_option_new_df7503944726835089b4a22f316d4383</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-03 05:10:13</sys_updated_on>
+        <sys_updated_on>2026-08-17 12:15:25</sys_updated_on>
         <table/>
         <tooltip/>
         <topic_block/>

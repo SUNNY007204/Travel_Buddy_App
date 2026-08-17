@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="Related Lists" section_id="a1ad5422475a831089b4a22f316d439e" sys_domain="global" table="x_travel_buddy_app_trip_request" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_selected_itinerary</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-07-28 06:07:56</sys_created_on>
+            <sys_id>69ad9422475a831089b4a22f316d436a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Related Lists" display_value="Related Lists" name="x_travel_buddy_app_trip_request" sys_domain="global" view="Default view">a1ad5422475a831089b4a22f316d439e</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-07-28 06:07:56</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="DELETE">
+            <caption>Related Lists</caption>
+            <header>false</header>
+            <name>x_travel_buddy_app_trip_request</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-07-28 06:07:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a1ad5422475a831089b4a22f316d439e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_travel_buddy_app_trip_request</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+            <sys_update_name>sys_ui_section_a1ad5422475a831089b4a22f316d439e</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-07-28 06:07:55</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</application>
+        <file_path/>
+        <instance_id>6241f8583b50cfd416e44a8aa4e45aa8</instance_id>
+        <instance_name>dev380569</instance_name>
+        <name>sys_ui_section_a1ad5422475a831089b4a22f316d439e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Related Lists" section_id="a1ad5422475a831089b4a22f316d439e" sys_domain="global" table="x_travel_buddy_app_trip_request" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_selected_itinerary</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-07-28 06:07:56</sys_created_on>
+            <sys_id>69ad9422475a831089b4a22f316d436a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Related Lists" display_value="Related Lists" name="x_travel_buddy_app_trip_request" sys_domain="global" view="Default view">a1ad5422475a831089b4a22f316d439e</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-07-28 06:07:56</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Related Lists</caption>
+            <header>false</header>
+            <name>x_travel_buddy_app_trip_request</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-07-28 06:07:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a1ad5422475a831089b4a22f316d439e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_travel_buddy_app_trip_request</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+            <sys_update_name>sys_ui_section_a1ad5422475a831089b4a22f316d439e</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-07-28 06:07:55</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>]]></payload>
+        <payload_hash>-1456549440</payload_hash>
+        <record_name>Trip Request</record_name>
+        <reverted_from/>
+        <source>7a60bd2e3b160b10d14ef10f23e45a49</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-28 12:09:38</sys_created_on>
+        <sys_id>d470716e3b160b10d14ef10f23e45a4a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19fa8a16abe0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-28 12:09:38</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>1070716e50160b10983f821b245d314a</update_guid>
+        <update_guid_history>1070716e50160b10983f821b245d314a:0,988e41aadd120b10901c2fe14bcf7775:1851780585,ec1e8d2ab5120b10394408d36089ce38:-1456549440</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-17 06:06:24</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>0965e31e19e54c1898b012d90cec8121</sys_id>
+        <sys_metadata>a1ad5422475a831089b4a22f316d439e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_travel_buddy_app_trip_request</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_parent display_value="Trip Request">4856eea0839a031031ab6730ceaad31c</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_scope_delete display_value="">ce79bab18acc49f9bef811863b5939e1</sys_scope_delete>
+        <sys_update_name>sys_ui_section_a1ad5422475a831089b4a22f316d439e</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_a1ad5422475a831089b4a22f316d439e">d470716e3b160b10d14ef10f23e45a4a</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-17 06:06:24</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
