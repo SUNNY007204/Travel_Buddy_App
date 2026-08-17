@@ -1,0 +1,1007 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=integrated,timeFromCreateToActivate=338045000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>9a41b6c2ff12101088e94ee9453bf1a4</copied_from>
+        <copied_from_name>FlowTemplate_Empty</copied_from_name>
+        <description>Buddy Calendar Block - Booked Trip flow</description>
+        <display_name_after_preview/>
+        <flow_priority/>
+        <generation_source/>
+        <internal_name>tba_buddy_calendar_block__booked_trip</internal_name>
+        <label_cache>[{"name":"Updated_1.current.end_time","label":"Trigger - Record Updated➛Trip Request Record➛End Time","reference":"","reference_display":"End Time","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_travel_buddy_app_trip_request","column_name":"end_time","usedInstances":{"69e979ee-5c9a-41ad-b80c-1899418a861c":["end_date_time"]}},{"name":"Updated_1.current.start_time","label":"Trigger - Record Updated➛Trip Request Record➛Start Time","reference":"","reference_display":"Start Time","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_travel_buddy_app_trip_request","column_name":"start_time","usedInstances":{"69e979ee-5c9a-41ad-b80c-1899418a861c":["start_date_time"]}},{"name":"Updated_1.current.number","label":"Trigger - Record Updated➛Trip Request Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_travel_buddy_app_trip_request","column_name":"number","usedInstances":{"69e979ee-5c9a-41ad-b80c-1899418a861c":["name"]}},{"name":"a495b00b-1d25-4fcd-badd-a79b35487f24.Record","label":"1 - Look Up Record➛Schedule Record","reference":"cmn_schedule","reference_display":"Schedule","type":"reference","base_type":"reference","usedInstances":{"69e979ee-5c9a-41ad-b80c-1899418a861c":["schedule"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Updated_1.current.assigned_to","label":"Trigger - Record Updated➛Trip Request Record➛Assigned to","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_travel_buddy_app_trip_request","column_name":"assigned_to","usedInstances":{"a495b00b-1d25-4fcd-badd-a79b35487f24":[null,"conditions"]}},{"name":"undefined","label":" - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record","usedInstances":{"a495b00b-1d25-4fcd-badd-a79b35487f24":[null]},"attributes":{}},{"name":"Updated_1.current.assigned_to.schedule","label":"Trigger - Record Updated➛Trip Request Record➛Assigned to➛Schedule","reference":"cmn_schedule","reference_display":"Schedule","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"schedule","usedInstances":{"69e979ee-5c9a-41ad-b80c-1899418a861c":["schedule"]}},{"name":"Updated_1.current","label":"Trigger - Record Updated➛Trip Request Record","reference":"x_travel_buddy_app_trip_request","reference_display":"Trip Request","type":"reference","base_type":"reference","usedInstances":{"69e979ee-5c9a-41ad-b80c-1899418a861c":["x_travel_buddy_app_u_linked_trip","name"]},"attributes":{}},{"name":"Updated_1.current.u_destination_package","label":"Trigger - Record Updated➛Trip Request Record➛Destination Package","reference":"","reference_display":"Destination Package","type":"choice","base_type":"choice","parent_table_name":"x_travel_buddy_app_trip_request","column_name":"u_destination_package","choices":[{"label":"-- None --","sequence":-1.0,"selected":false,"used":false,"reference":false,"image":"","rawLabel":"-- None --","missing":false,"value":""},{"parameters":{"name":"x_travel_buddy_app_trip_request","dependent_values":[""],"dependent_values_map":{"":"Premium"}},"sequence":0.0,"selected":false,"used":false,"label":"Premium","reference":false,"image":"","rawLabel":"Premium","missing":false,"value":"premium"},{"parameters":{"name":"x_travel_buddy_app_trip_request","dependent_values":[""],"dependent_values_map":{"":"Gold"}},"sequence":1.0,"selected":false,"used":false,"label":"Gold","reference":false,"image":"","rawLabel":"Gold","missing":false,"value":"gold"},{"parameters":{"name":"x_travel_buddy_app_trip_request","dependent_values":[""],"dependent_values_map":{"":"Silver"}},"sequence":2.0,"selected":false,"used":false,"label":"Silver","reference":false,"image":"","rawLabel":"Silver","missing":false,"value":"silver"}],"usedInstances":{"69e979ee-5c9a-41ad-b80c-1899418a861c":["name"]}}]</label_cache>
+        <master_snapshot>67f92bf03bba07d0d14ef10f23e45af5</master_snapshot>
+        <master_snapshot_digest/>
+        <name>TBA: Buddy Calendar Block - Booked Trip</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>4510337c3bba07d0d14ef10f23e45a21</remote_trigger_id>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-13 09:33:55</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1f3667a33ba60f90d14ef10f23e45a0d</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_name>TBA: Buddy Calendar Block - Booked Trip</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name>sys_hub_flow_1f3667a33ba60f90d14ef10f23e45a0d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-17 07:29:21</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record>de30f37c3bba07d0d14ef10f23e45afe</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=1f3667a33ba60f90d14ef10f23e45a0d"/>
+    <sys_variable_value action="delete_multiple" query="document_key=1f3667a33ba60f90d14ef10f23e45a0d"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_travel_buddy_app_trip_request">state=2^NQassigned_toISNOTEMPTY<item display_value="Trip Booked" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="2"/>
+            <item endquery="false" field="assigned_to" goto="false" newquery="true" operator="ISNOTEMPTY" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>false</on_insert>
+        <on_update>true</on_update>
+        <published_version/>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-17 07:29:19</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4510337c3bba07d0d14ef10f23e45a21</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-17 07:29:19</sys_updated_on>
+        <table>x_travel_buddy_app_trip_request</table>
+        <trigger_definition/>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>1f3667a33ba60f90d14ef10f23e45a0d</identifier>
+        <identifier_type>flow</identifier_type>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-17 07:29:19</sys_created_on>
+        <sys_id>4110337c3bba07d0d14ef10f23e45a22</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-17 07:29:19</sys_updated_on>
+        <trigger display_value="">4510337c3bba07d0d14ef10f23e45a21</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=1f3667a33ba60f90d14ef10f23e45a0d^sys_idNOT IN4110337c3bba07d0d14ef10f23e45a22"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=1f3667a33ba60f90d14ef10f23e45a0d"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=1f3667a33ba60f90d14ef10f23e45a0d^sys_idNOT INe33667a33ba60f90d14ef10f23e45a10"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>1f3667a33ba60f90d14ef10f23e45a0d</id>
+        <name>TBA: Buddy Calendar Block - Booked Trip</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-13 09:33:56</sys_created_on>
+        <sys_id>e33667a33ba60f90d14ef10f23e45a10</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-13 09:33:56</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=e33667a33ba60f90d14ef10f23e45a10"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=1f3667a33ba60f90d14ef10f23e45a0d^sys_idNOT IN0d586f673ba60f90d14ef10f23e45ab7,58586f673ba60f90d14ef10f23e45a3b,cf48abe33ba60f90d14ef10f23e45aa5"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="TBA: Buddy Calendar Block - Booked Trip">1f3667a33ba60f90d14ef10f23e45a0d</model>
+        <model_id>1f3667a33ba60f90d14ef10f23e45a0d</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_1f3667a33ba60f90d14ef10f23e45a0d</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-13 09:43:03</sys_created_on>
+        <sys_id>0d586f673ba60f90d14ef10f23e45ab7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-13 09:43:03</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=0d586f673ba60f90d14ef10f23e45ab7"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="TBA: Buddy Calendar Block - Booked Trip">1f3667a33ba60f90d14ef10f23e45a0d</model>
+        <model_id>1f3667a33ba60f90d14ef10f23e45a0d</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_1f3667a33ba60f90d14ef10f23e45a0d</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-13 09:43:00</sys_created_on>
+        <sys_id>58586f673ba60f90d14ef10f23e45a3b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-14 08:28:22</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=58586f673ba60f90d14ef10f23e45a3b"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="TBA: Buddy Calendar Block - Booked Trip">1f3667a33ba60f90d14ef10f23e45a0d</model>
+        <model_id>1f3667a33ba60f90d14ef10f23e45a0d</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_1f3667a33ba60f90d14ef10f23e45a0d</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-13 09:42:54</sys_created_on>
+        <sys_id>cf48abe33ba60f90d14ef10f23e45aa5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-14 08:28:25</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=cf48abe33ba60f90d14ef10f23e45aa5"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=1f3667a33ba60f90d14ef10f23e45a0d"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=1f3667a33ba60f90d14ef10f23e45a0d"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=1f3667a33ba60f90d14ef10f23e45a0d^sys_idNOT INe548abe33ba60f90d14ef10f23e45a63"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="TBA: Buddy Calendar Block - Booked Trip">1f3667a33ba60f90d14ef10f23e45a0d</flow>
+        <generation_source/>
+        <name>Updated</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-13 09:42:49</sys_created_on>
+        <sys_id>e548abe33ba60f90d14ef10f23e45a63</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-17 07:02:19</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs>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</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=1f3667a33ba60f90d14ef10f23e45a0d^sys_idNOT IN53dffb7b3ba28f90d14ef10f23e45a65,f1a16b343b7a07d0d14ef10f23e45ada"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="TBA: Buddy Calendar Block - Booked Trip">1f3667a33ba60f90d14ef10f23e45a0d</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-14 06:04:22</sys_created_on>
+        <sys_id>53dffb7b3ba28f90d14ef10f23e45a65</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-08-17 12:18:42</sys_updated_on>
+        <ui_id>69e979ee-5c9a-41ad-b80c-1899418a861c</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VTVPbMBD9KxmdHY8dJ4Hk1kI5tTADlAsFjSytiaay7Ooj4Gby37vyR8hQMqWdXjrT3LTv7ert03pzuyFSkCWZp5DMFumcZ2mWTZJkcjxN83mWpxORMYApiYhmJSDTsVwBbQ8RWTPlQ5CXmlq+AuERszXTiAlpa8Wam55y1cOjD9qZBnG+kkoY0GR5exeRmhks6cCQ5eYF9FaBiuWgkHodFB4Q7Jr61djH/dzReQdURgQ9SUTgyYEWgEIKpixEpGRaMFdhI0tnPAYMMHGhVbNjrKR2WJAE7pOV3/Ha4yTwCsDOOHTY7kh7u7pwccocu8LK3HnTU/mqkhxs54mAgnnlTvZjHeGidrLSXUrbZp9dKV/q884SsiswvA5GvEURUIc+g/K+jeJqVT1eDirPpG4t6UFVcaZ2J+ackbl3Qc+GgIISC9GS1bXUD7Q21Vq2yailjB8UHuJCVY94qZUPOmY8CI/RVhafYfy0Dd8wI0MXn7AMJm8jYht7opi1z72gifSbD0q6zvoeaGdDSOFG1u4dXrCGXu42GiZfQLI4OFhp/jxI7bDbvakfJv6LT5JMbDZsupjlSZKPUzGZjacFF+OcCTFmR4s8m02Pj4rJNL4EjnO13d4/UWfYGhTNvRANxf6op0rqryAQkfVQ9XONlmAsjbk3+AoOcy0+CmW2o+TeNvdBY3d8X1VYYnSNJZajV9Jj7cscTKjimHE0wNTJEg5eGHfEwMEsNPctOYHWZ4QPbF/bz8vhv5N/7ORvrtFfT/uwRs8kKGFfGf9hh0KJT4jqu8/hxR7twdFND/a7NP1buzSdJ+3vH9qoXXP//ELd++88sFrvfgCzKCdSVggAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=53dffb7b3ba28f90d14ef10f23e45a65"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="TBA: Buddy Calendar Block - Booked Trip">1f3667a33ba60f90d14ef10f23e45a0d</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-17 06:26:17</sys_created_on>
+        <sys_id>f1a16b343b7a07d0d14ef10f23e45ada</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-08-17 12:18:42</sys_updated_on>
+        <ui_id>a495b00b-1d25-4fcd-badd-a79b35487f24</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VYXW/iOhD9K1GeKTfhm75dtUJaae9W2nb3Ze/KcmynWNfYWduhpYj/fsexAwgoEC2VWu0bGY/HZ2bOmTj8WMacxtcxHSfjfDzuj4ZJ0u0myWDQJTjNsu6AZEmGe3ErlnjGwNPiTDB4nGNRumcyk8iQKaNlZabcFAIvvofV+80KmXJBNZPx9Y+frbjAGuJZpuPr5c7SuYAEzpgA14eAaAegXRTrR1Stedvn7W3RF7+gNHVQklbMni2TlAGGHAvDWvEMS4qt0ou1RTNM76TYGKZcWogYO+dnw1/g3FHi/HIGWRHm19aPKBTJm/NbbPG91SWxpQ6uZKo4YcbXg7Icl8LebNu8w11huZJ+i0/b71ainMkvvhzxOkDdE7CUBkCwwiXqkIc08vupevpao5xwWdUkLApFsFg/YWs1z0rr8CxjJtgMAqEZLgouH1Gh1ZxXmwHLrP0o4KGdC/UEhxr+KNuYOOBtqCtuT8B+W5m/Y81dFv9AGNgMgLgAhiDfQqNKXZVyjogoTbWgsTQ+VrxqxWZhbgQ2ZpM5lBz9Kh1uX4eQMfJFc1uI5oX9G0LMWUhu1ao10T9KwfGGckRJyh0KsyWMZwdvzgTKSkoXCHJCZfgN9YHU2L8lBKbL5bcCCsEoStuk1FB724YkoB5gsmq12lfVJUM3lOXpmtSyvNkuyqFCBYHu2T4fChAEml5MoL0k+UgShcPfn0Kba86X4ITwUnqUZHTDJ6O0Rb6WW8rbF0xjnp8Boeb5nWNmlC1eQxVonnMm6KH30MQt7LyHOn/me+hdkhwAUeS7x6XgsrpUANC3Yn//KPWydIdnFb023K9s2JB9DeDIquilsRLOgFMr4R7Ojh48ngMQ63lfUWZ31tfGIIDuxQTQ7VxGAMt1mutCHqh5fY903az9X5w/3vUHCm5tSFeHBNbozLTpmZ3VvoC7jRS8TTa/cvsK5y584XxFka23HAFT2BrOQ16/6InTR2Y3p9deVNknLP47tB4Yh+pGVem9weU1Pfr9lG1dXnmOZtA5XsAdWzMC5DAIa4ZyVUqKwu16QyTXyZxrY4Pz/qD5ykA/MlIgzMhOWVR5R2vvhi/i03nUpfyUR3Ui4TQTQSJRlUi0TqRZ2k2GVu+Cl9NLD60J5qLqBnw4FVvtZFor/crgOtHII4w4c6qdCSq9KKjfH3uHJHBw/J3A+iG+wi8/mgjDWa+DB8NumiZJmtBhMhoO09Egywd42Ms3GkXISALTFCLnQBUIj2pq1H1O9uePH6lNB80ZqGoK3irpvq87Qxs5WNDfqIZ1GngYKJlSgmG5M1Ee4D3x1yTgD3ztv7up8iH+kyr5w26lvelgrd/q3lDyb5L/KtknR7ERSzqjlJKr0TAdXvVyOrgaU9y/wuOsP+xSRnr5Ja8CP/8HIV9st90VAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=f1a16b343b7a07d0d14ef10f23e45ada"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=1f3667a33ba60f90d14ef10f23e45a0d"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=1f3667a33ba60f90d14ef10f23e45a0d"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=1f3667a33ba60f90d14ef10f23e45a0d"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=1f3667a33ba60f90d14ef10f23e45a0d"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_1f3667a33ba60f90d14ef10f23e45a0d</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-13 09:43:02</sys_created_on>
+        <sys_id>78586f673ba60f90d14ef10f23e45ab2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-13 09:43:02</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_1f3667a33ba60f90d14ef10f23e45a0d</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-13 09:42:59</sys_created_on>
+        <sys_id>c4586f673ba60f90d14ef10f23e45a35</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-13 09:42:59</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_1f3667a33ba60f90d14ef10f23e45a0d</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-13 09:43:05</sys_created_on>
+        <sys_id>e958af673ba60f90d14ef10f23e45a2f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-13 09:43:05</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_1f3667a33ba60f90d14ef10f23e45a0d"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_1f3667a33ba60f90d14ef10f23e45a0d"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=integrated,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>9a41b6c2ff12101088e94ee9453bf1a4</copied_from>
+        <copied_from_name/>
+        <description>Buddy Calendar Block - Booked Trip flow</description>
+        <flow_priority/>
+        <internal_name>tba_buddy_calendar_block__booked_trip</internal_name>
+        <label_cache>[{"name":"Updated_1.current.end_time","label":"Trigger - Record Updated➛Trip Request Record➛End Time","reference":"","reference_display":"End Time","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_travel_buddy_app_trip_request","column_name":"end_time","usedInstances":{"69e979ee-5c9a-41ad-b80c-1899418a861c":["end_date_time"]}},{"name":"Updated_1.current.start_time","label":"Trigger - Record Updated➛Trip Request Record➛Start Time","reference":"","reference_display":"Start Time","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_travel_buddy_app_trip_request","column_name":"start_time","usedInstances":{"69e979ee-5c9a-41ad-b80c-1899418a861c":["start_date_time"]}},{"name":"Updated_1.current.number","label":"Trigger - Record Updated➛Trip Request Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_travel_buddy_app_trip_request","column_name":"number","usedInstances":{"69e979ee-5c9a-41ad-b80c-1899418a861c":["name"]}},{"name":"a495b00b-1d25-4fcd-badd-a79b35487f24.Record","label":"1 - Look Up Record➛Schedule Record","reference":"cmn_schedule","reference_display":"Schedule","type":"reference","base_type":"reference","usedInstances":{"69e979ee-5c9a-41ad-b80c-1899418a861c":["schedule"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Updated_1.current.assigned_to","label":"Trigger - Record Updated➛Trip Request Record➛Assigned to","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_travel_buddy_app_trip_request","column_name":"assigned_to","usedInstances":{"a495b00b-1d25-4fcd-badd-a79b35487f24":[null,"conditions"]}},{"name":"undefined","label":" - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record - Create Record","usedInstances":{"a495b00b-1d25-4fcd-badd-a79b35487f24":[null]},"attributes":{}},{"name":"Updated_1.current.assigned_to.schedule","label":"Trigger - Record Updated➛Trip Request Record➛Assigned to➛Schedule","reference":"cmn_schedule","reference_display":"Schedule","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"schedule","usedInstances":{"69e979ee-5c9a-41ad-b80c-1899418a861c":["schedule"]}},{"name":"Updated_1.current","label":"Trigger - Record Updated➛Trip Request Record","reference":"x_travel_buddy_app_trip_request","reference_display":"Trip Request","type":"reference","base_type":"reference","usedInstances":{"69e979ee-5c9a-41ad-b80c-1899418a861c":["x_travel_buddy_app_u_linked_trip","name"]},"attributes":{}},{"name":"Updated_1.current.u_destination_package","label":"Trigger - Record Updated➛Trip Request Record➛Destination Package","reference":"","reference_display":"Destination Package","type":"choice","base_type":"choice","parent_table_name":"x_travel_buddy_app_trip_request","column_name":"u_destination_package","choices":[{"label":"-- None --","sequence":-1.0,"selected":false,"used":false,"reference":false,"image":"","rawLabel":"-- None --","missing":false,"value":""},{"parameters":{"name":"x_travel_buddy_app_trip_request","dependent_values":[""],"dependent_values_map":{"":"Premium"}},"sequence":0.0,"selected":false,"used":false,"label":"Premium","reference":false,"image":"","rawLabel":"Premium","missing":false,"value":"premium"},{"parameters":{"name":"x_travel_buddy_app_trip_request","dependent_values":[""],"dependent_values_map":{"":"Gold"}},"sequence":1.0,"selected":false,"used":false,"label":"Gold","reference":false,"image":"","rawLabel":"Gold","missing":false,"value":"gold"},{"parameters":{"name":"x_travel_buddy_app_trip_request","dependent_values":[""],"dependent_values_map":{"":"Silver"}},"sequence":2.0,"selected":false,"used":false,"label":"Silver","reference":false,"image":"","rawLabel":"Silver","missing":false,"value":"silver"}],"usedInstances":{"69e979ee-5c9a-41ad-b80c-1899418a861c":["name"]}}]</label_cache>
+        <master>true</master>
+        <name>TBA: Buddy Calendar Block - Booked Trip</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="TBA: Buddy Calendar Block - Booked Trip">1f3667a33ba60f90d14ef10f23e45a0d</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-17 07:02:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>67f92bf03bba07d0d14ef10f23e45af5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-17 07:29:04</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=67f92bf03bba07d0d14ef10f23e45af5"/>
+    <sys_variable_value action="delete_multiple" query="document_key=67f92bf03bba07d0d14ef10f23e45af5"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=67f92bf03bba07d0d14ef10f23e45af5"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=67f92bf03bba07d0d14ef10f23e45af5^sys_idNOT INb3f96bf03bba07d0d14ef10f23e45a81"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>67f92bf03bba07d0d14ef10f23e45af5</id>
+        <name>TBA: Buddy Calendar Block - Booked Trip</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-17 07:02:44</sys_created_on>
+        <sys_id>b3f96bf03bba07d0d14ef10f23e45a81</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-17 07:02:44</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=b3f96bf03bba07d0d14ef10f23e45a81"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=67f92bf03bba07d0d14ef10f23e45af5^sys_idNOT IN080a6bf03bba07d0d14ef10f23e45a83,950aabf03bba07d0d14ef10f23e45a23,c20aabf03bba07d0d14ef10f23e45a55"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="TBA: Buddy Calendar Block - Booked Trip">67f92bf03bba07d0d14ef10f23e45af5</model>
+        <model_id>67f92bf03bba07d0d14ef10f23e45af5</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_67f92bf03bba07d0d14ef10f23e45af5</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-17 07:02:46</sys_created_on>
+        <sys_id>080a6bf03bba07d0d14ef10f23e45a83</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-17 07:28:48</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=080a6bf03bba07d0d14ef10f23e45a83"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="TBA: Buddy Calendar Block - Booked Trip">67f92bf03bba07d0d14ef10f23e45af5</model>
+        <model_id>67f92bf03bba07d0d14ef10f23e45af5</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_67f92bf03bba07d0d14ef10f23e45af5</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-17 07:02:51</sys_created_on>
+        <sys_id>950aabf03bba07d0d14ef10f23e45a23</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-17 07:28:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=950aabf03bba07d0d14ef10f23e45a23"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="TBA: Buddy Calendar Block - Booked Trip">67f92bf03bba07d0d14ef10f23e45af5</model>
+        <model_id>67f92bf03bba07d0d14ef10f23e45af5</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_67f92bf03bba07d0d14ef10f23e45af5</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-17 07:02:53</sys_created_on>
+        <sys_id>c20aabf03bba07d0d14ef10f23e45a55</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-17 07:28:46</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=c20aabf03bba07d0d14ef10f23e45a55"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=67f92bf03bba07d0d14ef10f23e45af5"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=67f92bf03bba07d0d14ef10f23e45af5"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=67f92bf03bba07d0d14ef10f23e45af5^sys_idNOT IN901aebf03bba07d0d14ef10f23e45abd"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="TBA: Buddy Calendar Block - Booked Trip">67f92bf03bba07d0d14ef10f23e45af5</flow>
+        <generation_source/>
+        <name>Updated</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-17 07:03:03</sys_created_on>
+        <sys_id>901aebf03bba07d0d14ef10f23e45abd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-17 07:03:03</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs>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</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=67f92bf03bba07d0d14ef10f23e45af5^sys_idNOT IN8c1aabf03bba07d0d14ef10f23e45ada,b30aabf03bba07d0d14ef10f23e45ad9"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="TBA: Buddy Calendar Block - Booked Trip">67f92bf03bba07d0d14ef10f23e45af5</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-17 07:03:02</sys_created_on>
+        <sys_id>8c1aabf03bba07d0d14ef10f23e45ada</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-17 07:29:02</sys_updated_on>
+        <ui_id>69e979ee-5c9a-41ad-b80c-1899418a861c</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VTVPbMBD9KxmdHY8dJ4Hk1kI5tTADlAsFjSytiaay7Ooj4Gby37vyR8hQMqWdXjrT3LTv7ert03pzuyFSkCWZp5DMFumcZ2mWTZJkcjxN83mWpxORMYApiYhmJSDTsVwBbQ8RWTPlQ5CXmlq+AuERszXTiAlpa8Wam55y1cOjD9qZBnG+kkoY0GR5exeRmhks6cCQ5eYF9FaBiuWgkHodFB4Q7Jr61djH/dzReQdURgQ9SUTgyYEWgEIKpixEpGRaMFdhI0tnPAYMMHGhVbNjrKR2WJAE7pOV3/Ha4yTwCsDOOHTY7kh7u7pwccocu8LK3HnTU/mqkhxs54mAgnnlTvZjHeGidrLSXUrbZp9dKV/q884SsiswvA5GvEURUIc+g/K+jeJqVT1eDirPpG4t6UFVcaZ2J+ackbl3Qc+GgIISC9GS1bXUD7Q21Vq2yailjB8UHuJCVY94qZUPOmY8CI/RVhafYfy0Dd8wI0MXn7AMJm8jYht7opi1z72gifSbD0q6zvoeaGdDSOFG1u4dXrCGXu42GiZfQLI4OFhp/jxI7bDbvakfJv6LT5JMbDZsupjlSZKPUzGZjacFF+OcCTFmR4s8m02Pj4rJNL4EjnO13d4/UWfYGhTNvRANxf6op0rqryAQkfVQ9XONlmAsjbk3+AoOcy0+CmW2o+TeNvdBY3d8X1VYYnSNJZajV9Jj7cscTKjimHE0wNTJEg5eGHfEwMEsNPctOYHWZ4QPbF/bz8vhv5N/7ORvrtFfT/uwRs8kKGFfGf9hh0KJT4jqu8/hxR7twdFND/a7NP1buzSdJ+3vH9qoXXP//ELd++88sFrvfgCzKCdSVggAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=8c1aabf03bba07d0d14ef10f23e45ada"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="TBA: Buddy Calendar Block - Booked Trip">67f92bf03bba07d0d14ef10f23e45af5</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-17 07:03:01</sys_created_on>
+        <sys_id>b30aabf03bba07d0d14ef10f23e45ad9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-17 07:03:01</sys_updated_on>
+        <ui_id>a495b00b-1d25-4fcd-badd-a79b35487f24</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VYXW/iOhD9K1GeKTfhm75dtUJaae9W2nb3Ze/KcmynWNfYWduhpYj/fsexAwgoEC2VWu0bGY/HZ2bOmTj8WMacxtcxHSfjfDzuj4ZJ0u0myWDQJTjNsu6AZEmGe3ErlnjGwNPiTDB4nGNRumcyk8iQKaNlZabcFAIvvofV+80KmXJBNZPx9Y+frbjAGuJZpuPr5c7SuYAEzpgA14eAaAegXRTrR1Stedvn7W3RF7+gNHVQklbMni2TlAGGHAvDWvEMS4qt0ou1RTNM76TYGKZcWogYO+dnw1/g3FHi/HIGWRHm19aPKBTJm/NbbPG91SWxpQ6uZKo4YcbXg7Icl8LebNu8w11huZJ+i0/b71ainMkvvhzxOkDdE7CUBkCwwiXqkIc08vupevpao5xwWdUkLApFsFg/YWs1z0rr8CxjJtgMAqEZLgouH1Gh1ZxXmwHLrP0o4KGdC/UEhxr+KNuYOOBtqCtuT8B+W5m/Y81dFv9AGNgMgLgAhiDfQqNKXZVyjogoTbWgsTQ+VrxqxWZhbgQ2ZpM5lBz9Kh1uX4eQMfJFc1uI5oX9G0LMWUhu1ao10T9KwfGGckRJyh0KsyWMZwdvzgTKSkoXCHJCZfgN9YHU2L8lBKbL5bcCCsEoStuk1FB724YkoB5gsmq12lfVJUM3lOXpmtSyvNkuyqFCBYHu2T4fChAEml5MoL0k+UgShcPfn0Kba86X4ITwUnqUZHTDJ6O0Rb6WW8rbF0xjnp8Boeb5nWNmlC1eQxVonnMm6KH30MQt7LyHOn/me+hdkhwAUeS7x6XgsrpUANC3Yn//KPWydIdnFb023K9s2JB9DeDIquilsRLOgFMr4R7Ojh48ngMQ63lfUWZ31tfGIIDuxQTQ7VxGAMt1mutCHqh5fY903az9X5w/3vUHCm5tSFeHBNbozLTpmZ3VvoC7jRS8TTa/cvsK5y584XxFka23HAFT2BrOQ16/6InTR2Y3p9deVNknLP47tB4Yh+pGVem9weU1Pfr9lG1dXnmOZtA5XsAdWzMC5DAIa4ZyVUqKwu16QyTXyZxrY4Pz/qD5ykA/MlIgzMhOWVR5R2vvhi/i03nUpfyUR3Ui4TQTQSJRlUi0TqRZ2k2GVu+Cl9NLD60J5qLqBnw4FVvtZFor/crgOtHII4w4c6qdCSq9KKjfH3uHJHBw/J3A+iG+wi8/mgjDWa+DB8NumiZJmtBhMhoO09Egywd42Ms3GkXISALTFCLnQBUIj2pq1H1O9uePH6lNB80ZqGoK3irpvq87Qxs5WNDfqIZ1GngYKJlSgmG5M1Ee4D3x1yTgD3ztv7up8iH+kyr5w26lvelgrd/q3lDyb5L/KtknR7ERSzqjlJKr0TAdXvVyOrgaU9y/wuOsP+xSRnr5Ja8CP/8HIV9st90VAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b30aabf03bba07d0d14ef10f23e45ad9"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=67f92bf03bba07d0d14ef10f23e45af5"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=67f92bf03bba07d0d14ef10f23e45af5"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=67f92bf03bba07d0d14ef10f23e45af5"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=67f92bf03bba07d0d14ef10f23e45af5"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_67f92bf03bba07d0d14ef10f23e45af5</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-17 07:02:57</sys_created_on>
+        <sys_id>3a0aabf03bba07d0d14ef10f23e45a5c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-17 07:02:57</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_67f92bf03bba07d0d14ef10f23e45af5</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-17 07:02:50</sys_created_on>
+        <sys_id>490a6bf03bba07d0d14ef10f23e45aba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-17 07:02:50</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_67f92bf03bba07d0d14ef10f23e45af5</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-17 07:02:53</sys_created_on>
+        <sys_id>f10aabf03bba07d0d14ef10f23e45a2b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-17 07:02:53</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_67f92bf03bba07d0d14ef10f23e45af5"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_67f92bf03bba07d0d14ef10f23e45af5"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>1f3667a33ba60f90d14ef10f23e45a0d</sys_id>
+        <latest_snapshot>67f92bf03bba07d0d14ef10f23e45af5</latest_snapshot>
+        <compiler_build>glide-australia-02-11-2026__patch2-04-17-2026_04-29-2026_2044.zip</compiler_build>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=1f3667a33ba60f90d14ef10f23e45a0d^sys_idNOT IN231a6ff03bba07d0d14ef10f23e45a4c"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"@class":"com.snc.process_flow.engine.serialization.plan_data.ChunkingPlanData","chunk_data":{"table":"sys_flow_trigger_plan","id":"231a6ff03bba07d0d14ef10f23e45a4c","name":"plan","plan_signature":null},"plan_data":"CHUNKING_PLAN"}</plan>
+        <plan_id>1f3667a33ba60f90d14ef10f23e45a0d</plan_id>
+        <snapshot>534270413bb247d0d14ef10f23e45a71</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-17 07:03:16</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>231a6ff03bba07d0d14ef10f23e45a4c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-17 07:29:19</sys_updated_on>
+        <trigger display_value="">4510337c3bba07d0d14ef10f23e45a21</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=1f3667a33ba60f90d14ef10f23e45a0d"/>
+</record_update>
