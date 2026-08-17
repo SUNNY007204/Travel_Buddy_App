@@ -6,11 +6,13 @@
         <element label="isTravelBuddy" max_length="40" name="x_travel_buddy_app_u_istravelbuddy" type="boolean"/>
         <element choice="1" label="Spoken Languages" max_length="4000" name="x_travel_buddy_app_u_spoken_languages" type="glide_list">
             <choice>
+                <element inactive_on_update="false" label="Marathi" sequence="200" value="marathi"/>
                 <element inactive_on_update="false" label="Hindi" sequence="300" value="hindi"/>
                 <element inactive_on_update="false" label="English" sequence="100" value="english"/>
-                <element inactive_on_update="false" label="Marathi" sequence="200" value="marathi"/>
             </choice>
         </element>
         <element display="true" label="Total Rating" max_length="20" name="x_travel_buddy_app_u_total_rating" type="decimal"/>
+        <element attributes="edge_encryption_enabled=true" label="Total Rating" max_length="20" name="x_travel_buddy_app_u_total_rating" type="decimal"/>
+        <element label="isTravel" max_length="40" name="x_travel_buddy_app_istravel" type="boolean"/>
     </element>
 </database>

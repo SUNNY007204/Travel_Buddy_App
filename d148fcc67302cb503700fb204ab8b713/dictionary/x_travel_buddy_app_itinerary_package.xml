@@ -8,7 +8,6 @@
                 <element inactive_on_update="false" label="Car" sequence="0" value="car"/>
             </choice>
         </element>
-        <element label="Main Location" mandatory="true" max_length="32" name="u_main_location" reference="cmn_location" type="reference"/>
         <element label="Hotel Name" max_length="40" name="u_hotel_name" type="string"/>
         <element choice="1" label="Hotel Rating" max_length="255" name="u_hotel_rating" type="choice">
             <choice>
@@ -23,11 +22,16 @@
         <element label="Work Notes" max_length="40" name="work_notes" type="string"/>
         <element label="Total Package Price" max_length="20" name="u_total_package_price" type="currency"/>
         <element label="Transit Charges" max_length="20" name="u_transit_charges" type="currency"/>
+        <element label="Hotel Price" max_length="20" name="u_hote_price" type="currency"/>
+        <element label="Image" max_length="40" name="u_image" type="user_image"/>
+      
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element label="Main Location" mandatory="true" max_length="32" name="u_main_location" reference="cmn_location" type="reference"/>
         <element label="Hotel Feedback" max_length="40" name="u_hotel_feedback" type="string"/>
         <element label="Short Description" max_length="40" name="short_description" type="string"/>
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
-        <element label="Hotel Price" max_length="20" name="u_hote_price" type="currency"/>
-        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+    
+      
         <element label="Duration" max_length="255" name="u_duration" type="glide_duration"/>
         <index name="index">
             <element name="sys_class_name"/>

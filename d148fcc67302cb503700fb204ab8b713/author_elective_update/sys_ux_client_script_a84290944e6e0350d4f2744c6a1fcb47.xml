@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="DELETE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="Landing Page">a8429094276e0350d27a1ba75c044760</macroponent>
+        <name>Fetch my requests</name>
+        <preset/>
+        <required_translations>[ {
+  "code" : null,
+  "message" : "Completion date: {0}",
+  "comment" : ""
+} ]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ * @param {ApiHelpers} params.helpers
+ */
+async function handler({
+    api,
+    event,
+    helpers,
+    imports
+}) {
+    var input = api.data.evam_myrequests.compositeDataViews;
+    for (var i = 0; i < input.items.length; i++) {
+        var model = input.items[i].propValues;
+        var currDate = new Date();
+        var dueDate = new Date(model.model.due_date);
+        const duedateLabel = [dueDate.getFullYear(), dueDate.getMonth() + 1, dueDate.getDate()].join('-');
+        var price = model.model.price;
+        if (model.model.table == "sc_req_item") {
+            if (model.model.due_date != "") {
+                model.highlightedHeaderLabel = await helpers.translate("Completion date: {0}", duedateLabel);
+                if (currDate.getTime() > dueDate.getTime()) {
+                    model.highlightedHeaderBkgColor = "critical";
+                }
+            }
+            if (model.model.recurring_frequency != null)
+                model.subtitle = model.subtitle + " + " + model.model.recurring_price + " " + model.model.recurring_frequency;
+            if (price.substring(1) == "0.00" && model.model.recurring_frequency == null)
+                model.subtitle = " ";
+        } else {
+            if (model.model.due_date != "") {
+                model.highlightedHeaderLabel = await helpers.translate("Completion date: {0}", duedateLabel);
+                if (currDate.getTime() > dueDate.getTime()) {
+                    model.highlightedHeaderBkgColor = "critical";
+                }
+            }
+        }
+    }
+    api.setState('requestData', input);
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-02 15:47:33</sys_created_on>
+        <sys_id>a84290944e6e0350d4f2744c6a1fcb47</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Fetch my requests</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name>sys_ux_client_script_a84290944e6e0350d4f2744c6a1fcb47</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-02 15:47:33</sys_updated_on>
+        <target/>
+        <type>default</type>
+    </sys_ux_client_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</application>
+        <file_path/>
+        <instance_id>7a0f57d6eb9d8fd0c040fddacad0cdd9</instance_id>
+        <instance_name>dev400578</instance_name>
+        <name>sys_ux_client_script_a84290944e6e0350d4f2744c6a1fcb47</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_client_script"&gt;&lt;sys_ux_client_script action="INSERT_OR_UPDATE"&gt;&lt;controller_preset/&gt;&lt;includes/&gt;&lt;macroponent display_value="Landing Page"&gt;a8429094276e0350d27a1ba75c044760&lt;/macroponent&gt;&lt;name&gt;Fetch my requests&lt;/name&gt;&lt;preset/&gt;&lt;required_translations&gt;[ {
+  "code" : null,
+  "message" : "Completion date: {0}",
+  "comment" : ""
+} ]&lt;/required_translations&gt;&lt;script&gt;&lt;![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ * @param {ApiHelpers} params.helpers
+ */
+async function handler({
+    api,
+    event,
+    helpers,
+    imports
+}) {
+    var input = api.data.evam_myrequests.compositeDataViews;
+    for (var i = 0; i &lt; input.items.length; i++) {
+        var model = input.items[i].propValues;
+        var currDate = new Date();
+        var dueDate = new Date(model.model.due_date);
+        const duedateLabel = [dueDate.getFullYear(), dueDate.getMonth() + 1, dueDate.getDate()].join('-');
+        var price = model.model.price;
+        if (model.model.table == "sc_req_item") {
+            if (model.model.due_date != "") {
+                model.highlightedHeaderLabel = await helpers.translate("Completion date: {0}", duedateLabel);
+                if (currDate.getTime() &gt; dueDate.getTime()) {
+                    model.highlightedHeaderBkgColor = "critical";
+                }
+            }
+            if (model.model.recurring_frequency != null)
+                model.subtitle = model.subtitle + " + " + model.model.recurring_price + " " + model.model.recurring_frequency;
+            if (price.substring(1) == "0.00" &amp;&amp; model.model.recurring_frequency == null)
+                model.subtitle = " ";
+        } else {
+            if (model.model.due_date != "") {
+                model.highlightedHeaderLabel = await helpers.translate("Completion date: {0}", duedateLabel);
+                if (currDate.getTime() &gt; dueDate.getTime()) {
+                    model.highlightedHeaderBkgColor = "critical";
+                }
+            }
+        }
+    }
+    api.setState('requestData', input);
+}]]&gt;&lt;/script&gt;&lt;script_api_version&gt;2.0.0&lt;/script_api_version&gt;&lt;sys_class_name&gt;sys_ux_client_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-02 15:47:33&lt;/sys_created_on&gt;&lt;sys_id&gt;a84290944e6e0350d4f2744c6a1fcb47&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Fetch my requests&lt;/sys_name&gt;&lt;sys_package display_value="Travel Buddy App" source="x_travel_buddy_app"&gt;d148fcc67302cb503700fb204ab8b713&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Travel Buddy App"&gt;d148fcc67302cb503700fb204ab8b713&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_client_script_a84290944e6e0350d4f2744c6a1fcb47&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-02 15:47:33&lt;/sys_updated_on&gt;&lt;target/&gt;&lt;type&gt;default&lt;/type&gt;&lt;/sys_ux_client_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>750710232</payload_hash>
+        <record_name>Fetch my requests</record_name>
+        <reverted_from/>
+        <source>f9657a314702031089b4a22f316d4385</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>current</state>
+        <sys_created_by/>
+        <sys_created_on>2026-07-13 22:59:48</sys_created_on>
+        <sys_id>d7034f6f47e60f1089b4a22f316d4322</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19f5db542a00000000</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-13 13:20:12</sys_updated_on>
+        <type>UX Client Script</type>
+        <update_guid>97034f6fc4e60f10782051ec7f26bf22</update_guid>
+        <update_guid_history>97034f6fc4e60f10782051ec7f26bf22:750710232</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-13 07:00:12</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_client_script">sys_ux_client_script</sys_db_object>
+        <sys_id>0bc413c8990448eeb55fe016d969d9e4</sys_id>
+        <sys_metadata>a84290944e6e0350d4f2744c6a1fcb47</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Fetch my requests</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_scope_delete display_value="">ce79bab18acc49f9bef811863b5939e1</sys_scope_delete>
+        <sys_update_name>sys_ux_client_script_a84290944e6e0350d4f2744c6a1fcb47</sys_update_name>
+        <sys_update_version display_value="sys_ux_client_script_a84290944e6e0350d4f2744c6a1fcb47">d7034f6f47e60f1089b4a22f316d4322</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-13 07:00:12</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
