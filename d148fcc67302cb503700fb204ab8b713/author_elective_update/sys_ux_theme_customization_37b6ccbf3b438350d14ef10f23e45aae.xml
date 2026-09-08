@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_theme_customization">
+    <sys_ux_theme_customization action="DELETE">
+        <customization>{
+  "colors": [
+    {
+      "id": "isSecondaryColorUpdated",
+      "value": true,
+      "type": "secondary_color_updated"
+    },
+    {
+      "id": "--now-color--neutral",
+      "value": "51, 51, 51",
+      "type": "color_hook_overridden"
+    },
+    {
+      "id": "--now-color--primary",
+      "value": "26, 92, 151",
+      "type": "color_hook_overridden"
+    },
+    {
+      "id": "--now-color--secondary",
+      "value": "240, 139, 34",
+      "type": "color_hook_overridden"
+    },
+    {
+      "id": "--now-color_background--primary",
+      "value": "255, 255, 255",
+      "type": "color_hook_overridden"
+    },
+    {
+      "id": "--now-color_text--primary",
+      "value": "51, 51, 51",
+      "type": "color_hook_overridden"
+    },
+    {
+      "id": "--now-color_text--secondary",
+      "value": "85, 85, 85",
+      "type": "color_hook_overridden"
+    },
+    {
+      "id": "--now-button--primary--background-color",
+      "value": "26, 92, 151",
+      "type": "component_hook_overridden",
+      "hook": "now-color--link-2"
+    },
+    {
+      "id": "--now-button--primary--background-color--hover",
+      "value": "17,59,131",
+      "type": "component_hook_overridden",
+      "hook": "now-color--link-4"
+    },
+    {
+      "id": "--now-button--secondary--color",
+      "value": "26, 92, 151",
+      "type": "component_hook_overridden"
+    },
+    {
+      "id": "--now-button_icon--secondary--color",
+      "value": "216,49,3",
+      "type": "component_hook_overridden"
+    },
+    {
+      "id": "--now-button--bare_primary--color",
+      "value": "26, 92, 151",
+      "type": "component_hook_overridden"
+    },
+    {
+      "id": "--now-button--bare_secondary--color",
+      "value": "26, 92, 151",
+      "type": "component_hook_overridden"
+    },
+    {
+      "id": "--now-button--primary--color",
+      "value": "255, 255, 255",
+      "type": "component_hook_overridden"
+    },
+    {
+      "id": "--now-button--secondary--background-color",
+      "value": "255, 255, 255",
+      "type": "component_hook_overridden"
+    },
+    {
+      "id": "--now-button--secondary--background-color--hover",
+      "value": "26, 92, 151",
+      "type": "component_hook_overridden"
+    },
+    {
+      "id": "--now-button--secondary--border-color",
+      "value": "26, 92, 151",
+      "type": "component_hook_overridden"
+    },
+    {
+      "id": "--now-button--secondary--color--hover",
+      "value": "255, 255, 255",
+      "type": "component_hook_overridden"
+    },
+    {
+      "id": "--now-button--tertiary--color",
+      "value": "26, 92, 151",
+      "type": "component_hook_overridden"
+    },
+    {
+      "id": "--now-color_brand--primary",
+      "value": "26, 92, 151",
+      "type": "component_hook_overridden"
+    },
+    {
+      "id": "--now-color_brand--secondary",
+      "value": "240, 139, 34",
+      "type": "component_hook_overridden"
+    }
+  ],
+  "feedback": [],
+  "groupName": "",
+  "imagery": [],
+  "systemTokenVersion": "v1",
+  "initialValues": {}
+}</customization>
+        <name>Travel Buddy App Theme</name>
+        <sys_class_name>sys_ux_theme_customization</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-07 08:27:21</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>37b6ccbf3b438350d14ef10f23e45aae</sys_id>
+        <sys_mod_count>29</sys_mod_count>
+        <sys_name>Travel Buddy App Theme</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name>sys_ux_theme_customization_37b6ccbf3b438350d14ef10f23e45aae</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-07 10:32:42</sys_updated_on>
+        <theme display_value="Travel Buddy App Theme">87b6487f3b438350d14ef10f23e45a45</theme>
+    </sys_ux_theme_customization>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</application>
+        <file_path/>
+        <instance_id>6241f8583b50cfd416e44a8aa4e45aa8</instance_id>
+        <instance_name>dev380569</instance_name>
+        <name>sys_ux_theme_customization_37b6ccbf3b438350d14ef10f23e45aae</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_theme_customization"><sys_ux_theme_customization action="INSERT_OR_UPDATE"><customization>{
+  "colors": [
+    {
+      "id": "isSecondaryColorUpdated",
+      "value": true,
+      "type": "secondary_color_updated"
+    },
+    {
+      "id": "--now-color--neutral",
+      "value": "51, 51, 51",
+      "type": "color_hook_overridden"
+    },
+    {
+      "id": "--now-color--primary",
+      "value": "26, 92, 151",
+      "type": "color_hook_overridden"
+    },
+    {
+      "id": "--now-color--secondary",
+      "value": "240, 139, 34",
+      "type": "color_hook_overridden"
+    },
+    {
+      "id": "--now-color_background--primary",
+      "value": "255, 255, 255",
+      "type": "color_hook_overridden"
+    },
+    {
+      "id": "--now-color_text--primary",
+      "value": "51, 51, 51",
+      "type": "color_hook_overridden"
+    },
+    {
+      "id": "--now-color_text--secondary",
+      "value": "85, 85, 85",
+      "type": "color_hook_overridden"
+    },
+    {
+      "id": "--now-button--primary--background-color",
+      "value": "26, 92, 151",
+      "type": "component_hook_overridden",
+      "hook": "now-color--link-2"
+    },
+    {
+      "id": "--now-button--primary--background-color--hover",
+      "value": "17,59,131",
+      "type": "component_hook_overridden",
+      "hook": "now-color--link-4"
+    },
+    {
+      "id": "--now-button--secondary--color",
+      "value": "26, 92, 151",
+      "type": "component_hook_overridden"
+    },
+    {
+      "id": "--now-button_icon--secondary--color",
+      "value": "216,49,3",
+      "type": "component_hook_overridden"
+    },
+    {
+      "id": "--now-button--bare_primary--color",
+      "value": "26, 92, 151",
+      "type": "component_hook_overridden"
+    },
+    {
+      "id": "--now-button--bare_secondary--color",
+      "value": "26, 92, 151",
+      "type": "component_hook_overridden"
+    },
+    {
+      "id": "--now-button--primary--color",
+      "value": "255, 255, 255",
+      "type": "component_hook_overridden"
+    },
+    {
+      "id": "--now-button--secondary--background-color",
+      "value": "255, 255, 255",
+      "type": "component_hook_overridden"
+    },
+    {
+      "id": "--now-button--secondary--background-color--hover",
+      "value": "26, 92, 151",
+      "type": "component_hook_overridden"
+    },
+    {
+      "id": "--now-button--secondary--border-color",
+      "value": "26, 92, 151",
+      "type": "component_hook_overridden"
+    },
+    {
+      "id": "--now-button--secondary--color--hover",
+      "value": "255, 255, 255",
+      "type": "component_hook_overridden"
+    },
+    {
+      "id": "--now-button--tertiary--color",
+      "value": "26, 92, 151",
+      "type": "component_hook_overridden"
+    },
+    {
+      "id": "--now-color_brand--primary",
+      "value": "26, 92, 151",
+      "type": "component_hook_overridden"
+    },
+    {
+      "id": "--now-color_brand--secondary",
+      "value": "240, 139, 34",
+      "type": "component_hook_overridden"
+    }
+  ],
+  "feedback": [],
+  "groupName": "",
+  "imagery": [],
+  "systemTokenVersion": "v1",
+  "initialValues": {}
+}</customization><name>Travel Buddy App Theme</name><sys_class_name>sys_ux_theme_customization</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-07 08:27:21</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>37b6ccbf3b438350d14ef10f23e45aae</sys_id><sys_mod_count>29</sys_mod_count><sys_name>Travel Buddy App Theme</sys_name><sys_overrides/><sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package><sys_policy/><sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope><sys_update_name>sys_ux_theme_customization_37b6ccbf3b438350d14ef10f23e45aae</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-07 10:32:42</sys_updated_on><theme display_value="Travel Buddy App Theme">87b6487f3b438350d14ef10f23e45a45</theme></sys_ux_theme_customization></record_update>]]></payload>
+        <payload_hash>-1859069429</payload_hash>
+        <record_name>Travel Buddy App Theme</record_name>
+        <reverted_from/>
+        <source>f13de1023b028b10d14ef10f23e45a82</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-07 10:32:42</sys_created_on>
+        <sys_id>3363e83b3b478350d14ef10f23e45aea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a07b6d670a0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-07 10:32:42</sys_updated_on>
+        <type>Ux Theme Customization</type>
+        <update_guid>b763a83bf5478350ffa3cfb1044380a5</update_guid>
+        <update_guid_history>b763a83bf5478350ffa3cfb1044380a5:-1859069429,6d0b1cf7fe0783506d04bc51215ff1bb:509414135,650b1cf753078350dcccc09ae7ff47b7:1888491283,6d0b1cf75c078350a25eb88d4ededbb2:1524693065,650b1cf76707835091604b176d2793ae:1604893157,a50b1cf77a0783503da80e07ef24c99d:418388079,ad0b1cf77f07835098fb302f670be298:432716832,a50b1cf79b07835067adedeef2881b94:-180773289,e50b1cf7e30783500dd3bcb3ecc3cd83:-1687156188,ed0b1cf795078350707e16bc815b627e:1973032643,e50b1cf7c9078350b47d6829f04c687a:683135659,290b1cf75b07835019d29f474edd1b69:975895495,210b1cf732078350934c4d382307bd65:-1742891432,290b1cf7e8078350d7c20f74f4798f60:-973080073,590b1cf73e078350643a22394808624f:216643548,510b1cf7d9078350cb288e4669f4ca4b:1659544044,910b1cf729078350bbcb9cce0fda2b3a:198080863,990b1cf727078350cb620262175f9335:-237082595,510b1cf70e078350e010c65628db5031:-327671519,9d01d037a9c38350dc993c8fb1a019c5:-1020600142,cee01037a0c383502550570cf78c02a9:-225573415,3a50dcb33cc38350130d75666263bd7c:972153182,15401cb3bbc3835030b3d12ca80899e8:-1019476878,312058b3fbc38350628662b9ada8d5a7:1637504080,f6101cf389838350912e3e77cfe748e4:1063889363,2cffc0b347c383508630837fbc08dd01:1637504080,bcafc4737dc3835066ecd59bc86be5df:-1029051821,23c70073a98383505afd1e1aab846418:1063889363,7fb6ccbfc6438350a615f3c54a3b1ac2:-399336855,77b6ccbfcc438350915e5050003695b1:-145830892</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-07 10:33:34</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_theme_customization">sys_ux_theme_customization</sys_db_object>
+        <sys_id>be23a7e550124358983646785265dc84</sys_id>
+        <sys_metadata>37b6ccbf3b438350d14ef10f23e45aae</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Travel Buddy App Theme</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_scope_delete display_value="">ce79bab18acc49f9bef811863b5939e1</sys_scope_delete>
+        <sys_update_name>sys_ux_theme_customization_37b6ccbf3b438350d14ef10f23e45aae</sys_update_name>
+        <sys_update_version display_value="sys_ux_theme_customization_37b6ccbf3b438350d14ef10f23e45aae">3363e83b3b478350d14ef10f23e45aea</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-07 10:33:34</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
