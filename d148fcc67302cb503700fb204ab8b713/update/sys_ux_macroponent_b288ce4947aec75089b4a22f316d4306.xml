@@ -724,6 +724,9 @@
             "type": "JSON_LITERAL",
             "value": null
         },
+        "overrides": {
+            "composition": []
+        },
         "preset": null,
         "propertyValues": {
             "align": {
@@ -1463,6 +1466,201 @@
     },
     {
         "definition": {
+            "id": "bb0f92e8d7eff1590624bfe69d316f23",
+            "type": "MACROPONENT"
+        },
+        "elementId": "input_5",
+        "elementLabel": "Input 5",
+        "eventMappings": [
+            {
+                "eventMappingId": "gggeehhbePuKCaaggNjjpeeKcFXwjjSiih",
+                "isConfiguration": false,
+                "offRowStorageId": null,
+                "sourceEventApiName": "sn_input.NOW_INPUT#INPUT",
+                "sourceEventCorrelationId": null,
+                "sourceEventDefinition": {
+                    "apiName": "sn_input.NOW_INPUT#INPUT",
+                    "id": null,
+                    "type": "UXEVENT"
+                },
+                "sourceEventSysId": null,
+                "targets": [
+                    {
+                        "broker": null,
+                        "clientScript": null,
+                        "clientTransformScript": "",
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": {
+                            "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+                            "payload": {
+                                "container": {
+                                    "propName": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "password"
+                                    },
+                                    "value": {
+                                        "binding": {
+                                            "address": [
+                                                "fieldValue"
+                                            ]
+                                        },
+                                        "type": "EVENT_PAYLOAD_BINDING"
+                                    }
+                                },
+                                "type": "MAP_CONTAINER"
+                            },
+                            "sysId": "32408b42ff7a10109046e490703bf176"
+                        },
+                        "operation": null,
+                        "targetId": "TaOddeeddvWTAaauOjjeeddoAggrwViixgdd",
+                        "type": "EVENT"
+                    }
+                ]
+            }
+        ],
+        "isHidden": {
+            "type": "JSON_LITERAL",
+            "value": null
+        },
+        "preset": null,
+        "propertyValues": {
+            "align": {
+                "type": "JSON_LITERAL",
+                "value": null
+            },
+            "autofocus": {
+                "type": "JSON_LITERAL",
+                "value": false
+            },
+            "configAria": {
+                "type": "JSON_LITERAL",
+                "value": null
+            },
+            "disabled": {
+                "type": "JSON_LITERAL",
+                "value": false
+            },
+            "enableCaretSlot": {
+                "type": "JSON_LITERAL",
+                "value": false
+            },
+            "fieldLayout": {
+                "type": "JSON_LITERAL",
+                "value": {
+                    "layout": "vertical"
+                }
+            },
+            "helperContent": {
+                "type": "JSON_LITERAL",
+                "value": null
+            },
+            "hideRequiredIndicator": {
+                "type": "JSON_LITERAL",
+                "value": false
+            },
+            "invalid": {
+                "type": "JSON_LITERAL",
+                "value": false
+            },
+            "label": {
+                "type": "TRANSLATION_LITERAL",
+                "value": {
+                    "code": null,
+                    "comment": "",
+                    "message": "Enter password"
+                }
+            },
+            "landmark": {
+                "type": "JSON_LITERAL",
+                "value": null
+            },
+            "manageInvalid": {
+                "type": "JSON_LITERAL",
+                "value": false
+            },
+            "manageValue": {
+                "type": "JSON_LITERAL",
+                "value": false
+            },
+            "maskConfig": {
+                "type": "JSON_LITERAL",
+                "value": null
+            },
+            "max": {
+                "type": "JSON_LITERAL",
+                "value": null
+            },
+            "maxlength": {
+                "type": "JSON_LITERAL",
+                "value": null
+            },
+            "messages": {
+                "container": [],
+                "type": "LIST_CONTAINER"
+            },
+            "min": {
+                "type": "JSON_LITERAL",
+                "value": null
+            },
+            "minlength": {
+                "type": "JSON_LITERAL",
+                "value": null
+            },
+            "multiple": {
+                "type": "JSON_LITERAL",
+                "value": null
+            },
+            "name": {
+                "type": "JSON_LITERAL",
+                "value": null
+            },
+            "optional": {
+                "type": "JSON_LITERAL",
+                "value": false
+            },
+            "pattern": {
+                "type": "JSON_LITERAL",
+                "value": null
+            },
+            "placeholder": {
+                "type": "JSON_LITERAL",
+                "value": null
+            },
+            "readonly": {
+                "type": "JSON_LITERAL",
+                "value": false
+            },
+            "required": {
+                "type": "JSON_LITERAL",
+                "value": false
+            },
+            "size": {
+                "type": "JSON_LITERAL",
+                "value": "md"
+            },
+            "step": {
+                "type": "JSON_LITERAL",
+                "value": "any"
+            },
+            "type": {
+                "type": "JSON_LITERAL",
+                "value": "text"
+            },
+            "value": {
+                "type": "JSON_LITERAL",
+                "value": null
+            },
+            "wrapLabel": {
+                "type": "JSON_LITERAL",
+                "value": false
+            }
+        },
+        "slot": "start",
+        "styles": null
+    },
+    {
+        "definition": {
             "id": "d37ce8abca89d02905fed903c8e34d8e",
             "type": "MACROPONENT"
         },
@@ -1485,7 +1683,7 @@
                     {
                         "broker": null,
                         "clientScript": null,
-                        "clientTransformScript": "javascript(// function evaluateEvent({api, event}) {\n//     const email = api.state.email;\n//     const emailRegex = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;\n    \n//     if (!emailRegex.test(email)) {\n//         api.emit('PLAINTEXT_NOTIFICATION_TRANSLATED', {\n//             status: 'error',\n//             content: 'Please enter a valid email address.'\n//         });\n//         return;\n//     }\n    \n//     return {\n//         table: \"sys_user\",\n//         templateFields: \"user_name=\" + api.state.username + \"^first_name=\" + api.state.first_name + \"^last_name=\" + api.state.last_name + \"^email=\" + email + \"^active=false\",\n//         useSetDisplayValue: false\n//     };\n// }\n\n/**\n * @param {params} params\n * @param {api} params.api\n * @param {any} params.event\n * @param {any} params.imports\n */\n// function evaluateEvent({api, event}) {\n//     const email = api.state.email;\n//     const emailRegex = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;\n    \n//     // Validate email format\n//     if (!emailRegex.test(email)) {\n//         api.emit('NOW_UXF_PAGE#SHOW_SELECTED_BRICK', {\n//             type: 'paragraph',\n//             properties: {\n//                 content: 'Please enter a valid email address.'\n//             },\n//             status: 'critical'\n//         });\n//         return;\n//     }\n    \n//     // If valid, execute the data resource to create the record\n//     api.data.create_record_1.execute({\n//         table: \"sys_user\",\n//         templateFields: \"user_name=\" + api.state.username + \"^first_name=\" + api.state.first_name + \"^last_name=\" + api.state.last_name + \"^email=\" + email + \"^active=false\",\n//         useSetDisplayValue: false\n//     });\n// }\n\n// function evaluateEvent({ api, event }) {\n//     return {\n//         table: \"sys_user\",\n//         templateFields:\n//             \"user_name=\" + api.state.username +\n//             \"^first_name=\" + api.state.first_name +\n//             \"^last_name=\" + api.state.last_name +\n//             \"^email=\" + api.state.email +\n//             \"^active=false\",\n//         useSetDisplayValue: false\n//     };\n// }\n\nfunction evaluateEvent({ api, event }) {\n    return {\n        table: \"x_travel_buddy_app_user_password_registration\",\n        templateFields:\n            \"u_username=\" + api.state.username+\n            \"^u_first_name=\" + api.state.first_name +\n            \"^u_last_name=\" + api.state.last_name +\n            \"^u_email=\" + api.state.email +\n            \"^u_token_used=false\" +\n            \"^u_status=pending\",\n        useSetDisplayValue: false\n    };\n})",
+                        "clientTransformScript": "javascript(function evaluateEvent({ api, event }) {\n    console.log(api);\n    return {\n        table: \"x_travel_buddy_app_user_password_registration\",\n        templateFields:\n            \"u_username=\" + api.state.username +\n            \"^u_first_name=\" + api.state.first_name +\n            \"^u_last_name=\" + api.state.last_name +\n            \"^u_email=\" + api.state.email +\n            \"^u_password=\" + api.state.password +\n            \"^u_token_used=false\" +\n            \"^u_status=pending\",\n\n        useSetDisplayValue: false\n    };\n})",
                         "conditional": null,
                         "declarativeAction": null,
                         "event": null,
@@ -1497,7 +1695,7 @@
                                 "script": {
                                     "apiVersion": "1.0.0",
                                     "controllerElementId": null,
-                                    "inlineScript": "// function evaluateEvent({api, event}) {\n//     const email = api.state.email;\n//     const emailRegex = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;\n    \n//     if (!emailRegex.test(email)) {\n//         api.emit('PLAINTEXT_NOTIFICATION_TRANSLATED', {\n//             status: 'error',\n//             content: 'Please enter a valid email address.'\n//         });\n//         return;\n//     }\n    \n//     return {\n//         table: \"sys_user\",\n//         templateFields: \"user_name=\" + api.state.username + \"^first_name=\" + api.state.first_name + \"^last_name=\" + api.state.last_name + \"^email=\" + email + \"^active=false\",\n//         useSetDisplayValue: false\n//     };\n// }\n\n/**\n * @param {params} params\n * @param {api} params.api\n * @param {any} params.event\n * @param {any} params.imports\n */\n// function evaluateEvent({api, event}) {\n//     const email = api.state.email;\n//     const emailRegex = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;\n    \n//     // Validate email format\n//     if (!emailRegex.test(email)) {\n//         api.emit('NOW_UXF_PAGE#SHOW_SELECTED_BRICK', {\n//             type: 'paragraph',\n//             properties: {\n//                 content: 'Please enter a valid email address.'\n//             },\n//             status: 'critical'\n//         });\n//         return;\n//     }\n    \n//     // If valid, execute the data resource to create the record\n//     api.data.create_record_1.execute({\n//         table: \"sys_user\",\n//         templateFields: \"user_name=\" + api.state.username + \"^first_name=\" + api.state.first_name + \"^last_name=\" + api.state.last_name + \"^email=\" + email + \"^active=false\",\n//         useSetDisplayValue: false\n//     });\n// }\n\n// function evaluateEvent({ api, event }) {\n//     return {\n//         table: \"sys_user\",\n//         templateFields:\n//             \"user_name=\" + api.state.username +\n//             \"^first_name=\" + api.state.first_name +\n//             \"^last_name=\" + api.state.last_name +\n//             \"^email=\" + api.state.email +\n//             \"^active=false\",\n//         useSetDisplayValue: false\n//     };\n// }\n\nfunction evaluateEvent({ api, event }) {\n    return {\n        table: \"x_travel_buddy_app_user_password_registration\",\n        templateFields:\n            \"u_username=\" + api.state.username+\n            \"^u_first_name=\" + api.state.first_name +\n            \"^u_last_name=\" + api.state.last_name +\n            \"^u_email=\" + api.state.email +\n            \"^u_token_used=false\" +\n            \"^u_status=pending\",\n        useSetDisplayValue: false\n    };\n}",
+                                    "inlineScript": "function evaluateEvent({ api, event }) {\n    console.log(api);\n    return {\n        table: \"x_travel_buddy_app_user_password_registration\",\n        templateFields:\n            \"u_username=\" + api.state.username +\n            \"^u_first_name=\" + api.state.first_name +\n            \"^u_last_name=\" + api.state.last_name +\n            \"^u_email=\" + api.state.email +\n            \"^u_password=\" + api.state.password +\n            \"^u_token_used=false\" +\n            \"^u_status=pending\",\n\n        useSetDisplayValue: false\n    };\n}",
                                     "scriptSysId": null,
                                     "target": null
                                 },
@@ -1571,6 +1769,224 @@
                 "align-self": "center"
             }
         }
+    },
+    {
+        "definition": {
+            "id": "d37ce8abca89d02905fed903c8e34d8e",
+            "type": "MACROPONENT"
+        },
+        "elementId": "button_2",
+        "elementLabel": "Button 2",
+        "eventMappings": [
+            {
+                "eventMappingId": "CQSyOeehhddeeddDkeeZjjeIEpjjUHytBj",
+                "isConfiguration": false,
+                "offRowStorageId": null,
+                "sourceEventApiName": "sn_button.NOW_BUTTON#CLICKED",
+                "sourceEventCorrelationId": null,
+                "sourceEventDefinition": {
+                    "apiName": "sn_button.NOW_BUTTON#CLICKED",
+                    "id": null,
+                    "type": "UXEVENT"
+                },
+                "sourceEventSysId": null,
+                "targets": [
+                    {
+                        "broker": null,
+                        "clientScript": {
+                            "payload": {
+                                "type": "JSON_LITERAL",
+                                "value": {}
+                            },
+                            "sysId": "f9187e91477a8b5089b4a22f316d43a9"
+                        },
+                        "clientTransformScript": "",
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": null,
+                        "operation": null,
+                        "targetId": "zXaajVPWjjAaaPhheeddMQIEDjjMeowj",
+                        "type": "CLIENT_SCRIPT"
+                    }
+                ]
+            }
+        ],
+        "isHidden": {
+            "type": "JSON_LITERAL",
+            "value": null
+        },
+        "preset": null,
+        "propertyValues": {
+            "active": {
+                "type": "JSON_LITERAL",
+                "value": false
+            },
+            "animatedIcon": {
+                "type": "JSON_LITERAL",
+                "value": null
+            },
+            "configAria": {
+                "type": "JSON_LITERAL",
+                "value": null
+            },
+            "disabled": {
+                "type": "JSON_LITERAL",
+                "value": false
+            },
+            "icon": {
+                "type": "JSON_LITERAL",
+                "value": null
+            },
+            "label": {
+                "type": "TRANSLATION_LITERAL",
+                "value": {
+                    "code": null,
+                    "comment": "",
+                    "message": "Alert button"
+                }
+            },
+            "landmark": {
+                "type": "JSON_LITERAL",
+                "value": null
+            },
+            "size": {
+                "type": "JSON_LITERAL",
+                "value": "md"
+            },
+            "tooltipContent": {
+                "type": "TRANSLATION_LITERAL",
+                "value": {
+                    "code": null,
+                    "comment": "",
+                    "message": "Enter a label"
+                }
+            },
+            "variant": {
+                "type": "JSON_LITERAL",
+                "value": "secondary"
+            }
+        },
+        "slot": null,
+        "styles": {
+            "default": {
+                "align-self": "center"
+            }
+        }
+    },
+    {
+        "definition": {
+            "id": "05d8b1515b230010b913cbd59b81c71a",
+            "type": "MACROPONENT"
+        },
+        "elementId": "alert_1",
+        "elementLabel": "Alert 1",
+        "eventMappings": [
+            {
+                "eventMappingId": "iiyyiAvQKDkOMjjeehhQGveeddFaoThhS",
+                "isConfiguration": false,
+                "offRowStorageId": null,
+                "sourceEventApiName": "sn_canvas_core.CANVAS_MODAL#OPENED",
+                "sourceEventCorrelationId": null,
+                "sourceEventDefinition": {
+                    "apiName": "sn_canvas_core.CANVAS_MODAL#OPENED",
+                    "id": null,
+                    "type": "UXEVENT"
+                },
+                "sourceEventSysId": null,
+                "targets": [
+                    {
+                        "broker": null,
+                        "clientScript": null,
+                        "clientTransformScript": "",
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": {
+                            "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+                            "payload": {
+                                "type": "JSON_LITERAL",
+                                "value": {
+                                    "propName": "isModalOpen",
+                                    "value": false
+                                }
+                            },
+                            "sysId": "32408b42ff7a10109046e490703bf176"
+                        },
+                        "operation": null,
+                        "targetId": "ffSjjpZQBPCEeeddpjjqEAaabbdpprO",
+                        "type": "EVENT"
+                    }
+                ]
+            }
+        ],
+        "isHidden": {
+            "type": "JSON_LITERAL",
+            "value": null
+        },
+        "preset": null,
+        "propertyValues": {
+            "buttonLabel": {
+                "type": "TRANSLATION_LITERAL",
+                "value": {
+                    "code": null,
+                    "comment": "",
+                    "message": "Got it"
+                }
+            },
+            "content": {
+                "type": "TRANSLATION_LITERAL",
+                "value": {
+                    "code": null,
+                    "comment": "",
+                    "message": "Modal body copy goes here"
+                }
+            },
+            "defer": {
+                "type": "JSON_LITERAL",
+                "value": true
+            },
+            "enableResizable": {
+                "type": "JSON_LITERAL",
+                "value": false
+            },
+            "hasNoMargin": {
+                "type": "JSON_LITERAL",
+                "value": false
+            },
+            "headerLabel": {
+                "type": "TRANSLATION_LITERAL",
+                "value": {
+                    "code": null,
+                    "comment": "",
+                    "message": "Modal header"
+                }
+            },
+            "preventDefaultAction": {
+                "type": "JSON_LITERAL",
+                "value": false
+            },
+            "resizableMaxHeight": {
+                "type": "JSON_LITERAL",
+                "value": null
+            },
+            "resizableMaxWidth": {
+                "type": "JSON_LITERAL",
+                "value": null
+            },
+            "resizableMinHeight": {
+                "type": "JSON_LITERAL",
+                "value": 133
+            },
+            "resizableMinWidth": {
+                "type": "JSON_LITERAL",
+                "value": 420
+            },
+            "size": {
+                "type": "JSON_LITERAL",
+                "value": "md"
+            }
+        },
+        "slot": null,
+        "styles": null
     }
 ]</composition>
         <da_relay_models/>
@@ -1582,48 +1998,7 @@
         },
         "elementId": "create_record_1",
         "elementLabel": "Create Record 1",
-        "eventMappings": [
-            {
-                "eventMappingId": "SVoFvfubAkDFjjegBfPZaaVXld",
-                "isConfiguration": false,
-                "offRowStorageId": null,
-                "sourceEventApiName": "sn_uxf.DATA_OP_SUCCEEDED",
-                "sourceEventCorrelationId": null,
-                "sourceEventDefinition": {
-                    "apiName": "sn_uxf.DATA_OP_SUCCEEDED",
-                    "id": null,
-                    "type": "UXEVENT"
-                },
-                "sourceEventSysId": null,
-                "targets": [
-                    {
-                        "broker": null,
-                        "clientScript": null,
-                        "clientTransformScript": "javascript(function evaluateEvent({ api, event }) {\n    return {\n        token: api.page.params.token,\n        newPassword: api.state.newPassword,\n        confirmPassword: api.state.confirmPassword\n    };\n})",
-                        "conditional": null,
-                        "declarativeAction": null,
-                        "event": null,
-                        "operation": {
-                            "dataBrokerId": "beda4252770300108d070d74c810618f",
-                            "operationName": "EXECUTE",
-                            "parentResourceId": "create_record_1",
-                            "payload": {
-                                "script": {
-                                    "apiVersion": "1.0.0",
-                                    "controllerElementId": null,
-                                    "inlineScript": "function evaluateEvent({ api, event }) {\n    return {\n        token: api.page.params.token,\n        newPassword: api.state.newPassword,\n        confirmPassword: api.state.confirmPassword\n    };\n}",
-                                    "scriptSysId": null,
-                                    "target": null
-                                },
-                                "type": "CLIENT_TRANSFORM_SCRIPT"
-                            }
-                        },
-                        "targetId": "tvyeehhjjPghhDkzejjssHYGjjTaaeeddVW",
-                        "type": "DATABROKER_OP"
-                    }
-                ]
-            }
-        ],
+        "eventMappings": [],
         "inputValues": {
             "table": {
                 "type": "JSON_LITERAL",
@@ -1678,7 +2053,13 @@
                 "element_id": "input_4"
             },
             {
+                "element_id": "input_5"
+            },
+            {
                 "element_id": "button_1"
+            },
+            {
+                "element_id": "button_2"
             }
         ],
         "root": null,
@@ -1711,6 +2092,10 @@
         <props>[]</props>
         <required_sys_props/>
         <required_translations>[ {
+  "message" : "Alert button",
+  "code" : "",
+  "comment" : ""
+}, {
   "message" : "Email",
   "code" : "",
   "comment" : ""
@@ -1719,11 +2104,27 @@
   "code" : "",
   "comment" : ""
 }, {
+  "message" : "Enter password",
+  "code" : "",
+  "comment" : ""
+}, {
   "message" : "First Name",
   "code" : "",
   "comment" : ""
 }, {
+  "message" : "Got it",
+  "code" : "",
+  "comment" : ""
+}, {
   "message" : "Last name",
+  "code" : "",
+  "comment" : ""
+}, {
+  "message" : "Modal body copy goes here",
+  "code" : "",
+  "comment" : ""
+}, {
+  "message" : "Modal header",
   "code" : "",
   "comment" : ""
 }, {
@@ -1800,6 +2201,30 @@
         "name": "email",
         "shape": "",
         "valueType": "string"
+    },
+    {
+        "description": null,
+        "fieldType": "string",
+        "initialValue": {
+            "type": "JSON_LITERAL",
+            "value": null
+        },
+        "label": "newClientStateParam2",
+        "name": "password",
+        "shape": "",
+        "valueType": "string"
+    },
+    {
+        "description": null,
+        "fieldType": "boolean",
+        "initialValue": {
+            "type": "JSON_LITERAL",
+            "value": false
+        },
+        "label": "newClientStateParam2",
+        "name": "isModalOpen",
+        "shape": "",
+        "valueType": "boolean"
     }
 ]</state_properties>
         <style_config>{}</style_config>
@@ -1807,14 +2232,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-05 08:19:46</sys_created_on>
         <sys_id>b288ce4947aec75089b4a22f316d4306</sys_id>
-        <sys_mod_count>31</sys_mod_count>
+        <sys_mod_count>38</sys_mod_count>
         <sys_name>Sign up  default</sys_name>
         <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
         <sys_policy/>
         <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
         <sys_update_name>sys_ux_macroponent_b288ce4947aec75089b4a22f316d4306</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-11 10:57:41</sys_updated_on>
+        <sys_updated_on>2026-08-31 11:51:56</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=b288ce4947aec75089b4a22f316d4306"/>
 </record_update>
