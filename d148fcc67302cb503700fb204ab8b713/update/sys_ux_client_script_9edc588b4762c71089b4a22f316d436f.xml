@@ -6,56 +6,92 @@
         <name>Password submit</name>
         <preset/>
         <required_translations>[]</required_translations>
-        <script><![CDATA[function handler({api, event, helpers, imports}) {
-    // 1. Read the passwords from client state
-    const newPassword = api.state.newPassword;
-    const confirmPassword = api.state.confirmPassword;
+        <script><![CDATA[// function handler({api, event, helpers, imports}) {
+//     var password = api.state.password;
+//     var confirmPassword = api.state.confirmPassword;
+//     var sysId = api.page.params.sys_id || api.context.props.sys_id;
 
-    // 2. Validate empty and matching fields
-    if (!newPassword || !confirmPassword) {
-        helpers.snMessaging.addErrorMessage("Please fill in both fields.");
+//     console.log("--- START DEBUG PASS SUBMIT ---");
+//     console.log("Raw api.page.params:", api.page.params);
+//     console.log("Extracted sysId:", sysId);
+//     console.log("Password state:", password);
+
+//     if (!password || !confirmPassword) {
+//         helpers.snHttp.addErrorMessage("Please fill in both password fields.");
+//         return;
+//     }
+
+//     if (password !== confirmPassword) {
+//         helpers.snHttp.addErrorMessage("Passwords do not match.");
+//         return;
+//     }
+
+//     if (!sysId || sysId === "0") {
+//         helpers.snHttp.addErrorMessage("Missing User Sys ID in URL parameters.");
+//         return;
+//     }
+
+//     try {
+//         api.data.update_record_1.execute({
+//             table: "x_travel_buddy_app_user_password_registration",
+//             recordId: sysId,
+//             // CHANGED u_status from Completed to Pending to match Flow Trigger
+//             templateFields: "u_password=" + password + "^u_status=Pending^u_token_used=true"
+//         });
+//         console.log("update_record_1 execution triggered with Pending status");
+//     } catch (err) {
+//         console.error("Error executing update_record_1:", err);
+//     }
+// }
+
+function handler({api, event, helpers, imports}) {
+    var stagingSysId = api.context.props.sysparm_staging_id || api.context.props.sys_id;
+    if (!stagingSysId || stagingSysId === '') {
+        var pathParts = window.location.pathname.split('/');
+        stagingSysId = pathParts[pathParts.length - 1];
+    }
+
+    var newPassword = api.state.newPassword; 
+
+    if (!stagingSysId || !newPassword) {
+        helpers.snMessaging.showToast({
+            type: 'error',
+            message: 'Please enter a password.'
+        });
         return;
     }
-    if (newPassword !== confirmPassword) {
-        helpers.snMessaging.addErrorMessage("Passwords do not match.");
-        return;
-    }
 
-    // 3. Target endpoint & security token
-    const endpoint = '/api/x_travel_buddy_app/password_management/update';
-    const userToken = window.g_ck || (api.context.session && api.context.session.user ? api.context.session.user.csrfToken : '');
-
-    fetch(endpoint, {
+    fetch('/api/x_travel_buddy_app/password_management_api/update', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
             'Accept': 'application/json',
-            'X-UserToken': userToken
+            'X-UserToken': window.g_ck || ''
         },
         body: JSON.stringify({
-            password: newPassword
+            "staging_sys_id": stagingSysId,
+            "password": newPassword
         })
     })
-    .then(async res => {
-        const data = await res.json();
-        if (!res.ok) {
-            // Catches HTTP 400, 403, 500 responses
-            const errorMsg = data.error ? data.error.message : (data.result ? data.result.message : "Server error");
-            throw new Error(errorMsg);
-        }
-        return data;
+    .then(function(response) {
+        return response.json();
     })
-    .then(data => {
-        if (data.result && data.result.success) {
-            helpers.snMessaging.addInfoMessage("Password updated successfully!");
-            api.setState('newPassword', '');
-            api.setState('confirmPassword', '');
+    .then(function(data) {
+        var res = data.result || data;
+        if (res.success) {
+            helpers.snMessaging.showToast({
+                type: 'success',
+                message: 'Password created successfully!'
+            });
         } else {
-            helpers.snMessaging.addErrorMessage("Failed: " + (data.result ? data.result.message : "Unable to update password."));
+            helpers.snMessaging.showToast({
+                type: 'error',
+                message: res.message || 'Failed to update password.'
+            });
         }
     })
-    .catch(err => {
-        helpers.snMessaging.addErrorMessage("Error: " + err.message);
+    .catch(function(error) {
+        console.error('Error submitting password:', error);
     });
 }]]></script>
         <script_api_version>2.0.0</script_api_version>
@@ -63,14 +99,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-11 06:17:32</sys_created_on>
         <sys_id>9edc588b4762c71089b4a22f316d436f</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>19</sys_mod_count>
         <sys_name>Password submit</sys_name>
         <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
         <sys_policy/>
         <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
         <sys_update_name>sys_ux_client_script_9edc588b4762c71089b4a22f316d436f</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-11 08:57:05</sys_updated_on>
+        <sys_updated_on>2026-08-17 07:17:10</sys_updated_on>
         <target>macroponent</target>
         <type>default</type>
     </sys_ux_client_script>

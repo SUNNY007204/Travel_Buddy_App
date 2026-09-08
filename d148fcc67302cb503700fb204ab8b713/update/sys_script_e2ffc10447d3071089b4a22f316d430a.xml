@@ -5,20 +5,20 @@
         <action_delete>false</action_delete>
         <action_insert>true</action_insert>
         <action_query>false</action_query>
-        <action_update>true</action_update>
-        <active>false</active>
+        <action_update>false</action_update>
+        <active>true</active>
         <add_message>false</add_message>
         <advanced>true</advanced>
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
-        <collection>x_travel_buddy_app_user_password_registration</collection>
+        <collection>x_travel_buddy_app_trip_request</collection>
         <condition/>
         <description/>
         <execute_function>false</execute_function>
         <filter_condition/>
         <is_rest>false</is_rest>
         <message/>
-        <name>Token creation for user registration</name>
+        <name>Populate Weather on Trip Creation</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -27,38 +27,46 @@
         <rest_service_text/>
         <rest_variables/>
         <role_conditions/>
-        <script><![CDATA[(function executeRule(current, previous) {
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 
-    var token = gs.generateGUID();
+    var destinationName = '';
+    if (current.u_destination) {
+        destinationName = current.u_destination.getDisplayValue() || current.u_destination.toString();
+    }
 
-    var expiry = new GlideDateTime();
-    expiry.addSeconds(24 * 60 * 60);
+    if (destinationName) {
+        try {
+            var utils = new WeatherUtils();
+            var weatherResult = utils.getWeatherForDestination(destinationName);
 
-    current.u_registration_token = token;
-    current.u_token_expiration = expiry;
-    current.u_token_used = false;
-    current.u_status = 'pending';
-
-    current.update();
+            if (weatherResult) {
+                // Since this is an async BR, update the record explicitly
+                current.weather = weatherResult.toString();
+                current.update();
+            }
+        } catch (ex) {
+            gs.error("Populate Weather Business Rule failed: " + ex.message);
+        }
+    }
 
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-08-10 17:34:48</sys_created_on>
+        <sys_created_on>2026-09-08 08:27:07</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>dc0731fe472e471089b4a22f316d4322</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name>Token creation for user registration</sys_name>
+        <sys_id>e2ffc10447d3071089b4a22f316d430a</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Populate Weather on Trip Creation</sys_name>
         <sys_overrides/>
         <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
         <sys_policy/>
         <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
-        <sys_update_name>sys_script_dc0731fe472e471089b4a22f316d4322</sys_update_name>
+        <sys_update_name>sys_script_e2ffc10447d3071089b4a22f316d430a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-15 07:55:10</sys_updated_on>
+        <sys_updated_on>2026-09-08 08:47:21</sys_updated_on>
         <template/>
-        <when>after</when>
+        <when>async_always</when>
     </sys_script>
-    <sys_translated_text action="delete_multiple" query="documentkey=dc0731fe472e471089b4a22f316d4322"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=e2ffc10447d3071089b4a22f316d430a"/>
 </record_update>

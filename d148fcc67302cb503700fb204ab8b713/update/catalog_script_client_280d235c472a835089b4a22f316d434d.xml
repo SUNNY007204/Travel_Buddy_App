@@ -18,24 +18,44 @@
         <name>Fetch Weather on Destination Change</name>
         <order/>
         <published_ref/>
-        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+        <script><![CDATA[// function onChange(control, oldValue, newValue, isLoading) {
 
-    if (isLoading || newValue == '')
+//     if (isLoading || newValue == '')
+//         return;
+
+//     var destination = g_form.getDisplayValue('u_destination');
+
+
+//     var ga = new GlideAjax('WeatherUtils');
+
+//     ga.addParam('sysparm_name', 'getWeatherForDestination');
+//     ga.addParam('sysparm_destination', destination);
+// ga.getXMLAnswer(function(answer) {
+//     g_form.setValue('weather', answer);
+// });
+
+// }
+
+function onChange(control, oldValue, newValue, isLoading) {
+    if (isLoading || newValue == '') {
         return;
+    }
 
     var destination = g_form.getDisplayValue('u_destination');
 
-    alert(destination);
+    if (!destination) {
+        return;
+    }
 
     var ga = new GlideAjax('WeatherUtils');
-
     ga.addParam('sysparm_name', 'getWeatherForDestination');
     ga.addParam('sysparm_destination', destination);
-ga.getXMLAnswer(function(answer) {
-    alert(answer);
-    g_form.setValue('weather', answer);
-});
 
+    ga.getXMLAnswer(function(answer) {
+        if (answer) {
+            g_form.setValue('weather', answer);
+        }
+    });
 }]]></script>
         <sys_class_name>catalog_script_client</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -43,7 +63,7 @@ ga.getXMLAnswer(function(answer) {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>280d235c472a835089b4a22f316d434d</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_name>Fetch Weather on Destination Change</sys_name>
         <sys_overrides/>
         <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
@@ -51,7 +71,7 @@ ga.getXMLAnswer(function(answer) {
         <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
         <sys_update_name>catalog_script_client_280d235c472a835089b4a22f316d434d</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-03 11:13:25</sys_updated_on>
+        <sys_updated_on>2026-09-08 08:59:04</sys_updated_on>
         <table/>
         <type>onChange</type>
         <ui_type>10</ui_type>
