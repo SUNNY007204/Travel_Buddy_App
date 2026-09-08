@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_uib_screen_test_values">
+    <sys_uib_screen_test_values action="DELETE">
+        <macroponent/>
+        <macroponent_config/>
+        <screen display_value="Buddy dashboard">0758cbee479ec31089b4a22f316d43c4</screen>
+        <sys_class_name>sys_uib_screen_test_values</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-28 18:33:46</sys_created_on>
+        <sys_id>0758cbee479ec31089b4a22f316d43ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name>sys_uib_screen_test_values_0758cbee479ec31089b4a22f316d43ca</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-28 18:33:46</sys_updated_on>
+    </sys_uib_screen_test_values>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</application>
+        <file_path/>
+        <instance_id>0c79e8a6ff8e8350c812f8e4fc4fd905</instance_id>
+        <instance_name>dev438223</instance_name>
+        <name>sys_uib_screen_test_values_0758cbee479ec31089b4a22f316d43ca</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_uib_screen_test_values">
+    <sys_uib_screen_test_values action="INSERT_OR_UPDATE">
+        <macroponent/>
+        <macroponent_config/>
+        <screen display_value="Buddy dashboard">0758cbee479ec31089b4a22f316d43c4</screen>
+        <sys_class_name>sys_uib_screen_test_values</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-28 18:33:46</sys_created_on>
+        <sys_id>0758cbee479ec31089b4a22f316d43ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name>sys_uib_screen_test_values_0758cbee479ec31089b4a22f316d43ca</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-28 18:33:46</sys_updated_on>
+    </sys_uib_screen_test_values>
+</record_update>]]></payload>
+        <payload_hash>1885274972</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>455baab6839e471031ab6730ceaad37f</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-29 11:05:35</sys_created_on>
+        <sys_id>335b62f6839e471031ab6730ceaad36f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19fad8d23bf0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-29 11:05:35</sys_updated_on>
+        <type>UIB Test Values</type>
+        <update_guid>ff5b62f6399e47105ae945db057bd56e</update_guid>
+        <update_guid_history>ff5b62f6399e47105ae945db057bd56e:1885274972</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-14 08:46:17</sys_created_on>
+        <sys_db_object display_value="" name="sys_uib_screen_test_values">sys_uib_screen_test_values</sys_db_object>
+        <sys_id>0356d6d4912b4d06800ea1cf83a928a4</sys_id>
+        <sys_metadata>0758cbee479ec31089b4a22f316d43ca</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_scope_delete display_value="">ce79bab18acc49f9bef811863b5939e1</sys_scope_delete>
+        <sys_update_name>sys_uib_screen_test_values_0758cbee479ec31089b4a22f316d43ca</sys_update_name>
+        <sys_update_version display_value="sys_uib_screen_test_values_0758cbee479ec31089b4a22f316d43ca">335b62f6839e471031ab6730ceaad36f</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-14 08:46:17</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

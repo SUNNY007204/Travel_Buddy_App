@@ -66,11 +66,11 @@
                                     },
                                     "fit": {
                                         "type": "JSON_LITERAL",
-                                        "value": "fill"
+                                        "value": "contain"
                                     },
                                     "height": {
                                         "type": "JSON_LITERAL",
-                                        "value": null
+                                        "value": ""
                                     },
                                     "href": {
                                         "type": "JSON_LITERAL",
@@ -85,20 +85,24 @@
                                         "value": "center center"
                                     },
                                     "sources": {
-                                        "binding": {
-                                            "address": [
-                                                "look_up_multiple_records_1",
-                                                "results",
-                                                "0",
-                                                "photo",
-                                                "displayValue"
-                                            ]
+                                        "script": {
+                                            "apiVersion": "2.0.0",
+                                            "controllerElementId": null,
+                                            "inlineScript": null,
+                                            "scriptSysId": "38024c37834fc39031ab6730ceaad355",
+                                            "target": null
                                         },
-                                        "type": "DATA_OUTPUT_BINDING"
+                                        "type": "CLIENT_TRANSFORM_SCRIPT"
                                     },
                                     "src": {
-                                        "type": "JSON_LITERAL",
-                                        "value": ""
+                                        "script": {
+                                            "apiVersion": "2.0.0",
+                                            "controllerElementId": null,
+                                            "inlineScript": null,
+                                            "scriptSysId": "f4024c37834fc39031ab6730ceaad355",
+                                            "target": null
+                                        },
+                                        "type": "CLIENT_TRANSFORM_SCRIPT"
                                     },
                                     "supportRtl": {
                                         "type": "JSON_LITERAL",
@@ -106,7 +110,7 @@
                                     },
                                     "width": {
                                         "type": "JSON_LITERAL",
-                                        "value": null
+                                        "value": ""
                                     }
                                 },
                                 "slot": null,
@@ -981,10 +985,9 @@
                             {
                                 "binding": {
                                     "address": [
-                                        "user",
-                                        "sys_id"
+                                        "sysId"
                                     ],
-                                    "category": "session"
+                                    "category": "props"
                                 },
                                 "type": "CONTEXT_BINDING"
                             }
@@ -1114,14 +1117,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-10 13:03:37</sys_created_on>
         <sys_id>6179f0328362479031ab6730ceaad31d</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_name>Profile Page Link default</sys_name>
         <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
         <sys_policy/>
         <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
         <sys_update_name>sys_ux_macroponent_6179f0328362479031ab6730ceaad31d</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-11 04:53:45</sys_updated_on>
+        <sys_updated_on>2026-09-07 08:31:38</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=6179f0328362479031ab6730ceaad31d"/>
 </record_update>

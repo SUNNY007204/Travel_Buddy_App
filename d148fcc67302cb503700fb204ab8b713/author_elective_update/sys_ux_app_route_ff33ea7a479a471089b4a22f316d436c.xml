@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route">
+    <sys_ux_app_route action="DELETE">
+        <app_config display_value="Travel Buddy App App Config">2952fa62091ec3102712d1c0d55d4b92</app_config>
+        <description/>
+        <extension_point/>
+        <fields/>
+        <icon/>
+        <interoperable>false</interoperable>
+        <name>Sign Up</name>
+        <optional_parameters/>
+        <order>0</order>
+        <parent_macroponent display_value="Workspace App Shell">c276387cc331101080d6d3658940ddd2</parent_macroponent>
+        <parent_macroponent_composition_element_id/>
+        <route_type>sign-up</route_type>
+        <screen_type display_value="Sign Up">3733ea7a479a471089b4a22f316d4368</screen_type>
+        <sys_class_name>sys_ux_app_route</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-29 10:30:06</sys_created_on>
+        <sys_id>ff33ea7a479a471089b4a22f316d436c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Sign Up</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name>sys_ux_app_route_ff33ea7a479a471089b4a22f316d436c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-29 10:30:06</sys_updated_on>
+    </sys_ux_app_route>
+    <sys_translated_text action="DELETE" query="documentkey=ff33ea7a479a471089b4a22f316d436c"/>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</application>
+        <file_path/>
+        <instance_id>0c79e8a6ff8e8350c812f8e4fc4fd905</instance_id>
+        <instance_name>dev438223</instance_name>
+        <name>sys_ux_app_route_ff33ea7a479a471089b4a22f316d436c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route">
+    <sys_ux_app_route action="INSERT_OR_UPDATE">
+        <app_config display_value="Travel Buddy App App Config">2952fa62091ec3102712d1c0d55d4b92</app_config>
+        <description/>
+        <extension_point/>
+        <fields/>
+        <icon/>
+        <interoperable>false</interoperable>
+        <name>Sign Up</name>
+        <optional_parameters/>
+        <order>0</order>
+        <parent_macroponent display_value="Workspace App Shell">c276387cc331101080d6d3658940ddd2</parent_macroponent>
+        <parent_macroponent_composition_element_id/>
+        <route_type>sign-up</route_type>
+        <screen_type display_value="Sign Up">3733ea7a479a471089b4a22f316d4368</screen_type>
+        <sys_class_name>sys_ux_app_route</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-29 10:30:06</sys_created_on>
+        <sys_id>ff33ea7a479a471089b4a22f316d436c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Sign Up</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name>sys_ux_app_route_ff33ea7a479a471089b4a22f316d436c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-29 10:30:06</sys_updated_on>
+    </sys_ux_app_route>
+    <sys_translated_text action="delete_multiple" query="documentkey=ff33ea7a479a471089b4a22f316d436c"/>
+</record_update>]]></payload>
+        <payload_hash>149867255</payload_hash>
+        <record_name>Sign Up</record_name>
+        <reverted_from/>
+        <source>455baab6839e471031ab6730ceaad37f</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-29 11:05:37</sys_created_on>
+        <sys_id>486ba2f6839e471031ab6730ceaad3dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19fad8d299e0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-29 11:05:37</sys_updated_on>
+        <type>UX App Route</type>
+        <update_guid>086ba2f6939e47104a08c676c75af3dc</update_guid>
+        <update_guid_history>086ba2f6939e47104a08c676c75af3dc:149867255</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-08 06:13:07</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_app_route">sys_ux_app_route</sys_db_object>
+        <sys_id>35501f71923f46c49037ddb91f167064</sys_id>
+        <sys_metadata>ff33ea7a479a471089b4a22f316d436c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Sign Up</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_scope_delete display_value="">ce79bab18acc49f9bef811863b5939e1</sys_scope_delete>
+        <sys_update_name>sys_ux_app_route_ff33ea7a479a471089b4a22f316d436c</sys_update_name>
+        <sys_update_version display_value="sys_ux_app_route_ff33ea7a479a471089b4a22f316d436c">486ba2f6839e471031ab6730ceaad3dc</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-08 06:13:07</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

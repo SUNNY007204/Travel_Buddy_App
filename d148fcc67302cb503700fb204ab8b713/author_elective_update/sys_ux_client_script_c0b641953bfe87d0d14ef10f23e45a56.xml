@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="DELETE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="Buddy dashboard">0758cbae479ec31089b4a22f316d438c</macroponent>
+        <name>New client script 1</name>
+        <preset/>
+        <required_translations>[]</required_translations>
+        <script><![CDATA[/**
+* @param {params} params
+* @param {api} params.api
+* @param {any} params.event
+* @param {any} params.imports
+* @param {ApiHelpers} params.helpers
+*/
+function handler({api, event, helpers, imports}) {
+
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-18 08:41:27</sys_created_on>
+        <sys_id>c0b641953bfe87d0d14ef10f23e45a56</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>New client script 1</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name>sys_ux_client_script_c0b641953bfe87d0d14ef10f23e45a56</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-18 08:41:27</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</application>
+        <file_path/>
+        <instance_id>6241f8583b50cfd416e44a8aa4e45aa8</instance_id>
+        <instance_name>dev380569</instance_name>
+        <name>sys_ux_client_script_c0b641953bfe87d0d14ef10f23e45a56</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_client_script"&gt;&lt;sys_ux_client_script action="INSERT_OR_UPDATE"&gt;&lt;controller_preset/&gt;&lt;includes/&gt;&lt;macroponent display_value="Buddy dashboard"&gt;0758cbae479ec31089b4a22f316d438c&lt;/macroponent&gt;&lt;name&gt;New client script 1&lt;/name&gt;&lt;preset/&gt;&lt;required_translations&gt;[]&lt;/required_translations&gt;&lt;script&gt;&lt;![CDATA[/**
+* @param {params} params
+* @param {api} params.api
+* @param {any} params.event
+* @param {any} params.imports
+* @param {ApiHelpers} params.helpers
+*/
+function handler({api, event, helpers, imports}) {
+
+}]]&gt;&lt;/script&gt;&lt;script_api_version&gt;2.0.0&lt;/script_api_version&gt;&lt;sys_class_name&gt;sys_ux_client_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-18 08:41:27&lt;/sys_created_on&gt;&lt;sys_id&gt;c0b641953bfe87d0d14ef10f23e45a56&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;New client script 1&lt;/sys_name&gt;&lt;sys_package display_value="Travel Buddy App" source="x_travel_buddy_app"&gt;d148fcc67302cb503700fb204ab8b713&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Travel Buddy App"&gt;d148fcc67302cb503700fb204ab8b713&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_client_script_c0b641953bfe87d0d14ef10f23e45a56&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-18 08:41:27&lt;/sys_updated_on&gt;&lt;target&gt;macroponent&lt;/target&gt;&lt;type&gt;default&lt;/type&gt;&lt;/sys_ux_client_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1911962823</payload_hash>
+        <record_name>New client script 1</record_name>
+        <reverted_from/>
+        <source>f13de1023b028b10d14ef10f23e45a82</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-18 08:41:28</sys_created_on>
+        <sys_id>332ac95d3bfe87d0d14ef10f23e45a7d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a01408608d0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-18 08:41:28</sys_updated_on>
+        <type>UX Client Script</type>
+        <update_guid>ff2ac95da3fe87d0cb9d4c188be4787b</update_guid>
+        <update_guid_history>ff2ac95da3fe87d0cb9d4c188be4787b:1911962823</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-18 08:48:56</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_client_script">sys_ux_client_script</sys_db_object>
+        <sys_id>58f80c65fd3442d89d09de6dc36d7344</sys_id>
+        <sys_metadata>c0b641953bfe87d0d14ef10f23e45a56</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>New client script 1</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_scope_delete display_value="">ce79bab18acc49f9bef811863b5939e1</sys_scope_delete>
+        <sys_update_name>sys_ux_client_script_c0b641953bfe87d0d14ef10f23e45a56</sys_update_name>
+        <sys_update_version display_value="sys_ux_client_script_c0b641953bfe87d0d14ef10f23e45a56">332ac95d3bfe87d0d14ef10f23e45a7d</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-18 08:48:56</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

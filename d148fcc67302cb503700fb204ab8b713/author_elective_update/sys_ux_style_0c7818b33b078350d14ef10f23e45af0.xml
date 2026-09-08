@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_style">
+    <sys_ux_style action="DELETE">
+        <name>Travel Buddies Accessible Style</name>
+        <style>{&#13;
+  "properties": {&#13;
+    "--now-color_background--primary": "255, 255, 255",&#13;
+    "--now-color_brand--primary": "26, 92, 151",&#13;
+    "--now-color_brand--secondary": "240, 139, 34",&#13;
+    "--now-color_text--primary": "51, 51, 51",&#13;
+    "--now-button--secondary--color": "26, 92, 151",&#13;
+    "--now-button--secondary--hover-color": "255, 255, 255",&#13;
+    "--now-button--secondary--hover-background-color": "26, 92, 151",&#13;
+    "--now-button--tertiary--color": "26, 92, 151",&#13;
+    "--now-button--tertiary--hover-color": "51, 51, 51"&#13;
+  }&#13;
+}</style>
+        <sys_class_name>sys_ux_style</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-07 09:45:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0c7818b33b078350d14ef10f23e45af0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Travel Buddies Accessible Style</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name>sys_ux_style_0c7818b33b078350d14ef10f23e45af0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-07 09:45:40</sys_updated_on>
+        <type>core</type>
+    </sys_ux_style>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</application>
+        <file_path/>
+        <instance_id>6241f8583b50cfd416e44a8aa4e45aa8</instance_id>
+        <instance_name>dev380569</instance_name>
+        <name>sys_ux_style_0c7818b33b078350d14ef10f23e45af0</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_style"><sys_ux_style action="INSERT_OR_UPDATE"><name>Travel Buddies Accessible Style</name><style>{&#13;
+  "properties": {&#13;
+    "--now-color_background--primary": "255, 255, 255",&#13;
+    "--now-color_brand--primary": "26, 92, 151",&#13;
+    "--now-color_brand--secondary": "240, 139, 34",&#13;
+    "--now-color_text--primary": "51, 51, 51",&#13;
+    "--now-button--secondary--color": "26, 92, 151",&#13;
+    "--now-button--secondary--hover-color": "255, 255, 255",&#13;
+    "--now-button--secondary--hover-background-color": "26, 92, 151",&#13;
+    "--now-button--tertiary--color": "26, 92, 151",&#13;
+    "--now-button--tertiary--hover-color": "51, 51, 51"&#13;
+  }&#13;
+}</style><sys_class_name>sys_ux_style</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-07 09:45:40</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>0c7818b33b078350d14ef10f23e45af0</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Travel Buddies Accessible Style</sys_name><sys_overrides/><sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package><sys_policy/><sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope><sys_update_name>sys_ux_style_0c7818b33b078350d14ef10f23e45af0</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-07 09:45:40</sys_updated_on><type>core</type></sys_ux_style></record_update>]]></payload>
+        <payload_hash>-2058564779</payload_hash>
+        <record_name>Travel Buddies Accessible Style</record_name>
+        <reverted_from/>
+        <source>f13de1023b028b10d14ef10f23e45a82</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-07 09:45:40</sys_created_on>
+        <sys_id>b2a890f33b078350d14ef10f23e45a56</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a07b42574e0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-07 09:45:40</sys_updated_on>
+        <type>UX Style</type>
+        <update_guid>72a890f331078350c44f4572160f1655</update_guid>
+        <update_guid_history>72a890f331078350c44f4572160f1655:-2058564779</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-07 10:33:39</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_style">sys_ux_style</sys_db_object>
+        <sys_id>102b31f800e84c1885ee7db38de4d040</sys_id>
+        <sys_metadata>0c7818b33b078350d14ef10f23e45af0</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Travel Buddies Accessible Style</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_scope_delete display_value="">ce79bab18acc49f9bef811863b5939e1</sys_scope_delete>
+        <sys_update_name>sys_ux_style_0c7818b33b078350d14ef10f23e45af0</sys_update_name>
+        <sys_update_version display_value="sys_ux_style_0c7818b33b078350d14ef10f23e45af0">b2a890f33b078350d14ef10f23e45a56</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-07 10:33:39</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

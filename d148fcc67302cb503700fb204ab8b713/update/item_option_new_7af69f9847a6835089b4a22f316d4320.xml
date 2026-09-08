@@ -5,8 +5,8 @@
         <cat_item display_value="Request a Trip">b440fc5c4762435089b4a22f316d43a8</cat_item>
         <category/>
         <choice_direction>down</choice_direction>
-        <choice_field/>
-        <choice_table/>
+        <choice_field>u_destination_package</choice_field>
+        <choice_table>x_travel_buddy_app_trip_request</choice_table>
         <conversational_label/>
         <create_roles/>
         <default_html_value/>
@@ -36,7 +36,7 @@
         <lookup_dependent_question/>
         <lookup_label>u_destination_package</lookup_label>
         <lookup_price/>
-        <lookup_source/>
+        <lookup_source>choices</lookup_source>
         <lookup_table>x_travel_buddy_app_trip_request</lookup_table>
         <lookup_unique>true</lookup_unique>
         <lookup_value>u_destination_package</lookup_value>
@@ -49,7 +49,7 @@
         <name>u_destination_package</name>
         <no_auto_populate_also_request_for>false</no_auto_populate_also_request_for>
         <not_available_conversation>false</not_available_conversation>
-        <order>900</order>
+        <order>250</order>
         <post_insert_script/>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
@@ -84,14 +84,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-03 06:08:35</sys_created_on>
         <sys_id>7af69f9847a6835089b4a22f316d4320</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Destination package</sys_name>
         <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
         <sys_policy/>
         <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
         <sys_update_name>item_option_new_7af69f9847a6835089b4a22f316d4320</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-03 06:08:38</sys_updated_on>
+        <sys_updated_on>2026-08-17 12:41:07</sys_updated_on>
         <table/>
         <tooltip/>
         <topic_block/>
