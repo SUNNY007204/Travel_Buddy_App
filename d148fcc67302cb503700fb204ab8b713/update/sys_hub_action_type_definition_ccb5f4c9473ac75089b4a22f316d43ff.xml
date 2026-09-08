@@ -1,0 +1,3209 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <attributes>{labelCacheCleanUpExecuted=true}</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority/>
+        <ih_action>false</ih_action>
+        <internal_name>activate_user_and_set_password_2</internal_name>
+        <label_cache>[{"name":"{{action.username}}","label":"action➛username","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.first_name}}","label":"action➛first_name","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.last_name}}","label":"action➛last_name","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.password}}","label":"action➛password","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.email}}","label":"action➛email","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.registration_sys_id}}","label":"action➛registration_sys_id","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
+        <master_snapshot>e3f6f08d473ac75089b4a22f316d4306</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Activate user and set password 2</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <state>published</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-17 12:33:27</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ccb5f4c9473ac75089b4a22f316d43ff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Activate user and set password 2</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_ccb5f4c9473ac75089b4a22f316d43ff</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-08 10:10:06</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=ccb5f4c9473ac75089b4a22f316d43ff"/>
+    <sys_variable_value action="delete_multiple" query="document_key=ccb5f4c9473ac75089b4a22f316d43ff"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>ccb5f4c9473ac75089b4a22f316d43ff</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-17 12:34:19</sys_created_on>
+        <sys_id>24e5fcc9473ac75089b4a22f316d43c6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-17 12:34:19</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">28e5fcc9473ac75089b4a22f316d43a8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>ccb5f4c9473ac75089b4a22f316d43ff</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-17 12:34:19</sys_created_on>
+        <sys_id>68e5fcc9473ac75089b4a22f316d43c6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-17 12:34:19</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}}</value>
+        <variable display_value="Action Status">20e5fcc9473ac75089b4a22f316d439f</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_output_ccb5f4c9473ac75089b4a22f316d43ff^id=ccb5f4c9473ac75089b4a22f316d43ff"/>
+    <sys_hub_step_instance action="delete_multiple" query="action=ccb5f4c9473ac75089b4a22f316d43ff^sys_idNOT IN5ce5fcc9473ac75089b4a22f316d4386"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Activate user and set password 2">ccb5f4c9473ac75089b4a22f316d43ff</action>
+        <cid>0a3176f3-81ee-4153-af71-f1ff2eeab656</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-17 12:34:18</sys_created_on>
+        <sys_id>5ce5fcc9473ac75089b4a22f316d4386</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-18 08:09:30</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=5ce5fcc9473ac75089b4a22f316d4386"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>5ce5fcc9473ac75089b4a22f316d4386</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-17 12:34:18</sys_created_on>
+        <sys_id>60e5fcc9473ac75089b4a22f316d439b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-17 12:34:18</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>5ce5fcc9473ac75089b4a22f316d4386</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-17 12:34:18</sys_created_on>
+        <sys_id>ece5fcc9473ac75089b4a22f316d439b</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-18 08:09:30</sys_updated_on>
+        <value>// (function execute(inputs, outputs) {&#13;
+//     var email = (inputs.email || '').trim();&#13;
+//     var userPassword = (inputs.password || '').trim();&#13;
+//     var firstName = (inputs.first_name || '').trim();&#13;
+//     var lastName = (inputs.last_name || '').trim();&#13;
+//     var username = (inputs.username || email).trim();&#13;
+//     var regSysId = (inputs.registration_sys_id || '').trim();&#13;
+&#13;
+//     gs.info("[Password Action] Processing user registration for: " + email);&#13;
+&#13;
+//     if (!email || !userPassword) {&#13;
+//         gs.error("[Password Action] FAILED: Email or Password input is missing.");&#13;
+//         return;&#13;
+//     }&#13;
+&#13;
+//     var userGr = new GlideRecord('sys_user');&#13;
+//     var queryCond = userGr.addQuery('email', email);&#13;
+//     queryCond.addOrCondition('user_name', username);&#13;
+//     userGr.query();&#13;
+&#13;
+//     var isSuccess = false;&#13;
+&#13;
+//     if (userGr.next()) {&#13;
+//         // Update existing user password securely&#13;
+//         userGr.user_password.setEncryptedValue(userPassword);&#13;
+//         userGr.setValue('active', true);&#13;
+//         var updateResult = userGr.update();&#13;
+&#13;
+//         if (updateResult) {&#13;
+//             gs.info("[Password Action] SUCCESS: Updated password for existing user: " + email);&#13;
+//             isSuccess = true;&#13;
+//         } else {&#13;
+//             gs.error("[Password Action] FAILED to update user: " + userGr.getLastErrorMessage());&#13;
+//         }&#13;
+//     } else {&#13;
+//         // Insert new user into sys_user&#13;
+//         userGr.initialize();&#13;
+//         userGr.setValue('first_name', firstName);&#13;
+//         userGr.setValue('last_name', lastName);&#13;
+//         userGr.setValue('email', email);&#13;
+//         userGr.setValue('user_name', username);&#13;
+//         userGr.user_password.setEncryptedValue(userPassword);&#13;
+//         userGr.setValue('active', true);&#13;
+&#13;
+//         var newSysId = userGr.insert();&#13;
+&#13;
+//         if (newSysId) {&#13;
+//             gs.info("[Password Action] SUCCESS: Created user in sys_user with Sys ID: " + newSysId);&#13;
+//             isSuccess = true;&#13;
+//         } else {&#13;
+//             gs.error("[Password Action] FAILED to insert user into sys_user: " + userGr.getLastErrorMessage());&#13;
+//         }&#13;
+//     }&#13;
+&#13;
+//     // Update custom registration record status to Completed&#13;
+//     if (isSuccess &amp;&amp; regSysId) {&#13;
+//         var regGr = new GlideRecord('x_travel_buddy_app_user_password_registration');&#13;
+//         if (regGr.get(regSysId)) {&#13;
+//             regGr.setValue('status', 'Completed');&#13;
+//             regGr.update();&#13;
+//             gs.info("[Password Action] SUCCESS: Registration record updated to Completed.");&#13;
+//         } else {&#13;
+//             gs.error("[Password Action] FAILED: Could not find registration record with Sys ID: " + regSysId);&#13;
+//         }&#13;
+//     }&#13;
+// })(inputs, outputs);&#13;
+&#13;
+&#13;
+// (function execute(inputs, outputs) {&#13;
+//     var userName  = (inputs.username || '').trim();&#13;
+//     var firstName = (inputs.first_name || '').trim();&#13;
+//     var lastName  = (inputs.last_name || '').trim();&#13;
+//     var userPass  = (inputs.password || '').trim();&#13;
+//     var userEmail = (inputs.email || '').trim();&#13;
+//     var regSysId  = (inputs.registration_sys_id || '').trim();&#13;
+&#13;
+//     // 1. Validate mandatory inputs&#13;
+//     if (!userName || !userPass) {&#13;
+//         gs.error("[User Action] FAILED: Missing username or password.");&#13;
+//         outputs.status = "Failed";&#13;
+//         return;&#13;
+//     }&#13;
+&#13;
+//     var grUser = new GlideRecord('sys_user');&#13;
+&#13;
+//     // 2. Check if user already exists in sys_user&#13;
+//     if (grUser.get('user_name', userName)) {&#13;
+//         // UPDATE Existing User&#13;
+//         grUser.setValue('first_name', firstName);&#13;
+//         grUser.setValue('last_name', lastName);&#13;
+//         grUser.setValue('email', userEmail);&#13;
+//         grUser.setValue('user_password', userPass);&#13;
+//         grUser.setValue('active', true);&#13;
+//         grUser.update();&#13;
+//         gs.info("[User Action] Updated existing user: " + userName);&#13;
+//     } else {&#13;
+//         // INSERT New User&#13;
+//         grUser.initialize();&#13;
+//         grUser.setValue('user_name', userName);&#13;
+//         grUser.setValue('first_name', firstName);&#13;
+//         grUser.setValue('last_name', lastName);&#13;
+//         grUser.setValue('email', userEmail);&#13;
+//         grUser.setValue('user_password', userPass);&#13;
+//         grUser.setValue('active', true);&#13;
+        &#13;
+//         var newSysId = grUser.insert();&#13;
+//         gs.info("[User Action] Created new user in sys_user: " + newSysId);&#13;
+//     }&#13;
+&#13;
+//     // 3. Update custom table status to Completed&#13;
+//     if (regSysId) {&#13;
+//         var regGr = new GlideRecord('x_travel_buddy_app_user_password_registration');&#13;
+//         if (regGr.get(regSysId)) {&#13;
+//             regGr.setValue('status', 'Completed');&#13;
+//             regGr.update();&#13;
+//         }&#13;
+//     }&#13;
+&#13;
+//     outputs.status = "Success";&#13;
+// })(inputs, outputs);&#13;
+&#13;
+&#13;
+(function execute(inputs, outputs) {&#13;
+    var userName  = (inputs.username || '').trim();&#13;
+    var firstName = (inputs.first_name || '').trim();&#13;
+    var lastName  = (inputs.last_name || '').trim();&#13;
+    var userPass  = (inputs.password || '').trim();&#13;
+    var userEmail = (inputs.email || '').trim();&#13;
+    var regSysId  = (inputs.registration_sys_id || '').trim();&#13;
+&#13;
+    // 1. Validate mandatory inputs&#13;
+    if (!userName || !userPass) {&#13;
+        gs.error("[User Action] FAILED: Missing username or password.");&#13;
+        outputs.status = "Failed";&#13;
+        return;&#13;
+    }&#13;
+&#13;
+    var grUser = new GlideRecord('sys_user');&#13;
+&#13;
+    // 2. Check if user already exists in sys_user&#13;
+    if (grUser.get('user_name', userName)) {&#13;
+        // UPDATE Existing User&#13;
+        grUser.setValue('first_name', firstName);&#13;
+        grUser.setValue('last_name', lastName);&#13;
+        grUser.setValue('email', userEmail);&#13;
+        grUser.setValue('user_password', userPass);&#13;
+        grUser.setValue('active', true);&#13;
+        grUser.update();&#13;
+        gs.info("[User Action] Updated existing user: " + userName);&#13;
+&#13;
+        // Update custom table status to Completed&#13;
+        if (regSysId) {&#13;
+            updateCustomRecordStatus(regSysId, 'Completed');&#13;
+        }&#13;
+    } else {&#13;
+        // INSERT New User&#13;
+        grUser.initialize();&#13;
+        grUser.setValue('user_name', userName);&#13;
+        grUser.setValue('first_name', firstName);&#13;
+        grUser.setValue('last_name', lastName);&#13;
+        grUser.setValue('email', userEmail);&#13;
+        grUser.setValue('user_password', userPass);&#13;
+        grUser.setValue('active', true);&#13;
+&#13;
+        var newSysId = grUser.insert();&#13;
+&#13;
+        // 3. Only change status to Completed if sys_user record creation succeeded&#13;
+        if (newSysId) {&#13;
+            gs.info("[User Action] Successfully created new user in sys_user: " + newSysId);&#13;
+            &#13;
+            if (regSysId) {&#13;
+                updateCustomRecordStatus(regSysId, 'Completed');&#13;
+            }&#13;
+        } else {&#13;
+            gs.error("[User Action] FAILED to insert user into sys_user: " + grUser.getLastErrorMessage());&#13;
+            outputs.status = "Failed";&#13;
+            return;&#13;
+        }&#13;
+    }&#13;
+&#13;
+    outputs.status = "Success";&#13;
+&#13;
+    // Helper function to update the custom registration record status&#13;
+    function updateCustomRecordStatus(sysId, statusValue) {&#13;
+        var regGr = new GlideRecord('x_travel_buddy_app_user_password_registration');&#13;
+        if (regGr.get(sysId)) {&#13;
+            regGr.setValue('status', statusValue);&#13;
+            regGr.update();&#13;
+            gs.info("[User Action] Custom registration record status changed to: " + statusValue);&#13;
+        } else {&#13;
+            gs.error("[User Action] Could not find custom registration record with Sys ID: " + sysId);&#13;
+        }&#13;
+    }&#13;
+})(inputs, outputs);</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=5ce5fcc9473ac75089b4a22f316d4386"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>email</field>
+        <id>5ce5fcc9473ac75089b4a22f316d4386</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-17 13:29:53</sys_created_on>
+        <sys_id>7e928d4547bac75089b4a22f316d434d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-17 13:29:53</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_5ce5fcc9473ac75089b4a22f316d4386</table>
+        <value>{{action.email}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>first_name</field>
+        <id>5ce5fcc9473ac75089b4a22f316d4386</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-17 13:29:53</sys_created_on>
+        <sys_id>3a928d4547bac75089b4a22f316d434d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-17 13:29:53</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_5ce5fcc9473ac75089b4a22f316d4386</table>
+        <value>{{action.first_name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>last_name</field>
+        <id>5ce5fcc9473ac75089b4a22f316d4386</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-17 13:29:53</sys_created_on>
+        <sys_id>be928d4547bac75089b4a22f316d434c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-17 13:29:53</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_5ce5fcc9473ac75089b4a22f316d4386</table>
+        <value>{{action.last_name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>password</field>
+        <id>5ce5fcc9473ac75089b4a22f316d4386</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-17 13:29:53</sys_created_on>
+        <sys_id>f2928d4547bac75089b4a22f316d434d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-17 13:29:53</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_5ce5fcc9473ac75089b4a22f316d4386</table>
+        <value>{{action.password}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>registration_sys_id</field>
+        <id>5ce5fcc9473ac75089b4a22f316d4386</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-18 06:36:12</sys_created_on>
+        <sys_id>fc8dec9547f64b5089b4a22f316d4329</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-18 06:46:10</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_5ce5fcc9473ac75089b4a22f316d4386</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>username</field>
+        <id>5ce5fcc9473ac75089b4a22f316d4386</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-17 13:29:53</sys_created_on>
+        <sys_id>b2928d4547bac75089b4a22f316d434e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-17 13:29:53</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_5ce5fcc9473ac75089b4a22f316d4386</table>
+        <value>{{action.username}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=5ce5fcc9473ac75089b4a22f316d4386"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=5ce5fcc9473ac75089b4a22f316d4386"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=5ce5fcc9473ac75089b4a22f316d4386^sys_idNOT IN26928d4547bac75089b4a22f316d431e,62928d4547bac75089b4a22f316d4324,66928d4547bac75089b4a22f316d432c,e2928d4547bac75089b4a22f316d4328,e6928d4547bac75089b4a22f316d4330"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>username</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">5ce5fcc9473ac75089b4a22f316d4386</model>
+        <model_id>5ce5fcc9473ac75089b4a22f316d4386</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_5ce5fcc9473ac75089b4a22f316d4386</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-17 13:29:53</sys_created_on>
+        <sys_id>26928d4547bac75089b4a22f316d431e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-17 13:29:53</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>first_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">5ce5fcc9473ac75089b4a22f316d4386</model>
+        <model_id>5ce5fcc9473ac75089b4a22f316d4386</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_5ce5fcc9473ac75089b4a22f316d4386</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-17 13:29:53</sys_created_on>
+        <sys_id>62928d4547bac75089b4a22f316d4324</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-17 13:29:53</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>password</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">5ce5fcc9473ac75089b4a22f316d4386</model>
+        <model_id>5ce5fcc9473ac75089b4a22f316d4386</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_5ce5fcc9473ac75089b4a22f316d4386</name>
+        <next_element/>
+        <order>300</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-17 13:29:53</sys_created_on>
+        <sys_id>66928d4547bac75089b4a22f316d432c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-17 13:29:53</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>last_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">5ce5fcc9473ac75089b4a22f316d4386</model>
+        <model_id>5ce5fcc9473ac75089b4a22f316d4386</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_5ce5fcc9473ac75089b4a22f316d4386</name>
+        <next_element/>
+        <order>200</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-17 13:29:53</sys_created_on>
+        <sys_id>e2928d4547bac75089b4a22f316d4328</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-17 13:29:53</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>email</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">5ce5fcc9473ac75089b4a22f316d4386</model>
+        <model_id>5ce5fcc9473ac75089b4a22f316d4386</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_5ce5fcc9473ac75089b4a22f316d4386</name>
+        <next_element/>
+        <order>400</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-17 13:29:53</sys_created_on>
+        <sys_id>e6928d4547bac75089b4a22f316d4330</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-17 13:29:53</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=5ce5fcc9473ac75089b4a22f316d4386"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=5ce5fcc9473ac75089b4a22f316d4386"/>
+    <sys_hub_action_input action="delete_multiple" query="model=ccb5f4c9473ac75089b4a22f316d43ff^sys_idNOT IN1530490147bac75089b4a22f316d43f0,1930890147bac75089b4a22f316d431d,9930490147bac75089b4a22f316d43f9,9d30890147bac75089b4a22f316d430d,d930890147bac75089b4a22f316d4315"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=74fb1db7-a5aa-4178-ac50-4d4859e6489c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>username</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>username</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Activate user and set password 2">ccb5f4c9473ac75089b4a22f316d43ff</model>
+        <model_id>ccb5f4c9473ac75089b4a22f316d43ff</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_ccb5f4c9473ac75089b4a22f316d43ff</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-17 13:19:24</sys_created_on>
+        <sys_id>1530490147bac75089b4a22f316d43f0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-17 13:19:24</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=1530490147bac75089b4a22f316d43f0"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=58502754-2178-4296-b5f8-ab2e27c8752e</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>email</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>email</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Activate user and set password 2">ccb5f4c9473ac75089b4a22f316d43ff</model>
+        <model_id>ccb5f4c9473ac75089b4a22f316d43ff</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_ccb5f4c9473ac75089b4a22f316d43ff</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-17 13:19:25</sys_created_on>
+        <sys_id>1930890147bac75089b4a22f316d431d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-17 13:19:25</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=1930890147bac75089b4a22f316d431d"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=050c1c28-d2a6-4d1c-a65e-d517ae7aa4c7</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>first_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>first_name</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Activate user and set password 2">ccb5f4c9473ac75089b4a22f316d43ff</model>
+        <model_id>ccb5f4c9473ac75089b4a22f316d43ff</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_ccb5f4c9473ac75089b4a22f316d43ff</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-17 13:19:25</sys_created_on>
+        <sys_id>9930490147bac75089b4a22f316d43f9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-17 13:19:25</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=9930490147bac75089b4a22f316d43f9"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=dafeea20-ba01-4614-8e21-0dc3d08f999c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>last_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>last_name</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Activate user and set password 2">ccb5f4c9473ac75089b4a22f316d43ff</model>
+        <model_id>ccb5f4c9473ac75089b4a22f316d43ff</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_ccb5f4c9473ac75089b4a22f316d43ff</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-17 13:19:25</sys_created_on>
+        <sys_id>9d30890147bac75089b4a22f316d430d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-17 13:19:25</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=9d30890147bac75089b4a22f316d430d"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=5c5fcac2-8c2b-4930-a147-6497155b6ccd</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>password</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>password</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Activate user and set password 2">ccb5f4c9473ac75089b4a22f316d43ff</model>
+        <model_id>ccb5f4c9473ac75089b4a22f316d43ff</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_ccb5f4c9473ac75089b4a22f316d43ff</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-17 13:19:25</sys_created_on>
+        <sys_id>d930890147bac75089b4a22f316d4315</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-17 13:19:25</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=d930890147bac75089b4a22f316d4315"/>
+    <sys_hub_action_output action="delete_multiple" query="model=ccb5f4c9473ac75089b4a22f316d43ff^sys_idNOT IN20e5fcc9473ac75089b4a22f316d439f,28e5fcc9473ac75089b4a22f316d43a8"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FDACTIONSTATUS,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=aaf86ba1-51d3-4ec7-9d26-67ac4cb5b14e</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Activate user and set password 2">ccb5f4c9473ac75089b4a22f316d43ff</model>
+        <model_id>ccb5f4c9473ac75089b4a22f316d43ff</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_ccb5f4c9473ac75089b4a22f316d43ff</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-17 12:34:18</sys_created_on>
+        <sys_id>20e5fcc9473ac75089b4a22f316d439f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-17 12:34:18</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=20e5fcc9473ac75089b4a22f316d439f"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=20e5fcc9473ac75089b4a22f316d439f"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=ce04e6d1-6687-4a05-a6a1-a8d672fe92ab,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Activate user and set password 2">ccb5f4c9473ac75089b4a22f316d43ff</model>
+        <model_id>ccb5f4c9473ac75089b4a22f316d43ff</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_ccb5f4c9473ac75089b4a22f316d43ff</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-17 12:34:18</sys_created_on>
+        <sys_id>28e5fcc9473ac75089b4a22f316d43a8</sys_id>
+        <sys_mod_count>53</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-18 08:09:36</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=28e5fcc9473ac75089b4a22f316d43a8"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=28e5fcc9473ac75089b4a22f316d43a8"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=ccb5f4c9473ac75089b4a22f316d43ff"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=ccb5f4c9473ac75089b4a22f316d43ff^sys_idNOT IN6ce5fcc9473ac75089b4a22f316d43c8"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="Activate user and set password 2">ccb5f4c9473ac75089b4a22f316d43ff</action_type_id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-17 12:34:19</sys_created_on>
+        <sys_id>6ce5fcc9473ac75089b4a22f316d43c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-17 12:34:19</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=6ce5fcc9473ac75089b4a22f316d43c8"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>email</element>
+        <help/>
+        <hint/>
+        <label>email</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_ccb5f4c9473ac75089b4a22f316d43ff</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-17 13:19:25</sys_created_on>
+        <sys_id>1130890147bac75089b4a22f316d4323</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>email</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_ccb5f4c9473ac75089b4a22f316d43ff_email_en</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-17 13:19:25</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>first_name</element>
+        <help/>
+        <hint/>
+        <label>first_name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_ccb5f4c9473ac75089b4a22f316d43ff</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-17 13:19:25</sys_created_on>
+        <sys_id>5930890147bac75089b4a22f316d430b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>first_name</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_ccb5f4c9473ac75089b4a22f316d43ff_first_name_en</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-17 13:19:25</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>username</element>
+        <help/>
+        <hint/>
+        <label>username</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_ccb5f4c9473ac75089b4a22f316d43ff</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-17 13:19:25</sys_created_on>
+        <sys_id>9530490147bac75089b4a22f316d43f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>username</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_ccb5f4c9473ac75089b4a22f316d43ff_username_en</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-17 13:19:25</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>last_name</element>
+        <help/>
+        <hint/>
+        <label>last_name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_ccb5f4c9473ac75089b4a22f316d43ff</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-17 13:19:25</sys_created_on>
+        <sys_id>9530890147bac75089b4a22f316d4313</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>last_name</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_ccb5f4c9473ac75089b4a22f316d43ff_last_name_en</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-17 13:19:25</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>password</element>
+        <help/>
+        <hint/>
+        <label>password</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_ccb5f4c9473ac75089b4a22f316d43ff</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-17 13:19:25</sys_created_on>
+        <sys_id>d130890147bac75089b4a22f316d431b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>password</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_ccb5f4c9473ac75089b4a22f316d43ff_password_en</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-17 13:19:25</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_ccb5f4c9473ac75089b4a22f316d43ff"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_ccb5f4c9473ac75089b4a22f316d43ff</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-17 12:34:18</sys_created_on>
+        <sys_id>24e5fcc9473ac75089b4a22f316d43a6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Action Status</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_ccb5f4c9473ac75089b4a22f316d43ff___action_status___en</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-17 12:34:18</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_ccb5f4c9473ac75089b4a22f316d43ff</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-17 12:34:18</sys_created_on>
+        <sys_id>6ce5fcc9473ac75089b4a22f316d43bd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Don't Treat as Error</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_ccb5f4c9473ac75089b4a22f316d43ff___dont_treat_as_error___en</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-17 12:34:18</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_ccb5f4c9473ac75089b4a22f316d43ff"/>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=ccb5f4c9473ac75089b4a22f316d43ff^sys_idNOT INf3f6f08d473ac75089b4a22f316d4354"/>
+    <sys_hub_action_plan action="INSERT_OR_UPDATE">
+        <action_id display_value="Activate user and set password 2">ccb5f4c9473ac75089b4a22f316d43ff</action_id>
+        <plan>{"@class":"com.snc.process_flow.engine.serialization.plan_data.ChunkingPlanData","chunk_data":{"table":"sys_hub_action_plan","id":"f3f6f08d473ac75089b4a22f316d4354","name":"plan","plan_signature":null},"plan_data":"CHUNKING_PLAN"}</plan>
+        <snapshot>d9e2055547ba4b5089b4a22f316d4340</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-17 12:39:10</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f3f6f08d473ac75089b4a22f316d4354</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-18 08:09:38</sys_updated_on>
+    </sys_hub_action_plan>
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <annotation/>
+        <attributes>{labelCacheCleanUpExecuted=true}</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority/>
+        <internal_name>activate_user_and_set_password_2</internal_name>
+        <label_cache>[{"name":"{{action.username}}","label":"action➛username","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.first_name}}","label":"action➛first_name","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.last_name}}","label":"action➛last_name","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.password}}","label":"action➛password","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.email}}","label":"action➛email","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.registration_sys_id}}","label":"action➛registration_sys_id","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
+        <master>true</master>
+        <name>Activate user and set password 2</name>
+        <natlang/>
+        <outputs/>
+        <parent_action display_value="Activate user and set password 2">ccb5f4c9473ac75089b4a22f316d43ff</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-17 12:39:09</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e3f6f08d473ac75089b4a22f316d4306</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-18 06:36:44</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=e3f6f08d473ac75089b4a22f316d4306"/>
+    <sys_variable_value action="delete_multiple" query="document_key=e3f6f08d473ac75089b4a22f316d4306"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>e3f6f08d473ac75089b4a22f316d4306</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-17 12:39:10</sys_created_on>
+        <sys_id>73f6f08d473ac75089b4a22f316d434b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-17 12:39:10</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">bff6f08d473ac75089b4a22f316d4339</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>e3f6f08d473ac75089b4a22f316d4306</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-17 12:39:10</sys_created_on>
+        <sys_id>b7f6f08d473ac75089b4a22f316d434b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-17 12:39:10</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}}</value>
+        <variable display_value="Action Status">73f6f08d473ac75089b4a22f316d4331</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_output_e3f6f08d473ac75089b4a22f316d4306^id=e3f6f08d473ac75089b4a22f316d4306"/>
+    <sys_hub_step_instance action="delete_multiple" query="action=e3f6f08d473ac75089b4a22f316d4306^sys_idNOT IN6ff6f08d473ac75089b4a22f316d4310"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Activate user and set password 2">e3f6f08d473ac75089b4a22f316d4306</action>
+        <cid>0a3176f3-81ee-4153-af71-f1ff2eeab656</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-17 12:39:10</sys_created_on>
+        <sys_id>6ff6f08d473ac75089b4a22f316d4310</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-18 08:09:38</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=6ff6f08d473ac75089b4a22f316d4310"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>6ff6f08d473ac75089b4a22f316d4310</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-17 12:39:10</sys_created_on>
+        <sys_id>33f6f08d473ac75089b4a22f316d432e</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-18 08:09:38</sys_updated_on>
+        <value>// (function execute(inputs, outputs) {&#13;
+//     var email = (inputs.email || '').trim();&#13;
+//     var userPassword = (inputs.password || '').trim();&#13;
+//     var firstName = (inputs.first_name || '').trim();&#13;
+//     var lastName = (inputs.last_name || '').trim();&#13;
+//     var username = (inputs.username || email).trim();&#13;
+//     var regSysId = (inputs.registration_sys_id || '').trim();&#13;
+&#13;
+//     gs.info("[Password Action] Processing user registration for: " + email);&#13;
+&#13;
+//     if (!email || !userPassword) {&#13;
+//         gs.error("[Password Action] FAILED: Email or Password input is missing.");&#13;
+//         return;&#13;
+//     }&#13;
+&#13;
+//     var userGr = new GlideRecord('sys_user');&#13;
+//     var queryCond = userGr.addQuery('email', email);&#13;
+//     queryCond.addOrCondition('user_name', username);&#13;
+//     userGr.query();&#13;
+&#13;
+//     var isSuccess = false;&#13;
+&#13;
+//     if (userGr.next()) {&#13;
+//         // Update existing user password securely&#13;
+//         userGr.user_password.setEncryptedValue(userPassword);&#13;
+//         userGr.setValue('active', true);&#13;
+//         var updateResult = userGr.update();&#13;
+&#13;
+//         if (updateResult) {&#13;
+//             gs.info("[Password Action] SUCCESS: Updated password for existing user: " + email);&#13;
+//             isSuccess = true;&#13;
+//         } else {&#13;
+//             gs.error("[Password Action] FAILED to update user: " + userGr.getLastErrorMessage());&#13;
+//         }&#13;
+//     } else {&#13;
+//         // Insert new user into sys_user&#13;
+//         userGr.initialize();&#13;
+//         userGr.setValue('first_name', firstName);&#13;
+//         userGr.setValue('last_name', lastName);&#13;
+//         userGr.setValue('email', email);&#13;
+//         userGr.setValue('user_name', username);&#13;
+//         userGr.user_password.setEncryptedValue(userPassword);&#13;
+//         userGr.setValue('active', true);&#13;
+&#13;
+//         var newSysId = userGr.insert();&#13;
+&#13;
+//         if (newSysId) {&#13;
+//             gs.info("[Password Action] SUCCESS: Created user in sys_user with Sys ID: " + newSysId);&#13;
+//             isSuccess = true;&#13;
+//         } else {&#13;
+//             gs.error("[Password Action] FAILED to insert user into sys_user: " + userGr.getLastErrorMessage());&#13;
+//         }&#13;
+//     }&#13;
+&#13;
+//     // Update custom registration record status to Completed&#13;
+//     if (isSuccess &amp;&amp; regSysId) {&#13;
+//         var regGr = new GlideRecord('x_travel_buddy_app_user_password_registration');&#13;
+//         if (regGr.get(regSysId)) {&#13;
+//             regGr.setValue('status', 'Completed');&#13;
+//             regGr.update();&#13;
+//             gs.info("[Password Action] SUCCESS: Registration record updated to Completed.");&#13;
+//         } else {&#13;
+//             gs.error("[Password Action] FAILED: Could not find registration record with Sys ID: " + regSysId);&#13;
+//         }&#13;
+//     }&#13;
+// })(inputs, outputs);&#13;
+&#13;
+&#13;
+// (function execute(inputs, outputs) {&#13;
+//     var userName  = (inputs.username || '').trim();&#13;
+//     var firstName = (inputs.first_name || '').trim();&#13;
+//     var lastName  = (inputs.last_name || '').trim();&#13;
+//     var userPass  = (inputs.password || '').trim();&#13;
+//     var userEmail = (inputs.email || '').trim();&#13;
+//     var regSysId  = (inputs.registration_sys_id || '').trim();&#13;
+&#13;
+//     // 1. Validate mandatory inputs&#13;
+//     if (!userName || !userPass) {&#13;
+//         gs.error("[User Action] FAILED: Missing username or password.");&#13;
+//         outputs.status = "Failed";&#13;
+//         return;&#13;
+//     }&#13;
+&#13;
+//     var grUser = new GlideRecord('sys_user');&#13;
+&#13;
+//     // 2. Check if user already exists in sys_user&#13;
+//     if (grUser.get('user_name', userName)) {&#13;
+//         // UPDATE Existing User&#13;
+//         grUser.setValue('first_name', firstName);&#13;
+//         grUser.setValue('last_name', lastName);&#13;
+//         grUser.setValue('email', userEmail);&#13;
+//         grUser.setValue('user_password', userPass);&#13;
+//         grUser.setValue('active', true);&#13;
+//         grUser.update();&#13;
+//         gs.info("[User Action] Updated existing user: " + userName);&#13;
+//     } else {&#13;
+//         // INSERT New User&#13;
+//         grUser.initialize();&#13;
+//         grUser.setValue('user_name', userName);&#13;
+//         grUser.setValue('first_name', firstName);&#13;
+//         grUser.setValue('last_name', lastName);&#13;
+//         grUser.setValue('email', userEmail);&#13;
+//         grUser.setValue('user_password', userPass);&#13;
+//         grUser.setValue('active', true);&#13;
+        &#13;
+//         var newSysId = grUser.insert();&#13;
+//         gs.info("[User Action] Created new user in sys_user: " + newSysId);&#13;
+//     }&#13;
+&#13;
+//     // 3. Update custom table status to Completed&#13;
+//     if (regSysId) {&#13;
+//         var regGr = new GlideRecord('x_travel_buddy_app_user_password_registration');&#13;
+//         if (regGr.get(regSysId)) {&#13;
+//             regGr.setValue('status', 'Completed');&#13;
+//             regGr.update();&#13;
+//         }&#13;
+//     }&#13;
+&#13;
+//     outputs.status = "Success";&#13;
+// })(inputs, outputs);&#13;
+&#13;
+&#13;
+(function execute(inputs, outputs) {&#13;
+    var userName  = (inputs.username || '').trim();&#13;
+    var firstName = (inputs.first_name || '').trim();&#13;
+    var lastName  = (inputs.last_name || '').trim();&#13;
+    var userPass  = (inputs.password || '').trim();&#13;
+    var userEmail = (inputs.email || '').trim();&#13;
+    var regSysId  = (inputs.registration_sys_id || '').trim();&#13;
+&#13;
+    // 1. Validate mandatory inputs&#13;
+    if (!userName || !userPass) {&#13;
+        gs.error("[User Action] FAILED: Missing username or password.");&#13;
+        outputs.status = "Failed";&#13;
+        return;&#13;
+    }&#13;
+&#13;
+    var grUser = new GlideRecord('sys_user');&#13;
+&#13;
+    // 2. Check if user already exists in sys_user&#13;
+    if (grUser.get('user_name', userName)) {&#13;
+        // UPDATE Existing User&#13;
+        grUser.setValue('first_name', firstName);&#13;
+        grUser.setValue('last_name', lastName);&#13;
+        grUser.setValue('email', userEmail);&#13;
+        grUser.setValue('user_password', userPass);&#13;
+        grUser.setValue('active', true);&#13;
+        grUser.update();&#13;
+        gs.info("[User Action] Updated existing user: " + userName);&#13;
+&#13;
+        // Update custom table status to Completed&#13;
+        if (regSysId) {&#13;
+            updateCustomRecordStatus(regSysId, 'Completed');&#13;
+        }&#13;
+    } else {&#13;
+        // INSERT New User&#13;
+        grUser.initialize();&#13;
+        grUser.setValue('user_name', userName);&#13;
+        grUser.setValue('first_name', firstName);&#13;
+        grUser.setValue('last_name', lastName);&#13;
+        grUser.setValue('email', userEmail);&#13;
+        grUser.setValue('user_password', userPass);&#13;
+        grUser.setValue('active', true);&#13;
+&#13;
+        var newSysId = grUser.insert();&#13;
+&#13;
+        // 3. Only change status to Completed if sys_user record creation succeeded&#13;
+        if (newSysId) {&#13;
+            gs.info("[User Action] Successfully created new user in sys_user: " + newSysId);&#13;
+            &#13;
+            if (regSysId) {&#13;
+                updateCustomRecordStatus(regSysId, 'Completed');&#13;
+            }&#13;
+        } else {&#13;
+            gs.error("[User Action] FAILED to insert user into sys_user: " + grUser.getLastErrorMessage());&#13;
+            outputs.status = "Failed";&#13;
+            return;&#13;
+        }&#13;
+    }&#13;
+&#13;
+    outputs.status = "Success";&#13;
+&#13;
+    // Helper function to update the custom registration record status&#13;
+    function updateCustomRecordStatus(sysId, statusValue) {&#13;
+        var regGr = new GlideRecord('x_travel_buddy_app_user_password_registration');&#13;
+        if (regGr.get(sysId)) {&#13;
+            regGr.setValue('status', statusValue);&#13;
+            regGr.update();&#13;
+            gs.info("[User Action] Custom registration record status changed to: " + statusValue);&#13;
+        } else {&#13;
+            gs.error("[User Action] Could not find custom registration record with Sys ID: " + sysId);&#13;
+        }&#13;
+    }&#13;
+})(inputs, outputs);</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>6ff6f08d473ac75089b4a22f316d4310</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-17 12:39:10</sys_created_on>
+        <sys_id>fbf6f08d473ac75089b4a22f316d432d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-17 12:39:10</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=6ff6f08d473ac75089b4a22f316d4310"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>email</field>
+        <id>6ff6f08d473ac75089b4a22f316d4310</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-18 05:41:22</sys_created_on>
+        <sys_id>d9f0ecd947764b5089b4a22f316d431e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-18 05:41:22</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_6ff6f08d473ac75089b4a22f316d4310</table>
+        <value>{{action.email}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>first_name</field>
+        <id>6ff6f08d473ac75089b4a22f316d4310</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-18 05:41:22</sys_created_on>
+        <sys_id>95f0ecd947764b5089b4a22f316d431e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-18 05:41:22</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_6ff6f08d473ac75089b4a22f316d4310</table>
+        <value>{{action.first_name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>last_name</field>
+        <id>6ff6f08d473ac75089b4a22f316d4310</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-18 05:41:22</sys_created_on>
+        <sys_id>91f0ecd947764b5089b4a22f316d431d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-18 05:41:22</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_6ff6f08d473ac75089b4a22f316d4310</table>
+        <value>{{action.last_name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>password</field>
+        <id>6ff6f08d473ac75089b4a22f316d4310</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-18 05:41:22</sys_created_on>
+        <sys_id>51f0ecd947764b5089b4a22f316d431e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-18 05:41:22</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_6ff6f08d473ac75089b4a22f316d4310</table>
+        <value>{{action.password}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>registration_sys_id</field>
+        <id>6ff6f08d473ac75089b4a22f316d4310</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-18 06:36:45</sys_created_on>
+        <sys_id>20ad64d547f64b5089b4a22f316d432f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-18 06:36:45</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_6ff6f08d473ac75089b4a22f316d4310</table>
+        <value>{{action.registration_sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>username</field>
+        <id>6ff6f08d473ac75089b4a22f316d4310</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-18 05:41:22</sys_created_on>
+        <sys_id>11f0ecd947764b5089b4a22f316d431f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-18 05:41:22</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_6ff6f08d473ac75089b4a22f316d4310</table>
+        <value>{{action.username}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=6ff6f08d473ac75089b4a22f316d4310"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=6ff6f08d473ac75089b4a22f316d4310"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=6ff6f08d473ac75089b4a22f316d4310^sys_idNOT IN1df0acd947764b5089b4a22f316d43bb,55f0acd947764b5089b4a22f316d43cb,55f0ecd947764b5089b4a22f316d430a,d9f0acd947764b5089b4a22f316d43c4,d9f0ecd947764b5089b4a22f316d4303"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>username</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>username</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">6ff6f08d473ac75089b4a22f316d4310</model>
+        <model_id>6ff6f08d473ac75089b4a22f316d4310</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_6ff6f08d473ac75089b4a22f316d4310</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-18 05:41:21</sys_created_on>
+        <sys_id>1df0acd947764b5089b4a22f316d43bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-18 05:41:21</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>last_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>last_name</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">6ff6f08d473ac75089b4a22f316d4310</model>
+        <model_id>6ff6f08d473ac75089b4a22f316d4310</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_6ff6f08d473ac75089b4a22f316d4310</name>
+        <next_element/>
+        <order>200</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-18 05:41:22</sys_created_on>
+        <sys_id>55f0acd947764b5089b4a22f316d43cb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-18 05:41:22</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>email</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>email</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">6ff6f08d473ac75089b4a22f316d4310</model>
+        <model_id>6ff6f08d473ac75089b4a22f316d4310</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_6ff6f08d473ac75089b4a22f316d4310</name>
+        <next_element/>
+        <order>400</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-18 05:41:22</sys_created_on>
+        <sys_id>55f0ecd947764b5089b4a22f316d430a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-18 05:41:22</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>first_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>first_name</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">6ff6f08d473ac75089b4a22f316d4310</model>
+        <model_id>6ff6f08d473ac75089b4a22f316d4310</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_6ff6f08d473ac75089b4a22f316d4310</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-18 05:41:21</sys_created_on>
+        <sys_id>d9f0acd947764b5089b4a22f316d43c4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-18 05:41:21</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>password</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>password</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">6ff6f08d473ac75089b4a22f316d4310</model>
+        <model_id>6ff6f08d473ac75089b4a22f316d4310</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_6ff6f08d473ac75089b4a22f316d4310</name>
+        <next_element/>
+        <order>300</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-18 05:41:22</sys_created_on>
+        <sys_id>d9f0ecd947764b5089b4a22f316d4303</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-18 05:41:22</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=6ff6f08d473ac75089b4a22f316d4310"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=6ff6f08d473ac75089b4a22f316d4310"/>
+    <sys_hub_action_input action="delete_multiple" query="model=e3f6f08d473ac75089b4a22f316d4306^sys_idNOT IN09f0acd947764b5089b4a22f316d439f,85f0acd947764b5089b4a22f316d438b,c1f0acd947764b5089b4a22f316d43a7,c5f0acd947764b5089b4a22f316d4359,c9f0acd947764b5089b4a22f316d4383"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=5c5fcac2-8c2b-4930-a147-6497155b6ccd</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>password</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>password</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Activate user and set password 2">e3f6f08d473ac75089b4a22f316d4306</model>
+        <model_id>e3f6f08d473ac75089b4a22f316d4306</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_e3f6f08d473ac75089b4a22f316d4306</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-18 05:41:21</sys_created_on>
+        <sys_id>09f0acd947764b5089b4a22f316d439f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-18 05:41:21</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=09f0acd947764b5089b4a22f316d439f"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=dafeea20-ba01-4614-8e21-0dc3d08f999c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>last_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>last_name</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Activate user and set password 2">e3f6f08d473ac75089b4a22f316d4306</model>
+        <model_id>e3f6f08d473ac75089b4a22f316d4306</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_e3f6f08d473ac75089b4a22f316d4306</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-18 05:41:21</sys_created_on>
+        <sys_id>85f0acd947764b5089b4a22f316d438b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-18 05:41:21</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=85f0acd947764b5089b4a22f316d438b"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=58502754-2178-4296-b5f8-ab2e27c8752e</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>email</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>email</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Activate user and set password 2">e3f6f08d473ac75089b4a22f316d4306</model>
+        <model_id>e3f6f08d473ac75089b4a22f316d4306</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_e3f6f08d473ac75089b4a22f316d4306</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-18 05:41:21</sys_created_on>
+        <sys_id>c1f0acd947764b5089b4a22f316d43a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-18 05:41:21</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=c1f0acd947764b5089b4a22f316d43a7"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=74fb1db7-a5aa-4178-ac50-4d4859e6489c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>username</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>username</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Activate user and set password 2">e3f6f08d473ac75089b4a22f316d4306</model>
+        <model_id>e3f6f08d473ac75089b4a22f316d4306</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_e3f6f08d473ac75089b4a22f316d4306</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-18 05:41:21</sys_created_on>
+        <sys_id>c5f0acd947764b5089b4a22f316d4359</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-18 05:41:21</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=c5f0acd947764b5089b4a22f316d4359"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=050c1c28-d2a6-4d1c-a65e-d517ae7aa4c7</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>first_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>first_name</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Activate user and set password 2">e3f6f08d473ac75089b4a22f316d4306</model>
+        <model_id>e3f6f08d473ac75089b4a22f316d4306</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_e3f6f08d473ac75089b4a22f316d4306</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-18 05:41:21</sys_created_on>
+        <sys_id>c9f0acd947764b5089b4a22f316d4383</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-18 05:41:21</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=c9f0acd947764b5089b4a22f316d4383"/>
+    <sys_hub_action_output action="delete_multiple" query="model=e3f6f08d473ac75089b4a22f316d4306^sys_idNOT IN73f6f08d473ac75089b4a22f316d4331,bff6f08d473ac75089b4a22f316d4339"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FDACTIONSTATUS,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=aaf86ba1-51d3-4ec7-9d26-67ac4cb5b14e</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Activate user and set password 2">e3f6f08d473ac75089b4a22f316d4306</model>
+        <model_id>e3f6f08d473ac75089b4a22f316d4306</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_e3f6f08d473ac75089b4a22f316d4306</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-17 12:39:10</sys_created_on>
+        <sys_id>73f6f08d473ac75089b4a22f316d4331</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-17 12:39:10</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=73f6f08d473ac75089b4a22f316d4331"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=73f6f08d473ac75089b4a22f316d4331"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=ce04e6d1-6687-4a05-a6a1-a8d672fe92ab,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Activate user and set password 2">e3f6f08d473ac75089b4a22f316d4306</model>
+        <model_id>e3f6f08d473ac75089b4a22f316d4306</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_e3f6f08d473ac75089b4a22f316d4306</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-17 12:39:10</sys_created_on>
+        <sys_id>bff6f08d473ac75089b4a22f316d4339</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-18 08:09:38</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=bff6f08d473ac75089b4a22f316d4339"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=bff6f08d473ac75089b4a22f316d4339"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=e3f6f08d473ac75089b4a22f316d4306"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=e3f6f08d473ac75089b4a22f316d4306^sys_idNOT INbbf6f08d473ac75089b4a22f316d434d"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="Activate user and set password 2">e3f6f08d473ac75089b4a22f316d4306</action_type_id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-17 12:39:10</sys_created_on>
+        <sys_id>bbf6f08d473ac75089b4a22f316d434d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-17 12:39:10</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=bbf6f08d473ac75089b4a22f316d434d"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>last_name</element>
+        <help/>
+        <hint/>
+        <label>last_name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_e3f6f08d473ac75089b4a22f316d4306</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-18 05:41:21</sys_created_on>
+        <sys_id>0df0acd947764b5089b4a22f316d4390</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>last_name</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-18 05:41:21</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>first_name</element>
+        <help/>
+        <hint/>
+        <label>first_name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_e3f6f08d473ac75089b4a22f316d4306</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-18 05:41:21</sys_created_on>
+        <sys_id>41f0acd947764b5089b4a22f316d4389</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>first_name</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-18 05:41:21</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>email</element>
+        <help/>
+        <hint/>
+        <label>email</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_e3f6f08d473ac75089b4a22f316d4306</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-18 05:41:21</sys_created_on>
+        <sys_id>49f0acd947764b5089b4a22f316d43ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>email</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-18 05:41:21</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>username</element>
+        <help/>
+        <hint/>
+        <label>username</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_e3f6f08d473ac75089b4a22f316d4306</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-18 05:41:21</sys_created_on>
+        <sys_id>89f0acd947764b5089b4a22f316d4380</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>username</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-18 05:41:21</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>password</element>
+        <help/>
+        <hint/>
+        <label>password</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_e3f6f08d473ac75089b4a22f316d4306</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-18 05:41:21</sys_created_on>
+        <sys_id>8df0acd947764b5089b4a22f316d43a4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>password</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-18 05:41:21</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_e3f6f08d473ac75089b4a22f316d4306"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_e3f6f08d473ac75089b4a22f316d4306</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-17 12:39:10</sys_created_on>
+        <sys_id>7bf6f08d473ac75089b4a22f316d4337</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Action Status</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-17 12:39:10</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_e3f6f08d473ac75089b4a22f316d4306</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-17 12:39:10</sys_created_on>
+        <sys_id>bbf6f08d473ac75089b4a22f316d4342</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Don't Treat as Error</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-17 12:39:10</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_e3f6f08d473ac75089b4a22f316d4306"/>
+    <sys_hub_action_type_definition action="UPDATE">
+        <sys_id>ccb5f4c9473ac75089b4a22f316d43ff</sys_id>
+        <latest_snapshot>e3f6f08d473ac75089b4a22f316d4306</latest_snapshot>
+        <compiler_build>glide-australia-02-11-2026__patch3-05-25-2026_06-12-2026_1106.zip</compiler_build>
+    </sys_hub_action_type_definition>
+</record_update>

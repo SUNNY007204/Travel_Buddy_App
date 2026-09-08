@@ -38,7 +38,21 @@
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_travel_buddy_app_itinerary_package" sys_domain="global" view="Default view">82c85b4a8316031031ab6730ceaad3e9</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-08-14 08:53:11</sys_updated_on>
+            <sys_updated_on>2026-08-18 08:53:29</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_image</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-18 08:53:30</sys_created_on>
+            <sys_id>7becc91d47fa4b5089b4a22f316d43ef</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_travel_buddy_app_itinerary_package" sys_domain="global" view="Default view">82c85b4a8316031031ab6730ceaad3e9</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-18 08:53:30</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

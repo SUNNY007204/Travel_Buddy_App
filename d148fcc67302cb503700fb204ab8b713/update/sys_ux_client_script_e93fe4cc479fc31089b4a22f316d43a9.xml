@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="Landing Page">a8429094276e0350d27a1ba75c044760</macroponent>
+        <name>Book trip</name>
+        <preset/>
+        <required_translations>[]</required_translations>
+        <script><![CDATA[
+// /**
+//  * @param {params} params
+//  * @param {api} params.api
+//  * @param {any} params.event
+//  * @param {any} params.helpers
+//  */
+// async function handler({api, event, helpers}) {
+//     const item = event.context && event.context.item ? event.context.item.value : {};
+    
+//     const tableName = 'x_travel_buddy_app_trip_request';
+//     const destination = item.destination || item.title || 'Satara';
+
+//     let weatherData = '';
+
+//     // 1. Fetch Weather via REST endpoint for GlideAjax
+//     try {
+//         const url = `/api/now/ui/render_context/xmlhttp?sysparm_processor=WeatherUtils&sysparm_name=getWeatherForDestination&sysparm_destination=${encodeURIComponent(destination)}`;
+//         const res = await helpers.snHttp(url, { method: 'GET' });
+//         weatherData = typeof res === 'string' ? res : JSON.stringify(res);
+//     } catch (e) {
+//         console.warn("Weather call failed:", e);
+//     }
+
+//     // 2. Pass both 'u_weather' and 'weather' to cover both custom/standard schema possibilities
+//     const payload = {
+//         u_destination_package: item.title || 'Gold',
+//         u_destination: destination,
+//         u_traveler: api.context.session.user.sys_id,
+//         u_state: 'pending_approval',
+//         u_weather: weatherData,
+//         weather: weatherData
+//     };
+
+//     console.log("Sending REST POST with weather payload:", payload);
+
+//     try {
+//         const response = await helpers.snHttp(`/api/now/table/${tableName}`, {
+//             method: 'POST',
+//             headers: {
+//                 'Content-Type': 'application/json',
+//                 'Accept': 'application/json'
+//             },
+//             body: JSON.stringify(payload)
+//         });
+
+//         console.log("Record created:", response);
+
+//         if (helpers.modal) {
+//             helpers.modal.open('sn_canvas_app_template_toast', {
+//                 alertType: 'success',
+//                 message: 'Trip request created with weather!'
+//             });
+//         }
+//     } catch (error) {
+//         console.error("Failed to create record:", error);
+//     }
+// }
+
+// /**
+//  * @param {params} params
+//  * @param {api} params.api
+//  * @param {any} params.event
+//  * @param {any} params.helpers
+//  */
+// async function handler({api, event, helpers}) {
+//     const item = event.context && event.context.item ? event.context.item.value : {};
+//     const tableName = 'x_travel_buddy_app_trip_request';
+//     const destinationName = item.destination || item.title || 'Satara';
+
+//     let locationSysId = '';
+
+//     // 1. Resolve Location sys_id from cmn_location table
+//     try {
+//         const locRes = await helpers.snHttp(`/api/now/table/cmn_location?sysparm_query=name=${encodeURIComponent(destinationName)}&sysparm_limit=1`, {
+//             method: 'GET',
+//             headers: { 'Accept': 'application/json' }
+//         });
+
+//         if (locRes && locRes.result && locRes.result.length > 0) {
+//             locationSysId = locRes.result[0].sys_id;
+//         }
+//     } catch (e) {
+//         console.warn("Could not find location sys_id:", e);
+//     }
+
+//     // 2. Post record with resolved Location Reference ID
+//     const payload = {
+//         u_destination_package: item.title || 'Gold',
+//         u_destination: locationSysId || destinationName,
+//         u_traveler: api.context.session.user.sys_id,
+//         u_state: 'pending_approval'
+//     };
+
+//     try {
+//         const response = await helpers.snHttp(`/api/now/table/${tableName}`, {
+//             method: 'POST',
+//             headers: {
+//                 'Content-Type': 'application/json',
+//                 'Accept': 'application/json'
+//             },
+//             body: JSON.stringify(payload)
+//         });
+
+//         if (helpers.modal) {
+//             helpers.modal.open('sn_canvas_app_template_toast', {
+//                 alertType: 'success',
+//                 message: 'Trip request created successfully!'
+//             });
+//         }
+//     } catch (error) {
+//         console.error("Failed to create record:", error);
+//     }
+// }
+
+/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.helpers
+ */
+async function handler({api, event, helpers}) {
+    const item = event.context && event.context.item ? event.context.item.value : {};
+    const tableName = 'x_travel_buddy_app_trip_request';
+
+    const payload = {
+        u_destination_package: item.title || item.name || 'Gold',
+        u_destination: item.destination || item.title || 'Satara',
+        u_traveler: api.context.session.user.sys_id,
+        u_state: 'pending_approval'
+    };
+
+    try {
+        const response = await helpers.snHttp(`/api/now/table/${tableName}`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify(payload)
+        });
+
+        if (helpers.modal) {
+            helpers.modal.open('sn_canvas_app_template_toast', {
+                alertType: 'success',
+                message: 'Trip request created successfully!'
+            });
+        }
+    } catch (error) {
+        console.error("Failed to create record:", error);
+    }
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-08 06:34:24</sys_created_on>
+        <sys_id>e93fe4cc479fc31089b4a22f316d43a9</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>Book trip</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name>sys_ux_client_script_e93fe4cc479fc31089b4a22f316d43a9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-08 08:42:31</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>
