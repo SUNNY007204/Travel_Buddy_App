@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_travel_buddy_app.TBA_ScheduleEventsAjax</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description>GlideAjax processor that fetches schedule span events and converts schedule_date_time format to standard date-time for calendar components.</description>
+        <mobile_callable>false</mobile_callable>
+        <name>TBA_ScheduleEventsAjax</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var TBA_ScheduleEventsAjax = Class.create();
+
+TBA_ScheduleEventsAjax.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    /**
+     * Fetches ALL booked schedule span events for a user.
+     * Automatically finds all cmn_schedule records linked to the user
+     * via x_travel_buddy_app_u_buddy_profile, then returns all spans.
+     *
+     * Parameters:
+     *   sysparm_user_id (optional) - sys_id of a sys_user record.
+     *                                Defaults to the current logged-in user.
+     */
+    getScheduleEvents: function() {
+        var userId = this.getParameter('sysparm_user_id');
+
+        // Default to current logged-in user if no user ID provided
+        if (!userId) {
+            userId = gs.getUserID();
+        }
+
+        var events = [];
+        var scheduleIds = [];
+
+        // Step 1: Find all schedules linked to this buddy/user
+        var schedGR = new GlideRecord('cmn_schedule');
+        schedGR.addQuery('x_travel_buddy_app_u_buddy_profile', userId);
+        schedGR.query();
+
+        while (schedGR.next()) {
+            scheduleIds.push(schedGR.getUniqueValue());
+        }
+
+        // If no schedules found for this user, return empty
+        if (scheduleIds.length === 0) {
+            return JSON.stringify({ events: events, count: 0 });
+        }
+
+        // Step 2: Get all booked spans across all schedules for this user
+        var spanGR = new GlideRecord('cmn_schedule_span');
+        spanGR.addQuery('schedule', 'IN', scheduleIds.join(','));
+        spanGR.addQuery('type', 'Booked');
+        spanGR.query();
+
+        while (spanGR.next()) {
+            var startDT = spanGR.getValue('start_date_time') || '';
+            var endDT = spanGR.getValue('end_date_time') || '';
+
+            events.push({
+                sys_id: spanGR.getUniqueValue(),
+                name: spanGR.getValue('name') || '',
+                start: this._convertScheduleDateTime(startDT),
+                end: this._convertScheduleDateTime(endDT),
+                type: spanGR.getValue('type') || '',
+                show_as: spanGR.getValue('show_as') || '',
+                all_day: spanGR.getValue('all_day') === '1',
+                linked_trip: spanGR.getValue('x_travel_buddy_app_u_linked_trip') || '',
+                schedule: spanGR.getValue('schedule') || ''
+            });
+        }
+
+        return JSON.stringify({ events: events, count: events.length });
+    },
+
+    /**
+     * One-time fix: Populates empty start/end fields on all cmn_schedule_span
+     * records that have start_date_time/end_date_time but missing start/end.
+     * Call this once to backfill existing records.
+     * Returns the number of records fixed.
+     */
+    fixExistingRecords: function() {
+        var gr = new GlideRecord('cmn_schedule_span');
+        gr.addQuery('start_date_time', '!=', '');
+        gr.addNullQuery('start');
+        gr.query();
+
+        var count = 0;
+        while (gr.next()) {
+            var startDT = gr.getValue('start_date_time') || '';
+            var endDT = gr.getValue('end_date_time') || '';
+
+            if (startDT && startDT.length >= 15) {
+                gr.setValue('start', this._convertScheduleDateTime(startDT));
+            }
+            if (endDT && endDT.length >= 15) {
+                gr.setValue('end', this._convertScheduleDateTime(endDT));
+            }
+            gr.update();
+            count++;
+        }
+
+        return JSON.stringify({ fixed: count });
+    },
+
+    _convertScheduleDateTime: function(sdt) {
+        if (!sdt || sdt.length < 15) return '';
+        // Input format: "20260827T054920" (yyyyMMddTHHmmss)
+        // Output format: "2026-08-27 05:49:20" (yyyy-MM-dd HH:mm:ss)
+        var year = sdt.substring(0, 4);
+        var month = sdt.substring(4, 6);
+        var day = sdt.substring(6, 8);
+        // Position 8 is 'T' separator
+        var hour = sdt.substring(9, 11);
+        var min = sdt.substring(11, 13);
+        var sec = sdt.substring(13, 15);
+        return year + '-' + month + '-' + day + ' ' + hour + ':' + min + ':' + sec;
+    },
+
+    type: 'TBA_ScheduleEventsAjax'
+});
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-08 09:55:36</sys_created_on>
+        <sys_id>a3b09fbe96b64cddbc57d1914dbaf985</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>TBA_ScheduleEventsAjax</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name>sys_script_include_a3b09fbe96b64cddbc57d1914dbaf985</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-08 09:55:36</sys_updated_on>
+    </sys_script_include>
+</record_update>

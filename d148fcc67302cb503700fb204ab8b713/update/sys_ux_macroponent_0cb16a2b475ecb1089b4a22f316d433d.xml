@@ -279,12 +279,12 @@
                                         "value": {
                                             "code": null,
                                             "comment": "",
-                                            "message": ""
+                                            "message": "Enter a label"
                                         }
                                     },
                                     "variant": {
                                         "type": "JSON_LITERAL",
-                                        "value": "primary-ai"
+                                        "value": "secondary"
                                     }
                                 },
                                 "slot": null,
@@ -418,12 +418,12 @@
                                         "value": {
                                             "code": null,
                                             "comment": "",
-                                            "message": ""
+                                            "message": "Enter a label"
                                         }
                                     },
                                     "variant": {
                                         "type": "JSON_LITERAL",
-                                        "value": "primary-ai"
+                                        "value": "secondary"
                                     }
                                 },
                                 "slot": null,
@@ -557,12 +557,12 @@
                                         "value": {
                                             "code": null,
                                             "comment": "",
-                                            "message": ""
+                                            "message": "Enter a label"
                                         }
                                     },
                                     "variant": {
                                         "type": "JSON_LITERAL",
-                                        "value": "primary-ai"
+                                        "value": "secondary"
                                     }
                                 },
                                 "slot": null,
@@ -696,12 +696,12 @@
                                         "value": {
                                             "code": null,
                                             "comment": "",
-                                            "message": ""
+                                            "message": "Enter a label"
                                         }
                                     },
                                     "variant": {
                                         "type": "JSON_LITERAL",
-                                        "value": "primary-ai"
+                                        "value": "secondary"
                                     }
                                 },
                                 "slot": null,
