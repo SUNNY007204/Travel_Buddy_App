@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl/>
+        <http_method>PUT</http_method>
+        <name>Updating Incident</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+    var sysId = request.pathParams.sys_id;
+    var body = request.body.data;
+
+    var gr = new GlideRecord('incident');
+    if (gr.get(sysId)) {
+        if (body.caller) gr.caller_id = body.caller;
+        if (body.short_description) gr.short_description = body.short_description;
+        if (body.description) gr.description = body.description;
+        if (body.category) gr.category = body.category;
+        if (body.priority) gr.priority = body.priority;
+
+        gr.update();
+
+        response.setStatus(200);
+        response.setBody({
+            message: "Incident updated successfully",
+            sys_id: sysId
+        });
+    } else {
+        response.setStatus(404);
+        response.setBody({ error: "Incident record not found" });
+    }
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_travel_buddy_app/incident_data_api/{sys_id}</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/{sys_id}</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <support_trailing_slash>false</support_trailing_slash>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-19 06:16:15</sys_created_on>
+        <sys_id>a0e1f5e983f2471031ab6730ceaad3f4</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Updating Incident</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name>sys_ws_operation_a0e1f5e983f2471031ab6730ceaad3f4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-19 06:46:14</sys_updated_on>
+        <web_service_definition display_value="Incident Data API">f3aea9a183f2471031ab6730ceaad300</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>
