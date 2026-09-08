@@ -20,6 +20,17 @@
                 <element inactive_on_update="false" label="Group" sequence="1" value="group"/>
             </choice>
         </element>
+        <element label="Selected Itinerary" max_length="40" name="u_selected_itinerary" type="string"/>
+        <element label="Preferred Language" max_length="1024" name="u_preferred_language" type="glide_list"/>
+        <element label="Destination" mandatory="true" max_length="32" name="u_destination" reference="cmn_location" reference_qual="country=India^EQ" reference_qual_condition="country=India^EQ" type="reference"/>
         <element attributes="edge_encryption_enabled=true" label="End Time" max_length="40" name="end_time" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="Start Time" max_length="40" name="start_time" type="glide_date_time"/>
+        <element choice="1" label="Destination Package" max_length="40" name="u_destination_package" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Gold" sequence="1" value="gold"/>
+                <element inactive_on_update="false" label="Silver" sequence="2" value="silver"/>
+                <element inactive_on_update="false" label="Premium" sequence="0" value="premium"/>
+            </choice>
+        </element>
     </element>
 </database>
