@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_transform">
+    <sys_ux_data_broker_transform action="INSERT_OR_UPDATE">
+        <acl_failure_result/>
+        <api_name>x_travel_buddy_app.TBA Get Schedule Events</api_name>
+        <batch_exclude>false</batch_exclude>
+        <description/>
+        <mutates_server_data>false</mutates_server_data>
+        <name>TBA Get Schedule Events</name>
+        <output_schema/>
+        <private>false</private>
+        <props>[{"name":"scheduleSysId","label":"Schedule Sys Id","description":"The sys_id of the schedule (cmn_schedule) to retrieve events for","readOnly":false,"fieldType":"string","mandatory":true,"defaultValue":""}]</props>
+        <required_translations/>
+        <schema_version>1.0.0</schema_version>
+        <script><![CDATA[function transform(input) {
+    var scheduleSysId = input.scheduleSysId;
+    var events = [];
+
+    if (!scheduleSysId) {
+        return { events: events };
+    }
+
+    var gr = new GlideRecord('cmn_schedule_span');
+    gr.addQuery('schedule', scheduleSysId);
+    gr.query();
+
+    while (gr.next()) {
+        var startDT = gr.getValue('start_date_time') || '';
+        var endDT = gr.getValue('end_date_time') || '';
+
+        events.push({
+            sys_id: gr.getUniqueValue(),
+            name: gr.getValue('name') || '',
+            start: convertScheduleDateTime(startDT),
+            end: convertScheduleDateTime(endDT),
+            type: gr.getValue('type') || '',
+            show_as: gr.getValue('show_as') || '',
+            all_day: gr.getValue('all_day') === '1',
+            linked_trip: gr.getValue('x_travel_buddy_app_u_linked_trip') || ''
+        });
+    }
+
+    return { events: events };
+}
+
+function convertScheduleDateTime(sdt) {
+    if (!sdt || sdt.length < 15) return '';
+    // Input format: "20260827T054920" (yyyyMMddTHHmmss)
+    // Output format: "2026-08-27 05:49:20" (yyyy-MM-dd HH:mm:ss)
+    var year = sdt.substring(0, 4);
+    var month = sdt.substring(4, 6);
+    var day = sdt.substring(6, 8);
+    // Position 8 is 'T' separator
+    var hour = sdt.substring(9, 11);
+    var min = sdt.substring(11, 13);
+    var sec = sdt.substring(13, 15);
+    return year + '-' + month + '-' + day + ' ' + hour + ':' + min + ':' + sec;
+}
+]]></script>
+        <sys_class_name>sys_ux_data_broker_transform</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-08 09:55:35</sys_created_on>
+        <sys_id>adffb9a38a1e4b4d8be1517aaa0fad34</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>TBA Get Schedule Events</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name>sys_ux_data_broker_transform_adffb9a38a1e4b4d8be1517aaa0fad34</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-08 09:55:35</sys_updated_on>
+    </sys_ux_data_broker_transform>
+    <sys_translated_text action="delete_multiple" query="documentkey=adffb9a38a1e4b4d8be1517aaa0fad34"/>
+</record_update>
