@@ -493,12 +493,12 @@
                                         "value": {
                                             "code": null,
                                             "comment": "",
-                                            "message": "Enter a label"
+                                            "message": ""
                                         }
                                     },
                                     "variant": {
                                         "type": "JSON_LITERAL",
-                                        "value": "secondary"
+                                        "value": "primary-ai"
                                     }
                                 },
                                 "slot": null,
@@ -598,7 +598,7 @@
                                 "propertyValues": {
                                     "active": {
                                         "type": "JSON_LITERAL",
-                                        "value": true
+                                        "value": false
                                     },
                                     "animatedIcon": {
                                         "type": "JSON_LITERAL",
@@ -637,12 +637,12 @@
                                         "value": {
                                             "code": null,
                                             "comment": "",
-                                            "message": "Enter a label"
+                                            "message": ""
                                         }
                                     },
                                     "variant": {
                                         "type": "JSON_LITERAL",
-                                        "value": "tertiary-ai"
+                                        "value": "primary-ai"
                                     }
                                 },
                                 "slot": null,
@@ -776,12 +776,12 @@
                                         "value": {
                                             "code": null,
                                             "comment": "",
-                                            "message": "Enter a label"
+                                            "message": ""
                                         }
                                     },
                                     "variant": {
                                         "type": "JSON_LITERAL",
-                                        "value": "secondary"
+                                        "value": "primary-ai"
                                     }
                                 },
                                 "slot": null,
@@ -915,12 +915,12 @@
                                         "value": {
                                             "code": null,
                                             "comment": "",
-                                            "message": "Enter a label"
+                                            "message": ""
                                         }
                                     },
                                     "variant": {
                                         "type": "JSON_LITERAL",
-                                        "value": "secondary"
+                                        "value": "primary-ai"
                                     }
                                 },
                                 "slot": null,
@@ -2432,14 +2432,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-07-29 10:33:26</sys_created_on>
         <sys_id>24046afa479a471089b4a22f316d4385</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_name>My Trips</sys_name>
         <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
         <sys_policy/>
         <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
         <sys_update_name>sys_ux_macroponent_24046afa479a471089b4a22f316d4385</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-31 13:29:40</sys_updated_on>
+        <sys_updated_on>2026-09-07 09:10:55</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=24046afa479a471089b4a22f316d4385"/>
 </record_update>
