@@ -6,7 +6,7 @@
         <disable_auto_reflow>true</disable_auto_reflow>
         <disable_interoperable>false</disable_interoperable>
         <event_mappings>[]</event_mappings>
-        <macroponent display_value="Traveler Dashboard">0cb16a2b475ecb1089b4a22f316d433d</macroponent>
+        <macroponent display_value="Buddy dashboard">0758cbae479ec31089b4a22f316d438c</macroponent>
         <macroponent_config>{
     "bare": {
         "type": "JSON_LITERAL",
@@ -37,8 +37,8 @@
         "value": "y"
     }
 }</macroponent_config>
-        <name>Traveler Dashboard</name>
-        <order>0</order>
+        <name>Buddy dashboard</name>
+        <order>200</order>
         <parent_macroponent display_value="Workspace App Shell">c276387cc331101080d6d3658940ddd2</parent_macroponent>
         <required_translations>[ ]</required_translations>
         <rollback_screen/>
@@ -46,19 +46,19 @@
         <screen_type display_value="Home">2d52fa62a31ec31054eb4487b8889688</screen_type>
         <sys_class_name>sys_ux_screen</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-07-31 18:18:44</sys_created_on>
+        <sys_created_on>2026-07-28 18:33:46</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>c8b1e26b475ecb1089b4a22f316d43ba</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>Traveler Dashboard</sys_name>
+        <sys_id>0758cbee479ec31089b4a22f316d43c4</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>Buddy dashboard</sys_name>
         <sys_overrides/>
         <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
         <sys_policy/>
         <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
-        <sys_update_name>sys_ux_screen_c8b1e26b475ecb1089b4a22f316d43ba</sys_update_name>
+        <sys_update_name>sys_ux_screen_0758cbee479ec31089b4a22f316d43c4</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-09-07 13:51:40</sys_updated_on>
+        <sys_updated_on>2026-09-07 11:42:51</sys_updated_on>
     </sys_ux_screen>
-    <sys_translated_text action="delete_multiple" query="documentkey=c8b1e26b475ecb1089b4a22f316d43ba"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=0758cbee479ec31089b4a22f316d43c4"/>
 </record_update>

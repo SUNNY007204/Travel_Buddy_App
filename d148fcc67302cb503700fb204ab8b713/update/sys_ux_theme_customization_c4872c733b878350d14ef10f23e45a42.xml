@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_theme_customization">
+    <sys_ux_theme_customization action="INSERT_OR_UPDATE">
+        <customization>{
+  "colors": [
+    {
+      "id": "isSecondaryColorUpdated",
+      "value": true,
+      "type": "secondary_color_updated"
+    }
+  ],
+  "feedback": [],
+  "groupName": "Travel Buddy App Theme Group",
+  "variants": [
+    {
+      "id": "04dab43b3b0b8350d14ef10f23e45a1b",
+      "colors": [
+        {
+          "id": "isSecondaryColorUpdated",
+          "value": true,
+          "type": "secondary_color_updated"
+        },
+        {
+          "id": "--now-color_text--primary",
+          "value": "22, 50, 95",
+          "type": "color_hook_overridden"
+        },
+        {
+          "id": "--now-color_chrome--brand",
+          "value": "22, 50, 95",
+          "type": "color_hook_overridden"
+        },
+        {
+          "id": "--now-color_border--primary",
+          "value": "148, 163, 184",
+          "type": "color_hook_overridden"
+        },
+        {
+          "id": "--now-color_divider--primary",
+          "value": "226, 232, 240",
+          "type": "color_hook_overridden"
+        },
+        {
+          "id": "--now-color_text--secondary",
+          "value": "22, 50, 95",
+          "type": "color_hook_overridden"
+        },
+        {
+          "id": "--now-button--secondary-positive--color",
+          "value": "207,65,1",
+          "type": "component_hook_overridden"
+        },
+        {
+          "id": "--now-button_icon--secondary-positive--color--active",
+          "value": "50,53,58",
+          "type": "component_hook_overridden",
+          "hook": "now-color--neutral-15"
+        },
+        {
+          "id": "--now-button_icon--secondary-negative--color--active",
+          "value": "58,62,67",
+          "type": "component_hook_overridden",
+          "hook": "now-color--neutral-14"
+        },
+        {
+          "id": "--now-button-circular--background-color",
+          "value": "116,121,125",
+          "type": "component_hook_overridden",
+          "hook": "now-color--neutral-9"
+        },
+        {
+          "id": "--now-button_icon--bare_primary--color",
+          "value": "99,104,108",
+          "type": "component_hook_overridden",
+          "hook": "now-color--neutral-10"
+        },
+        {
+          "id": "--now-button--primary--background-color",
+          "value": "99,104,108",
+          "type": "component_hook_overridden",
+          "hook": "now-color--neutral-10"
+        },
+        {
+          "id": "--now-button--secondary--color",
+          "value": "197,78,25",
+          "type": "component_hook_overridden"
+        },
+        {
+          "id": "--now-button_icon--secondary--color",
+          "value": "189,76,24",
+          "type": "component_hook_overridden"
+        },
+        {
+          "id": "--now-button-stateful--secondary--color",
+          "value": "164,82,46",
+          "type": "component_hook_overridden",
+          "hook": "now-color_selection--secondary-3"
+        },
+        {
+          "id": "--now-button-stateful--secondary--color--selected",
+          "value": "164,82,46",
+          "type": "component_hook_overridden",
+          "hook": "now-color--secondary-2"
+        },
+        {
+          "id": "--now-button-stateful--secondary_highlighted--color--selected",
+          "value": "164,82,46",
+          "type": "component_hook_overridden",
+          "hook": "now-color_selection--secondary-3"
+        },
+        {
+          "id": "--now-unified-nav_menu-item--background-color--hover",
+          "value": "241,121,67",
+          "type": "component_hook_overridden",
+          "hook": "now-color_brand--secondary"
+        },
+        {
+          "id": "--now-unified-nav_menu-item--border-color--hover",
+          "value": "22,50,95",
+          "type": "component_hook_overridden",
+          "hook": "now-color_brand--primary"
+        },
+        {
+          "id": "--now-unified-nav_menu-subitem--color--hover",
+          "value": "255,255,255",
+          "type": "component_hook_overridden",
+          "hook": "now-color--neutral-0"
+        },
+        {
+          "id": "--now-unified-nav_menu-item--color--hover",
+          "value": "41,45,48",
+          "type": "component_hook_overridden",
+          "hook": "now-color--neutral-16"
+        },
+        {
+          "id": "--now-unified-nav_menu-sublabel--color--hover",
+          "value": "22,50,95",
+          "type": "component_hook_overridden",
+          "hook": "now-color_brand--primary"
+        },
+        {
+          "id": "--now-form-control-input--primary--border-color",
+          "value": "22,50,95",
+          "type": "component_hook_overridden",
+          "hook": "now-color_brand--primary"
+        },
+        {
+          "id": "--now-form-control_value--placeholder--color",
+          "value": "22,50,95",
+          "type": "component_hook_overridden",
+          "hook": "now-color_brand--primary"
+        },
+        {
+          "id": "--now-form-control-input--primary--border-color--hover",
+          "value": "22,50,95",
+          "type": "component_hook_overridden",
+          "hook": "now-color_brand--primary"
+        },
+        {
+          "id": "--now-form-control-input--primary--background-color--readonly",
+          "value": "116,121,125",
+          "type": "component_hook_overridden",
+          "hook": "now-color_text--tertiary"
+        },
+        {
+          "id": "--now-form-control_value--primary--color",
+          "value": "0,0,0",
+          "type": "component_hook_overridden",
+          "hook": "now-color--neutral-21"
+        },
+        {
+          "id": "--now-unified-nav_menu-filter--border-color",
+          "value": "22,50,95",
+          "type": "component_hook_overridden",
+          "hook": "now-color_brand--primary"
+        },
+        {
+          "id": "--now-button-iconic--secondary--color",
+          "value": "164,82,46",
+          "type": "component_hook_overridden",
+          "hook": "now-color--secondary-2"
+        },
+        {
+          "id": "--now-button--bare_secondary--color",
+          "value": "164,82,46",
+          "type": "component_hook_overridden",
+          "hook": "now-color--secondary-2"
+        },
+        {
+          "id": "--now-button_icon--bare_secondary--color",
+          "value": "164,82,46",
+          "type": "component_hook_overridden",
+          "hook": "now-color--secondary-2"
+        },
+        {
+          "id": "--now-button--tertiary--color",
+          "value": "22,50,95",
+          "type": "component_hook_overridden",
+          "hook": "now-color_brand--primary"
+        },
+        {
+          "id": "--now-form-field_message--suggestion--color",
+          "value": "22,50,95",
+          "type": "component_hook_overridden",
+          "hook": "now-color_brand--primary"
+        },
+        {
+          "id": "--now-button-iconic--bare_secondary--color",
+          "value": "164,82,46",
+          "type": "component_hook_overridden",
+          "hook": "now-color--secondary-2"
+        },
+        {
+          "id": "--now-unified-nav_menu-section-header--color",
+          "value": "22,50,95",
+          "type": "component_hook_overridden",
+          "hook": "now-color_brand--primary"
+        },
+        {
+          "id": "--now-unified-nav_menu-section-header-divider--color",
+          "value": "22,50,95",
+          "type": "component_hook_overridden",
+          "hook": "now-color_brand--primary"
+        },
+        {
+          "id": "--now-button--bare_tertiary--color",
+          "value": "22,50,95",
+          "type": "component_hook_overridden",
+          "hook": "now-color_brand--primary"
+        },
+        {
+          "id": "--now-button-iconic--primary--background-color",
+          "value": "22,50,95",
+          "type": "component_hook_overridden",
+          "hook": "now-color_brand--primary"
+        },
+        {
+          "id": "--now-avatar--color",
+          "value": "22,50,95",
+          "type": "component_hook_overridden",
+          "hook": "now-color_brand--primary"
+        },
+        {
+          "id": "--now-button-stateful--tertiary_highlighted--color--selected",
+          "value": "164,82,46",
+          "type": "component_hook_overridden",
+          "hook": "now-color--secondary-2"
+        },
+        {
+          "id": "--now-heading--title-tertiary--color",
+          "value": "22,50,95",
+          "type": "component_hook_overridden",
+          "hook": "now-color_brand--primary"
+        },
+        {
+          "id": "--now-badge--primary_magenta--color",
+          "value": "41,45,48",
+          "type": "component_hook_overridden",
+          "hook": "now-color--neutral-16"
+        },
+        {
+          "id": "--now-unified-nav_menu--border-color",
+          "value": "22,50,95",
+          "type": "component_hook_overridden",
+          "hook": "now-color_brand--primary"
+        },
+        {
+          "id": "--now-badge--primary_blue--color",
+          "value": "0,0,0",
+          "type": "component_hook_overridden",
+          "hook": "now-color--neutral-21"
+        },
+        {
+          "id": "--now-highlighted-value--primary_blue--color",
+          "value": "24,26,29",
+          "type": "component_hook_overridden",
+          "hook": "now-color--neutral-18"
+        },
+        {
+          "id": "--now-unified-nav_favorite-icon--color",
+          "value": "230,90,27",
+          "type": "component_hook_overridden"
+        },
+        {
+          "id": "--now-highlighted-value--primary_magenta--color",
+          "value": "33,36,39",
+          "type": "component_hook_overridden",
+          "hook": "now-color--neutral-17"
+        },
+        {
+          "id": "--now-highlighted-value--primary_purple--color",
+          "value": "41,45,48",
+          "type": "component_hook_overridden",
+          "hook": "now-color--neutral-16"
+        },
+        {
+          "id": "--now-badge--primary_purple--color",
+          "value": "41,45,48",
+          "type": "component_hook_overridden",
+          "hook": "now-color--neutral-16"
+        }
+      ],
+      "initialValues": {}
+    }
+  ],
+  "imagery": [],
+  "systemTokenVersion": "v1",
+  "initialValues": {}
+}</customization>
+        <name>Travel Buddy App Theme</name>
+        <sys_class_name>sys_ux_theme_customization</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-07 10:50:28</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c4872c733b878350d14ef10f23e45a42</sys_id>
+        <sys_mod_count>112</sys_mod_count>
+        <sys_name>Travel Buddy App Theme</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name>sys_ux_theme_customization_c4872c733b878350d14ef10f23e45a42</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-07 13:11:50</sys_updated_on>
+        <theme display_value="Travel Buddy App Theme">fe7720733b878350d14ef10f23e45ad8</theme>
+    </sys_ux_theme_customization>
+</record_update>
