@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="Buddy dashboard">0758cbae479ec31089b4a22f316d438c</macroponent>
+        <name>New client script 1</name>
+        <preset/>
+        <required_translations>[]</required_translations>
+        <script><![CDATA[/**
+* @param {params} params
+* @param {api} params.api
+* @param {any} params.event
+* @param {any} params.imports
+* @param {ApiHelpers} params.helpers
+*/
+function handler({api, event}) {
+    // Replace with the actual schedule sys_id or bind dynamically
+    // You can get this from another data resource on the page
+    var scheduleSysId = api.data.<YOUR_DATA_RESOURCE>.schedule; 
+    
+    // If you know a specific schedule to test with, hardcode it first:
+    // var scheduleSysId = '530423ea3bea4790d14ef10f23e45a7f';
+    
+    if (!scheduleSysId) return;
+    
+    var ga = new GlideAjax('x_travel_buddy_app.TBA_ScheduleEventsAjax');
+    ga.addParam('sysparm_name', 'getScheduleEvents');
+    ga.addParam('sysparm_schedule_id', scheduleSysId);
+    ga.getXMLAnswer(function(response) {
+        try {
+            var result = JSON.parse(response);
+            api.setState('calendarEvents', result.events);
+        } catch(e) {
+            console.error('Failed to parse schedule events:', e);
+        }
+    });
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-18 09:42:38</sys_created_on>
+        <sys_id>770151d53b32c7d0d14ef10f23e45a2c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>New client script 1</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name>sys_ux_client_script_770151d53b32c7d0d14ef10f23e45a2c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-18 09:42:38</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>

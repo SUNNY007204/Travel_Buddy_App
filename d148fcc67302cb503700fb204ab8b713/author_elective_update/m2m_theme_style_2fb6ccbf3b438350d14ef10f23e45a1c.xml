@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="m2m_theme_style">
+    <m2m_theme_style action="DELETE">
+        <applicability/>
+        <order>0</order>
+        <style display_value="Shape and Form">93b68cbf3b438350d14ef10f23e45a82</style>
+        <sys_class_name>m2m_theme_style</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-07 08:27:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2fb6ccbf3b438350d14ef10f23e45a1c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name>m2m_theme_style_2fb6ccbf3b438350d14ef10f23e45a1c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-07 08:27:20</sys_updated_on>
+        <theme display_value="Travel Buddy App Theme">87b6487f3b438350d14ef10f23e45a45</theme>
+    </m2m_theme_style>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</application>
+        <file_path/>
+        <instance_id>6241f8583b50cfd416e44a8aa4e45aa8</instance_id>
+        <instance_name>dev380569</instance_name>
+        <name>m2m_theme_style_2fb6ccbf3b438350d14ef10f23e45a1c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="m2m_theme_style"><m2m_theme_style action="INSERT_OR_UPDATE"><applicability/><order>0</order><style display_value="Shape and Form">93b68cbf3b438350d14ef10f23e45a82</style><sys_class_name>m2m_theme_style</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-07 08:27:20</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>2fb6ccbf3b438350d14ef10f23e45a1c</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_overrides/><sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package><sys_policy/><sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope><sys_update_name>m2m_theme_style_2fb6ccbf3b438350d14ef10f23e45a1c</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-07 08:27:20</sys_updated_on><theme display_value="Travel Buddy App Theme">87b6487f3b438350d14ef10f23e45a45</theme></m2m_theme_style></record_update>]]></payload>
+        <payload_hash>870595669</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>f13de1023b028b10d14ef10f23e45a82</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-07 08:27:20</sys_created_on>
+        <sys_id>67b6ccbf3b438350d14ef10f23e45a21</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a07afaa1200000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-07 08:27:20</sys_updated_on>
+        <type>UX Theme Style</type>
+        <update_guid>27b6ccbfc64383502765dc664d125a20</update_guid>
+        <update_guid_history>27b6ccbfc64383502765dc664d125a20:870595669</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">bca3a07b3b478350d14ef10f23e45ad3</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-07 10:33:35</sys_created_on>
+        <sys_db_object display_value="" name="m2m_theme_style">m2m_theme_style</sys_db_object>
+        <sys_id>089a5d248eb54abc80fe1f935a5f8351</sys_id>
+        <sys_metadata>2fb6ccbf3b438350d14ef10f23e45a1c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_scope_delete display_value="">ce79bab18acc49f9bef811863b5939e1</sys_scope_delete>
+        <sys_update_name>m2m_theme_style_2fb6ccbf3b438350d14ef10f23e45a1c</sys_update_name>
+        <sys_update_version display_value="m2m_theme_style_2fb6ccbf3b438350d14ef10f23e45a1c">67b6ccbf3b438350d14ef10f23e45a21</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-07 10:33:35</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
