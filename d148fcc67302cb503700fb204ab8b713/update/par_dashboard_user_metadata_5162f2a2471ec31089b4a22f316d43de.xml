@@ -5,7 +5,7 @@
         <card_bg_image/>
         <created_by_user display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</created_by_user>
         <created_on>2026-07-28 16:57:48</created_on>
-        <dashboard display_value="Travel Buddy App">9562f2a2471ec31089b4a22f316d43d6</dashboard>
+        <dashboard display_value="">9562f2a2471ec31089b4a22f316d43d6</dashboard>
         <edit_locked/>
         <enable_data_cache>false</enable_data_cache>
         <include_custom_insights>true</include_custom_insights>
@@ -28,7 +28,6 @@
         <requested_by_user/>
         <schedule_repetition>false</schedule_repetition>
         <show_ai_insights_panel>true</show_ai_insights_panel>
-        <show_ai_summary>true</show_ai_summary>
         <show_insights_panel>true</show_insights_panel>
         <sys_class_name>par_dashboard_user_metadata</sys_class_name>
         <sys_created_by>admin</sys_created_by>

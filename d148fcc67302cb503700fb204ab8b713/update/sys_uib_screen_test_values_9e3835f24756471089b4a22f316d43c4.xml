@@ -5,7 +5,7 @@
     "tabelName": "x_travel_buddy_app_trip_request",
     "assignedTo": "Me"
 }</macroponent_config>
-        <screen display_value="Trip Request Page default">1e3835f24756471089b4a22f316d4373</screen>
+        <screen display_value="My Trip Request">1e3835f24756471089b4a22f316d4373</screen>
         <sys_class_name>sys_uib_screen_test_values</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-07-29 07:22:07</sys_created_on>

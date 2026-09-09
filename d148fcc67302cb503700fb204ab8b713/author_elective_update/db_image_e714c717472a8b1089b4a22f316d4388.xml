@@ -83,7 +83,7 @@
         <reverted_from/>
         <source>348d9eac47d6031089b4a22f316d4392</source>
         <source_table>sys_update_set</source_table>
-        <state>current</state>
+        <state>previous</state>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-12 12:31:41</sys_created_on>
         <sys_id>1d550bd7472a8b1089b4a22f316d4373</sys_id>
@@ -96,7 +96,7 @@
         <update_guid_history>59550bd7a02a8b10e2c121f32af4ec72:272772253,87a40b579f2a8b107f98c495721a436a:-848749803,eea40b57d92a8b1078e8c6554bf99a5f:-1936221544,5aa40b57802a8b1069299f599ec20f41:1261109898,ab840757cb2a8b10a5c4df1ab6dd31c0:1484344008</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="x_travel_buddy_app.travel_buddy_home_page.png">50858fd7472a8b1089b4a22f316d4337</sys_audit_delete>
+        <sys_audit_delete display_value="">50858fd7472a8b1089b4a22f316d4337</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-12 12:32:26</sys_created_on>

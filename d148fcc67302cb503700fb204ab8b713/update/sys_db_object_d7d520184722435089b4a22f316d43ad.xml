@@ -20,7 +20,7 @@
         <provider_class/>
         <read_access>true</read_access>
         <scriptable_table>false</scriptable_table>
-        <super_class display_value="Self Registered User Profile" name="sys_self_registered_user_profile">9c926c1847ee035089b4a22f316d4344</super_class>
+        <super_class display_value="label" name="sys_self_registered_user_profile">21f4614d3b6ecb50d14ef10f23e45ac5</super_class>
         <sys_class_name>sys_db_object</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-02 17:13:11</sys_created_on>

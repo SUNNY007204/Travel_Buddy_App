@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_theme_customization">
+    <sys_ux_theme_customization action="INSERT_OR_UPDATE">
+        <customization>{
+  "colors": [
+    {
+      "id": "isSecondaryColorUpdated",
+      "value": true,
+      "type": "secondary_color_updated"
+    },
+    {
+      "id": "--now-color_text--tertiary",
+      "value": "22, 50, 95",
+      "type": "color_hook_overridden"
+    },
+    {
+      "id": "--now-color_text--secondary",
+      "value": "51, 65, 85",
+      "type": "color_hook_overridden"
+    },
+    {
+      "id": "--now-color_selection--primary",
+      "value": "22, 50, 95",
+      "type": "color_hook_overridden"
+    },
+    {
+      "id": "--now-color_selection--secondary",
+      "value": "241, 121, 67",
+      "type": "color_hook_overridden"
+    },
+    {
+      "id": "--now-color_divider--primary",
+      "value": "29, 92, 150",
+      "type": "color_hook_overridden"
+    },
+    {
+      "id": "--now-color--interactive",
+      "value": "241, 121, 67",
+      "type": "color_hook_overridden"
+    },
+    {
+      "id": "--now-color--link",
+      "value": "22, 50, 95",
+      "type": "color_hook_overridden"
+    },
+    {
+      "id": "--now-color_secondary-nav--brand",
+      "value": "22, 50, 95",
+      "type": "color_hook_overridden"
+    },
+    {
+      "id": "--now-color_secondary-nav--divider",
+      "value": "22, 50, 95",
+      "type": "color_hook_overridden"
+    },
+    {
+      "id": "--now-button--primary--background-color",
+      "value": "22,50,95",
+      "type": "component_hook_overridden",
+      "hook": "now-color-reference-1"
+    },
+    {
+      "id": "--now-button--primary--color",
+      "value": "255,255,255",
+      "type": "component_hook_overridden",
+      "hook": "now-color-reference-2"
+    },
+    {
+      "id": "--now-button_icon--primary--color",
+      "value": "255,255,255",
+      "type": "component_hook_overridden",
+      "hook": "now-color-reference-2"
+    },
+    {
+      "id": "--now-button--primary--background-color--hover",
+      "value": "7,25,54",
+      "type": "component_hook_overridden"
+    },
+    {
+      "id": "--now-button--secondary--color",
+      "value": "22,50,95",
+      "type": "component_hook_overridden",
+      "hook": "now-color-reference-1"
+    },
+    {
+      "id": "--now-button_icon--secondary--color",
+      "value": "22,50,95",
+      "type": "component_hook_overridden",
+      "hook": "now-color-reference-1"
+    },
+    {
+      "id": "--now-button_icon--secondary-positive--color--active",
+      "value": "22,50,95",
+      "type": "component_hook_overridden",
+      "hook": "now-color-reference-1"
+    }
+  ],
+  "feedback": [],
+  "groupName": "",
+  "imagery": [],
+  "systemTokenVersion": "v1",
+  "initialValues": {}
+}</customization>
+        <name>TBA theme</name>
+        <sys_class_name>sys_ux_theme_customization</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-08 12:27:51</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>606782c83b534750d14ef10f23e45ab1</sys_id>
+        <sys_mod_count>47</sys_mod_count>
+        <sys_name>TBA theme</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name>sys_ux_theme_customization_606782c83b534750d14ef10f23e45ab1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-09 06:31:52</sys_updated_on>
+        <theme display_value="TBA theme">af574e883b534750d14ef10f23e45a28</theme>
+    </sys_ux_theme_customization>
+</record_update>

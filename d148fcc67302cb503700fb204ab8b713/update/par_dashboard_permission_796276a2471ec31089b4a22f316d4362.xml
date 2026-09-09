@@ -3,7 +3,7 @@
         <can_read>true</can_read>
         <can_share>false</can_share>
         <can_write>false</can_write>
-        <dashboard display_value="Travel Buddy App">9562f2a2471ec31089b4a22f316d43d6</dashboard>
+        <dashboard display_value="">9562f2a2471ec31089b4a22f316d43d6</dashboard>
         <group/>
         <owner>false</owner>
         <role display_value="x_travel_buddy_app.trip_request_user" name="x_travel_buddy_app.trip_request_user">e95662e0839a031031ab6730ceaad34f</role>

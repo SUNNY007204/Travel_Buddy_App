@@ -14,7 +14,7 @@
         <license_definition/>
         <license_model>none</license_model>
         <logo/>
-        <menu display_value="TRavel Buddy App">1f99b0c67302cb503700fb204ab8b751</menu>
+        <menu display_value="">1f99b0c67302cb503700fb204ab8b751</menu>
         <name>Travel Buddy App</name>
         <package_json/>
         <package_resolver_version>1.0.0</package_resolver_version>

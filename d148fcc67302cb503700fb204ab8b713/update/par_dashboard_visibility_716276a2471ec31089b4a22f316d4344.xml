@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_visibility">
     <par_dashboard_visibility action="INSERT_OR_UPDATE">
-        <dashboard display_value="Travel Buddy App">9562f2a2471ec31089b4a22f316d43d6</dashboard>
+        <dashboard display_value="">9562f2a2471ec31089b4a22f316d43d6</dashboard>
         <experience display_value="Travel Buddy App">6952fa62d51ec31089983b0cf308e393</experience>
         <sys_class_name>par_dashboard_visibility</sys_class_name>
         <sys_created_by>admin</sys_created_by>
