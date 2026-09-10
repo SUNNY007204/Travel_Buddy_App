@@ -229,7 +229,7 @@
                                     },
                                     "variant": {
                                         "type": "JSON_LITERAL",
-                                        "value": "primary-ai"
+                                        "value": "primary"
                                     }
                                 },
                                 "slot": null,
@@ -414,7 +414,7 @@
                                     },
                                     "variant": {
                                         "type": "JSON_LITERAL",
-                                        "value": "primary-ai"
+                                        "value": "primary"
                                     }
                                 },
                                 "slot": null,
@@ -598,7 +598,7 @@
                                     },
                                     "variant": {
                                         "type": "JSON_LITERAL",
-                                        "value": "primary-ai"
+                                        "value": "primary"
                                     }
                                 },
                                 "slot": null,
@@ -665,149 +665,14 @@
                             "display": "contents"
                         }
                     }
-                }
-            ],
-            "layout": {
-                "default": {
-                    "children": null,
-                    "isInline": null,
-                    "items": [
-                        {
-                            "element_id": "__PdlgaafddaaCUTsjjgwJgbddxupLE__column_2"
-                        },
-                        {
-                            "element_id": "__jjRAmWvzSBaaKRjjeeeGjjrxbeeOwg__column_4"
-                        },
-                        {
-                            "element_id": "__TDccpPeehhcmBEhhffjjpMCaaAnddSfKL__column_5"
-                        }
-                    ],
-                    "root": null,
-                    "rules": null,
-                    "styles": {
-                        "box-sizing": "border-box",
-                        "column-gap": "var(--now-scalable-space--xs)",
-                        "display": "grid",
-                        "grid-auto-columns": "1fr",
-                        "grid-auto-rows": "1fr",
-                        "grid-template-columns": "33.33333333333333fr 33.33333333333333fr 33.33333333333333fr",
-                        "grid-template-rows": "1fr",
-                        "margin-bottom": "var(--now-scalable-space--xl)",
-                        "margin-left": "var(--now-scalable-space--lg)",
-                        "margin-right": "var(--now-scalable-space--lg)",
-                        "padding-left": "0",
-                        "width": "auto"
-                    },
-                    "type": "grid"
                 },
-                "disableAutoReflow": true,
-                "queries": [
-                    {
-                        "layout": {
-                            "children": null,
-                            "isInline": null,
-                            "items": [],
-                            "root": null,
-                            "rules": null,
-                            "styles": {
-                                "grid-template-columns": "1fr",
-                                "height": "fit-content",
-                                "max-height": "max-content",
-                                "min-height": "min-content"
-                            },
-                            "type": "grid"
-                        },
-                        "query": {
-                            "max-width": 640
-                        }
-                    }
-                ],
-                "version": "3.1.0"
-            }
-        },
-        "preset": null,
-        "propertyValues": {
-            "hideEmptyStateUi": {
-                "type": "JSON_LITERAL",
-                "value": true
-            },
-            "slotWrapperBehavior": {
-                "type": "JSON_LITERAL",
-                "value": "contents"
-            }
-        },
-        "scratchPad": {
-            "uib": {
-                "layout": {
-                    "columnSection": {
-                        "breakpoints": [
-                            {
-                                "behavior": "stack",
-                                "max-width": 640,
-                                "styles": {
-                                    "grid-template-columns": "1fr",
-                                    "height": "fit-content",
-                                    "max-height": "max-content",
-                                    "min-height": "min-content"
-                                }
-                            }
-                        ],
-                        "children": [
-                            {
-                                "columnNumber": 1,
-                                "unit": "%",
-                                "width": 33.33333333333333
-                            },
-                            {
-                                "columnNumber": 2,
-                                "unit": "%",
-                                "width": 33.33333333333333
-                            },
-                            {
-                                "columnNumber": 3,
-                                "unit": "%",
-                                "width": 33.33333333333333
-                            }
-                        ],
-                        "id": "UIB_COLUMN_SECTION_SINGLE_COLUMN_SECTION",
-                        "styleConfig": {
-                            "external": {},
-                            "internal": {}
-                        }
-                    },
-                    "type": "columnSection"
-                },
-                "version": "1.0.0"
-            }
-        },
-        "slot": null,
-        "styles": {
-            "default": {
-                "display": "contents"
-            }
-        }
-    },
-    {
-        "definition": {
-            "id": "d356d14b6e293a3020a244b63d278d8f",
-            "type": "MACROPONENT"
-        },
-        "elementId": "column_layout_3",
-        "elementLabel": "Column layout 3",
-        "eventMappings": [],
-        "isHidden": {
-            "type": "JSON_LITERAL",
-            "value": null
-        },
-        "overrides": {
-            "composition": [
                 {
                     "definition": {
                         "id": "d356d14b6e293a3020a244b63d278d8f",
                         "type": "MACROPONENT"
                     },
-                    "elementId": "__YEmjjneehhEqAktffjjggUGdJHuffDfn__column_1",
-                    "elementLabel": "Column 1",
+                    "elementId": "__MpccTxfggODUiyjjYsNFvnLmHnu__column_4",
+                    "elementLabel": "Column 4",
                     "eventMappings": [],
                     "isHidden": {
                         "type": "JSON_LITERAL",
@@ -899,7 +764,7 @@
                                         "value": {
                                             "code": null,
                                             "comment": "",
-                                            "message": "All Active Trips"
+                                            "message": "Active Trips"
                                         }
                                     },
                                     "landmark": {
@@ -920,7 +785,7 @@
                                     },
                                     "variant": {
                                         "type": "JSON_LITERAL",
-                                        "value": "primary-ai"
+                                        "value": "primary"
                                     }
                                 },
                                 "slot": null,
@@ -995,8 +860,8 @@
                         "id": "d356d14b6e293a3020a244b63d278d8f",
                         "type": "MACROPONENT"
                     },
-                    "elementId": "__BhsggYPdaBkRMjjRAPVSizTXyK__column_2",
-                    "elementLabel": "Column 2",
+                    "elementId": "__hiiubUfTmCEiBjjQwLKKZUGZFr__column_5",
+                    "elementLabel": "Column 5",
                     "eventMappings": [],
                     "isHidden": {
                         "type": "JSON_LITERAL",
@@ -1088,7 +953,7 @@
                                         "value": {
                                             "code": null,
                                             "comment": "",
-                                            "message": "All Completed Trips"
+                                            "message": "Completed Trips"
                                         }
                                     },
                                     "landmark": {
@@ -1109,7 +974,7 @@
                                     },
                                     "variant": {
                                         "type": "JSON_LITERAL",
-                                        "value": "primary-ai"
+                                        "value": "primary"
                                     }
                                 },
                                 "slot": null,
@@ -1183,8 +1048,8 @@
                         "id": "d356d14b6e293a3020a244b63d278d8f",
                         "type": "MACROPONENT"
                     },
-                    "elementId": "__xlRhhJeehhvTCaanceeddOsATccOggAHJy__column_3",
-                    "elementLabel": "Column 3",
+                    "elementId": "__qYdaOwBtAUikjjeeUObbcoGdbRff__column_6",
+                    "elementLabel": "Column 6",
                     "eventMappings": [],
                     "isHidden": {
                         "type": "JSON_LITERAL",
@@ -1297,7 +1162,7 @@
                                     },
                                     "variant": {
                                         "type": "JSON_LITERAL",
-                                        "value": "primary-ai"
+                                        "value": "primary"
                                     }
                                 },
                                 "slot": null,
@@ -1375,21 +1240,38 @@
                     "isInline": null,
                     "items": [
                         {
-                            "element_id": "__YEmjjneehhEqAktffjjggUGdJHuffDfn__column_1"
+                            "element_id": "__PdlgaafddaaCUTsjjgwJgbddxupLE__column_2"
                         },
                         {
-                            "element_id": "__BhsggYPdaBkRMjjRAPVSizTXyK__column_2"
+                            "element_id": "__jjRAmWvzSBaaKRjjeeeGjjrxbeeOwg__column_4"
                         },
                         {
-                            "element_id": "__xlRhhJeehhvTCaanceeddOsATccOggAHJy__column_3"
+                            "element_id": "__TDccpPeehhcmBEhhffjjpMCaaAnddSfKL__column_5"
+                        },
+                        {
+                            "element_id": "__MpccTxfggODUiyjjYsNFvnLmHnu__column_4"
+                        },
+                        {
+                            "element_id": "__hiiubUfTmCEiBjjQwLKKZUGZFr__column_5"
+                        },
+                        {
+                            "element_id": "__qYdaOwBtAUikjjeeUObbcoGdbRff__column_6"
                         }
                     ],
                     "root": null,
                     "rules": null,
                     "styles": {
                         "box-sizing": "border-box",
-                        "grid-template-columns": "33.33fr 33.33fr 33.33fr",
+                        "column-gap": "var(--now-scalable-space--xs)",
+                        "display": "grid",
+                        "grid-auto-columns": "1fr",
+                        "grid-auto-rows": "1fr",
+                        "grid-template-columns": "16.66666666666666fr 16.66666666666666fr 16.66666666666666fr 16.666666666666668fr 16.666666666666668fr 16.666666666666668fr",
                         "grid-template-rows": "1fr",
+                        "margin-bottom": "var(--now-scalable-space--xs)",
+                        "margin-left": "var(--now-scalable-space--lg)",
+                        "margin-right": "var(--now-scalable-space--lg)",
+                        "padding-left": "0",
                         "width": "auto"
                     },
                     "type": "grid"
@@ -1450,17 +1332,32 @@
                             {
                                 "columnNumber": 1,
                                 "unit": "%",
-                                "width": 33.33
+                                "width": 16.66666666666666
                             },
                             {
                                 "columnNumber": 2,
                                 "unit": "%",
-                                "width": 33.33
+                                "width": 16.66666666666666
                             },
                             {
                                 "columnNumber": 3,
                                 "unit": "%",
-                                "width": 33.33
+                                "width": 16.66666666666666
+                            },
+                            {
+                                "columnNumber": 4,
+                                "unit": "%",
+                                "width": 16.666666666666668
+                            },
+                            {
+                                "columnNumber": 5,
+                                "unit": "%",
+                                "width": 16.666666666666668
+                            },
+                            {
+                                "columnNumber": 6,
+                                "unit": "%",
+                                "width": 16.666666666666668
                             }
                         ],
                         "id": "UIB_COLUMN_SECTION_SINGLE_COLUMN_SECTION",
@@ -1614,8 +1511,8 @@
                                     "background": "rgb(var(--now-color--neutral-1))",
                                     "border-color": "RGB(var(--now-color--neutral-5))",
                                     "border-radius": "var(--now-static-border-radius--0)",
-                                    "border-style": "id",
-                                    "border-width": "1px",
+                                    "border-style": "solid",
+                                    "border-width": "var(--now-static-space--xxs)",
                                     "box-sizing": "border-box",
                                     "display": "flex",
                                     "flex-direction": "column",
@@ -1779,6 +1676,9 @@
                                 "styles": {
                                     "align-items": "stretch",
                                     "background": "rgb(var(--now-color--neutral-1))",
+                                    "border-color": "RGB(var(--now-color--neutral-5))",
+                                    "border-style": "solid",
+                                    "border-width": "var(--now-static-space--xxs)",
                                     "box-sizing": "border-box",
                                     "display": "flex",
                                     "flex-direction": "column",
@@ -1943,6 +1843,9 @@
                                 "styles": {
                                     "align-items": "stretch",
                                     "background": "rgb(var(--now-color--neutral-1))",
+                                    "border-color": "RGB(var(--now-color--neutral-5))",
+                                    "border-style": "solid",
+                                    "border-width": "var(--now-static-space--xxs)",
                                     "box-sizing": "border-box",
                                     "display": "flex",
                                     "flex-direction": "column",
@@ -2020,7 +1923,7 @@
                         "margin-bottom": "1px",
                         "margin-left": "var(--now-scalable-space--md)",
                         "margin-right": "var(--now-scalable-space--md)",
-                        "margin-top": "1px",
+                        "margin-top": "0",
                         "width": "auto"
                     },
                     "type": "grid"
@@ -2245,8 +2148,8 @@
                                     "background": "rgb(var(--now-color--neutral-1))",
                                     "border-color": "RGB(var(--now-color--neutral-5))",
                                     "border-radius": "var(--now-static-border-radius--0)",
-                                    "border-style": "id",
-                                    "border-width": "1px",
+                                    "border-style": "solid",
+                                    "border-width": "var(--now-static-space--xxs)",
                                     "box-sizing": "border-box",
                                     "display": "flex",
                                     "flex-direction": "column",
@@ -2577,6 +2480,9 @@
                                 "styles": {
                                     "align-items": "stretch",
                                     "background": "rgb(var(--now-color--neutral-1))",
+                                    "border-color": "RGB(var(--now-color--neutral-5))",
+                                    "border-style": "solid",
+                                    "border-width": "var(--now-static-space--xxs)",
                                     "box-sizing": "border-box",
                                     "display": "flex",
                                     "flex-direction": "column",
@@ -5639,9 +5545,6 @@
                 "element_id": "column_layout_2"
             },
             {
-                "element_id": "column_layout_3"
-            },
-            {
                 "element_id": "column_layout_1"
             },
             {
@@ -5844,6 +5747,10 @@
 ]</props>
         <required_sys_props/>
         <required_translations>[ {
+  "message" : "Active Trips",
+  "code" : "",
+  "comment" : ""
+}, {
   "message" : "Admin Dashboard",
   "code" : "",
   "comment" : ""
@@ -5873,6 +5780,10 @@
   "comment" : ""
 }, {
   "message" : "Buddy",
+  "code" : "",
+  "comment" : ""
+}, {
+  "message" : "Completed Trips",
   "code" : "",
   "comment" : ""
 }, {
@@ -5915,14 +5826,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-07-28 18:29:45</sys_created_on>
         <sys_id>d477476e479ec31089b4a22f316d43c4</sys_id>
-        <sys_mod_count>53</sys_mod_count>
+        <sys_mod_count>56</sys_mod_count>
         <sys_name>Admin Dashboard</sys_name>
         <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
         <sys_policy/>
         <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
         <sys_update_name>sys_ux_macroponent_d477476e479ec31089b4a22f316d43c4</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-09-07 08:42:47</sys_updated_on>
+        <sys_updated_on>2026-09-09 08:50:38</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=d477476e479ec31089b4a22f316d43c4"/>
 </record_update>

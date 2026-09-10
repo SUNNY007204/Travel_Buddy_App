@@ -43,7 +43,7 @@
         <update_guid_history>1250c83a4b6e0710afefdc4af98a5d5b:-447654362</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Travell Buddy Password Reset.SMS Verification">0980807a476e071089b4a22f316d4318</sys_audit_delete>
+        <sys_audit_delete display_value="">0980807a476e071089b4a22f316d4318</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-10 08:54:48</sys_created_on>

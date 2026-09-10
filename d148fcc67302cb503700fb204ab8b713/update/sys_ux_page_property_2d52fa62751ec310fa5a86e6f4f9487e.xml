@@ -29,88 +29,88 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>global</sys_domain_path>
         <sys_id>2d52fa62751ec310fa5a86e6f4f9487e</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>chrome_toolbar</sys_name>
         <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
         <sys_policy/>
         <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
         <sys_update_name>sys_ux_page_property_2d52fa62751ec310fa5a86e6f4f9487e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-09-08 06:43:02</sys_updated_on>
+        <sys_updated_on>2026-09-08 13:27:13</sys_updated_on>
         <type>json</type>
         <unique_name>x_travel_buddy_app.6952fa62d51ec31089983b0cf308e393.root.global.chrome_toolbar</unique_name>
-        <value>[&#13;
-    {&#13;
-        "id": "home",&#13;
-        "label": {&#13;
-            "translatable": true,&#13;
-            "message": "Home"&#13;
-        },&#13;
-        "icon": "home-outline",&#13;
-        "routeInfo": {&#13;
-            "route": "home",&#13;
-             "fields": {&#13;
-                   "table": "x_travel_buddy_app_trip_request" &#13;
-  }&#13;
-        },&#13;
-        "group": "top",&#13;
-        "order": 0,&#13;
-        "badge": {},&#13;
-        "presence": {},&#13;
-        "availability": {},&#13;
-        "viewportInfo": {}&#13;
-    },&#13;
-    {&#13;
-        "id": "list",&#13;
-        "label": {&#13;
-            "translatable": true,&#13;
-            "message": "List"&#13;
-        },&#13;
-        "icon": "list-outline",&#13;
-        "routeInfo": {&#13;
-            "route": "list"&#13;
-        },&#13;
-        "group": "top",&#13;
-        "order": 0,&#13;
-        "badge": {},&#13;
-        "presence": {},&#13;
-        "availability": {},&#13;
-        "viewportInfo": {}&#13;
-    },&#13;
-    {&#13;
-        "id": "analytics-center",&#13;
-        "label": {&#13;
-            "translatable": true,&#13;
-            "message": "Analytics Center"&#13;
-        },&#13;
-        "icon": "analytics-center-outline",&#13;
-        "routeInfo": {&#13;
-            "route": "analytics-center"&#13;
-        },&#13;
-        "group": "top",&#13;
-        "order": 0,&#13;
-        "badge": {},&#13;
-        "presence": {},&#13;
-        "availability": {},&#13;
-        "viewportInfo": {}&#13;
-    },&#13;
-    {&#13;
-        "id": "my-trips",&#13;
-        "label": {&#13;
-            "translatable": true,&#13;
-            "message": "My Trips"&#13;
-        },&#13;
-        "icon": "list-fill",&#13;
-        "routeInfo": {&#13;
-            "route": "my-trips"&#13;
-        },&#13;
-        "group": "top",&#13;
-        "order": 300,&#13;
-        "badge": {},&#13;
-        "presence": {},&#13;
-        "availability": {},&#13;
-        "viewportInfo": {}&#13;
-    }&#13;
+        <value>[
+    {
+        "id": "home",
+        "label": {
+            "translatable": true,
+            "message": "Home"
+        },
+        "icon": "home-outline",
+        "routeInfo": {
+            "route": "home",
+            "fields": {
+                "table": "x_travel_buddy_app_trip_request"
+            }
+        },
+        "group": "top",
+        "order": 0,
+        "badge": {},
+        "presence": {},
+        "availability": {},
+        "viewportInfo": {}
+    },
+    {
+        "id": "list",
+        "label": {
+            "translatable": true,
+            "message": "List"
+        },
+        "icon": "list-outline",
+        "routeInfo": {
+            "route": "list"
+        },
+        "group": "top",
+        "order": 0,
+        "badge": {},
+        "presence": {},
+        "availability": {},
+        "viewportInfo": {}
+    },
+    {
+        "id": "analytics-center",
+        "label": {
+            "translatable": true,
+            "message": "Analytics Center"
+        },
+        "icon": "analytics-center-outline",
+        "routeInfo": {
+            "route": "analytics-center"
+        },
+        "group": "top",
+        "order": 0,
+        "badge": {},
+        "presence": {},
+        "availability": {},
+        "viewportInfo": {}
+    },
+    {
+        "id": "my-trips",
+        "label": {
+            "translatable": true,
+            "message": "My Trips"
+        },
+        "icon": "list-fill",
+        "routeInfo": {
+            "route": "my-trips"
+        },
+        "group": "top",
+        "order": 300,
+        "badge": {},
+        "presence": {},
+        "availability": {},
+        "viewportInfo": {}
+    }
 ]</value>
     </sys_ux_page_property>
     <sys_translated_text action="delete_multiple" query="documentkey=2d52fa62751ec310fa5a86e6f4f9487e"/>

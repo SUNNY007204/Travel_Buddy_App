@@ -32,16 +32,16 @@
         <sys_created_by/>
         <sys_created_on>2026-07-13 22:59:48</sys_created_on>
         <sys_id>5325d0ba4722471089b4a22f316d43b5</sys_id>
-        <sys_mod_count/>
+        <sys_mod_count>0</sys_mod_count>
         <sys_recorded_at>19f5db542a00000000</sys_recorded_at>
-        <sys_updated_by/>
-        <sys_updated_on/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-08 08:36:49</sys_updated_on>
         <type>Catalog Item Not Available for</type>
         <update_guid>1325d0baa6224710172448d8dced86b5</update_guid>
         <update_guid_history>1325d0baa6224710172448d8dced86b5:379888935</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Password reset .SNC External">5f25d0ba4722471089b4a22f316d43b5</sys_audit_delete>
+        <sys_audit_delete display_value="">5f25d0ba4722471089b4a22f316d43b5</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-10 10:25:05</sys_created_on>

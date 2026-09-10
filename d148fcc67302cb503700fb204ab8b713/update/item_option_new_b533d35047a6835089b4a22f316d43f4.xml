@@ -23,7 +23,7 @@
         <dynamic_value_field/>
         <enable_also_request_for>false</enable_also_request_for>
         <example_text/>
-        <field>assigned_to</field>
+        <field/>
         <global>false</global>
         <help_tag>More information</help_tag>
         <help_text/>
@@ -43,7 +43,7 @@
         <macro/>
         <macroponent/>
         <mandatory>false</mandatory>
-        <map_to_field>true</map_to_field>
+        <map_to_field>false</map_to_field>
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>true</mask_use_encryption>
         <name>assigned_to</name>
@@ -54,7 +54,7 @@
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
         <published_ref/>
-        <question_text>Assigned to</question_text>
+        <question_text>Please choose your buddy </question_text>
         <read_only>false</read_only>
         <read_roles/>
         <read_script/>
@@ -84,14 +84,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-03 05:52:33</sys_created_on>
         <sys_id>b533d35047a6835089b4a22f316d43f4</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name>Assigned to</sys_name>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Please choose your buddy </sys_name>
         <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
         <sys_policy/>
         <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
         <sys_update_name>item_option_new_b533d35047a6835089b4a22f316d43f4</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-17 10:08:20</sys_updated_on>
+        <sys_updated_on>2026-09-10 05:25:47</sys_updated_on>
         <table/>
         <tooltip/>
         <topic_block/>

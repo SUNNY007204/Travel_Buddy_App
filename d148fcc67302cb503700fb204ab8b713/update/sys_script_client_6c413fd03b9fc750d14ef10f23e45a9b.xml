@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>start_time</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>TBA: start date validation UI</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue === '' || newValue === oldValue) {
+        return;
+    }
+    // Convert 'string dates' into 'JavaScript Date objects'
+    var selectedDate = new Date(newValue);
+    var today = new Date();
+    // Reset today's time to midnight
+    today.setHours(0, 0, 0, 0);
+
+    // If the selected date is in the past, warn the user and clear the field
+    if (selectedDate < today) {
+        g_form.showFieldMsg('start_time', 'Error: Trip Start Date cannot be in the past!', 'error');
+        g_form.clearValue('start_time');
+		g_form.clearValue('end_time');
+    }
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-09 14:52:46</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6c413fd03b9fc750d14ef10f23e45a9b</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>TBA: start date validation UI</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name>sys_script_client_6c413fd03b9fc750d14ef10f23e45a9b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-09 17:56:58</sys_updated_on>
+        <table>x_travel_buddy_app_trip_request</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

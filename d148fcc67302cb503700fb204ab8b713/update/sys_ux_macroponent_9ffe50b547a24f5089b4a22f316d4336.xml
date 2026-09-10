@@ -253,7 +253,7 @@
                                     },
                                     "icon": {
                                         "type": "JSON_LITERAL",
-                                        "value": null
+                                        "value": "home-fill"
                                     },
                                     "label": {
                                         "type": "TRANSLATION_LITERAL",
@@ -269,19 +269,19 @@
                                     },
                                     "size": {
                                         "type": "JSON_LITERAL",
-                                        "value": "lg"
+                                        "value": "md"
                                     },
                                     "tooltipContent": {
                                         "type": "TRANSLATION_LITERAL",
                                         "value": {
                                             "code": null,
                                             "comment": "",
-                                            "message": "Enter a label"
+                                            "message": ""
                                         }
                                     },
                                     "variant": {
                                         "type": "JSON_LITERAL",
-                                        "value": "tertiary"
+                                        "value": "primary"
                                     }
                                 },
                                 "slot": null,
@@ -488,19 +488,19 @@
                                     },
                                     "size": {
                                         "type": "JSON_LITERAL",
-                                        "value": "lg"
+                                        "value": "md"
                                     },
                                     "tooltipContent": {
                                         "type": "TRANSLATION_LITERAL",
                                         "value": {
                                             "code": null,
                                             "comment": "",
-                                            "message": "Enter a label"
+                                            "message": ""
                                         }
                                     },
                                     "variant": {
                                         "type": "JSON_LITERAL",
-                                        "value": "tertiary"
+                                        "value": "primary"
                                     }
                                 },
                                 "slot": null,
@@ -582,82 +582,11 @@
                         "value": null
                     },
                     "overrides": {
-                        "composition": [
-                            {
-                                "definition": {
-                                    "id": "d37ce8abca89d02905fed903c8e34d8e",
-                                    "type": "MACROPONENT"
-                                },
-                                "elementId": "button_3",
-                                "elementLabel": "Button 3",
-                                "eventMappings": [],
-                                "isHidden": {
-                                    "type": "JSON_LITERAL",
-                                    "value": null
-                                },
-                                "preset": null,
-                                "propertyValues": {
-                                    "active": {
-                                        "type": "JSON_LITERAL",
-                                        "value": false
-                                    },
-                                    "animatedIcon": {
-                                        "type": "JSON_LITERAL",
-                                        "value": null
-                                    },
-                                    "configAria": {
-                                        "type": "JSON_LITERAL",
-                                        "value": null
-                                    },
-                                    "disabled": {
-                                        "type": "JSON_LITERAL",
-                                        "value": false
-                                    },
-                                    "icon": {
-                                        "type": "JSON_LITERAL",
-                                        "value": null
-                                    },
-                                    "label": {
-                                        "type": "TRANSLATION_LITERAL",
-                                        "value": {
-                                            "code": null,
-                                            "comment": "",
-                                            "message": "Button"
-                                        }
-                                    },
-                                    "landmark": {
-                                        "type": "JSON_LITERAL",
-                                        "value": null
-                                    },
-                                    "size": {
-                                        "type": "JSON_LITERAL",
-                                        "value": "md"
-                                    },
-                                    "tooltipContent": {
-                                        "type": "TRANSLATION_LITERAL",
-                                        "value": {
-                                            "code": null,
-                                            "comment": "",
-                                            "message": "Enter a label"
-                                        }
-                                    },
-                                    "variant": {
-                                        "type": "JSON_LITERAL",
-                                        "value": "secondary"
-                                    }
-                                },
-                                "slot": null,
-                                "styles": null
-                            }
-                        ],
+                        "composition": [],
                         "layout": {
                             "default": {
                                 "children": null,
-                                "items": [
-                                    {
-                                        "element_id": "button_3"
-                                    }
-                                ],
+                                "items": [],
                                 "root": null,
                                 "styles": {
                                     "align-items": "center",
@@ -721,82 +650,11 @@
                         "value": null
                     },
                     "overrides": {
-                        "composition": [
-                            {
-                                "definition": {
-                                    "id": "d37ce8abca89d02905fed903c8e34d8e",
-                                    "type": "MACROPONENT"
-                                },
-                                "elementId": "button_4",
-                                "elementLabel": "Button 4",
-                                "eventMappings": [],
-                                "isHidden": {
-                                    "type": "JSON_LITERAL",
-                                    "value": null
-                                },
-                                "preset": null,
-                                "propertyValues": {
-                                    "active": {
-                                        "type": "JSON_LITERAL",
-                                        "value": false
-                                    },
-                                    "animatedIcon": {
-                                        "type": "JSON_LITERAL",
-                                        "value": null
-                                    },
-                                    "configAria": {
-                                        "type": "JSON_LITERAL",
-                                        "value": null
-                                    },
-                                    "disabled": {
-                                        "type": "JSON_LITERAL",
-                                        "value": false
-                                    },
-                                    "icon": {
-                                        "type": "JSON_LITERAL",
-                                        "value": null
-                                    },
-                                    "label": {
-                                        "type": "TRANSLATION_LITERAL",
-                                        "value": {
-                                            "code": null,
-                                            "comment": "",
-                                            "message": "Button"
-                                        }
-                                    },
-                                    "landmark": {
-                                        "type": "JSON_LITERAL",
-                                        "value": null
-                                    },
-                                    "size": {
-                                        "type": "JSON_LITERAL",
-                                        "value": "md"
-                                    },
-                                    "tooltipContent": {
-                                        "type": "TRANSLATION_LITERAL",
-                                        "value": {
-                                            "code": null,
-                                            "comment": "",
-                                            "message": "Enter a label"
-                                        }
-                                    },
-                                    "variant": {
-                                        "type": "JSON_LITERAL",
-                                        "value": "secondary"
-                                    }
-                                },
-                                "slot": null,
-                                "styles": null
-                            }
-                        ],
+                        "composition": [],
                         "layout": {
                             "default": {
                                 "children": null,
-                                "items": [
-                                    {
-                                        "element_id": "button_4"
-                                    }
-                                ],
+                                "items": [],
                                 "root": null,
                                 "styles": {
                                     "align-items": "center",
@@ -942,7 +800,13 @@
                     "root": null,
                     "rules": null,
                     "styles": {
+                        "border-color": "rgb(var(--now-color--focus-1))",
+                        "border-style": "solid",
+                        "border-width": "var(--now-static-space--xs)",
                         "box-sizing": "border-box",
+                        "display": "grid",
+                        "grid-auto-columns": "1fr",
+                        "grid-auto-rows": "1fr",
                         "grid-template-columns": "16.66fr 16.66fr 16.66fr 16.66fr 16.66fr 16.66fr",
                         "grid-template-rows": "1fr",
                         "width": "auto"
@@ -1493,16 +1357,18 @@
                                                         "styles": {
                                                             "default": {
                                                                 "background": "rgb(var(--now-color--link-1))",
+                                                                "height": "400px",
                                                                 "margin": "var(--now-scalable-space--sm)",
                                                                 "margin-bottom": "var(--now-scalable-space--sm)",
                                                                 "margin-left": "var(--now-scalable-space--sm)",
                                                                 "margin-right": "var(--now-scalable-space--sm)",
-                                                                "margin-top": "var(--now-scalable-space--sm)",
+                                                                "margin-top": "0",
                                                                 "padding": "var(--now-scalable-space--sm)",
                                                                 "padding-bottom": "var(--now-scalable-space--sm)",
                                                                 "padding-left": "var(--now-scalable-space--sm)",
                                                                 "padding-right": "var(--now-scalable-space--sm)",
-                                                                "padding-top": "var(--now-scalable-space--sm)"
+                                                                "padding-top": "0",
+                                                                "width": "400px"
                                                             }
                                                         }
                                                     }
@@ -2026,10 +1892,6 @@
         <props>[]</props>
         <required_sys_props/>
         <required_translations>[ {
-  "message" : "Button",
-  "code" : "",
-  "comment" : ""
-}, {
   "message" : "Create Trip",
   "code" : "",
   "comment" : ""
@@ -2073,14 +1935,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-07 08:34:01</sys_created_on>
         <sys_id>9ffe50b547a24f5089b4a22f316d4336</sys_id>
-        <sys_mod_count>37</sys_mod_count>
+        <sys_mod_count>38</sys_mod_count>
         <sys_name>Demo My Trips default</sys_name>
         <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
         <sys_policy/>
         <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
         <sys_update_name>sys_ux_macroponent_9ffe50b547a24f5089b4a22f316d4336</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-18 19:27:55</sys_updated_on>
+        <sys_updated_on>2026-09-09 09:28:47</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=9ffe50b547a24f5089b4a22f316d4336"/>
 </record_update>

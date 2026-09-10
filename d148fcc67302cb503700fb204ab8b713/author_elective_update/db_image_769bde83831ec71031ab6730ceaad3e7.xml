@@ -105,7 +105,7 @@
         <update_guid_history>0dcb56c3af1ec710731d83960e943f1a:2063474787,d4cb16c3ad1ec710a48c26c1353e32c5:-1690055877,ffbb16c3081ec710ea9a71db95c4215b:1218572141,91bb52c3651ec7103ae6fe4506717d74:960744264</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="x_travel_buddy_app.Travel Buddy Backgroung.png">1beb62c3839ec71031ab6730ceaad33e</sys_audit_delete>
+        <sys_audit_delete display_value="">1beb62c3839ec71031ab6730ceaad33e</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-07-30 05:46:30</sys_created_on>

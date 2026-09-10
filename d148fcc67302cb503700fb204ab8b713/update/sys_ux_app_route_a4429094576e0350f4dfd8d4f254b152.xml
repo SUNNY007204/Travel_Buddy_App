@@ -17,14 +17,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-02 15:47:33</sys_created_on>
         <sys_id>a4429094576e0350f4dfd8d4f254b152</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Catalog Item Page</sys_name>
         <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
         <sys_policy/>
         <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
         <sys_update_name>sys_ux_app_route_a4429094576e0350f4dfd8d4f254b152</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-02 15:47:33</sys_updated_on>
+        <sys_updated_on>2026-09-10 05:43:20</sys_updated_on>
     </sys_ux_app_route>
     <sys_translated_text action="delete_multiple" query="documentkey=a4429094576e0350f4dfd8d4f254b152"/>
 </record_update>

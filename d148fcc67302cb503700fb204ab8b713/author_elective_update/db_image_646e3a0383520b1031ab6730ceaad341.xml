@@ -87,7 +87,7 @@
         <update_guid_history>647eba03de520b1098b66e2bad19f587:871199733,907eba03b6520b10071a80dce615757d:-1845184542,447eba0377520b1005e671eceab4ca5f:1735183252,9e6e3a03ce520b109c023e972fe4324a:-1477298552</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="x_travel_buddy_app.Beach.png">5ccffac383520b1031ab6730ceaad300</sys_audit_delete>
+        <sys_audit_delete display_value="">5ccffac383520b1031ab6730ceaad300</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-07-30 07:13:08</sys_created_on>
