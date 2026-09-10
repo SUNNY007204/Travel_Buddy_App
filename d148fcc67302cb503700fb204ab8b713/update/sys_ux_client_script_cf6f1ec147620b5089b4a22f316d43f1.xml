@@ -6,42 +6,75 @@
         <name>ValidateAndSubmit</name>
         <preset/>
         <required_translations>[]</required_translations>
-        <script><![CDATA[/**
- * @param {params} params
- * @param {api} params.api
- * @param {any} params.event
- * @param {any} params.imports
- */
-// function evaluateEvent({api, event}) {
-//     const email = api.state.email;
-//     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        <script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
 
-//     if (!emailRegex.test(email)) {
-//         // This fires a native Workspace/UI Builder toast notification
-//         api.emit('NOW_UXF_PAGE#SHOW_SELECTED_BRICK', {
-//             summary: "Invalid Email",
-//             message: "Please enter a valid email address.",
-//             status: "critical"
-//         });
-//         return;
-//     }
+    var requestBody = request.body.nextEntry();
+    var email = requestBody.email;
+    var firstName = requestBody.first_name;
+    var lastName = requestBody.last_name;
 
-//     // If valid, execute the data resource
-//     api.data.create_record_1.execute();
-// }]]></script>
+    if (!email) {
+        return new sn_ws_err.BadRequestError("Email is required.");
+    }
+
+    var grUserCheck = new GlideRecord('sys_user');
+    if (grUserCheck.get('email', email)) {
+        return new sn_ws_err.ConflictError("A user with this email already exists.");
+    }
+
+    var grUser = new GlideRecord('sys_user');
+    grUser.initialize();
+    grUser.user_name = email;
+    grUser.email = email;
+    grUser.first_name = firstName;
+    grUser.last_name = lastName;
+    
+    // EXPLICIT STAGING OVERRIDE
+    grUser.active = false;            // Set boolean
+    grUser.setDisplayValue('active', 'false'); 
+    grUser.locked_out = true;         // Lock account until verification
+    
+    var userSysId = grUser.insert();
+
+    if (userSysId) {
+        // Assign Default Traveler Role[cite: 1]
+        var grRole = new GlideRecord('sys_user_has_role');
+        grRole.initialize();
+        grRole.user = userSysId;
+        
+        var grRoleRef = new GlideRecord('sys_user_role');
+        if (grRoleRef.get('name', 'snc_external')) { 
+            grRole.role = grRoleRef.getUniqueValue();
+            grRole.insert();
+        }
+
+        // Trigger Email Verification Event[cite: 1]
+        gs.eventQueue('custom.traveler.password_reset', grUser, userSysId, email);
+
+        response.setBody({
+            status: "success",
+            message: "User registered successfully. Verification email sent.",
+            sys_id: userSysId
+        });
+        response.setStatus(201);
+    } else {
+        return new sn_ws_err.ServerError("Failed to create user record.");
+    }
+
+})(request, response);]]></script>
         <script_api_version>2.0.0</script_api_version>
         <sys_class_name>sys_ux_client_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-05 11:18:41</sys_created_on>
         <sys_id>cf6f1ec147620b5089b4a22f316d43f1</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>ValidateAndSubmit</sys_name>
         <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
         <sys_policy/>
         <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
         <sys_update_name>sys_ux_client_script_cf6f1ec147620b5089b4a22f316d43f1</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-06 05:29:40</sys_updated_on>
+        <sys_updated_on>2026-09-10 07:03:44</sys_updated_on>
         <target>macroponent</target>
         <type>default</type>
     </sys_ux_client_script>

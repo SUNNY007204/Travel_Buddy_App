@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function registrationFormController($scope) {
+  var c = this;
+  c.data = c.data || {};
+  c.submitting = false;
+  c.errorMsg = "";
+  c.register = function() {
+    c.errorMsg = "";
+    if (!c.data.fullName || !c.data.email) {
+      c.errorMsg = "Please enter your name and email address.";
+      return;
+    }
+    c.submitting = true;
+    c.data.action = "register";
+    c.server.update().then(function(response) {
+      c.submitting = false;
+      if (response.data.error) {
+        c.errorMsg = response.data.error;
+      }
+    });
+  };
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>registration_form</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Registration Form</name>
+        <option_schema/>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function(data, input) {
+	data.submitted = false;
+	if (!input || input.action !== "register") { return; }
+	var fullName = (input.fullName || "").trim();
+	var email = (input.email || "").trim().toLowerCase();
+	if (!fullName || !email) { data.error = "Please provide your name and email address."; return; }
+	var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+	if (!emailPattern.test(email)) { data.error = "Please enter a valid email address."; return; }
+
+	var existing = new GlideRecord("sys_user");
+	existing.addQuery("email", email);
+	existing.query();
+	if (existing.next()) { data.error = "An account with this email address already exists."; return; }
+
+	var nameParts = fullName.split(" ");
+	var firstName = nameParts.shift();
+	var lastName = nameParts.join(" ") || firstName;
+
+	// sys_user create is ACL-restricted to the ai_user_admin role, which the guest
+	// portal session never holds. Briefly impersonate the built-in admin account to
+	// perform the insert + password-reset trigger, then revert to the original session.
+	var ADMIN_SYS_ID = "6816f79cc0a8016401c5a33be04be441";
+	var originalUserId = gs.getUserID();
+	var newUserSysId = null;
+	var impersonated = false;
+	try {
+		gs.impersonate(ADMIN_SYS_ID);
+		impersonated = true;
+
+		var user = new GlideRecord("sys_user");
+		user.initialize();
+		user.first_name = firstName;
+		user.last_name = lastName;
+		user.name = fullName;
+		user.email = email;
+		user.user_name = email;
+		user.active = false;
+		user.locked_out = true;
+		user.password_needs_reset = true;
+		newUserSysId = user.insert();
+
+		if (newUserSysId) {
+			try {
+				var pwdUtil = new global.PasswordResetUtil();
+				var requestId = pwdUtil.validateUser(newUserSysId);
+				if (requestId) {
+					pwdUtil.raiseSendEmailEvent(user, requestId, gs.getProperty("glide.servlet.uri"));
+				} else {
+					gs.eventQueue("password.reset.url", user, newUserSysId, "");
+				}
+			} catch (ex) {
+				gs.error("Travel Buddy registration: password reset trigger failed - " + ex.message);
+			}
+		}
+	} finally {
+		if (impersonated) {
+			gs.impersonate(originalUserId);
+		}
+	}
+
+	if (!newUserSysId) {
+		data.error = "We were unable to create your account. Please try again later.";
+		return;
+	}
+
+	data.submitted = true;
+})(data, input);]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-10 06:12:32</sys_created_on>
+        <sys_id>92a4436c47534b1089b4a22f316d43fb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Registration Form</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name>sp_widget_92a4436c47534b1089b4a22f316d43fb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-10 06:12:32</sys_updated_on>
+        <template><![CDATA[<div class="panel panel-default">
+  <div class="panel-heading">Create Your Travel Buddy Account</div>
+  <div class="panel-body">
+    <form novalidate ng-if="!data.submitted" ng-submit="c.register()">
+      <div class="form-group">
+        <label for="tb-reg-name">Full Name</label>
+        <input type="text" id="tb-reg-name" class="form-control" ng-model="c.data.fullName" required>
+      </div>
+      <div class="form-group">
+        <label for="tb-reg-email">Email Address</label>
+        <input type="email" id="tb-reg-email" class="form-control" ng-model="c.data.email" required>
+      </div>
+      <div class="alert alert-danger" ng-if="c.errorMsg">{{c.errorMsg}}</div>
+      <button type="submit" class="btn btn-primary" ng-disabled="c.submitting"><span ng-if="!c.submitting">Register</span><span ng-if="c.submitting">Submitting...</span></button>
+    </form>
+    <div class="alert alert-success" ng-if="data.submitted">Registration successful! We have sent a link to your email so you can set your password and activate your account.</div>
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_portal">
+    <sp_portal action="INSERT_OR_UPDATE">
+        <alternate_portal/>
+        <communication_channels/>
+        <css_variables/>
+        <dark_theme/>
+        <default>false</default>
+        <embeddable_macroponents/>
+        <enable_ais>false</enable_ais>
+        <enable_certificate_based_authentication>false</enable_certificate_based_authentication>
+        <enable_embeddables>false</enable_embeddables>
+        <enable_favorites>false</enable_favorites>
+        <hide_portal_name>false</hide_portal_name>
+        <homepage display_value="tb_home">7837cf2047934b1089b4a22f316d43f5</homepage>
+        <icon/>
+        <inactive>false</inactive>
+        <kb_knowledge_base/>
+        <kb_knowledge_page/>
+        <login_page/>
+        <logo/>
+        <logo_alt_text/>
+        <notfound_page/>
+        <quick_start_config/>
+        <rtl_enabled>false</rtl_enabled>
+        <sc_catalog/>
+        <sc_catalog_page/>
+        <sc_category_page/>
+        <search_application/>
+        <search_results_configuration/>
+        <sp_chat_queue/>
+        <sp_rectangle_menu/>
+        <sys_class_name>sp_portal</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-10 06:10:41</sys_created_on>
+        <sys_id>d734472c47534b1089b4a22f316d4337</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Travel Buddy Portal</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name>sp_portal_d734472c47534b1089b4a22f316d4337</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-10 06:23:41</sys_updated_on>
+        <theme display_value="Travel Buddy Theme">6054cb2c47534b1089b4a22f316d4396</theme>
+        <title>Travel Buddy Portal</title>
+        <ts_index_group/>
+        <url_suffix>travelbuddy</url_suffix>
+        <user_registration_config/>
+    </sp_portal>
+    <sys_translated_text action="delete_multiple" query="documentkey=d734472c47534b1089b4a22f316d4337"/>
+</record_update>
