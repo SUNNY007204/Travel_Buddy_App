@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_theme_customization">
+    <sys_ux_theme_customization action="DELETE">
+        <customization>{
+  "colors": [
+    {
+      "id": "isSecondaryColorUpdated",
+      "value": true,
+      "type": "secondary_color_updated"
+    },
+    {
+      "id": "--now-color_secondary-nav--brand",
+      "value": "8, 33, 74",
+      "type": "color_hook_overridden"
+    },
+    {
+      "id": "--now-color_background--secondary",
+      "value": "213, 214, 217",
+      "type": "color_hook_overridden"
+    },
+    {
+      "id": "--now-color_text--primary",
+      "value": "30, 41, 59",
+      "type": "color_hook_overridden"
+    }
+  ],
+  "feedback": [],
+  "groupName": "Travel Buddy App Theme Group",
+  "imagery": [],
+  "systemTokenVersion": "v1",
+  "initialValues": {}
+}</customization>
+        <name>Travel Buddy App Theme</name>
+        <sys_class_name>sys_ux_theme_customization</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-07 10:50:28</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c4872c733b878350d14ef10f23e45a42</sys_id>
+        <sys_mod_count>136</sys_mod_count>
+        <sys_name>Travel Buddy App Theme</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name>sys_ux_theme_customization_c4872c733b878350d14ef10f23e45a42</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-08 12:24:38</sys_updated_on>
+        <theme display_value="Travel Buddy App Theme">fe7720733b878350d14ef10f23e45ad8</theme>
+    </sys_ux_theme_customization>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</application>
+        <file_path/>
+        <instance_id>6241f8583b50cfd416e44a8aa4e45aa8</instance_id>
+        <instance_name>dev380569</instance_name>
+        <name>sys_ux_theme_customization_c4872c733b878350d14ef10f23e45a42</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_theme_customization"><sys_ux_theme_customization action="INSERT_OR_UPDATE"><customization>{
+  "colors": [
+    {
+      "id": "isSecondaryColorUpdated",
+      "value": true,
+      "type": "secondary_color_updated"
+    },
+    {
+      "id": "--now-color_secondary-nav--brand",
+      "value": "8, 33, 74",
+      "type": "color_hook_overridden"
+    },
+    {
+      "id": "--now-color_background--secondary",
+      "value": "213, 214, 217",
+      "type": "color_hook_overridden"
+    },
+    {
+      "id": "--now-color_text--primary",
+      "value": "30, 41, 59",
+      "type": "color_hook_overridden"
+    }
+  ],
+  "feedback": [],
+  "groupName": "Travel Buddy App Theme Group",
+  "imagery": [],
+  "systemTokenVersion": "v1",
+  "initialValues": {}
+}</customization><name>Travel Buddy App Theme</name><sys_class_name>sys_ux_theme_customization</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-07 10:50:28</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>c4872c733b878350d14ef10f23e45a42</sys_id><sys_mod_count>136</sys_mod_count><sys_name>Travel Buddy App Theme</sys_name><sys_overrides/><sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package><sys_policy/><sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope><sys_update_name>sys_ux_theme_customization_c4872c733b878350d14ef10f23e45a42</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-08 12:24:38</sys_updated_on><theme display_value="Travel Buddy App Theme">fe7720733b878350d14ef10f23e45ad8</theme></sys_ux_theme_customization></record_update>]]></payload>
+        <payload_hash>-1339251319</payload_hash>
+        <record_name>Travel Buddy App Theme</record_name>
+        <reverted_from/>
+        <source>f13de1023b028b10d14ef10f23e45a82</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-08 12:24:38</sys_created_on>
+        <sys_id>19a64a483b534750d14ef10f23e45aa5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a080fa3e700000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-08 12:24:38</sys_updated_on>
+        <type>Ux Theme Customization</type>
+        <update_guid>55a64a481b53475089aa37253c322da4</update_guid>
+        <update_guid_history>55a64a481b53475089aa37253c322da4:-1339251319,e7e34ec0705347506b595186c4f858b4:1703270409,fad3cac00c53475080b510c7250c93b5:1572617637,55d38ac099534750f53a406eee2ff833:-1361220992,8fb3c2c0095347509d8c78aa8b77100c:-59061234,d632060036534750952790f529040346:-1431895150,652242009c53475018bf3955f4a25ff0:783283360,54c1c2cc3a134750f7a76742593ed7da:-705557084,99818a8c5c134750afb33ef65e05f047:-260110533,1f714a8c4a134750d4b3c3b0f77daa66:289795416,f871c68c6a134750f8c45e78aa407729:2104179854,ee61868c7613475030d3eeb7a210dc2f:1120141696,e251468ce0134750b92f867857d7c94c:1311562306,3c41828c221347501effa42ea06fda22:1859321404,b231428cb61347502fbc90b6242b9f28:-136360525,c231028cea134750930b6ed42b7790c9:1356850682,3721ce4c7f134750b4d707e7e57305aa:283380833,29218e4c43134750a7786b3d361478ee:1356850682,9d11ca4cf7134750b24f9db3ff2523f4:-2085658216,f701ca4c4e1347509c49723933861520:966144248,5ff00a4c54134750ed4e32076b2e81d8:1638880938,ddf0c64c631347506b94ec32f8d620f7:1039770244,e5c0824c78134750a6a334072cfd2822:-156825462,42b0024ccd134750841b126f47a308b0:974113684,c3d741b3f98b835084325eacbab449e3:1822572596,2212d1c8ef9b07500eccdda21d15f9c6:1059288640,c3d741b3f98b835084325eacbab449e3:1822572596,eeb74d732d8b835076e8908f2c70e850:1058430356,4cb70d73188b835098a57092118593a2:-611009925,98a789733a8b83508723d7369d71f9d4:1058430356,28d681338e8b83500a8d63234b64ea15:1094766299,25c60133de8b8350ae2e2254cb26a99f:888767869,16b6cdffd44b8350d72b01f3c7db4711:-695053713,afa64dff074b8350f8e6a986d11c31cd:-1572660535,3f960dff074b8350829cf9c1018e8658:1087481295,c28609ff964b8350f35f29ec81f18fb6:2017151751,2b4641ffb74b8350eed7d42e2e11b6c2:1108731407,114601ffcd4b83507660a4f5b884dd98:-1532298584,d0368dbfac4b835081c0f51436755e81:811126499,c91689bf624b8350c61bd1b97cdce7b3:1108731407,f3d505bffb4b83506c98fce3cecfae19:605956292,6ab501bf644b835096840fb9f63c581f:-1427912755,1e95c97f724b8350a3b79c9196c72c99:965763524,7f85897f954b83502b4d244aba4a4962:-2060355417,2985497f464b835041924f5d19217c76:-663474640,a745417fbc4b8350b596800a0c7b8849:-1550892314,ff358df3be4b835032c97339cc09df76:1124395319,5215c53f694b8350c04e49466dec7392:-1122123417,9df4c53ff44b8350d789ce41e12c2753:-1153500948,3ee4853f7d4b835077caa132a05a0255:-1957859317,d8e4453f4e4b8350c0310be6e5c99a1d:-344532821,5ad4053f184b835060d5acf539f9ef47:1734339652,e6940dfb694b8350b915b3df50925dab:-770519662,ed8449fbb34b83509e932b22f7a2d7f2:1829539849,467409fbcd4b8350416e0272afa47339:-482912206,ef5405fb9e4b8350c5717c7677e634dc:-70623693,c24481fb0d4b8350be4c686256871c1b:-1466137404,7034cdbbc44b8350c8abab6734d410be:264750151,e4244dbb414b835064c0f46e588b39cb:2091912469,1814c9bb2e4b835047239458bb16268e:1798101527,76f309bbfa4b8350489eb39e9d9505ad:1909562791,bee385bb194b8350871d60aa198aa493:-627945456,fbd305bbb14b83507e0d1e6dc5ebcec7:1311155328,e9d3c1bbc64b8350dabc7f9be938e6b5:-1666652042,01c341bb694b8350fb5f6bf42d57f086:1811974238,d9b3cd7b444b83501c0dca4ea5124dd2:-2000663175,bb934d7b024b8350aeb1f014eea8590c:2077897417,2e83497b4e4b8350f5ae2210a71cbd13:1765943133,2373c57b9e4b83507bc148ae150ce9e9:-1552396754,c763c57b264b83504824ce14ab29ed14:-1941540559,b063457bad4b835024fd4f59e30e4261:-1136382601,f712cdb77d4b8350a4b756d9585e501c:-1666536669,87024db7b54b8350b297f921d8d99c37:-1552399806,7ff189b7a14b8350a6ba005e68c2ddc7:-1285908823,74e185b7e54b835004ac89af5fb45341:-549591165,9cd1c1b7324b8350d4aca3ca350bafdf:-1328515002,05c181b7584b8350d58b464e5c0ce4ce:-677124127,c9b141b7e64b8350d2056bc6961616e4:724859904,95918d77584b8350e2afaeffd6c45ea3:1697827372,91718977964b83507e549c216c100b43:-368964222,f4610977374b8350456b4c800a31996f:315564342,7d518577464b8350ffc4f50f3bd74096:-417809008,724105771f4b8350e8b004c01ddc8509:1449755826,f731c177b24b83504ad7343ad63ca07d:235641681,26e04937f34b835070e64168eefd93db:1533813141,f3d0c537ce4b8350c22e127eec877ef6:-1547044696,38d085379b4b8350fb4f13ee3724178b:1533813141,35c045378a4b8350c49e5edd34e50d15:168146759,c1a001377c4b8350288bf622d563ccdb:1377061977,d8904df39d4b835037f6fe9c607972e1:-1302365229,f9804df3d84b83509dcad93abcd22e00:1377061977,bc7089f3c24b8350962fb10ea5805ce9:-1005214104,1350c5f3c54b83507b20bc4c58c04db5:2114587832,604005f3a24b8350a1cee89093e3f5cf:1800802651,932081f3dc4b8350fd006f4c8f0f100a:1494006409,892001f3074b83500c2afae0dd97bddf:247680859,8300c9b3b04b8350f71ccea7892b1222:1507930089,b4ff7873864b835041b882fed7152f0f:461676013,39ef78b3184b8350fec2b2da0036ce7d:-1083466716,5bdf38b3744b8350f5efa78a63868346:800116219,81dff4b38e4b8350088d21ce6567f240:86336570,26cfb4b3404b8350c0706c32f41f0660:-1409448678,84cf74b34f4b8350fca020ec9f8fb829:-130204354,ddbff0b3864b835023e381232c66e337:844186108,4c9fb873574b83506167c51805ddaa6b:-1401118368,1e6f38736c4b835049b1c6407b8543f6:-150585497,af5ff473844b8350db8f71fe1b0d6ae4:-531742471,015f3473b34b835038911e7b8d88be59:-39781458,e23fb073244b83503a1f86b43f1aa3b2:-531742471,872f70738f4b8350bd5c0337ae3730d2:1278928352,b02ffc33ed4b835090f88d80fd2c7d18:1715372079,130f7c33ec4b83503dcc80c699588a4c:92413455,500f3c33a74b8350fedc43c9f58e8585:1389145388,25feb833df4b835016c2c1978e25aaac:-1032283239,97eeb8330f4b835034ba897f0586593c:648641749,a8def433ee4b83508106641fffcdfc44:-1032283239,2cce7433334b835081e5ae732215cb46:1079623752,2eaeb033534b835078cbd452f4fdc58c:257274559,169e3033c94b83501832b91ab253b044:1396731116,e38ebcff760b83507200642b0a6b68cf:1180729668,488e7cffa00b8350d9b41475638f3966:-1699383903,025e38ffb60b8350aee6e07cf5b01971:-2070179831,3d1e30ff1a0b8350a3c3c4789903a86c:-1466671964,d3edf8bf230b8350eae6e8902cdfcee6:-149630717,0bcdf4bfde0b835010d2a44f5f8db287:-1466671964,dfbdb4bf1a0b8350efa184ebf161642e:926289409,bf7d3c7f840b8350c814bed35ad55a84:-266168452,6e6df87fb50b8350ef5dbd117b73a879:-978806298,f46db87f5f0b83507636ef4fc04c8ce3:-108395755,163d747f2c0b8350cf445cc9f03a1a67:1821782472,9e1d707f340b8350708c2b03a2fa648f:1321061207,d4da783bde0b8350b538668fbbb05fe6:-1641231206,1a1af0f7c90b83505535f8475c05d64a:-478540627,960ab0f7e50b8350bf84377d88114a47:-1094436145,86e97cb7f50b83506fb67244333772bd:251974628,1ec978b7d10b8350dc2ebeecb89622cc:-1094436145,7e2a6cb72c878350e74fa8c35cbbaa6f:-478540627,18872c73e7878350cdffd6617751ac49:-1941766845,14872c736d8783503cb6954a5ae04e45:-1688260882</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-08 12:27:03</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_theme_customization">sys_ux_theme_customization</sys_db_object>
+        <sys_id>3d5e05ba481046c4b35478b6f52a8069</sys_id>
+        <sys_metadata>c4872c733b878350d14ef10f23e45a42</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Travel Buddy App Theme</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_scope_delete display_value="">ce79bab18acc49f9bef811863b5939e1</sys_scope_delete>
+        <sys_update_name>sys_ux_theme_customization_c4872c733b878350d14ef10f23e45a42</sys_update_name>
+        <sys_update_version display_value="sys_ux_theme_customization_c4872c733b878350d14ef10f23e45a42">19a64a483b534750d14ef10f23e45aa5</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-08 12:27:03</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

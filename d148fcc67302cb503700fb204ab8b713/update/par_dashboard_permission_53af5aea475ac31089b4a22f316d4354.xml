@@ -3,7 +3,7 @@
         <can_read>true</can_read>
         <can_share>false</can_share>
         <can_write>false</can_write>
-        <dashboard display_value="Traveler workspace">6eafd6ea475ac31089b4a22f316d43ac</dashboard>
+        <dashboard display_value="">6eafd6ea475ac31089b4a22f316d43ac</dashboard>
         <group/>
         <owner>false</owner>
         <role display_value="x_travel_buddy_app.Traveler" name="x_travel_buddy_app.Traveler">8b00f1ea4712c31089b4a22f316d43ce</role>
