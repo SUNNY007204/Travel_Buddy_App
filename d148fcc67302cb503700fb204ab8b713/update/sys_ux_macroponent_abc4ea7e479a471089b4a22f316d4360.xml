@@ -348,7 +348,52 @@
                                 },
                                 "elementId": "button_1",
                                 "elementLabel": "Button 1",
-                                "eventMappings": [],
+                                "eventMappings": [
+                                    {
+                                        "eventMappingId": "hiDSffPlLCUkUjjSIGpYNSaeeWgg",
+                                        "isConfiguration": false,
+                                        "offRowStorageId": null,
+                                        "sourceEventApiName": "sn_button.NOW_BUTTON#CLICKED",
+                                        "sourceEventCorrelationId": null,
+                                        "sourceEventDefinition": {
+                                            "apiName": "sn_button.NOW_BUTTON#CLICKED",
+                                            "id": null,
+                                            "type": "UXEVENT"
+                                        },
+                                        "sourceEventSysId": null,
+                                        "targets": [
+                                            {
+                                                "broker": null,
+                                                "clientScript": null,
+                                                "clientTransformScript": "",
+                                                "conditional": null,
+                                                "declarativeAction": null,
+                                                "event": {
+                                                    "apiName": "x_travel_buddy_app.NAV_ITEM_SELECTED_RELAY_abc4ea7e479a471089b4a22f316d4360",
+                                                    "payload": {
+                                                        "type": "JSON_LITERAL",
+                                                        "value": {
+                                                            "external": null,
+                                                            "fields": null,
+                                                            "multiInstField": null,
+                                                            "navigationOptions": null,
+                                                            "params": null,
+                                                            "passiveNavigation": null,
+                                                            "redirect": null,
+                                                            "route": "home",
+                                                            "targetRoute": null,
+                                                            "title": null
+                                                        }
+                                                    },
+                                                    "sysId": "1d54e9dc835b0b9031ab6730ceaad326"
+                                                },
+                                                "operation": null,
+                                                "targetId": "olAKweehhgNCkYljjhEPpfejcchhddO",
+                                                "type": "EVENT"
+                                            }
+                                        ]
+                                    }
+                                ],
                                 "isHidden": {
                                     "type": "JSON_LITERAL",
                                     "value": null
@@ -396,12 +441,12 @@
                                         "value": {
                                             "code": null,
                                             "comment": "",
-                                            "message": "Enter a label"
+                                            "message": ""
                                         }
                                     },
                                     "variant": {
                                         "type": "JSON_LITERAL",
-                                        "value": "primary-ai"
+                                        "value": "primary"
                                     }
                                 },
                                 "slot": null,
@@ -2042,7 +2087,7 @@
 ]</data>
         <description/>
         <disable_auto_reflow>false</disable_auto_reflow>
-        <dispatched_events/>
+        <dispatched_events>1d54e9dc835b0b9031ab6730ceaad326</dispatched_events>
         <ext_controller_dep/>
         <extends display_value="Page Template">19be392623033300f4b4c50947bf65ba</extends>
         <extension_point/>
@@ -2105,10 +2150,6 @@
   "code" : "",
   "comment" : ""
 }, {
-  "message" : "Enter a label",
-  "code" : "",
-  "comment" : ""
-}, {
   "message" : "Home",
   "code" : "",
   "comment" : ""
@@ -2124,14 +2165,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-07-29 10:36:54</sys_created_on>
         <sys_id>abc4ea7e479a471089b4a22f316d4360</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>All Active Trips</sys_name>
         <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
         <sys_policy/>
         <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
         <sys_update_name>sys_ux_macroponent_abc4ea7e479a471089b4a22f316d4360</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-06 07:27:23</sys_updated_on>
+        <sys_updated_on>2026-09-10 04:11:54</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=abc4ea7e479a471089b4a22f316d4360"/>
 </record_update>

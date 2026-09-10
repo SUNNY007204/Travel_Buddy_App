@@ -23,7 +23,7 @@
         <dynamic_value_field/>
         <enable_also_request_for>false</enable_also_request_for>
         <example_text/>
-        <field>u_selected_itinerary</field>
+        <field/>
         <global>false</global>
         <help_tag>More information</help_tag>
         <help_text/>
@@ -43,7 +43,7 @@
         <macro/>
         <macroponent/>
         <mandatory>false</mandatory>
-        <map_to_field>true</map_to_field>
+        <map_to_field>false</map_to_field>
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>true</mask_use_encryption>
         <name>u_selected_itinerary</name>
@@ -84,14 +84,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-17 10:41:10</sys_created_on>
         <sys_id>daf890053bfe07d0d14ef10f23e45af5</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Select a Itinerary Package</sys_name>
         <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
         <sys_policy/>
         <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
         <sys_update_name>item_option_new_daf890053bfe07d0d14ef10f23e45af5</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-17 10:42:43</sys_updated_on>
+        <sys_updated_on>2026-09-09 12:10:49</sys_updated_on>
         <table/>
         <tooltip/>
         <topic_block/>

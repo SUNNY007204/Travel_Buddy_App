@@ -1,0 +1,959 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=85684000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>When guest user will enter the password his record will get stored in sys user table</description>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>activate_user_in_user_table</internal_name>
+        <label_cache>[{"name":"Updated_1.current.sys_id","label":"Trigger - Record Updated➛User password registration Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_travel_buddy_app_user_password_registration","column_name":"sys_id","usedInstances":{"e142e185-d4f4-4aa1-945a-24b8085cf75a":["staging_sys_id"]}},{"name":"Created or Updated_1.current.current","label":"Trigger - Record Created or Updated➛Record","type":"reference","base_type":"reference","usedInstances":{},"attributes":{}}]</label_cache>
+        <master_snapshot>f16b619047be435089b4a22f316d43f2</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Activate user in user table </name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>ca6ba19047be435089b4a22f316d436d</remote_trigger_id>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-14 08:44:37</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e284e8484736cf1089b4a22f316d4391</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Activate user in user table </sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name>sys_hub_flow_e284e8484736cf1089b4a22f316d4391</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-08 10:10:11</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=e284e8484736cf1089b4a22f316d4391"/>
+    <sys_variable_value action="delete_multiple" query="document_key=e284e8484736cf1089b4a22f316d4391"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_travel_buddy_app_user_password_registration">u_status=pending^u_passwordISNOTEMPTY<item display_value="Pending" endquery="false" field="u_status" goto="false" newquery="false" operator="=" or="false" value="pending"/>
+            <item endquery="false" field="u_password" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>false</on_insert>
+        <on_update>true</on_update>
+        <published_version/>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-15 08:32:43</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ca6ba19047be435089b4a22f316d436d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-15 08:32:43</sys_updated_on>
+        <table>x_travel_buddy_app_user_password_registration</table>
+        <trigger_definition/>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>e284e8484736cf1089b4a22f316d4391</identifier>
+        <identifier_type>flow</identifier_type>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-15 08:32:43</sys_created_on>
+        <sys_id>066ba19047be435089b4a22f316d436f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-17 11:18:33</sys_updated_on>
+        <trigger display_value="">ca6ba19047be435089b4a22f316d436d</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=e284e8484736cf1089b4a22f316d4391^sys_idNOT IN066ba19047be435089b4a22f316d436f"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=e284e8484736cf1089b4a22f316d4391"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=e284e8484736cf1089b4a22f316d4391^sys_idNOT INea84e8484736cf1089b4a22f316d4393"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>e284e8484736cf1089b4a22f316d4391</id>
+        <name>Activate user in user table </name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-14 08:44:37</sys_created_on>
+        <sys_id>ea84e8484736cf1089b4a22f316d4393</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-14 08:44:37</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=ea84e8484736cf1089b4a22f316d4393"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=e284e8484736cf1089b4a22f316d4391^sys_idNOT IN1a94ac484736cf1089b4a22f316d4327,1a94ac484736cf1089b4a22f316d4351,1e94ac484736cf1089b4a22f316d4345"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Activate user in user table ">e284e8484736cf1089b4a22f316d4391</model>
+        <model_id>e284e8484736cf1089b4a22f316d4391</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_e284e8484736cf1089b4a22f316d4391</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-14 08:44:52</sys_created_on>
+        <sys_id>1a94ac484736cf1089b4a22f316d4327</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-14 12:22:33</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=1a94ac484736cf1089b4a22f316d4327"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Activate user in user table ">e284e8484736cf1089b4a22f316d4391</model>
+        <model_id>e284e8484736cf1089b4a22f316d4391</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_e284e8484736cf1089b4a22f316d4391</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-14 08:44:52</sys_created_on>
+        <sys_id>1a94ac484736cf1089b4a22f316d4351</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-14 08:44:52</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=1a94ac484736cf1089b4a22f316d4351"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Activate user in user table ">e284e8484736cf1089b4a22f316d4391</model>
+        <model_id>e284e8484736cf1089b4a22f316d4391</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_e284e8484736cf1089b4a22f316d4391</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-14 08:44:52</sys_created_on>
+        <sys_id>1e94ac484736cf1089b4a22f316d4345</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-14 12:22:33</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=1e94ac484736cf1089b4a22f316d4345"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=e284e8484736cf1089b4a22f316d4391"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e284e8484736cf1089b4a22f316d4391"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=e284e8484736cf1089b4a22f316d4391^sys_idNOT IN7ff36cc547b6c75089b4a22f316d43c8"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Activate user in user table ">e284e8484736cf1089b4a22f316d4391</flow>
+        <generation_source/>
+        <name>Created or Updated</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-17 11:16:09</sys_created_on>
+        <sys_id>7ff36cc547b6c75089b4a22f316d43c8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-17 11:18:35</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9VZXXPaOBT9Kx4/7c7QHX8ADtmnLCHbzKTJLNDuQybrkSUZPGtkastO2U7/+175A4y/Ati0NA8JSLJ07tW550jx81fZRRZ15Wt5jiyXyj3ZYZz6DLnzzZpCMxfNJkMr0bdCjCDu+Rv5mvsh7cm2763mdLV2EYfBNnIDaPR8Qn35Wu3JEXJDOtsE9wRmgufjadI55bQ76SFOAJNsPu1a8NJxiU+ZfP380pPXyIdnuZj3a6HLEZNjW6Xq6ErBugY/iqJd9VVrqFuqRnREkQITFgMtgOEV8e4ioV84ZYSSbZClVPgUkSfmbnIjvgTOfzDnlSJ6bQqIcRrc9quZBp7F7DmYPq2547GkJUGXdHpuuGKPCWqRMmqj0OW5lIUBzEfXAijjWxz2bOm9TrMF7xwWx5R2uh5G7vYb4tx3rJDTQKTZdlxIuJlkJPBCP0Y/nYyfprfm3zfz8fvJ1JxOZvPp/Xg+uZW/xXGZn0MxY4IwxWIm4cCAAPvOmt9g7kQZYb71diQce4w4cfQlIuKsK9gnYhZlExMVpZaLOLdixsd/Jn91QElDMQhR6yiJrRwl82FX4OIVGciH1kTOtKWenX1F+UH8TCXkVHquPELd2910MnQuFkBYh61DLnL0ihgPTO6ZiBAzlz0xNBT1nSXO9NbUFwkTfZ9uHsbvbx7/nMx+T//eTZ8+ZJ/nT2/yPMnJ22T3QwYPmNvdK1M+Tvc27w9OAGE+Q2HO6Ocw2ax3oE12luJ4BRhuP6QrTEMmebDr8EvCoQ8Z5lKmd/b9Ci3SjYEJXYp5jkH2xyD/7YMTBA5b5IKow5BmtgBhuzoQU8oCTqAELbG8dKkG5S2JCrltqwoq7muKbg0VQ2iCCh9tVTGUAbKJrijWVU4VymBqUfICYTpUh+O0IYgJ6h7Av2JiU8hKvkIOIk+0z7wsdEGMVILG3UBTO4KmCWgFKdWP0tItGZPm231ONoXW8REBkQjBEySLsYMjgCC37XqvIOPtFdFC+N+F74WMFDVJLCE5TNqNkH5J0/nr+dTR9nzajGd/xCXp4m5TMlojtulAETVdpcawP1RACHWhgYPRyMJIs21jaFBVLSjiDkYltgtWwjcoF1Vxtk4VK+kSVbHsCD1sAbCkjUcDbK+KKR0rNTHp+znU73VJmQlQfdMV+lYSwYXrEJr1dVvjpaW7vKJbIzIYGAY24C4EdW73qYXUvjZAI2OoU7tQ5yUoTTB5RWbOeEMKNkG8fI0GfEy6Lus2f06yBpRzYT2t/ZrBsTaeAiVr5kxS7I0UK4vnS48ee3e/GyfNKHhffFc+k3EfAkpsu/RdUVkeX5YOEoDkD2jfQyKOpzU5u7j7V4FR0X6sbVUIaRoaqXqNChnDKhXagamHeaHnjgOrJqqtv6oDyKGsjyqLp/bEcAJxC+TIHyUazjpdJUXtPCna+ZKitz5fZRVYe+k8BexP5HLxgaNDqxMQqOnZeQW/9STokGBNybGl9D+alEjWRuJLChl24VwN60sCTFvpbnCWMrItv38oruQcXzI8aJbSA9nleVmBN93eninR8YjU+VnfqD1V15taoftCne3oSomqCq/R3o6btzhnpcHliLrPgwOtq9Ooq/2rXdSVDvZW1O29qenuX4Hi8l1HgJ4n29DeazyGC9cWfMZXQCFzoN3ES8QWyeudbN072AWK8FJKhkjJkDO6hfuKNoFcdDFguCii9H/j0ADlxBKxOxMQGlF/U8qEaJTCNRHG8p2NS2swruw9asB9eHKx2at23MVLMM0aQakOFKyrql56NT7Ivxrfr4N6hDUupZ3qUksnfqecWz7dL+6saKyJ2xfK0gpxvKRBT4JNjV+8xJLp+AGPR/8md3idw7S8HVUmVltqUV2V1ppCQ7lExUKrcoEKrkeFusj7QOPFrSF8tZPwtS7C108Lv9/aBrP6rPTBNHvdet+pVvfyP3nfHa57JgAA</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=e284e8484736cf1089b4a22f316d4391^sys_idNOT INd6b719c447facf1089b4a22f316d4321"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Activate User &amp; Set Password">d9afb8d347a64b1089b4a22f316d432d</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>d9afb8d347a64b1089b4a22f316d432d</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Activate user in user table ">e284e8484736cf1089b4a22f316d4391</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-14 12:28:14</sys_created_on>
+        <sys_id>d6b719c447facf1089b4a22f316d4321</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-17 11:16:09</sys_updated_on>
+        <ui_id>e142e185-d4f4-4aa1-945a-24b8085cf75a</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/41RW2vbMBT+K0XPjnFqx03yNiiFwrbCsvWlFHNsHSUCWVJ1SeuV/vcd2U468jD2Jn3n8l3O0zuTnG3ZagmiXfOyuoG6apfFetNWcH0tymXNq7IsWcY09EidPsBe6n3jB9/QaMaOoGIq0JNLbxUMj59Id5CKO9Rs+/ScMQuOlgR0bPt+UQqDxUZBi4oGd8ERBY3/r7bPwVHc1W7wV/e3/xCd6EZ8JjKOJ1XLjOFbQM2RiAUojxnrQXMIxg1sG1wkwCHwB62Gc8dB6jDZ7eHNy9+0eV0UReoUSA67OYzzt5mDOmVkZIcPNkijJyRAq04BGhV7/X2ykSJGAVGFvyKOnvahTaKTjFmT2B3M648T4Z3Uo7+5qEwH6vyDQCm0MaBPZ4ny50U2E/L18jaosCfGpgdrU7bWmaMcWUh0n+8VfXKhzCup83Kvc+iSw5zChPyO8NsRfgQnk91vtIaGE90vLV8i3qfb17DBFS+6xQ2vNwu6Pi42bVkvVlXHi3ItRFt37GOMtnmJydQU0hxHMyVKDb5z0oYvJOGIs/OP5z97+q8E/gIAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d6b719c447facf1089b4a22f316d4321"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=e284e8484736cf1089b4a22f316d4391"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=e284e8484736cf1089b4a22f316d4391"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=e284e8484736cf1089b4a22f316d4391"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=e284e8484736cf1089b4a22f316d4391"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e284e8484736cf1089b4a22f316d4391</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-14 08:44:52</sys_created_on>
+        <sys_id>1a94ac484736cf1089b4a22f316d4340</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Table Name</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_e284e8484736cf1089b4a22f316d4391_table_name_en</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-14 08:44:52</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e284e8484736cf1089b4a22f316d4391</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-14 08:44:52</sys_created_on>
+        <sys_id>5e94ac484736cf1089b4a22f316d434c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Record</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_e284e8484736cf1089b4a22f316d4391_current_en</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-14 08:44:52</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e284e8484736cf1089b4a22f316d4391</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-14 08:44:52</sys_created_on>
+        <sys_id>a694ac484736cf1089b4a22f316d4372</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Changed Fields</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_e284e8484736cf1089b4a22f316d4391_changed_fields_en</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-14 08:44:52</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_e284e8484736cf1089b4a22f316d4391"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_e284e8484736cf1089b4a22f316d4391"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>When guest user will enter the password his record will get stored in sys user table</description>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>activate_user_in_user_table</internal_name>
+        <label_cache>[{"name":"Updated_1.current.sys_id","label":"Trigger - Record Updated➛User password registration Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_travel_buddy_app_user_password_registration","column_name":"sys_id","usedInstances":{"e142e185-d4f4-4aa1-945a-24b8085cf75a":["staging_sys_id"]}}]</label_cache>
+        <master>true</master>
+        <name>Activate user in user table </name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Activate user in user table ">e284e8484736cf1089b4a22f316d4391</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-15 08:32:42</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f16b619047be435089b4a22f316d43f2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-15 08:32:42</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=f16b619047be435089b4a22f316d43f2"/>
+    <sys_variable_value action="delete_multiple" query="document_key=f16b619047be435089b4a22f316d43f2"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=f16b619047be435089b4a22f316d43f2"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=f16b619047be435089b4a22f316d43f2^sys_idNOT INb16b619047be435089b4a22f316d43f5"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>f16b619047be435089b4a22f316d43f2</id>
+        <name>Activate user in user table </name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-15 08:32:42</sys_created_on>
+        <sys_id>b16b619047be435089b4a22f316d43f5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-15 08:32:42</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=b16b619047be435089b4a22f316d43f5"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=f16b619047be435089b4a22f316d43f2^sys_idNOT IN7d6ba19047be435089b4a22f316d432d,b56b619047be435089b4a22f316d43f7,f96ba19047be435089b4a22f316d4321"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Activate user in user table ">f16b619047be435089b4a22f316d43f2</model>
+        <model_id>f16b619047be435089b4a22f316d43f2</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_f16b619047be435089b4a22f316d43f2</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-15 08:32:42</sys_created_on>
+        <sys_id>7d6ba19047be435089b4a22f316d432d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-15 08:32:42</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7d6ba19047be435089b4a22f316d432d"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Activate user in user table ">f16b619047be435089b4a22f316d43f2</model>
+        <model_id>f16b619047be435089b4a22f316d43f2</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_f16b619047be435089b4a22f316d43f2</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-15 08:32:42</sys_created_on>
+        <sys_id>b56b619047be435089b4a22f316d43f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-15 08:32:42</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b56b619047be435089b4a22f316d43f7"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Activate user in user table ">f16b619047be435089b4a22f316d43f2</model>
+        <model_id>f16b619047be435089b4a22f316d43f2</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_f16b619047be435089b4a22f316d43f2</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-15 08:32:42</sys_created_on>
+        <sys_id>f96ba19047be435089b4a22f316d4321</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-15 08:32:42</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f96ba19047be435089b4a22f316d4321"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=f16b619047be435089b4a22f316d43f2"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=f16b619047be435089b4a22f316d43f2"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=f16b619047be435089b4a22f316d43f2^sys_idNOT IN026ba19047be435089b4a22f316d4344"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Activate user in user table ">f16b619047be435089b4a22f316d43f2</flow>
+        <generation_source/>
+        <name>Updated</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-15 08:32:42</sys_created_on>
+        <sys_id>026ba19047be435089b4a22f316d4344</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-15 08:32:42</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9Vaa2/bNhT9K4I+bYA7SJYfcfYpy2MN0CaD7XYYuk6gSMomJlOuSCn1iv73Xephy3rFjuTW/dLUJEWee3nuOaTlD190DznU0y/1OXI8qvd0xiUNOPLmmzWFZqmabY5Wqm+FOEHSDzb6pQxC2tPdwF/N6WrtIQmDXeQJaPQDQgP90uzpEfJCOtuIewIzwfPxNOmcetoNnz/bMkAR9WwnJGRjo/XaDgUN7DUS4glmswO6YALGSOZzeI4wAStu3qePv4OxWjZWK4zFS+aRgHL98sPHnr5GAUCQCt6XQhdTGE1CkNmnBrZMq983jP7FwHRGlmP2iYUouoAJi/kqxCQr0rZLCP0sKSeUbHNVymhAEXnk3iY34rNg/8GcF4bqdSkgxjTJ5/ajnaYkacZLn2H6uI5TELck6JJO3wtX/CFBrZJJXRR6MksmtEDubULXCiiXWxzubOk/TbMF7xiPY0o7PR8jb/sJSRkwJ5RUqDS7zIOE20lGhB8GMfrp7fXj9Mb+82p+/fp2ak9vZ/Pp/fX89kb/GsdlfwrVjAnCFIudhPN1y4A7Rj21bTxcOYCmpwscsLW8wpJFGR+/9nYcv/Y5YSkxCjzHWZfY53kWfRPRDaOW6ji3Ykb30BYSyVD8HRqGRVRsjC/+Cbd0v589PM5v3/4x/+to/jrOBBGKavg7Guf4m89FBVhZkZZ8vE1MTlvqqTwwjO9E5lS2XsrllU+od7ObTofOxQLYzfg6lCpHT4hLYUvfRoTYueypoaESgyxxtr+mgUqY6nt/9eb69dXD77ezX9O/d9PHt9n/54/PFkWSk3JlPF8TQchhCnu7n+XKiDdguxNvQF2BcVDXM/opTLbvFUibmyU9XgGGu2/SFaYh13zgAfyj4TCAnEstk0v3foUW6VbBhB7FMscpF6Q99+ktEwJKJRdEHYY01wUI29WBqloWcAJFtMTysUvRKG9JVMhtwQGP1okRJubAGY+MsVIJ07Ac1zTGxhC5xDKMiZXTiTKYWpSyQJgO9eI4tRAxQb0D+FdMbArZyFfIQeSJ9pmXha6IkYrSdTfQzI6g9RW0grhaR6nrloxJ880+J5tC6/iEgUiE4AmSxXjICeIAVXQ9/wmEvb0iOgj/uwj8kJOiJqklNMa13QjtpzSdP59OHV0fDsmNePZHnJMu7jYlozXimw4UcUAxGY8GIwOE0AINdIaTiYNR33XHozE1SEERdzAqsZ2xEj5DuaiKs3WqWEmXqIplR+hhC4AlbTwaYHtVTOlYqYlJ34+hfk9LypNruKf0rSSCC48RmvV1W+OlpaNdVbetc8u9IMPheIzHcDuCOncH1EHmoD9Ek/HIoqNCnZegNMGUFZk54Z1JbES8fI0GvEu6zuvLgFOSVVAplfW09msOx9p4CpSsmTNJtTdarCx+oD34/NX9bpw2o+B98e35RMZ9CKj427Bvisrx5bJ0kAAkv0H7HhJ1PK3J2dndvwqMivZjbX3auLAmQ+Ja1So07lep0A5MPcwzPXccWDVRbf1VHUAOZX1UWTy1J4YXELdAjvxRouGs01VSzM6T0j9dUqzW56usAmsvnS8B+wO5XHzg6NDqFARq+25ewW98DTo0WFNjrpZ+x0mJ5mw0uaSQYQ/O1bC+psC0le4GZykj2/L7u+JKzvElw4NmLT2QnZ+XFXjT7e0ZuxOHTKyaU/Ww/lRdb2qF7jN1tqMrJaoqvEZ7O27e4pyVBpcj6j4PDrSuTqOu9q92UVc62HNRt/emprt/BYrzdx0Fep5sQ3uv8TkuXFvwCV8BhZxBu42XiC+S1zvZunewCxThpZYM0ZIhJ3QL7wlthF50MWC4KqL0u3FogHLiididCAiNaLApZUI1auGaKGP55sbV8COR9M1q/FsOutjsVTvu4iUYNifDvkUusGVOrPKPPcycae3XQT3CWpd65rcfdS61ZPFb5tzy6X5JtqKxJm5fMWsrJPGSip4Gmxq/eIklkwVCxqN/0Tu8zmFa3o4qE6sttaiuSmtNoaFcomKhVblABdejQl3kfaDx4tYQvtlJ+P0uwrdeFv6gtQ1m9Vnpg2n2uvW+l1rdx/8B24mkMQEnAAA=</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=f16b619047be435089b4a22f316d43f2^sys_idNOT IN826ba19047be435089b4a22f316d4341"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Activate User &amp; Set Password">d9afb8d347a64b1089b4a22f316d432d</action_type>
+        <action_type_parent display_value="Activate User &amp; Set Password">f4eebc5347a64b1089b4a22f316d43b7</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>d9afb8d347a64b1089b4a22f316d432d</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Activate user in user table ">f16b619047be435089b4a22f316d43f2</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-15 08:32:42</sys_created_on>
+        <sys_id>826ba19047be435089b4a22f316d4341</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-15 08:32:42</sys_updated_on>
+        <ui_id>e142e185-d4f4-4aa1-945a-24b8085cf75a</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/41SXWvbQBD8K+GeZSFFtmL7rcQEAm0DdZOXEMTqbmUfnE7KfThRjf9793yyWlIoedzZ2duZ2Xs+MinYmi1yaOqlKOY3UM7rPFuu6jlcXzdFXop5URQsYRpaJKZ1sJN6V9nBVjSasAMoHxrH42MvwKGo8pR7Y1C7NJJOJ6IJaXsFw9Pn2HwvlSCQrZ9fEtaDoeUODVsfP7Q+q15BjYqo2yj/ajvYq/vNf2y5oY+4IXisv06PjGBnRBCVJwzfHWqBpKYBZTFhLWjy15mBrZ3xBBgE8aDVMDH2Ujt6jAXuu5W/aN0yy7LAbJAMcozdqazGDCPcbMABKfHceTNS+b6THG2MRmADXrnbv7FIeOid7HQccVCry3SnfKu/x0DY9MDlZIR4SyKwD06D9tFIs913bz8uKu+kPocyNlXHQU0VOIqu9i7oOTIvf35IOSL/5IwKW9pYtdD34Uq96Q7yvIVEt+lOUZE2qnsjdVbudAo8OEzpApDeEb45w09gZLD7jZ6h4bDuUctXj/fhF5WwwoXI+OxGlKsZ/SOcreqinC3mXGTFsmnqkrNTwuiL3Cqw9k9QdKHq1QebMbYxoCpmHEa4kb37QqIOOGZxevkNXA11OnwDAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=826ba19047be435089b4a22f316d4341"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=f16b619047be435089b4a22f316d43f2"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=f16b619047be435089b4a22f316d43f2"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=f16b619047be435089b4a22f316d43f2"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=f16b619047be435089b4a22f316d43f2"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_f16b619047be435089b4a22f316d43f2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-15 08:32:42</sys_created_on>
+        <sys_id>026ba19047be435089b4a22f316d4335</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Table Name</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-15 08:32:42</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_f16b619047be435089b4a22f316d43f2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-15 08:32:42</sys_created_on>
+        <sys_id>316ba19047be435089b4a22f316d4310</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Record</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-15 08:32:42</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_f16b619047be435089b4a22f316d43f2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-15 08:32:42</sys_created_on>
+        <sys_id>756ba19047be435089b4a22f316d4329</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Changed Fields</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-15 08:32:42</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_f16b619047be435089b4a22f316d43f2"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_f16b619047be435089b4a22f316d43f2"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>e284e8484736cf1089b4a22f316d4391</sys_id>
+        <latest_snapshot>f16b619047be435089b4a22f316d43f2</latest_snapshot>
+        <compiler_build>glide-australia-02-11-2026__patch3-05-25-2026_06-12-2026_1106.zip</compiler_build>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=e284e8484736cf1089b4a22f316d4391^sys_idNOT IN866ba19047be435089b4a22f316d4370"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"@class":"com.snc.process_flow.engine.serialization.plan_data.ChunkingPlanData","chunk_data":{"table":"sys_flow_trigger_plan","id":"866ba19047be435089b4a22f316d4370","name":"plan","plan_signature":null},"plan_data":"CHUNKING_PLAN"}</plan>
+        <plan_id>e284e8484736cf1089b4a22f316d4391</plan_id>
+        <snapshot>1994480547b2c75089b4a22f316d4347</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-15 08:32:43</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>866ba19047be435089b4a22f316d4370</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-15 08:32:43</sys_updated_on>
+        <trigger display_value="">ca6ba19047be435089b4a22f316d436d</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=e284e8484736cf1089b4a22f316d4391"/>
+</record_update>

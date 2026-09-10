@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_style">
+    <sys_ux_style action="DELETE">
+        <name>Imagery</name>
+        <style>{"properties":{}}</style>
+        <sys_class_name>sys_ux_style</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-07 08:27:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5fb68cbf3b438350d14ef10f23e45a86</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Imagery</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name>sys_ux_style_5fb68cbf3b438350d14ef10f23e45a86</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-07 08:27:20</sys_updated_on>
+        <type>core</type>
+    </sys_ux_style>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</application>
+        <file_path/>
+        <instance_id>6241f8583b50cfd416e44a8aa4e45aa8</instance_id>
+        <instance_name>dev380569</instance_name>
+        <name>sys_ux_style_5fb68cbf3b438350d14ef10f23e45a86</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_style"><sys_ux_style action="INSERT_OR_UPDATE"><name>Imagery</name><style>{"properties":{}}</style><sys_class_name>sys_ux_style</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-07 08:27:20</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>5fb68cbf3b438350d14ef10f23e45a86</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Imagery</sys_name><sys_overrides/><sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package><sys_policy/><sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope><sys_update_name>sys_ux_style_5fb68cbf3b438350d14ef10f23e45a86</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-07 08:27:20</sys_updated_on><type>core</type></sys_ux_style></record_update>]]></payload>
+        <payload_hash>-798833704</payload_hash>
+        <record_name>Imagery</record_name>
+        <reverted_from/>
+        <source>f13de1023b028b10d14ef10f23e45a82</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-07 08:27:20</sys_created_on>
+        <sys_id>e3b6ccbf3b438350d14ef10f23e45a07</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a07afa9fae0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-07 08:27:20</sys_updated_on>
+        <type>UX Style</type>
+        <update_guid>93b6ccbfb9438350423c13571239d106</update_guid>
+        <update_guid_history>93b6ccbfb9438350423c13571239d106:-798833704</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-07 10:33:40</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_style">sys_ux_style</sys_db_object>
+        <sys_id>1d23d8378f5342a88d097b0d9278b5a4</sys_id>
+        <sys_metadata>5fb68cbf3b438350d14ef10f23e45a86</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Imagery</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_scope_delete display_value="">ce79bab18acc49f9bef811863b5939e1</sys_scope_delete>
+        <sys_update_name>sys_ux_style_5fb68cbf3b438350d14ef10f23e45a86</sys_update_name>
+        <sys_update_version display_value="sys_ux_style_5fb68cbf3b438350d14ef10f23e45a86">e3b6ccbf3b438350d14ef10f23e45a07</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-07 10:33:40</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
