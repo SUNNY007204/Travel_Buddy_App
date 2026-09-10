@@ -19,7 +19,7 @@
     },
     {
       "id": "--now-color_selection--primary",
-      "value": "22, 50, 95",
+      "value": "29, 92, 150",
       "type": "color_hook_overridden"
     },
     {
@@ -29,7 +29,7 @@
     },
     {
       "id": "--now-color_divider--primary",
-      "value": "29, 92, 150",
+      "value": "22, 50, 95",
       "type": "color_hook_overridden"
     },
     {
@@ -39,24 +39,76 @@
     },
     {
       "id": "--now-color--link",
-      "value": "22, 50, 95",
+      "value": "29, 92, 150",
       "type": "color_hook_overridden"
     },
     {
       "id": "--now-color_secondary-nav--brand",
-      "value": "22, 50, 95",
+      "value": "209, 192, 244",
       "type": "color_hook_overridden"
     },
     {
       "id": "--now-color_secondary-nav--divider",
+      "value": "29, 92, 150",
+      "type": "color_hook_overridden"
+    },
+    {
+      "id": "--now-color_chrome--brand",
+      "value": "209, 192, 244",
+      "type": "color_hook_overridden"
+    },
+    {
+      "id": "--now-color_chrome--divider",
+      "value": "158, 135, 205",
+      "type": "color_hook_overridden"
+    },
+    {
+      "id": "--now-color_focus-ring",
       "value": "22, 50, 95",
       "type": "color_hook_overridden"
     },
     {
+      "id": "--now-color_focus-ring_shadow",
+      "value": "209, 192, 244",
+      "type": "color_hook_overridden"
+    },
+    {
+      "id": "--now-color_surface--neutral",
+      "value": "209, 192, 244",
+      "type": "color_hook_overridden"
+    },
+    {
+      "id": "--now-color_background--tertiary",
+      "value": "209, 192, 244",
+      "type": "color_hook_overridden"
+    },
+    {
+      "id": "--now-color_background--secondary",
+      "value": "239, 232, 251",
+      "type": "color_hook_overridden"
+    },
+    {
+      "id": "--now-color_surface--brand",
+      "value": "22, 50, 95",
+      "type": "color_hook_overridden"
+    },
+    {
+      "id": "--now-color_border--primary",
+      "value": "22, 50, 95",
+      "type": "color_hook_overridden"
+    },
+    {
+      "id": "--now-color--primary",
+      "value": "158,135,205",
+      "component": "now-button-iconic-bare--primary",
+      "type": "component_base_hook_overridden",
+      "hook": "now-color-reference-7"
+    },
+    {
       "id": "--now-button--primary--background-color",
-      "value": "22,50,95",
+      "value": "114,77,191",
       "type": "component_hook_overridden",
-      "hook": "now-color-reference-1"
+      "hook": "now-color_brand--secondary"
     },
     {
       "id": "--now-button--primary--color",
@@ -92,13 +144,144 @@
       "value": "22,50,95",
       "type": "component_hook_overridden",
       "hook": "now-color-reference-1"
+    },
+    {
+      "id": "--now-color-reference-0",
+      "value": "241, 121, 67",
+      "type": "component_hook_overridden"
+    },
+    {
+      "id": "--now-color-reference-1",
+      "value": "22, 50, 95",
+      "type": "component_hook_overridden"
+    },
+    {
+      "id": "--now-color-reference-2",
+      "value": "255, 255, 255",
+      "type": "component_hook_overridden"
+    },
+    {
+      "id": "--now-button_icon--secondary-negative--color--active",
+      "value": "137,21,34",
+      "type": "component_hook_overridden"
+    },
+    {
+      "id": "--now-button--bare_primary--color",
+      "value": "22,50,95",
+      "type": "component_hook_overridden",
+      "hook": "now-color-reference-1"
+    },
+    {
+      "id": "--now-button_icon--bare_primary--color",
+      "value": "22,50,95",
+      "type": "component_hook_overridden",
+      "hook": "now-color-reference-1"
+    },
+    {
+      "id": "--now-button-circular--background-color",
+      "value": "158,135,205",
+      "type": "component_hook_overridden",
+      "hook": "now-color-reference-7"
+    },
+    {
+      "id": "--now-button-iconic--primary--background-color",
+      "value": "158,135,205",
+      "type": "component_hook_overridden",
+      "hook": "now-color-reference-7"
+    },
+    {
+      "id": "--now-form-control-input--primary--border-color--hover",
+      "value": "22,50,95",
+      "type": "component_hook_overridden",
+      "hook": "now-color-reference-1"
+    },
+    {
+      "id": "--now-form-control-input--primary--background-color--readonly",
+      "value": "158,135,205",
+      "type": "component_hook_overridden",
+      "hook": "now-color-reference-7"
+    },
+    {
+      "id": "--now-unified-nav_menu-filter--border-color",
+      "value": "22,50,95",
+      "type": "component_hook_overridden",
+      "hook": "now-color-reference-1"
+    },
+    {
+      "id": "--now-unified-nav_menu-filter_icon--color--hover",
+      "value": "25,26,27",
+      "type": "component_hook_overridden",
+      "hook": "now-color_surface--divider-8"
+    },
+    {
+      "id": "--now-unified-nav_menu-filter--color--hover",
+      "value": "22,50,95",
+      "type": "component_hook_overridden",
+      "hook": "now-color-reference-1"
+    },
+    {
+      "id": "--now-unified-nav_favorite-icon--color",
+      "value": "185,28,28",
+      "type": "component_hook_overridden",
+      "hook": "now-color-reference-4"
+    },
+    {
+      "id": "--now-unified-nav_menu-section-header-divider--color",
+      "value": "22,50,95",
+      "type": "component_hook_overridden",
+      "hook": "now-color-reference-1"
+    },
+    {
+      "id": "--now-unified-nav_menu-section-header--color",
+      "value": "22,50,95",
+      "type": "component_hook_overridden",
+      "hook": "now-color-reference-1"
+    },
+    {
+      "id": "--now-unified-nav_nav-menu-trigger--background-color--pinned",
+      "value": "114,77,191",
+      "type": "component_hook_overridden",
+      "hook": "now-color_brand--secondary"
+    },
+    {
+      "id": "--now-button-iconic--bare_primary--color",
+      "value": "158,135,205",
+      "type": "component_hook_overridden",
+      "hook": "now-color-reference-7"
+    }
+  ],
+  "typography": [
+    {
+      "id": "--now-button--text-transform",
+      "value": "",
+      "type": "component_hook_overridden"
+    }
+  ],
+  "shapeAndForm": [
+    {
+      "id": "--now-button-iconic--bare_primary--opacity--disabled",
+      "value": "0.82",
+      "type": "component_hook_overridden"
     }
   ],
   "feedback": [],
   "groupName": "",
   "imagery": [],
   "systemTokenVersion": "v1",
-  "initialValues": {}
+  "initialValues": {
+    "--now-button-iconic--primary--border-color": "--now-actionable--primary--border-color",
+    "--now-button-iconic--primary--border-color--hover": "--now-actionable--primary--border-color--hover",
+    "--now-button-iconic--primary--border-color--active": "--now-actionable--primary--border-color--active",
+    "--now-button-iconic--primary--background-color": "--now-actionable--primary--background-color",
+    "--now-button-iconic--primary--background-color--hover": "--now-actionable--primary--background-color--hover",
+    "--now-button-iconic--primary--background-color--active": "--now-actionable--primary--background-color--active",
+    "--now-button-iconic--bare_primary--background-color--active": "--now-actionable--primary_bare--background-color--active",
+    "--now-button-iconic--bare_primary--background-color--hover": "--now-actionable--primary_bare--background-color--hover",
+    "--now-button-iconic--bare_primary--border-color--active": "--now-color--primary-3",
+    "--now-button-iconic--bare_primary--border-color--hover": "--now-actionable--primary_bare--border-color--hover",
+    "--now-button-iconic--bare_primary--color--hover": "--now-actionable_icon--primary_bare--color--hover",
+    "--now-button-iconic--bare_primary--color--active": "--now-actionable_icon--primary_bare--color--active"
+  }
 }</customization>
         <name>TBA theme</name>
         <sys_class_name>sys_ux_theme_customization</sys_class_name>
@@ -107,7 +290,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>606782c83b534750d14ef10f23e45ab1</sys_id>
-        <sys_mod_count>47</sys_mod_count>
+        <sys_mod_count>119</sys_mod_count>
         <sys_name>TBA theme</sys_name>
         <sys_overrides/>
         <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
@@ -115,7 +298,7 @@
         <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
         <sys_update_name>sys_ux_theme_customization_606782c83b534750d14ef10f23e45ab1</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-09-09 06:31:52</sys_updated_on>
+        <sys_updated_on>2026-09-09 08:57:22</sys_updated_on>
         <theme display_value="TBA theme">af574e883b534750d14ef10f23e45a28</theme>
     </sys_ux_theme_customization>
 </record_update>
