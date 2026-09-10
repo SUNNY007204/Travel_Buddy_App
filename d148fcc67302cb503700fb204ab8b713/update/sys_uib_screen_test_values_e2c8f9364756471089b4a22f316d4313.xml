@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_uib_screen_test_values">
     <sys_uib_screen_test_values action="INSERT_OR_UPDATE">
-        <macroponent display_value="Trip Request Page default">9e3835f24756471089b4a22f316d436a</macroponent>
+        <macroponent display_value="My Trip Request">9e3835f24756471089b4a22f316d436a</macroponent>
         <macroponent_config>{
     "mcpTestValues": {
         "tabelName": "x_travel_buddy_app_trip_request",

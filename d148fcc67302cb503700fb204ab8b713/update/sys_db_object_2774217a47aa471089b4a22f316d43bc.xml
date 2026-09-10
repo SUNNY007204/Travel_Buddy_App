@@ -16,7 +16,7 @@
         <label>User password registration</label>
         <live_feed_enabled>false</live_feed_enabled>
         <name>x_travel_buddy_app_user_password_registration</name>
-        <number_ref display_value="USE">3b74217a47aa471089b4a22f316d43fd</number_ref>
+        <number_ref display_value="">3b74217a47aa471089b4a22f316d43fd</number_ref>
         <provider_class/>
         <read_access>true</read_access>
         <scriptable_table>false</scriptable_table>

@@ -3,7 +3,6 @@
         <access>public</access>
         <access_token_lifespan>1800</access_token_lifespan>
         <active>true</active>
-        <allow_snc_user_exchange>false</allow_snc_user_exchange>
         <auth_aig_client>false</auth_aig_client>
         <auth_cimd_client>false</auth_cimd_client>
         <auth_code_lifespan>60</auth_code_lifespan>

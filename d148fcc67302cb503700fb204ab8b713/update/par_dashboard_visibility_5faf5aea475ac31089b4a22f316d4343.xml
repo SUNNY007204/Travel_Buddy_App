@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_visibility">
     <par_dashboard_visibility action="INSERT_OR_UPDATE">
-        <dashboard display_value="Traveler workspace">6eafd6ea475ac31089b4a22f316d43ac</dashboard>
+        <dashboard display_value="">6eafd6ea475ac31089b4a22f316d43ac</dashboard>
         <experience/>
         <sys_class_name>par_dashboard_visibility</sys_class_name>
         <sys_created_by>admin</sys_created_by>

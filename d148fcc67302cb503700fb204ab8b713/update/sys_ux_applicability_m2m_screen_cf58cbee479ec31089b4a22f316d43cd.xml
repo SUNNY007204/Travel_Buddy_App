@@ -3,7 +3,7 @@
         <active>true</active>
         <applicability display_value="Travel Buddy Buddy ">1069cf6247dec31089b4a22f316d433b</applicability>
         <order>200</order>
-        <screen display_value="Buddy dashboard">0758cbee479ec31089b4a22f316d43c4</screen>
+        <screen/>
         <sys_class_name>sys_ux_applicability_m2m_screen</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-07-28 18:33:46</sys_created_on>
