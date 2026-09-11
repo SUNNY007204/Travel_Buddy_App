@@ -656,12 +656,13 @@
                                         "value": false
                                     },
                                     "label": {
-                                        "type": "TRANSLATION_LITERAL",
-                                        "value": {
-                                            "code": null,
-                                            "comment": "",
-                                            "message": "Username"
-                                        }
+                                        "binding": {
+                                            "address": [
+                                                "formValues",
+                                                "userName"
+                                            ]
+                                        },
+                                        "type": "STATE_BINDING"
                                     },
                                     "landmark": {
                                         "type": "JSON_LITERAL",
@@ -740,12 +741,13 @@
                                         "value": "text"
                                     },
                                     "value": {
-                                        "type": "TRANSLATION_LITERAL",
-                                        "value": {
-                                            "code": null,
-                                            "comment": "",
-                                            "message": ""
-                                        }
+                                        "binding": {
+                                            "address": [
+                                                "formValues",
+                                                "userName"
+                                            ]
+                                        },
+                                        "type": "STATE_BINDING"
                                     },
                                     "wrapLabel": {
                                         "type": "JSON_LITERAL",
@@ -863,12 +865,13 @@
                                         "value": false
                                     },
                                     "label": {
-                                        "type": "TRANSLATION_LITERAL",
-                                        "value": {
-                                            "code": null,
-                                            "comment": "",
-                                            "message": "First Name"
-                                        }
+                                        "binding": {
+                                            "address": [
+                                                "formValues",
+                                                "firstName"
+                                            ]
+                                        },
+                                        "type": "STATE_BINDING"
                                     },
                                     "landmark": {
                                         "type": "JSON_LITERAL",
@@ -947,12 +950,13 @@
                                         "value": "text"
                                     },
                                     "value": {
-                                        "type": "TRANSLATION_LITERAL",
-                                        "value": {
-                                            "code": null,
-                                            "comment": "",
-                                            "message": ""
-                                        }
+                                        "binding": {
+                                            "address": [
+                                                "formValues",
+                                                "firstName"
+                                            ]
+                                        },
+                                        "type": "STATE_BINDING"
                                     },
                                     "wrapLabel": {
                                         "type": "JSON_LITERAL",
@@ -1069,12 +1073,13 @@
                                         "value": false
                                     },
                                     "label": {
-                                        "type": "TRANSLATION_LITERAL",
-                                        "value": {
-                                            "code": null,
-                                            "comment": "",
-                                            "message": "Last name"
-                                        }
+                                        "binding": {
+                                            "address": [
+                                                "formValues",
+                                                "lastName"
+                                            ]
+                                        },
+                                        "type": "STATE_BINDING"
                                     },
                                     "landmark": {
                                         "type": "JSON_LITERAL",
@@ -1153,12 +1158,13 @@
                                         "value": "text"
                                     },
                                     "value": {
-                                        "type": "TRANSLATION_LITERAL",
-                                        "value": {
-                                            "code": null,
-                                            "comment": "",
-                                            "message": ""
-                                        }
+                                        "binding": {
+                                            "address": [
+                                                "formValues",
+                                                "lastName"
+                                            ]
+                                        },
+                                        "type": "STATE_BINDING"
                                     },
                                     "wrapLabel": {
                                         "type": "JSON_LITERAL",
@@ -1275,12 +1281,13 @@
                                         "value": false
                                     },
                                     "label": {
-                                        "type": "TRANSLATION_LITERAL",
-                                        "value": {
-                                            "code": null,
-                                            "comment": "",
-                                            "message": "Email"
-                                        }
+                                        "binding": {
+                                            "address": [
+                                                "formValues",
+                                                "email"
+                                            ]
+                                        },
+                                        "type": "STATE_BINDING"
                                     },
                                     "landmark": {
                                         "type": "JSON_LITERAL",
@@ -1359,12 +1366,13 @@
                                         "value": "text"
                                     },
                                     "value": {
-                                        "type": "TRANSLATION_LITERAL",
-                                        "value": {
-                                            "code": null,
-                                            "comment": "",
-                                            "message": ""
-                                        }
+                                        "binding": {
+                                            "address": [
+                                                "formValues",
+                                                "email"
+                                            ]
+                                        },
+                                        "type": "STATE_BINDING"
                                     },
                                     "wrapLabel": {
                                         "type": "JSON_LITERAL",
@@ -1481,12 +1489,13 @@
                                         "value": false
                                     },
                                     "label": {
-                                        "type": "TRANSLATION_LITERAL",
-                                        "value": {
-                                            "code": null,
-                                            "comment": "",
-                                            "message": "Enter password"
-                                        }
+                                        "binding": {
+                                            "address": [
+                                                "formValues",
+                                                "password"
+                                            ]
+                                        },
+                                        "type": "STATE_BINDING"
                                     },
                                     "landmark": {
                                         "type": "JSON_LITERAL",
@@ -1565,8 +1574,13 @@
                                         "value": "text"
                                     },
                                     "value": {
-                                        "type": "JSON_LITERAL",
-                                        "value": null
+                                        "binding": {
+                                            "address": [
+                                                "formValues",
+                                                "password"
+                                            ]
+                                        },
+                                        "type": "STATE_BINDING"
                                     },
                                     "wrapLabel": {
                                         "type": "JSON_LITERAL",
@@ -1987,44 +2001,7 @@
         },
         "elementId": "alert_1",
         "elementLabel": "Alert 1",
-        "eventMappings": [
-            {
-                "eventMappingId": "iiyyiAvQKDkOMjjeehhQGveeddFaoThhS",
-                "isConfiguration": false,
-                "offRowStorageId": null,
-                "sourceEventApiName": "sn_canvas_core.CANVAS_MODAL#OPENED",
-                "sourceEventCorrelationId": null,
-                "sourceEventDefinition": {
-                    "apiName": "sn_canvas_core.CANVAS_MODAL#OPENED",
-                    "id": null,
-                    "type": "UXEVENT"
-                },
-                "sourceEventSysId": null,
-                "targets": [
-                    {
-                        "broker": null,
-                        "clientScript": null,
-                        "clientTransformScript": "",
-                        "conditional": null,
-                        "declarativeAction": null,
-                        "event": {
-                            "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
-                            "payload": {
-                                "type": "JSON_LITERAL",
-                                "value": {
-                                    "propName": "isModalOpen",
-                                    "value": false
-                                }
-                            },
-                            "sysId": "32408b42ff7a10109046e490703bf176"
-                        },
-                        "operation": null,
-                        "targetId": "ffSjjpZQBPCEeeddpjjqEAaabbdpprO",
-                        "type": "EVENT"
-                    }
-                ]
-            }
-        ],
+        "eventMappings": [],
         "isHidden": {
             "type": "JSON_LITERAL",
             "value": null
@@ -2185,23 +2162,7 @@
   "code" : "",
   "comment" : ""
 }, {
-  "message" : "Email",
-  "code" : "",
-  "comment" : ""
-}, {
-  "message" : "Enter password",
-  "code" : "",
-  "comment" : ""
-}, {
-  "message" : "First Name",
-  "code" : "",
-  "comment" : ""
-}, {
   "message" : "Got it",
-  "code" : "",
-  "comment" : ""
-}, {
-  "message" : "Last name",
   "code" : "",
   "comment" : ""
 }, {
@@ -2216,10 +2177,6 @@
   "message" : "Sign up",
   "code" : "",
   "comment" : ""
-}, {
-  "message" : "Username",
-  "code" : "",
-  "comment" : ""
 } ]</required_translations>
         <root_component/>
         <root_component_config/>
@@ -2229,75 +2186,39 @@
         <state_properties>[
     {
         "description": null,
-        "fieldType": "string",
+        "fieldType": "json",
         "initialValue": {
             "type": "JSON_LITERAL",
-            "value": null
+            "value": {
+                "email": "",
+                "firstName": "",
+                "lastName": "",
+                "password": "",
+                "userName": ""
+            }
         },
         "label": "newClientStateParam1",
-        "name": "newClientStateParam1",
+        "name": "formValues",
         "shape": "",
-        "valueType": "string"
+        "valueType": "json"
     },
     {
         "description": null,
-        "fieldType": "string",
+        "fieldType": "json",
         "initialValue": {
             "type": "JSON_LITERAL",
-            "value": null
+            "value": {
+                "email": "",
+                "firstName": "",
+                "lastName": "",
+                "password": "",
+                "userName": ""
+            }
         },
         "label": "newClientStateParam2",
-        "name": "username",
+        "name": "errors",
         "shape": "",
-        "valueType": "string"
-    },
-    {
-        "description": null,
-        "fieldType": "string",
-        "initialValue": {
-            "type": "JSON_LITERAL",
-            "value": null
-        },
-        "label": "newClientStateParam2",
-        "name": "first_name",
-        "shape": "",
-        "valueType": "string"
-    },
-    {
-        "description": null,
-        "fieldType": "string",
-        "initialValue": {
-            "type": "JSON_LITERAL",
-            "value": null
-        },
-        "label": "newClientStateParam2",
-        "name": "last_name",
-        "shape": "",
-        "valueType": "string"
-    },
-    {
-        "description": null,
-        "fieldType": "string",
-        "initialValue": {
-            "type": "JSON_LITERAL",
-            "value": null
-        },
-        "label": "newClientStateParam2",
-        "name": "email",
-        "shape": "",
-        "valueType": "string"
-    },
-    {
-        "description": null,
-        "fieldType": "string",
-        "initialValue": {
-            "type": "JSON_LITERAL",
-            "value": null
-        },
-        "label": "newClientStateParam2",
-        "name": "password",
-        "shape": "",
-        "valueType": "string"
+        "valueType": "json"
     },
     {
         "description": null,
@@ -2307,7 +2228,7 @@
             "value": false
         },
         "label": "newClientStateParam2",
-        "name": "isModalOpen",
+        "name": "isFormValid",
         "shape": "",
         "valueType": "boolean"
     }
@@ -2317,14 +2238,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-05 08:19:46</sys_created_on>
         <sys_id>b288ce4947aec75089b4a22f316d4306</sys_id>
-        <sys_mod_count>41</sys_mod_count>
+        <sys_mod_count>42</sys_mod_count>
         <sys_name>Sign up  default</sys_name>
         <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
         <sys_policy/>
         <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
         <sys_update_name>sys_ux_macroponent_b288ce4947aec75089b4a22f316d4306</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-09-09 10:33:23</sys_updated_on>
+        <sys_updated_on>2026-09-10 13:47:42</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=b288ce4947aec75089b4a22f316d4306"/>
 </record_update>
