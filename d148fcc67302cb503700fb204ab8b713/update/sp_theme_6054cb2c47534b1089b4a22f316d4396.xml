@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_theme">
+    <sp_theme action="INSERT_OR_UPDATE">
+        <css_variables>$sp-logo-margin-x: 15px !default;
+$sp-tagline-color: $text-color !default;
+$navbar-inverse-bg: #0e7c86 !default;
+$navbar-inverse-link-color: #e7f6f7 !default;
+$navbar-inverse-link-hover-color: #ffffff !default;
+$body-bg: #f4f9f9 !default;
+$brand-primary: #0e7c86 !default;
+$btn-primary-bg: #0e7c86 !default;
+$btn-primary-border: #0a6169 !default;</css_variables>
+        <footer/>
+        <footer_fixed>false</footer_fixed>
+        <header display_value="Stock Header">bf5ec2f2cb10120000f8d856634c9c0c</header>
+        <icon/>
+        <logo/>
+        <logo_alt_text/>
+        <matching_now_experience_theme/>
+        <name>Travel Buddy Theme</name>
+        <navbar_fixed>true</navbar_fixed>
+        <sys_class_name>sp_theme</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-10 06:11:04</sys_created_on>
+        <sys_id>6054cb2c47534b1089b4a22f316d4396</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Travel Buddy Theme</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name>sp_theme_6054cb2c47534b1089b4a22f316d4396</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-10 06:11:04</sys_updated_on>
+        <turn_off_scss_compilation>false</turn_off_scss_compilation>
+    </sp_theme>
+    <sys_translated_text action="delete_multiple" query="documentkey=6054cb2c47534b1089b4a22f316d4396"/>
+</record_update>

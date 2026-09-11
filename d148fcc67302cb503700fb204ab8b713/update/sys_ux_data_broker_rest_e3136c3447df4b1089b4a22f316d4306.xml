@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_rest">
+    <sys_ux_data_broker_rest action="INSERT_OR_UPDATE">
+        <api_name>x_travel_buddy_app.Create User REST Broker</api_name>
+        <api_url/>
+        <batch_exclude>false</batch_exclude>
+        <description/>
+        <http_method>POST</http_method>
+        <mutates_server_data>true</mutates_server_data>
+        <name>Create User REST Broker</name>
+        <output_schema/>
+        <parameters/>
+        <private>false</private>
+        <props/>
+        <request_body/>
+        <required_translations/>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_data_broker_rest</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-10 13:08:06</sys_created_on>
+        <sys_id>e3136c3447df4b1089b4a22f316d4306</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Create User REST Broker</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name>sys_ux_data_broker_rest_e3136c3447df4b1089b4a22f316d4306</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-10 13:08:06</sys_updated_on>
+    </sys_ux_data_broker_rest>
+    <sys_translated_text action="delete_multiple" query="documentkey=e3136c3447df4b1089b4a22f316d4306"/>
+</record_update>
