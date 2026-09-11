@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function tripRequestController($scope) {
+	var c = this;
+	c.data = c.data || {};
+	c.data.travelType = c.data.travelType || "solo";
+	c.data.destinationPackage = c.data.destinationPackage || "silver";
+	c.submitting = false;
+	c.errorMsg = "";
+	c.weather = null;
+	c.weatherLoading = false;
+	c.weatherError = "";
+
+	var WEATHER_CODES = {0:"Clear sky",1:"Mainly clear",2:"Partly cloudy",3:"Overcast",45:"Fog",48:"Depositing rime fog",51:"Light drizzle",53:"Moderate drizzle",55:"Dense drizzle",56:"Light freezing drizzle",57:"Dense freezing drizzle",61:"Slight rain",63:"Moderate rain",65:"Heavy rain",66:"Light freezing rain",67:"Heavy freezing rain",71:"Slight snow fall",73:"Moderate snow fall",75:"Heavy snow fall",77:"Snow grains",80:"Slight rain showers",81:"Moderate rain showers",82:"Violent rain showers",85:"Slight snow showers",86:"Heavy snow showers",95:"Thunderstorm",96:"Thunderstorm with slight hail",99:"Thunderstorm with heavy hail"};
+
+	c.onDestinationChange = function() {
+		c.weather = null;
+		c.weatherError = "";
+		c.data.weatherSummary = "";
+		var locId = c.data.destinationId;
+		if (!locId) { return; }
+		var loc = null;
+		var list = ($scope.data && $scope.data.locations) || [];
+		for (var i = 0; i < list.length; i++) {
+			if (list[i].sys_id === locId) { loc = list[i]; break; }
+		}
+		if (!loc) { return; }
+		if (!loc.latitude || !loc.longitude) {
+			c.weatherError = "Weather data isn't available for this location.";
+			return;
+		}
+		c.weatherLoading = true;
+		fetch("https://api.open-meteo.com/v1/forecast?latitude=" + loc.latitude + "&longitude=" + loc.longitude + "&current_weather=true")
+			.then(function(r) { return r.json(); })
+			.then(function(wx) {
+				c.weatherLoading = false;
+				if (wx.current_weather) {
+					var code = wx.current_weather.weathercode;
+					c.weather = {
+						tempC: Math.round(wx.current_weather.temperature),
+						description: WEATHER_CODES[code] || ("Code " + code),
+						place: loc.label
+					};
+					c.data.weatherSummary = c.weather.tempC + "C, " + c.weather.description + " (" + c.weather.place + ")";
+				} else {
+					c.weatherError = "Weather data unavailable.";
+				}
+				$scope.$applyAsync();
+			})
+			.catch(function() {
+				c.weatherLoading = false;
+				c.weatherError = "Unable to fetch weather right now.";
+				$scope.$applyAsync();
+			});
+	};
+
+	c.submit = function() {
+		c.errorMsg = "";
+		if (!c.data.destinationId || !c.data.startDate || !c.data.endDate || !c.data.buddyId || !c.data.emergencyName || !c.data.emergencyPhone) {
+			c.errorMsg = "Please fill in all required fields, including a travel buddy.";
+			return;
+		}
+		c.submitting = true;
+		c.data.action = "submit";
+		c.server.update().then(function(response) {
+			c.submitting = false;
+			if (response.data.error) {
+				c.errorMsg = response.data.error;
+			}
+		});
+	};
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>trip_request_form</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Trip Request Form</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function(data, input) {
+	data.submitted = false;
+
+	// Always provide the list of available travel buddies (active users holding the Buddy role).
+	// Query sys_user directly (public-readable) via its "roles" pseudo-field rather than
+	// sys_user_has_role, which is ACL-restricted for ordinary logged-in travelers.
+	data.buddies = [];
+	var BUDDY_ROLE_SYS_ID = "2630792e47d2c31089b4a22f316d4379";
+	var buddyGr = new GlideRecord("sys_user");
+	buddyGr.addQuery("active", true);
+	buddyGr.addQuery("roles", BUDDY_ROLE_SYS_ID);
+	buddyGr.query();
+	while (buddyGr.next()) {
+		data.buddies.push({
+			sys_id: buddyGr.getUniqueValue(),
+			name: buddyGr.getValue("name"),
+			email: buddyGr.getValue("email")
+		});
+	}
+
+	// Destination is a true reference to cmn_location - populate the picker from the location catalog
+	// (including lat/long so the client can fetch weather without a separate geocoding call).
+	data.locations = [];
+	var locGr = new GlideRecord("cmn_location");
+	locGr.orderBy("name");
+	locGr.query();
+	while (locGr.next()) {
+		var city = locGr.getValue("city");
+		var country = locGr.getValue("country");
+		var label = (city && country) ? (city + ", " + country) : (locGr.getValue("name") || city || country);
+		data.locations.push({
+			sys_id: locGr.getUniqueValue(),
+			label: label,
+			latitude: locGr.getValue("latitude"),
+			longitude: locGr.getValue("longitude")
+		});
+	}
+
+	if (!input || input.action !== "submit") { return; }
+
+	var destinationId = input.destinationId;
+	var startDate = input.startDate;
+	var endDate = input.endDate;
+	var buddyId = input.buddyId;
+	var emergencyName = (input.emergencyName || "").trim();
+	var emergencyPhone = (input.emergencyPhone || "").trim();
+
+	if (!destinationId || !startDate || !endDate || !buddyId || !emergencyName || !emergencyPhone) {
+		data.error = "Please fill in all required fields, including a travel buddy.";
+		return;
+	}
+	if (!gs.getUserID()) {
+		data.error = "You must be logged in to request a trip.";
+		return;
+	}
+
+	var loc = new GlideRecord("cmn_location");
+	if (!loc.get(destinationId)) {
+		data.error = "Please select a valid destination.";
+		return;
+	}
+
+	var trip = new GlideRecord("x_travel_buddy_app_trip_request");
+	trip.initialize();
+	trip.u_traveler = gs.getUserID();
+	trip.u_destination = destinationId;
+	trip.start_time = startDate + " 00:00:00";
+	trip.end_time = endDate + " 00:00:00";
+	trip.u_travel_type = input.travelType || "solo";
+	trip.u_group_size = input.travelType === "group" ? (parseInt(input.groupSize, 10) || 1) : 1;
+	trip.u_destination_package = input.destinationPackage || "silver";
+	trip.u_preferred_language = input.preferredLanguage || "";
+	trip.u_emergency_contact_name = emergencyName;
+	trip.u_emergency_contact_phone = emergencyPhone;
+	trip.u_buddy = buddyId;
+	trip.weather = input.weatherSummary || "";
+
+	var newTripId = trip.insert();
+	if (!newTripId) {
+		data.error = "We were unable to submit your trip request. Please try again later.";
+		return;
+	}
+
+	// Notify both the traveler and the selected buddy that the request was created.
+	gs.eventQueue("x_travel_buddy_app.trip_request.created", trip, gs.getUserID(), buddyId);
+
+	data.number = trip.getValue("number") || newTripId;
+	data.submitted = true;
+})(data, input);]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-10 06:20:38</sys_created_on>
+        <sys_id>7486cfec47534b1089b4a22f316d4338</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Trip Request Form</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name>sp_widget_7486cfec47534b1089b4a22f316d4338</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-10 08:26:28</sys_updated_on>
+        <template><![CDATA[<div class="panel panel-default">
+  <div class="panel-heading">Request a Trip</div>
+  <div class="panel-body">
+    <form novalidate ng-if="!data.submitted" ng-submit="c.submit()">
+      <div class="form-group">
+        <label for="tb-trip-dest">Destination</label>
+        <select id="tb-trip-dest" class="form-control" ng-model="c.data.destinationId" ng-change="c.onDestinationChange()" required>
+          <option value="">-- Select a destination --</option>
+          <option ng-repeat="loc in data.locations" value="{{loc.sys_id}}">{{loc.label}}</option>
+        </select>
+      </div>
+      <div class="form-group" ng-show="c.data.destinationId">
+        <label>Weather</label>
+        <p class="help-block" ng-if="c.weatherLoading">Checking weather...</p>
+        <div class="alert alert-info" ng-if="c.weather && !c.weatherLoading" style="margin-top:8px;">
+          <strong>{{c.weather.place}}</strong>: {{c.weather.tempC}}&deg;C, {{c.weather.description}}
+        </div>
+        <p class="text-danger" ng-if="c.weatherError">{{c.weatherError}}</p>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="form-group">
+            <label for="tb-trip-start">Start Date</label>
+            <input type="date" id="tb-trip-start" class="form-control" ng-model="c.data.startDate" required>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="form-group">
+            <label for="tb-trip-end">End Date</label>
+            <input type="date" id="tb-trip-end" class="form-control" ng-model="c.data.endDate" required>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="tb-trip-type">Travel Type</label>
+        <select id="tb-trip-type" class="form-control" ng-model="c.data.travelType">
+          <option value="solo">Solo</option>
+          <option value="group">Group</option>
+        </select>
+      </div>
+      <div class="form-group" ng-if="c.data.travelType === 'group'">
+        <label for="tb-trip-groupsize">Group Size</label>
+        <input type="number" id="tb-trip-groupsize" class="form-control" min="1" ng-model="c.data.groupSize">
+      </div>
+      <div class="form-group">
+        <label for="tb-trip-package">Destination Package</label>
+        <select id="tb-trip-package" class="form-control" ng-model="c.data.destinationPackage">
+          <option value="silver">Silver</option>
+          <option value="gold">Gold</option>
+          <option value="premium">Premium</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="tb-trip-lang">Preferred Language</label>
+        <input type="text" id="tb-trip-lang" class="form-control" ng-model="c.data.preferredLanguage">
+      </div>
+      <div class="form-group">
+        <label for="tb-trip-buddy">Travel Buddy</label>
+        <select id="tb-trip-buddy" class="form-control" ng-model="c.data.buddyId" required>
+          <option value="">-- Select a buddy --</option>
+          <option ng-repeat="b in data.buddies" value="{{b.sys_id}}">{{b.name}}</option>
+        </select>
+        <p class="help-block" ng-if="data.buddies && data.buddies.length === 0">No buddies are available right now.</p>
+      </div>
+      <fieldset>
+        <legend style="font-size:16px;">Emergency Contact</legend>
+        <div class="form-group">
+          <label for="tb-trip-ecname">Name</label>
+          <input type="text" id="tb-trip-ecname" class="form-control" ng-model="c.data.emergencyName" required>
+        </div>
+        <div class="form-group">
+          <label for="tb-trip-ecphone">Phone</label>
+          <input type="text" id="tb-trip-ecphone" class="form-control" ng-model="c.data.emergencyPhone" required>
+        </div>
+      </fieldset>
+      <p class="text-danger" ng-if="c.errorMsg">{{c.errorMsg}}</p>
+      <button type="submit" class="btn btn-primary" ng-disabled="c.submitting">Submit Request</button>
+    </form>
+    <div ng-if="data.submitted" class="alert alert-success">
+      Your trip request <strong>{{data.number}}</strong> has been submitted!
+    </div>
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>
