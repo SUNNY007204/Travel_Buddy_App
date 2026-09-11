@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl/>
+        <http_method>POST</http_method>
+        <name>Register User</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+    var requestBody = request.body.nextEntry();
+    var email = requestBody.email;
+    var firstName = requestBody.first_name;
+    var lastName = requestBody.last_name;
+
+    if (!email) {
+        return new sn_ws_err.BadRequestError("Email is required.");
+    }
+
+    var grUserCheck = new GlideRecord('sys_user');
+    if (grUserCheck.get('email', email)) {
+        return new sn_ws_err.ConflictError("A user with this email already exists.");
+    }
+
+    // 1. Create User
+    var grUser = new GlideRecord('sys_user');
+    grUser.initialize();
+    grUser.user_name = email;
+    grUser.email = email;
+    grUser.first_name = firstName;
+    grUser.last_name = lastName;
+    
+    var userSysId = grUser.insert();
+
+    if (userSysId) {
+        // 2. Force inactive and locked status
+        var grUpdate = new GlideRecord('sys_user');
+        if (grUpdate.get(userSysId)) {
+            grUpdate.active = false;
+            grUpdate.locked_out = true;
+            grUpdate.update();
+        }
+
+        // 3. ADD USER TO PORTAL GROUP WITH SNC_EXTERNAL ROLE
+        var grGroupMember = new GlideRecord('sys_user_grmember');
+        grGroupMember.initialize();
+        grGroupMember.user = userSysId;
+        grGroupMember.group = '7fca346e471e831089b4a22f316d437a'; // Group sys_id
+        grGroupMember.insert();
+
+        // 4. Trigger Verification Email Event
+        gs.eventQueue('x_travel_buddy_app.custom.traveler.password_reset', grUser, userSysId, email);
+
+        response.setBody({
+            status: "success",
+            message: "User registered and added to portal group successfully.",
+            sys_id: userSysId
+        });
+        response.setStatus(201);
+    } else {
+        return new sn_ws_err.ServerError("Failed to create user record.");
+    }
+
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_travel_buddy_app/user_registration_api/register</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/register</relative_path>
+        <request_example/>
+        <requires_acl_authorization>false</requires_acl_authorization>
+        <requires_authentication>false</requires_authentication>
+        <requires_snc_internal_role>false</requires_snc_internal_role>
+        <short_description/>
+        <support_trailing_slash>false</support_trailing_slash>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-10 06:36:47</sys_created_on>
+        <sys_id>8fd94f6847934b1089b4a22f316d4326</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Register User</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name>sys_ws_operation_8fd94f6847934b1089b4a22f316d4326</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-10 08:30:26</sys_updated_on>
+        <web_service_definition display_value="User Registration API">11d88be447934b1089b4a22f316d4354</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>
