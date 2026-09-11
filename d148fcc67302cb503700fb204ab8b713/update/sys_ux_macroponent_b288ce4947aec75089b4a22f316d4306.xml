@@ -678,35 +678,75 @@
                                         "type": "EVENT_PAYLOAD_BINDING"
                                     }
                                 },
-                                "type": "MAP_CONTAINER"
-                            },
-                            "sysId": "32408b42ff7a10109046e490703bf176"
-                        },
-                        "operation": null,
-                        "targetId": "viieeddQPfaaSDkuujjwaaHaaddaamWntc",
-                        "type": "EVENT"
-                    },
-                    {
-                        "broker": null,
-                        "clientScript": null,
-                        "clientTransformScript": "",
-                        "conditional": null,
-                        "declarativeAction": null,
-                        "event": {
-                            "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
-                            "payload": {
-                                "container": {
-                                    "propName": {
+                                "preset": null,
+                                "propertyValues": {
+                                    "align": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "autofocus": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "configAria": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "disabled": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "enableCaretSlot": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "fieldLayout": {
+                                        "type": "JSON_LITERAL",
+                                        "value": {
+                                            "layout": "vertical"
+                                        }
+                                    },
+                                    "helperContent": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "hideRequiredIndicator": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "invalid": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "label": {
+                                        "binding": {
+                                            "address": [
+                                                "formValues",
+                                                "userName"
+                                            ]
+                                        },
+                                        "type": "STATE_BINDING"
+                                    },
+                                    "landmark": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "manageInvalid": {
                                         "type": "JSON_LITERAL",
                                         "value": "username"
                                     },
                                     "value": {
                                         "binding": {
                                             "address": [
-                                                "fieldValue"
+                                                "formValues",
+                                                "userName"
                                             ]
                                         },
-                                        "type": "EVENT_PAYLOAD_BINDING"
+                                        "type": "STATE_BINDING"
+                                    },
+                                    "wrapLabel": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
                                     }
                                 },
                                 "type": "MAP_CONTAINER"
@@ -911,604 +951,779 @@
                                         "type": "EVENT_PAYLOAD_BINDING"
                                     }
                                 },
-                                "type": "MAP_CONTAINER"
-                            },
-                            "sysId": "32408b42ff7a10109046e490703bf176"
-                        },
-                        "operation": null,
-                        "targetId": "bqODrPwhAaaQaeeddIsOpJggLDEGL",
-                        "type": "EVENT"
-                    }
-                ]
-            }
-        ],
-        "isHidden": {
-            "type": "JSON_LITERAL",
-            "value": null
-        },
-        "preset": null,
-        "propertyValues": {
-            "align": {
-                "type": "JSON_LITERAL",
-                "value": null
-            },
-            "autofocus": {
-                "type": "JSON_LITERAL",
-                "value": false
-            },
-            "configAria": {
-                "type": "JSON_LITERAL",
-                "value": null
-            },
-            "disabled": {
-                "type": "JSON_LITERAL",
-                "value": false
-            },
-            "enableCaretSlot": {
-                "type": "JSON_LITERAL",
-                "value": false
-            },
-            "fieldLayout": {
-                "type": "JSON_LITERAL",
-                "value": {
-                    "layout": "vertical"
-                }
-            },
-            "helperContent": {
-                "type": "JSON_LITERAL",
-                "value": null
-            },
-            "hideRequiredIndicator": {
-                "type": "JSON_LITERAL",
-                "value": false
-            },
-            "invalid": {
-                "type": "JSON_LITERAL",
-                "value": false
-            },
-            "label": {
-                "type": "TRANSLATION_LITERAL",
-                "value": {
-                    "code": null,
-                    "comment": "",
-                    "message": "First Name"
-                }
-            },
-            "landmark": {
-                "type": "JSON_LITERAL",
-                "value": null
-            },
-            "manageInvalid": {
-                "type": "JSON_LITERAL",
-                "value": false
-            },
-            "manageValue": {
-                "type": "JSON_LITERAL",
-                "value": false
-            },
-            "maskConfig": {
-                "type": "JSON_LITERAL",
-                "value": null
-            },
-            "max": {
-                "type": "JSON_LITERAL",
-                "value": null
-            },
-            "maxlength": {
-                "type": "JSON_LITERAL",
-                "value": null
-            },
-            "messages": {
-                "container": [],
-                "type": "LIST_CONTAINER"
-            },
-            "min": {
-                "type": "JSON_LITERAL",
-                "value": null
-            },
-            "minlength": {
-                "type": "JSON_LITERAL",
-                "value": null
-            },
-            "multiple": {
-                "type": "JSON_LITERAL",
-                "value": null
-            },
-            "name": {
-                "type": "JSON_LITERAL",
-                "value": null
-            },
-            "optional": {
-                "type": "JSON_LITERAL",
-                "value": false
-            },
-            "pattern": {
-                "type": "JSON_LITERAL",
-                "value": null
-            },
-            "placeholder": {
-                "type": "JSON_LITERAL",
-                "value": null
-            },
-            "readonly": {
-                "type": "JSON_LITERAL",
-                "value": false
-            },
-            "required": {
-                "type": "JSON_LITERAL",
-                "value": false
-            },
-            "size": {
-                "type": "JSON_LITERAL",
-                "value": "md"
-            },
-            "step": {
-                "type": "JSON_LITERAL",
-                "value": "any"
-            },
-            "type": {
-                "type": "JSON_LITERAL",
-                "value": "text"
-            },
-            "value": {
-                "type": "TRANSLATION_LITERAL",
-                "value": {
-                    "code": null,
-                    "comment": "",
-                    "message": ""
-                }
-            },
-            "wrapLabel": {
-                "type": "JSON_LITERAL",
-                "value": false
-            }
-        },
-        "slot": null,
-        "styles": null
-    },
-    {
-        "definition": {
-            "id": "bb0f92e8d7eff1590624bfe69d316f23",
-            "type": "MACROPONENT"
-        },
-        "elementId": "input_3",
-        "elementLabel": "Input 3",
-        "eventMappings": [
-            {
-                "eventMappingId": "AxaaYJfccLAkPpjjddQGNwxddeeObe",
-                "isConfiguration": false,
-                "offRowStorageId": null,
-                "sourceEventApiName": "sn_input.NOW_INPUT#INPUT",
-                "sourceEventCorrelationId": null,
-                "sourceEventDefinition": {
-                    "apiName": "sn_input.NOW_INPUT#INPUT",
-                    "id": null,
-                    "type": "UXEVENT"
-                },
-                "sourceEventSysId": null,
-                "targets": [
-                    {
-                        "broker": null,
-                        "clientScript": null,
-                        "clientTransformScript": "",
-                        "conditional": null,
-                        "declarativeAction": null,
-                        "event": {
-                            "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
-                            "payload": {
-                                "container": {
-                                    "propName": {
+                                "preset": null,
+                                "propertyValues": {
+                                    "align": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "autofocus": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "configAria": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "disabled": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "enableCaretSlot": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "fieldLayout": {
+                                        "type": "JSON_LITERAL",
+                                        "value": {
+                                            "layout": "vertical"
+                                        }
+                                    },
+                                    "helperContent": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "hideRequiredIndicator": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "invalid": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "label": {
+                                        "binding": {
+                                            "address": [
+                                                "formValues",
+                                                "firstName"
+                                            ]
+                                        },
+                                        "type": "STATE_BINDING"
+                                    },
+                                    "landmark": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "manageInvalid": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "manageValue": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "maskConfig": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "max": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "maxlength": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "messages": {
+                                        "container": [],
+                                        "type": "LIST_CONTAINER"
+                                    },
+                                    "min": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "minlength": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "multiple": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "name": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "optional": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "pattern": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "placeholder": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "readonly": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "required": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "size": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "md"
+                                    },
+                                    "step": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "any"
+                                    },
+                                    "type": {
                                         "type": "JSON_LITERAL",
                                         "value": "last_name"
                                     },
                                     "value": {
                                         "binding": {
                                             "address": [
-                                                "fieldValue"
+                                                "formValues",
+                                                "firstName"
                                             ]
+                                        },
+                                        "type": "STATE_BINDING"
+                                    },
+                                    "wrapLabel": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    }
+                                },
+                                "slot": null,
+                                "styles": {
+                                    "default": {
+                                        "margin-left": "var(--now-scalable-space--3xl)",
+                                        "margin-right": "var(--now-scalable-space--3xl)",
+                                        "padding-left": "var(--now-scalable-space--3xl)",
+                                        "padding-right": "var(--now-scalable-space--3xl)"
+                                    }
+                                }
+                            },
+                            {
+                                "definition": {
+                                    "id": "bb0f92e8d7eff1590624bfe69d316f23",
+                                    "type": "MACROPONENT"
+                                },
+                                "elementId": "input_3",
+                                "elementLabel": "Input 3",
+                                "eventMappings": [
+                                    {
+                                        "eventMappingId": "AxaaYJfccLAkPpjjddQGNwxddeeObe",
+                                        "isConfiguration": false,
+                                        "offRowStorageId": null,
+                                        "sourceEventApiName": "sn_input.NOW_INPUT#INPUT",
+                                        "sourceEventCorrelationId": null,
+                                        "sourceEventDefinition": {
+                                            "apiName": "sn_input.NOW_INPUT#INPUT",
+                                            "id": null,
+                                            "type": "UXEVENT"
                                         },
                                         "type": "EVENT_PAYLOAD_BINDING"
                                     }
                                 },
-                                "type": "MAP_CONTAINER"
-                            },
-                            "sysId": "32408b42ff7a10109046e490703bf176"
-                        },
-                        "operation": null,
-                        "targetId": "cgcjjueehhLBDaamteeddKsKSgbboITuU",
-                        "type": "EVENT"
-                    }
-                ]
-            }
-        ],
-        "isHidden": {
-            "type": "JSON_LITERAL",
-            "value": null
-        },
-        "preset": null,
-        "propertyValues": {
-            "align": {
-                "type": "JSON_LITERAL",
-                "value": null
-            },
-            "autofocus": {
-                "type": "JSON_LITERAL",
-                "value": false
-            },
-            "configAria": {
-                "type": "JSON_LITERAL",
-                "value": null
-            },
-            "disabled": {
-                "type": "JSON_LITERAL",
-                "value": false
-            },
-            "enableCaretSlot": {
-                "type": "JSON_LITERAL",
-                "value": false
-            },
-            "fieldLayout": {
-                "type": "JSON_LITERAL",
-                "value": {
-                    "layout": "vertical"
-                }
-            },
-            "helperContent": {
-                "type": "JSON_LITERAL",
-                "value": null
-            },
-            "hideRequiredIndicator": {
-                "type": "JSON_LITERAL",
-                "value": false
-            },
-            "invalid": {
-                "type": "JSON_LITERAL",
-                "value": false
-            },
-            "label": {
-                "type": "TRANSLATION_LITERAL",
-                "value": {
-                    "code": null,
-                    "comment": "",
-                    "message": "Last name"
-                }
-            },
-            "landmark": {
-                "type": "JSON_LITERAL",
-                "value": null
-            },
-            "manageInvalid": {
-                "type": "JSON_LITERAL",
-                "value": false
-            },
-            "manageValue": {
-                "type": "JSON_LITERAL",
-                "value": false
-            },
-            "maskConfig": {
-                "type": "JSON_LITERAL",
-                "value": null
-            },
-            "max": {
-                "type": "JSON_LITERAL",
-                "value": null
-            },
-            "maxlength": {
-                "type": "JSON_LITERAL",
-                "value": null
-            },
-            "messages": {
-                "container": [],
-                "type": "LIST_CONTAINER"
-            },
-            "min": {
-                "type": "JSON_LITERAL",
-                "value": null
-            },
-            "minlength": {
-                "type": "JSON_LITERAL",
-                "value": null
-            },
-            "multiple": {
-                "type": "JSON_LITERAL",
-                "value": null
-            },
-            "name": {
-                "type": "JSON_LITERAL",
-                "value": null
-            },
-            "optional": {
-                "type": "JSON_LITERAL",
-                "value": false
-            },
-            "pattern": {
-                "type": "JSON_LITERAL",
-                "value": null
-            },
-            "placeholder": {
-                "type": "JSON_LITERAL",
-                "value": null
-            },
-            "readonly": {
-                "type": "JSON_LITERAL",
-                "value": false
-            },
-            "required": {
-                "type": "JSON_LITERAL",
-                "value": false
-            },
-            "size": {
-                "type": "JSON_LITERAL",
-                "value": "md"
-            },
-            "step": {
-                "type": "JSON_LITERAL",
-                "value": "any"
-            },
-            "type": {
-                "type": "JSON_LITERAL",
-                "value": "text"
-            },
-            "value": {
-                "type": "TRANSLATION_LITERAL",
-                "value": {
-                    "code": null,
-                    "comment": "",
-                    "message": ""
-                }
-            },
-            "wrapLabel": {
-                "type": "JSON_LITERAL",
-                "value": false
-            }
-        },
-        "slot": null,
-        "styles": null
-    },
-    {
-        "definition": {
-            "id": "bb0f92e8d7eff1590624bfe69d316f23",
-            "type": "MACROPONENT"
-        },
-        "elementId": "input_4",
-        "elementLabel": "Input 4",
-        "eventMappings": [
-            {
-                "eventMappingId": "qCZssveehhccAkXqeeddLsAccieehhnpnxQ",
-                "isConfiguration": false,
-                "offRowStorageId": null,
-                "sourceEventApiName": "sn_input.NOW_INPUT#INPUT",
-                "sourceEventCorrelationId": null,
-                "sourceEventDefinition": {
-                    "apiName": "sn_input.NOW_INPUT#INPUT",
-                    "id": null,
-                    "type": "UXEVENT"
-                },
-                "sourceEventSysId": null,
-                "targets": [
-                    {
-                        "broker": null,
-                        "clientScript": null,
-                        "clientTransformScript": "",
-                        "conditional": null,
-                        "declarativeAction": null,
-                        "event": {
-                            "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
-                            "payload": {
-                                "container": {
-                                    "propName": {
+                                "preset": null,
+                                "propertyValues": {
+                                    "align": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "autofocus": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "configAria": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "disabled": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "enableCaretSlot": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "fieldLayout": {
+                                        "type": "JSON_LITERAL",
+                                        "value": {
+                                            "layout": "vertical"
+                                        }
+                                    },
+                                    "helperContent": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "hideRequiredIndicator": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "invalid": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "label": {
+                                        "binding": {
+                                            "address": [
+                                                "formValues",
+                                                "lastName"
+                                            ]
+                                        },
+                                        "type": "STATE_BINDING"
+                                    },
+                                    "landmark": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "manageInvalid": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "manageValue": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "maskConfig": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "max": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "maxlength": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "messages": {
+                                        "container": [],
+                                        "type": "LIST_CONTAINER"
+                                    },
+                                    "min": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "minlength": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "multiple": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "name": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "optional": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "pattern": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "placeholder": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "readonly": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "required": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "size": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "md"
+                                    },
+                                    "step": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "any"
+                                    },
+                                    "type": {
                                         "type": "JSON_LITERAL",
                                         "value": "email"
                                     },
                                     "value": {
                                         "binding": {
                                             "address": [
-                                                "fieldValue"
+                                                "formValues",
+                                                "lastName"
                                             ]
+                                        },
+                                        "type": "STATE_BINDING"
+                                    },
+                                    "wrapLabel": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    }
+                                },
+                                "slot": null,
+                                "styles": {
+                                    "default": {
+                                        "margin-left": "var(--now-scalable-space--3xl)",
+                                        "margin-right": "var(--now-scalable-space--3xl)",
+                                        "padding-left": "var(--now-scalable-space--3xl)",
+                                        "padding-right": "var(--now-scalable-space--3xl)"
+                                    }
+                                }
+                            },
+                            {
+                                "definition": {
+                                    "id": "bb0f92e8d7eff1590624bfe69d316f23",
+                                    "type": "MACROPONENT"
+                                },
+                                "elementId": "input_4",
+                                "elementLabel": "Input 4",
+                                "eventMappings": [
+                                    {
+                                        "eventMappingId": "qCZssveehhccAkXqeeddLsAccieehhnpnxQ",
+                                        "isConfiguration": false,
+                                        "offRowStorageId": null,
+                                        "sourceEventApiName": "sn_input.NOW_INPUT#INPUT",
+                                        "sourceEventCorrelationId": null,
+                                        "sourceEventDefinition": {
+                                            "apiName": "sn_input.NOW_INPUT#INPUT",
+                                            "id": null,
+                                            "type": "UXEVENT"
                                         },
                                         "type": "EVENT_PAYLOAD_BINDING"
                                     }
                                 },
-                                "type": "MAP_CONTAINER"
-                            },
-                            "sysId": "32408b42ff7a10109046e490703bf176"
-                        },
-                        "operation": null,
-                        "targetId": "jwJjjaaPFDDEeBjjjjoHiiijvncchii",
-                        "type": "EVENT"
-                    }
-                ]
-            }
-        ],
-        "isHidden": {
-            "type": "JSON_LITERAL",
-            "value": null
-        },
-        "preset": null,
-        "propertyValues": {
-            "align": {
-                "type": "JSON_LITERAL",
-                "value": null
-            },
-            "autofocus": {
-                "type": "JSON_LITERAL",
-                "value": false
-            },
-            "configAria": {
-                "type": "JSON_LITERAL",
-                "value": null
-            },
-            "disabled": {
-                "type": "JSON_LITERAL",
-                "value": false
-            },
-            "enableCaretSlot": {
-                "type": "JSON_LITERAL",
-                "value": false
-            },
-            "fieldLayout": {
-                "type": "JSON_LITERAL",
-                "value": {
-                    "layout": "vertical"
-                }
-            },
-            "helperContent": {
-                "type": "JSON_LITERAL",
-                "value": null
-            },
-            "hideRequiredIndicator": {
-                "type": "JSON_LITERAL",
-                "value": false
-            },
-            "invalid": {
-                "type": "JSON_LITERAL",
-                "value": false
-            },
-            "label": {
-                "type": "TRANSLATION_LITERAL",
-                "value": {
-                    "code": null,
-                    "comment": "",
-                    "message": "Email"
-                }
-            },
-            "landmark": {
-                "type": "JSON_LITERAL",
-                "value": null
-            },
-            "manageInvalid": {
-                "type": "JSON_LITERAL",
-                "value": false
-            },
-            "manageValue": {
-                "type": "JSON_LITERAL",
-                "value": false
-            },
-            "maskConfig": {
-                "type": "JSON_LITERAL",
-                "value": null
-            },
-            "max": {
-                "type": "JSON_LITERAL",
-                "value": null
-            },
-            "maxlength": {
-                "type": "JSON_LITERAL",
-                "value": null
-            },
-            "messages": {
-                "container": [],
-                "type": "LIST_CONTAINER"
-            },
-            "min": {
-                "type": "JSON_LITERAL",
-                "value": null
-            },
-            "minlength": {
-                "type": "JSON_LITERAL",
-                "value": null
-            },
-            "multiple": {
-                "type": "JSON_LITERAL",
-                "value": null
-            },
-            "name": {
-                "type": "JSON_LITERAL",
-                "value": null
-            },
-            "optional": {
-                "type": "JSON_LITERAL",
-                "value": false
-            },
-            "pattern": {
-                "type": "JSON_LITERAL",
-                "value": null
-            },
-            "placeholder": {
-                "type": "JSON_LITERAL",
-                "value": null
-            },
-            "readonly": {
-                "type": "JSON_LITERAL",
-                "value": false
-            },
-            "required": {
-                "type": "JSON_LITERAL",
-                "value": false
-            },
-            "size": {
-                "type": "JSON_LITERAL",
-                "value": "md"
-            },
-            "step": {
-                "type": "JSON_LITERAL",
-                "value": "any"
-            },
-            "type": {
-                "type": "JSON_LITERAL",
-                "value": "text"
-            },
-            "value": {
-                "type": "TRANSLATION_LITERAL",
-                "value": {
-                    "code": null,
-                    "comment": "",
-                    "message": ""
-                }
-            },
-            "wrapLabel": {
-                "type": "JSON_LITERAL",
-                "value": false
-            }
-        },
-        "slot": null,
-        "styles": null
-    },
-    {
-        "definition": {
-            "id": "bb0f92e8d7eff1590624bfe69d316f23",
-            "type": "MACROPONENT"
-        },
-        "elementId": "input_5",
-        "elementLabel": "Input 5",
-        "eventMappings": [
-            {
-                "eventMappingId": "gggeehhbePuKCaaggNjjpeeKcFXwjjSiih",
-                "isConfiguration": false,
-                "offRowStorageId": null,
-                "sourceEventApiName": "sn_input.NOW_INPUT#INPUT",
-                "sourceEventCorrelationId": null,
-                "sourceEventDefinition": {
-                    "apiName": "sn_input.NOW_INPUT#INPUT",
-                    "id": null,
-                    "type": "UXEVENT"
-                },
-                "sourceEventSysId": null,
-                "targets": [
-                    {
-                        "broker": null,
-                        "clientScript": null,
-                        "clientTransformScript": "",
-                        "conditional": null,
-                        "declarativeAction": null,
-                        "event": {
-                            "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
-                            "payload": {
-                                "container": {
-                                    "propName": {
+                                "preset": null,
+                                "propertyValues": {
+                                    "align": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "autofocus": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "configAria": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "disabled": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "enableCaretSlot": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "fieldLayout": {
+                                        "type": "JSON_LITERAL",
+                                        "value": {
+                                            "layout": "vertical"
+                                        }
+                                    },
+                                    "helperContent": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "hideRequiredIndicator": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "invalid": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "label": {
+                                        "binding": {
+                                            "address": [
+                                                "formValues",
+                                                "email"
+                                            ]
+                                        },
+                                        "type": "STATE_BINDING"
+                                    },
+                                    "landmark": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "manageInvalid": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "manageValue": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "maskConfig": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "max": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "maxlength": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "messages": {
+                                        "container": [],
+                                        "type": "LIST_CONTAINER"
+                                    },
+                                    "min": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "minlength": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "multiple": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "name": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "optional": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "pattern": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "placeholder": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "readonly": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "required": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "size": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "md"
+                                    },
+                                    "step": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "any"
+                                    },
+                                    "type": {
                                         "type": "JSON_LITERAL",
                                         "value": "password"
                                     },
                                     "value": {
                                         "binding": {
                                             "address": [
-                                                "fieldValue"
+                                                "formValues",
+                                                "email"
                                             ]
+                                        },
+                                        "type": "STATE_BINDING"
+                                    },
+                                    "wrapLabel": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    }
+                                },
+                                "slot": null,
+                                "styles": {
+                                    "default": {
+                                        "margin-left": "var(--now-scalable-space--3xl)",
+                                        "margin-right": "var(--now-scalable-space--3xl)",
+                                        "padding-left": "var(--now-scalable-space--3xl)",
+                                        "padding-right": "var(--now-scalable-space--3xl)"
+                                    }
+                                }
+                            },
+                            {
+                                "definition": {
+                                    "id": "bb0f92e8d7eff1590624bfe69d316f23",
+                                    "type": "MACROPONENT"
+                                },
+                                "elementId": "input_5",
+                                "elementLabel": "Input 5",
+                                "eventMappings": [
+                                    {
+                                        "eventMappingId": "gggeehhbePuKCaaggNjjpeeKcFXwjjSiih",
+                                        "isConfiguration": false,
+                                        "offRowStorageId": null,
+                                        "sourceEventApiName": "sn_input.NOW_INPUT#INPUT",
+                                        "sourceEventCorrelationId": null,
+                                        "sourceEventDefinition": {
+                                            "apiName": "sn_input.NOW_INPUT#INPUT",
+                                            "id": null,
+                                            "type": "UXEVENT"
                                         },
                                         "type": "EVENT_PAYLOAD_BINDING"
                                     }
                                 },
-                                "type": "MAP_CONTAINER"
+                                "preset": null,
+                                "propertyValues": {
+                                    "align": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "autofocus": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "configAria": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "disabled": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "enableCaretSlot": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "fieldLayout": {
+                                        "type": "JSON_LITERAL",
+                                        "value": {
+                                            "layout": "vertical"
+                                        }
+                                    },
+                                    "helperContent": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "hideRequiredIndicator": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "invalid": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "label": {
+                                        "binding": {
+                                            "address": [
+                                                "formValues",
+                                                "password"
+                                            ]
+                                        },
+                                        "type": "STATE_BINDING"
+                                    },
+                                    "landmark": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "manageInvalid": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "manageValue": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "maskConfig": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "max": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "maxlength": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "messages": {
+                                        "container": [],
+                                        "type": "LIST_CONTAINER"
+                                    },
+                                    "min": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "minlength": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "multiple": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "name": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "optional": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "pattern": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "placeholder": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "readonly": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "required": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "size": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "md"
+                                    },
+                                    "step": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "any"
+                                    },
+                                    "type": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "text"
+                                    },
+                                    "value": {
+                                        "binding": {
+                                            "address": [
+                                                "formValues",
+                                                "password"
+                                            ]
+                                        },
+                                        "type": "STATE_BINDING"
+                                    },
+                                    "wrapLabel": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    }
+                                },
+                                "slot": "start",
+                                "styles": {
+                                    "default": {
+                                        "margin-left": "var(--now-scalable-space--3xl)",
+                                        "margin-right": "var(--now-scalable-space--3xl)",
+                                        "padding-left": "var(--now-scalable-space--3xl)",
+                                        "padding-right": "var(--now-scalable-space--3xl)"
+                                    }
+                                }
+                            },
+                            {
+                                "definition": {
+                                    "id": "d37ce8abca89d02905fed903c8e34d8e",
+                                    "type": "MACROPONENT"
+                                },
+                                "elementId": "button_1",
+                                "elementLabel": "Button 1",
+                                "eventMappings": [
+                                    {
+                                        "eventMappingId": "kVccxZeehhPWCEccbbjjccUBNVccGnddoY",
+                                        "isConfiguration": false,
+                                        "offRowStorageId": null,
+                                        "sourceEventApiName": "sn_button.NOW_BUTTON#CLICKED",
+                                        "sourceEventCorrelationId": null,
+                                        "sourceEventDefinition": {
+                                            "apiName": "sn_button.NOW_BUTTON#CLICKED",
+                                            "id": null,
+                                            "type": "UXEVENT"
+                                        },
+                                        "sourceEventSysId": null,
+                                        "targets": [
+                                            {
+                                                "broker": null,
+                                                "clientScript": null,
+                                                "clientTransformScript": "javascript(function evaluateEvent({ api, event }) {\n    console.log(api);\n    return {\n        table: \"x_travel_buddy_app_user_password_registration\",\n        templateFields:\n            \"u_username=\" + api.state.username +\n            \"^u_first_name=\" + api.state.first_name +\n            \"^u_last_name=\" + api.state.last_name +\n            \"^u_email=\" + api.state.email +\n            \"^u_password=\" + api.state.password +\n            \"^u_token_used=false\" +\n            \"^u_status=pending\",\n\n        useSetDisplayValue: false\n    };\n})",
+                                                "conditional": null,
+                                                "declarativeAction": null,
+                                                "event": null,
+                                                "operation": {
+                                                    "dataBrokerId": "beda4252770300108d070d74c810618f",
+                                                    "operationName": "EXECUTE",
+                                                    "parentResourceId": "create_record_1",
+                                                    "payload": {
+                                                        "script": {
+                                                            "apiVersion": "1.0.0",
+                                                            "controllerElementId": null,
+                                                            "inlineScript": "function evaluateEvent({ api, event }) {\n    console.log(api);\n    return {\n        table: \"x_travel_buddy_app_user_password_registration\",\n        templateFields:\n            \"u_username=\" + api.state.username +\n            \"^u_first_name=\" + api.state.first_name +\n            \"^u_last_name=\" + api.state.last_name +\n            \"^u_email=\" + api.state.email +\n            \"^u_password=\" + api.state.password +\n            \"^u_token_used=false\" +\n            \"^u_status=pending\",\n\n        useSetDisplayValue: false\n    };\n}",
+                                                            "scriptSysId": null,
+                                                            "target": null
+                                                        },
+                                                        "type": "CLIENT_TRANSFORM_SCRIPT"
+                                                    }
+                                                },
+                                                "targetId": "ffGplmfdccBkdeeddjjiiQBKZHYvHQO",
+                                                "type": "DATABROKER_OP"
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "isHidden": {
+                                    "type": "JSON_LITERAL",
+                                    "value": null
+                                },
+                                "preset": null,
+                                "propertyValues": {
+                                    "active": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "animatedIcon": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "configAria": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "disabled": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "icon": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "agent-transfer-fill"
+                                    },
+                                    "label": {
+                                        "type": "TRANSLATION_LITERAL",
+                                        "value": {
+                                            "code": null,
+                                            "comment": "",
+                                            "message": "Sign up"
+                                        }
+                                    },
+                                    "landmark": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "size": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "md"
+                                    },
+                                    "tooltipContent": {
+                                        "type": "TRANSLATION_LITERAL",
+                                        "value": {
+                                            "code": null,
+                                            "comment": "",
+                                            "message": ""
+                                        }
+                                    },
+                                    "variant": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "primary"
+                                    }
+                                },
+                                "slot": "start",
+                                "styles": {
+                                    "default": {
+                                        "align-self": "center",
+                                        "margin-top": "var(--now-scalable-space--md)"
+                                    }
+                                }
                             },
                             "sysId": "32408b42ff7a10109046e490703bf176"
                         },
@@ -1880,44 +2095,7 @@
         },
         "elementId": "alert_1",
         "elementLabel": "Alert 1",
-        "eventMappings": [
-            {
-                "eventMappingId": "iiyyiAvQKDkOMjjeehhQGveeddFaoThhS",
-                "isConfiguration": false,
-                "offRowStorageId": null,
-                "sourceEventApiName": "sn_canvas_core.CANVAS_MODAL#OPENED",
-                "sourceEventCorrelationId": null,
-                "sourceEventDefinition": {
-                    "apiName": "sn_canvas_core.CANVAS_MODAL#OPENED",
-                    "id": null,
-                    "type": "UXEVENT"
-                },
-                "sourceEventSysId": null,
-                "targets": [
-                    {
-                        "broker": null,
-                        "clientScript": null,
-                        "clientTransformScript": "",
-                        "conditional": null,
-                        "declarativeAction": null,
-                        "event": {
-                            "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
-                            "payload": {
-                                "type": "JSON_LITERAL",
-                                "value": {
-                                    "propName": "isModalOpen",
-                                    "value": false
-                                }
-                            },
-                            "sysId": "32408b42ff7a10109046e490703bf176"
-                        },
-                        "operation": null,
-                        "targetId": "ffSjjpZQBPCEeeddpjjqEAaabbdpprO",
-                        "type": "EVENT"
-                    }
-                ]
-            }
-        ],
+        "eventMappings": [],
         "isHidden": {
             "type": "JSON_LITERAL",
             "value": null
@@ -2116,10 +2294,6 @@
   "code" : "",
   "comment" : ""
 }, {
-  "message" : "Last name",
-  "code" : "",
-  "comment" : ""
-}, {
   "message" : "Modal body copy goes here",
   "code" : "",
   "comment" : ""
@@ -2131,10 +2305,6 @@
   "message" : "Sign up",
   "code" : "",
   "comment" : ""
-}, {
-  "message" : "Username",
-  "code" : "",
-  "comment" : ""
 } ]</required_translations>
         <root_component/>
         <root_component_config/>
@@ -2144,75 +2314,39 @@
         <state_properties>[
     {
         "description": null,
-        "fieldType": "string",
+        "fieldType": "json",
         "initialValue": {
             "type": "JSON_LITERAL",
-            "value": null
+            "value": {
+                "email": "",
+                "firstName": "",
+                "lastName": "",
+                "password": "",
+                "userName": ""
+            }
         },
         "label": "newClientStateParam1",
-        "name": "newClientStateParam1",
+        "name": "formValues",
         "shape": "",
-        "valueType": "string"
+        "valueType": "json"
     },
     {
         "description": null,
-        "fieldType": "string",
+        "fieldType": "json",
         "initialValue": {
             "type": "JSON_LITERAL",
-            "value": null
+            "value": {
+                "email": "",
+                "firstName": "",
+                "lastName": "",
+                "password": "",
+                "userName": ""
+            }
         },
         "label": "newClientStateParam2",
-        "name": "username",
+        "name": "errors",
         "shape": "",
-        "valueType": "string"
-    },
-    {
-        "description": null,
-        "fieldType": "string",
-        "initialValue": {
-            "type": "JSON_LITERAL",
-            "value": null
-        },
-        "label": "newClientStateParam2",
-        "name": "first_name",
-        "shape": "",
-        "valueType": "string"
-    },
-    {
-        "description": null,
-        "fieldType": "string",
-        "initialValue": {
-            "type": "JSON_LITERAL",
-            "value": null
-        },
-        "label": "newClientStateParam2",
-        "name": "last_name",
-        "shape": "",
-        "valueType": "string"
-    },
-    {
-        "description": null,
-        "fieldType": "string",
-        "initialValue": {
-            "type": "JSON_LITERAL",
-            "value": null
-        },
-        "label": "newClientStateParam2",
-        "name": "email",
-        "shape": "",
-        "valueType": "string"
-    },
-    {
-        "description": null,
-        "fieldType": "string",
-        "initialValue": {
-            "type": "JSON_LITERAL",
-            "value": null
-        },
-        "label": "newClientStateParam2",
-        "name": "password",
-        "shape": "",
-        "valueType": "string"
+        "valueType": "json"
     },
     {
         "description": null,
@@ -2222,7 +2356,7 @@
             "value": false
         },
         "label": "newClientStateParam2",
-        "name": "isModalOpen",
+        "name": "isFormValid",
         "shape": "",
         "valueType": "boolean"
     }
@@ -2232,14 +2366,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-05 08:19:46</sys_created_on>
         <sys_id>b288ce4947aec75089b4a22f316d4306</sys_id>
-        <sys_mod_count>40</sys_mod_count>
+        <sys_mod_count>42</sys_mod_count>
         <sys_name>Sign up  default</sys_name>
         <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
         <sys_policy/>
         <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
         <sys_update_name>sys_ux_macroponent_b288ce4947aec75089b4a22f316d4306</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-09-10 07:03:44</sys_updated_on>
+        <sys_updated_on>2026-09-10 13:47:42</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=b288ce4947aec75089b4a22f316d4306"/>
 </record_update>
