@@ -88,7 +88,52 @@
                                 },
                                 "elementId": "button_1",
                                 "elementLabel": "Button 1",
-                                "eventMappings": [],
+                                "eventMappings": [
+                                    {
+                                        "eventMappingId": "TNwCOeehhgvCkZcjjpaaDirEPLBShh",
+                                        "isConfiguration": false,
+                                        "offRowStorageId": null,
+                                        "sourceEventApiName": "sn_button.NOW_BUTTON#CLICKED",
+                                        "sourceEventCorrelationId": null,
+                                        "sourceEventDefinition": {
+                                            "apiName": "sn_button.NOW_BUTTON#CLICKED",
+                                            "id": null,
+                                            "type": "UXEVENT"
+                                        },
+                                        "sourceEventSysId": null,
+                                        "targets": [
+                                            {
+                                                "broker": null,
+                                                "clientScript": null,
+                                                "clientTransformScript": "",
+                                                "conditional": null,
+                                                "declarativeAction": null,
+                                                "event": {
+                                                    "apiName": "x_travel_buddy_app.NAV_ITEM_SELECTED_RELAY_f66058b047ae075089b4a22f316d4334",
+                                                    "payload": {
+                                                        "type": "JSON_LITERAL",
+                                                        "value": {
+                                                            "external": null,
+                                                            "fields": null,
+                                                            "multiInstField": null,
+                                                            "navigationOptions": null,
+                                                            "params": null,
+                                                            "passiveNavigation": null,
+                                                            "redirect": null,
+                                                            "route": "landing",
+                                                            "targetRoute": null,
+                                                            "title": null
+                                                        }
+                                                    },
+                                                    "sysId": "af28840d839f4f9031ab6730ceaad318"
+                                                },
+                                                "operation": null,
+                                                "targetId": "yffSjjGQCcAUyojjhQMZDLtJnjr",
+                                                "type": "EVENT"
+                                            }
+                                        ]
+                                    }
+                                ],
                                 "isHidden": {
                                     "type": "JSON_LITERAL",
                                     "value": null
@@ -308,6 +353,452 @@
         }
     },
     {
+        "definition": {
+            "id": "d356d14b6e293a3020a244b63d278d8f",
+            "type": "MACROPONENT"
+        },
+        "elementId": "column_layout_2",
+        "elementLabel": "Column layout 2",
+        "eventMappings": [],
+        "isHidden": {
+            "type": "JSON_LITERAL",
+            "value": null
+        },
+        "overrides": {
+            "composition": [
+                {
+                    "definition": {
+                        "id": "d356d14b6e293a3020a244b63d278d8f",
+                        "type": "MACROPONENT"
+                    },
+                    "elementId": "__lpIhhlvMCDkQsjjhcLddBZUdeiiP__column_1",
+                    "elementLabel": "Column 1",
+                    "eventMappings": [],
+                    "isHidden": {
+                        "type": "JSON_LITERAL",
+                        "value": null
+                    },
+                    "overrides": {
+                        "composition": [
+                            {
+                                "definition": {
+                                    "id": "2d56f06d55f46bbd4e79b5e624beb940",
+                                    "type": "MACROPONENT"
+                                },
+                                "elementId": "rich_text_1",
+                                "elementLabel": "Rich text 1",
+                                "eventMappings": [],
+                                "isHidden": {
+                                    "type": "JSON_LITERAL",
+                                    "value": null
+                                },
+                                "preset": null,
+                                "propertyValues": {
+                                    "html": {
+                                        "type": "TRANSLATION_LITERAL",
+                                        "value": {
+                                            "code": null,
+                                            "comment": "",
+                                            "message": "&lt;p style=\"text-align: center;\"&gt;&lt;strong&gt;&lt;span style=\"font-size: 14pt;\"&gt;Trip &amp;amp; Travel Buddy Feedback List&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;"
+                                        }
+                                    }
+                                },
+                                "slot": null,
+                                "styles": {
+                                    "default": {
+                                        "background": "rgb(var(--now-color_selection--primary-0))"
+                                    }
+                                }
+                            }
+                        ],
+                        "layout": {
+                            "default": {
+                                "children": null,
+                                "items": [
+                                    {
+                                        "element_id": "rich_text_1"
+                                    }
+                                ],
+                                "root": null,
+                                "styles": {
+                                    "align-items": "stretch",
+                                    "background": "rgb(var(--now-color_surface--brand-2))",
+                                    "box-sizing": "border-box",
+                                    "display": "flex",
+                                    "flex-direction": "column",
+                                    "height": "100%",
+                                    "justify-content": "flex-start",
+                                    "overflow": "auto"
+                                },
+                                "type": "flex"
+                            },
+                            "disableAutoReflow": true,
+                            "version": "3.1.0"
+                        }
+                    },
+                    "preset": null,
+                    "propertyValues": {
+                        "hideEmptyStateUi": {
+                            "type": "JSON_LITERAL",
+                            "value": true
+                        },
+                        "slotWrapperBehavior": {
+                            "type": "JSON_LITERAL",
+                            "value": "contents"
+                        }
+                    },
+                    "scratchPad": {
+                        "uib": {
+                            "layout": {
+                                "column": {
+                                    "columnNumber": 2,
+                                    "id": "default",
+                                    "styleConfig": {
+                                        "external": {},
+                                        "internal": {}
+                                    }
+                                },
+                                "type": "column"
+                            },
+                            "version": "1.0.0"
+                        }
+                    },
+                    "slot": null,
+                    "styles": {
+                        "default": {
+                            "display": "contents"
+                        }
+                    }
+                },
+                {
+                    "definition": {
+                        "id": "d356d14b6e293a3020a244b63d278d8f",
+                        "type": "MACROPONENT"
+                    },
+                    "elementId": "__UxhhXVeehhfSAEaaDjjawNNXQDzaaPJ__column_2",
+                    "elementLabel": "Column 2",
+                    "eventMappings": [],
+                    "isHidden": {
+                        "type": "JSON_LITERAL",
+                        "value": null
+                    },
+                    "overrides": {
+                        "composition": [
+                            {
+                                "definition": {
+                                    "id": "d37ce8abca89d02905fed903c8e34d8e",
+                                    "type": "MACROPONENT"
+                                },
+                                "elementId": "button_2",
+                                "elementLabel": "Button 2",
+                                "eventMappings": [
+                                    {
+                                        "eventMappingId": "lCROVPcccDaaBAjjbbQJewRgjHuii",
+                                        "isConfiguration": false,
+                                        "offRowStorageId": null,
+                                        "sourceEventApiName": "sn_button.NOW_BUTTON#CLICKED",
+                                        "sourceEventCorrelationId": null,
+                                        "sourceEventDefinition": {
+                                            "apiName": "sn_button.NOW_BUTTON#CLICKED",
+                                            "id": null,
+                                            "type": "UXEVENT"
+                                        },
+                                        "sourceEventSysId": null,
+                                        "targets": [
+                                            {
+                                                "broker": null,
+                                                "clientScript": null,
+                                                "clientTransformScript": "",
+                                                "conditional": null,
+                                                "declarativeAction": null,
+                                                "event": {
+                                                    "apiName": "x_travel_buddy_app.NAV_ITEM_SELECTED_RELAY_f66058b047ae075089b4a22f316d4334",
+                                                    "payload": {
+                                                        "container": {
+                                                            "external": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "fields": {
+                                                                "container": {
+                                                                    "sysId": {
+                                                                        "type": "JSON_LITERAL",
+                                                                        "value": "3db0c48d835f4f9031ab6730ceaad35f"
+                                                                    }
+                                                                },
+                                                                "type": "MAP_CONTAINER"
+                                                            },
+                                                            "multiInstField": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "navigationOptions": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "params": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "passiveNavigation": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "redirect": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "route": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": "catalog"
+                                                            },
+                                                            "targetRoute": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "title": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            }
+                                                        },
+                                                        "type": "MAP_CONTAINER"
+                                                    },
+                                                    "sysId": "af28840d839f4f9031ab6730ceaad318"
+                                                },
+                                                "operation": null,
+                                                "targetId": "bwkMaaPjggDEaaoeeddBQHgXxinZfc",
+                                                "type": "EVENT"
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "isHidden": {
+                                    "type": "JSON_LITERAL",
+                                    "value": null
+                                },
+                                "preset": null,
+                                "propertyValues": {
+                                    "active": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "animatedIcon": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "configAria": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "disabled": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "icon": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "label": {
+                                        "type": "TRANSLATION_LITERAL",
+                                        "value": {
+                                            "code": null,
+                                            "comment": "",
+                                            "message": "Feedback Form"
+                                        }
+                                    },
+                                    "landmark": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "size": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "md"
+                                    },
+                                    "tooltipContent": {
+                                        "type": "TRANSLATION_LITERAL",
+                                        "value": {
+                                            "code": null,
+                                            "comment": "",
+                                            "message": ""
+                                        }
+                                    },
+                                    "variant": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "primary"
+                                    }
+                                },
+                                "slot": null,
+                                "styles": {
+                                    "default": {
+                                        "align-self": "center",
+                                        "margin-top": "var(--now-scalable-space--sm)"
+                                    }
+                                }
+                            }
+                        ],
+                        "layout": {
+                            "default": {
+                                "children": null,
+                                "items": [
+                                    {
+                                        "element_id": "button_2"
+                                    }
+                                ],
+                                "root": null,
+                                "styles": {
+                                    "align-items": "stretch",
+                                    "box-sizing": "border-box",
+                                    "flex-direction": "column",
+                                    "height": "100%",
+                                    "justify-content": "flex-start",
+                                    "overflow": "auto"
+                                },
+                                "type": "flex"
+                            },
+                            "disableAutoReflow": true,
+                            "version": "3.1.0"
+                        }
+                    },
+                    "preset": null,
+                    "propertyValues": {
+                        "hideEmptyStateUi": {
+                            "type": "JSON_LITERAL",
+                            "value": true
+                        },
+                        "slotWrapperBehavior": {
+                            "type": "JSON_LITERAL",
+                            "value": "contents"
+                        }
+                    },
+                    "scratchPad": {
+                        "uib": {
+                            "layout": {
+                                "column": {
+                                    "columnNumber": 2,
+                                    "id": "default",
+                                    "styleConfig": {
+                                        "external": {},
+                                        "internal": {}
+                                    }
+                                },
+                                "type": "column"
+                            },
+                            "version": "1.0.0"
+                        }
+                    },
+                    "slot": null,
+                    "styles": {
+                        "default": {
+                            "display": "contents"
+                        }
+                    }
+                }
+            ],
+            "layout": {
+                "default": {
+                    "children": null,
+                    "isInline": null,
+                    "items": [
+                        {
+                            "element_id": "__lpIhhlvMCDkQsjjhcLddBZUdeiiP__column_1"
+                        },
+                        {
+                            "element_id": "__UxhhXVeehhfSAEaaDjjawNNXQDzaaPJ__column_2"
+                        }
+                    ],
+                    "root": null,
+                    "rules": null,
+                    "styles": {
+                        "box-sizing": "border-box",
+                        "grid-template-columns": "50fr 50fr",
+                        "grid-template-rows": "1fr",
+                        "width": "auto"
+                    },
+                    "type": "grid"
+                },
+                "disableAutoReflow": true,
+                "queries": [
+                    {
+                        "layout": {
+                            "children": null,
+                            "isInline": null,
+                            "items": [],
+                            "root": null,
+                            "rules": null,
+                            "styles": {
+                                "grid-template-columns": "1fr",
+                                "height": "fit-content",
+                                "max-height": "max-content",
+                                "min-height": "min-content"
+                            },
+                            "type": "grid"
+                        },
+                        "query": {
+                            "max-width": 640
+                        }
+                    }
+                ],
+                "version": "3.1.0"
+            }
+        },
+        "preset": null,
+        "propertyValues": {
+            "hideEmptyStateUi": {
+                "type": "JSON_LITERAL",
+                "value": true
+            },
+            "slotWrapperBehavior": {
+                "type": "JSON_LITERAL",
+                "value": "contents"
+            }
+        },
+        "scratchPad": {
+            "uib": {
+                "layout": {
+                    "columnSection": {
+                        "breakpoints": [
+                            {
+                                "behavior": "stack",
+                                "max-width": 640,
+                                "styles": {
+                                    "grid-template-columns": "1fr",
+                                    "height": "fit-content",
+                                    "max-height": "max-content",
+                                    "min-height": "min-content"
+                                }
+                            }
+                        ],
+                        "children": [
+                            {
+                                "columnNumber": 1,
+                                "unit": "%",
+                                "width": 50
+                            },
+                            {
+                                "columnNumber": 2,
+                                "unit": "%",
+                                "width": 50
+                            }
+                        ],
+                        "id": "UIB_COLUMN_SECTION_SINGLE_COLUMN_SECTION",
+                        "styleConfig": {
+                            "external": {},
+                            "internal": {}
+                        }
+                    },
+                    "type": "columnSection"
+                },
+                "version": "1.0.0"
+            }
+        },
+        "slot": null,
+        "styles": {
+            "default": {
+                "display": "contents"
+            }
+        }
+    },
+    {
         "bundleLink": {
             "bundleInstanceId": "_1",
             "elementType": "root",
@@ -324,31 +815,6 @@
         "isHidden": null,
         "overrides": {
             "composition": [
-                {
-                    "bundleLink": {
-                        "bundleInstanceId": "_1",
-                        "elementType": "member",
-                        "originalElementId": "record_list_header_1"
-                    },
-                    "conditionals": null,
-                    "definition": {
-                        "id": "b685c9c6773ab64a2c11c88564fc9f62",
-                        "type": "MACROPONENT"
-                    },
-                    "elementId": "record_list_header_1",
-                    "elementLabel": "Record List Header",
-                    "eventMappings": [],
-                    "isHero": true,
-                    "isHidden": null,
-                    "preset": {
-                        "controllerElementId": "list_controller",
-                        "disabledEventTargetIds": [],
-                        "id": "7390b78659717406599eca6a55e68c44"
-                    },
-                    "propertyValues": {},
-                    "slot": null,
-                    "styles": null
-                },
                 {
                     "bundleLink": {
                         "bundleInstanceId": "_1",
@@ -631,10 +1097,6 @@
                 "default": {
                     "children": null,
                     "items": [
-                        {
-                            "element_id": "record_list_header_1",
-                            "styles": {}
-                        },
                         {
                             "element_id": "resizable_panes_1",
                             "styles": {
@@ -1156,7 +1618,7 @@
 ]</data>
         <description/>
         <disable_auto_reflow>false</disable_auto_reflow>
-        <dispatched_events/>
+        <dispatched_events>af28840d839f4f9031ab6730ceaad318</dispatched_events>
         <ext_controller_dep/>
         <extends display_value="Page Template">19be392623033300f4b4c50947bf65ba</extends>
         <extension_point/>
@@ -1177,6 +1639,9 @@
         "items": [
             {
                 "element_id": "column_layout_1"
+            },
+            {
+                "element_id": "column_layout_2"
             },
             {
                 "element_id": "list_bundle"
@@ -1239,6 +1704,14 @@
 ]</props>
         <required_sys_props/>
         <required_translations>[ {
+  "message" : "&lt;p style=\"text-align: center;\"&gt;&lt;strong&gt;&lt;span style=\"font-size: 14pt;\"&gt;Trip &amp;amp; Travel Buddy Feedback List&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;",
+  "code" : "",
+  "comment" : ""
+}, {
+  "message" : "Feedback Form",
+  "code" : "",
+  "comment" : ""
+}, {
   "message" : "Home",
   "code" : "",
   "comment" : ""
@@ -1254,14 +1727,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-04 04:56:27</sys_created_on>
         <sys_id>f66058b047ae075089b4a22f316d4334</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>My Feedbacks default</sys_name>
         <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
         <sys_policy/>
         <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
         <sys_update_name>sys_ux_macroponent_f66058b047ae075089b4a22f316d4334</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-09-09 09:42:43</sys_updated_on>
+        <sys_updated_on>2026-09-11 06:05:05</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=f66058b047ae075089b4a22f316d4334"/>
 </record_update>
