@@ -1225,7 +1225,54 @@
                                 },
                                 "elementId": "button_13",
                                 "elementLabel": "Button 13",
-                                "eventMappings": [],
+                                "eventMappings": [
+                                    {
+                                        "eventMappingId": "fXlFNvPbbAUcnjjddiiIsIGIbNiiu",
+                                        "isConfiguration": false,
+                                        "offRowStorageId": null,
+                                        "sourceEventApiName": "sn_button.NOW_BUTTON#CLICKED",
+                                        "sourceEventCorrelationId": null,
+                                        "sourceEventDefinition": {
+                                            "apiName": "sn_button.NOW_BUTTON#CLICKED",
+                                            "id": null,
+                                            "type": "UXEVENT"
+                                        },
+                                        "sourceEventSysId": null,
+                                        "targets": [
+                                            {
+                                                "broker": null,
+                                                "clientScript": null,
+                                                "clientTransformScript": "",
+                                                "conditional": null,
+                                                "declarativeAction": null,
+                                                "event": {
+                                                    "apiName": "x_travel_buddy_app.NAV_ITEM_SELECTED_RELAY_a8429094276e0350d27a1ba75c044760",
+                                                    "payload": {
+                                                        "type": "JSON_LITERAL",
+                                                        "value": {
+                                                            "external": {
+                                                                "url": "https://dev400578.service-now.com/x/travel/travel-buddy-app-portal/login"
+                                                            },
+                                                            "fields": null,
+                                                            "multiInstField": null,
+                                                            "navigationOptions": null,
+                                                            "params": null,
+                                                            "passiveNavigation": null,
+                                                            "redirect": null,
+                                                            "route": null,
+                                                            "targetRoute": null,
+                                                            "title": null
+                                                        }
+                                                    },
+                                                    "sysId": "a4429094de6e035099dc4da31abc8633"
+                                                },
+                                                "operation": null,
+                                                "targetId": "yJccHYvjwAEpqeeddIwPRggMUGeehhQG",
+                                                "type": "EVENT"
+                                            }
+                                        ]
+                                    }
+                                ],
                                 "isHidden": {
                                     "type": "JSON_LITERAL",
                                     "value": null
@@ -1542,7 +1589,52 @@
                                 },
                                 "elementId": "button_15",
                                 "elementLabel": "Button 15",
-                                "eventMappings": [],
+                                "eventMappings": [
+                                    {
+                                        "eventMappingId": "kvyfXfkeehhCkqbjjcgOeehhrhobbwhhdd",
+                                        "isConfiguration": false,
+                                        "offRowStorageId": null,
+                                        "sourceEventApiName": "sn_button.NOW_BUTTON#CLICKED",
+                                        "sourceEventCorrelationId": null,
+                                        "sourceEventDefinition": {
+                                            "apiName": "sn_button.NOW_BUTTON#CLICKED",
+                                            "id": null,
+                                            "type": "UXEVENT"
+                                        },
+                                        "sourceEventSysId": null,
+                                        "targets": [
+                                            {
+                                                "broker": null,
+                                                "clientScript": null,
+                                                "clientTransformScript": "",
+                                                "conditional": null,
+                                                "declarativeAction": null,
+                                                "event": {
+                                                    "apiName": "x_travel_buddy_app.NAV_ITEM_SELECTED_RELAY_a8429094276e0350d27a1ba75c044760",
+                                                    "payload": {
+                                                        "type": "JSON_LITERAL",
+                                                        "value": {
+                                                            "external": null,
+                                                            "fields": null,
+                                                            "multiInstField": null,
+                                                            "navigationOptions": null,
+                                                            "params": null,
+                                                            "passiveNavigation": null,
+                                                            "redirect": null,
+                                                            "route": "about-us-page",
+                                                            "targetRoute": null,
+                                                            "title": null
+                                                        }
+                                                    },
+                                                    "sysId": "a4429094de6e035099dc4da31abc8633"
+                                                },
+                                                "operation": null,
+                                                "targetId": "OrGeeeeehhSHAkeeddffeeddIQLncceehhEXFPM",
+                                                "type": "EVENT"
+                                            }
+                                        ]
+                                    }
+                                ],
                                 "isHidden": {
                                     "type": "JSON_LITERAL",
                                     "value": null
@@ -1678,7 +1770,52 @@
                                 },
                                 "elementId": "button_16",
                                 "elementLabel": "Button 16",
-                                "eventMappings": [],
+                                "eventMappings": [
+                                    {
+                                        "eventMappingId": "ccbbUbzPiYBEiisjjaMAXEdqWDCK",
+                                        "isConfiguration": false,
+                                        "offRowStorageId": null,
+                                        "sourceEventApiName": "sn_button.NOW_BUTTON#CLICKED",
+                                        "sourceEventCorrelationId": null,
+                                        "sourceEventDefinition": {
+                                            "apiName": "sn_button.NOW_BUTTON#CLICKED",
+                                            "id": null,
+                                            "type": "UXEVENT"
+                                        },
+                                        "sourceEventSysId": null,
+                                        "targets": [
+                                            {
+                                                "broker": null,
+                                                "clientScript": null,
+                                                "clientTransformScript": "",
+                                                "conditional": null,
+                                                "declarativeAction": null,
+                                                "event": {
+                                                    "apiName": "x_travel_buddy_app.NAV_ITEM_SELECTED_RELAY_a8429094276e0350d27a1ba75c044760",
+                                                    "payload": {
+                                                        "type": "JSON_LITERAL",
+                                                        "value": {
+                                                            "external": null,
+                                                            "fields": null,
+                                                            "multiInstField": null,
+                                                            "navigationOptions": null,
+                                                            "params": null,
+                                                            "passiveNavigation": null,
+                                                            "redirect": null,
+                                                            "route": "contact-us-page",
+                                                            "targetRoute": null,
+                                                            "title": null
+                                                        }
+                                                    },
+                                                    "sysId": "a4429094de6e035099dc4da31abc8633"
+                                                },
+                                                "operation": null,
+                                                "targetId": "eehhfySTPoFAUKGeeddNeeDhvbmEhjC",
+                                                "type": "EVENT"
+                                            }
+                                        ]
+                                    }
+                                ],
                                 "isHidden": {
                                     "type": "JSON_LITERAL",
                                     "value": null
@@ -3028,86 +3165,6 @@
                                                                 },
                                                                 {
                                                                     "definition": {
-                                                                        "id": "4335ba6dca80378f7ba7a67cd6667bec",
-                                                                        "type": "MACROPONENT"
-                                                                    },
-                                                                    "elementId": "stylized_text_2",
-                                                                    "elementLabel": "Stylized text 2",
-                                                                    "eventMappings": [],
-                                                                    "isHidden": {
-                                                                        "type": "JSON_LITERAL",
-                                                                        "value": null
-                                                                    },
-                                                                    "preset": null,
-                                                                    "propertyValues": {
-                                                                        "configAria": {
-                                                                            "container": {},
-                                                                            "type": "MAP_CONTAINER"
-                                                                        },
-                                                                        "css": {
-                                                                            "type": "JSON_LITERAL",
-                                                                            "value": "* { }"
-                                                                        },
-                                                                        "tag": {
-                                                                            "type": "JSON_LITERAL",
-                                                                            "value": "h1"
-                                                                        },
-                                                                        "text": {
-                                                                            "binding": {
-                                                                                "address": [
-                                                                                    "u_package_name",
-                                                                                    "displayValue"
-                                                                                ],
-                                                                                "category": "value"
-                                                                            },
-                                                                            "type": "REPEATER_ITEM_BINDING"
-                                                                        }
-                                                                    },
-                                                                    "slot": null,
-                                                                    "styles": null
-                                                                },
-                                                                {
-                                                                    "definition": {
-                                                                        "id": "4335ba6dca80378f7ba7a67cd6667bec",
-                                                                        "type": "MACROPONENT"
-                                                                    },
-                                                                    "elementId": "stylized_text_3",
-                                                                    "elementLabel": "Stylized text 3",
-                                                                    "eventMappings": [],
-                                                                    "isHidden": {
-                                                                        "type": "JSON_LITERAL",
-                                                                        "value": null
-                                                                    },
-                                                                    "preset": null,
-                                                                    "propertyValues": {
-                                                                        "configAria": {
-                                                                            "container": {},
-                                                                            "type": "MAP_CONTAINER"
-                                                                        },
-                                                                        "css": {
-                                                                            "type": "JSON_LITERAL",
-                                                                            "value": "* { }"
-                                                                        },
-                                                                        "tag": {
-                                                                            "type": "JSON_LITERAL",
-                                                                            "value": "h1"
-                                                                        },
-                                                                        "text": {
-                                                                            "binding": {
-                                                                                "address": [
-                                                                                    "u_total_package_price",
-                                                                                    "displayValue"
-                                                                                ],
-                                                                                "category": "value"
-                                                                            },
-                                                                            "type": "REPEATER_ITEM_BINDING"
-                                                                        }
-                                                                    },
-                                                                    "slot": null,
-                                                                    "styles": null
-                                                                },
-                                                                {
-                                                                    "definition": {
                                                                         "id": "d37ce8abca89d02905fed903c8e34d8e",
                                                                         "type": "MACROPONENT"
                                                                     },
@@ -3266,17 +3323,14 @@
                                                                             "styles": {}
                                                                         },
                                                                         {
-                                                                            "element_id": "stylized_text_2",
-                                                                            "styles": {}
-                                                                        },
-                                                                        {
-                                                                            "element_id": "stylized_text_3",
-                                                                            "styles": {}
-                                                                        },
-                                                                        {
                                                                             "element_id": "button_20",
                                                                             "styles": {
-                                                                                "align-self": "center"
+                                                                                "align-self": "center",
+                                                                                "margin": "var(--now-scalable-space--md)",
+                                                                                "margin-bottom": "var(--now-scalable-space--md)",
+                                                                                "margin-left": "var(--now-scalable-space--md)",
+                                                                                "margin-right": "var(--now-scalable-space--md)",
+                                                                                "margin-top": "var(--now-scalable-space--md)"
                                                                             }
                                                                         }
                                                                     ],
@@ -4678,14 +4732,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-02 15:47:34</sys_created_on>
         <sys_id>a8429094276e0350d27a1ba75c044760</sys_id>
-        <sys_mod_count>79</sys_mod_count>
+        <sys_mod_count>83</sys_mod_count>
         <sys_name>Landing Page</sys_name>
         <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
         <sys_policy/>
         <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
         <sys_update_name>sys_ux_macroponent_a8429094276e0350d27a1ba75c044760</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-09-10 05:44:13</sys_updated_on>
+        <sys_updated_on>2026-09-11 05:53:37</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=a8429094276e0350d27a1ba75c044760"/>
 </record_update>

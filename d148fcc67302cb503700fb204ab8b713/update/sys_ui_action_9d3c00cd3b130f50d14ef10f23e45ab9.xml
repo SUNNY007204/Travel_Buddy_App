@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name>tba_approve_trip_request</action_name>
+        <active>true</active>
+        <client>false</client>
+        <client_script_v2/>
+        <comments/>
+        <condition>current.state == 1 &amp;&amp; (gs.hasRole('x_travel_buddy_app.Admin') || current.assigned_to == gs.getUserID())</condition>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_button_icon/>
+        <form_button_v2>false</form_button_v2>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style/>
+        <format_for_configurable_workspace>false</format_for_configurable_workspace>
+        <hint>Approve this trip request and book it on the Buddy's schedule</hint>
+        <isolate_script>false</isolate_script>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_button_icon/>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <messages/>
+        <name>Approve Trip Request</name>
+        <onclick/>
+        <order>100</order>
+        <script><![CDATA[if (!gs.hasRole('x_travel_buddy_app.Admin') && current.assigned_to != gs.getUserID()) {
+    gs.addErrorMessage('Only the assigned Buddy or an Admin can approve this trip request.');
+    current.setAbortAction(true);
+} else if (current.state != 1) {
+    gs.addErrorMessage('Only trip requests in Pending Approval can be approved.');
+    current.setAbortAction(true);
+} else {
+    var buddyId = current.getValue('assigned_to');
+    var schedGr = new GlideRecord('cmn_schedule');
+    schedGr.addQuery('x_travel_buddy_app_u_buddy_profile', buddyId);
+    schedGr.query();
+    if (!schedGr.next()) {
+        gs.addErrorMessage('This Buddy does not have a schedule set up yet. Please contact an admin.');
+        current.setAbortAction(true);
+    } else {
+        var span = new GlideRecord('cmn_schedule_span');
+        span.initialize();
+        span.schedule = schedGr.getUniqueValue();
+        span.type = 'Booked';
+        span.u_start_date_time = current.getValue('start_time');
+        span.u_end_date_time = current.getValue('end_time');
+        span.x_travel_buddy_app_u_linked_trip = current.sys_id;
+        span.name = 'Trip ' + current.getValue('number');
+        var spanId = span.insert();
+
+        if (!spanId) {
+            gs.addErrorMessage('Could not book this trip - the buddy already has an overlapping booked trip.');
+            current.setAbortAction(true);
+        } else {
+            current.state = 2;
+            current.update();
+
+            try {
+                var travelerId = current.getValue('u_traveler');
+                if (travelerId) {
+                    var travelerGr = new GlideRecord('sys_user');
+                    if (travelerGr.get(travelerId)) {
+                        var toAddr = travelerGr.getValue('email');
+                        if (toAddr) {
+                            var emailGr = new GlideRecord('sys_email');
+                            emailGr.initialize();
+                            emailGr.type = 'send-ready';
+                            emailGr.state = 'ready';
+                            emailGr.recipients = toAddr;
+                            emailGr.content_type = 'text/plain';
+                            emailGr.subject = 'Travel Buddy: Your trip request was approved - ' + current.getDisplayValue('number');
+                            emailGr.body = 'Hi ' + travelerGr.getDisplayValue('first_name') + ',\n\n' +
+                                'Good news! Your trip request ' + current.getDisplayValue('number') + ' has been approved and booked.\n\n' +
+                                '- Travel Buddy App';
+                            emailGr.insert();
+                        }
+                    }
+                }
+            } catch (e) {
+                gs.error('TBA approve notification failed: ' + e.message);
+            }
+
+            gs.addInfoMessage('Trip approved and booked on the Buddy\'s schedule.');
+            action.setRedirectURL(current);
+        }
+    }
+}]]></script>
+        <show_form_icon_only>false</show_form_icon_only>
+        <show_insert>false</show_insert>
+        <show_list_icon_only>false</show_list_icon_only>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-11 06:03:37</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9d3c00cd3b130f50d14ef10f23e45ab9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Approve Trip Request</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name>sys_ui_action_9d3c00cd3b130f50d14ef10f23e45ab9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-11 06:03:37</sys_updated_on>
+        <table>x_travel_buddy_app_trip_request</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+</record_update>

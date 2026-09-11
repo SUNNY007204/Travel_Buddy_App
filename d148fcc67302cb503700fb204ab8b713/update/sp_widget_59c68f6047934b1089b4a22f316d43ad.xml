@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {  /* widget controller */  var c = this;};]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>my_trips_list</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>My Trips List</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function(data, input) {
+	data.trips = [];
+	if (!gs.getUserID()) { return; }
+	var gr = new GlideRecord("x_travel_buddy_app_trip_request");
+	gr.addQuery("u_traveler", gs.getUserID());
+	gr.orderByDesc("sys_created_on");
+	gr.query();
+	while (gr.next()) {
+		var buddyName = "";
+		var buddyId = gr.getValue("u_buddy");
+		if (buddyId) {
+			var buddyGr = new GlideRecord("sys_user");
+			if (buddyGr.get(buddyId)) {
+				buddyName = buddyGr.getValue("name") || buddyGr.getValue("user_name") || "";
+			}
+		}
+		data.trips.push({
+			number: gr.getValue("number"),
+			destination: gr.u_destination.getDisplayValue(),
+			startDate: gr.start_time.getDisplayValue(),
+			endDate: gr.end_time.getDisplayValue(),
+			pkg: gr.u_destination_package.getDisplayValue(),
+			travelType: gr.u_travel_type.getDisplayValue(),
+			buddy: buddyName,
+			weather: gr.getValue("weather"),
+			state: gr.getDisplayValue("state")
+		});
+	}
+})(data, input);]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-10 06:21:45</sys_created_on>
+        <sys_id>59c68f6047934b1089b4a22f316d43ad</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>My Trips List</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name>sp_widget_59c68f6047934b1089b4a22f316d43ad</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-10 06:35:20</sys_updated_on>
+        <template><![CDATA[<div class="panel panel-default">
+  <div class="panel-heading">My Trips</div>
+  <div class="panel-body">
+    <p ng-if="data.trips.length === 0">You have no trip requests yet.</p>
+    <table class="table table-striped" ng-if="data.trips.length > 0">
+      <thead>
+        <tr>
+          <th>Number</th>
+          <th>Destination</th>
+          <th>Start</th>
+          <th>End</th>
+          <th>Package</th>
+          <th>Type</th>
+          <th>Buddy</th>
+          <th>Weather</th>
+          <th>State</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="t in data.trips">
+          <td>{{t.number}}</td>
+          <td>{{t.destination}}</td>
+          <td>{{t.startDate}}</td>
+          <td>{{t.endDate}}</td>
+          <td>{{t.pkg}}</td>
+          <td>{{t.travelType}}</td>
+          <td>{{t.buddy}}</td>
+          <td>{{t.weather}}</td>
+          <td>{{t.state}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>
