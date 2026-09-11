@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_travel_buddy_app.TBABuddyAvailabilityAjax</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description>AJAX-callable check used by the Request a Trip catalog form to warn travelers, before submission, if the buddy they picked already has an overlapping Booked trip.</description>
+        <mobile_callable>false</mobile_callable>
+        <name>TBABuddyAvailabilityAjax</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var TBABuddyAvailabilityAjax = Class.create();
+TBABuddyAvailabilityAjax.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    isBuddyAvailable: function() {
+        var buddyId = this.getParameter('sysparm_buddy');
+        var startTime = this.getParameter('sysparm_start');
+        var endTime = this.getParameter('sysparm_end');
+
+        if (!buddyId || !startTime || !endTime) {
+            return 'true';
+        }
+
+        var schedGr = new GlideRecord('cmn_schedule');
+        schedGr.addQuery('x_travel_buddy_app_u_buddy_profile', buddyId);
+        schedGr.query();
+
+        while (schedGr.next()) {
+            var conflict = new GlideRecord('cmn_schedule_span');
+            conflict.addQuery('schedule', schedGr.getUniqueValue());
+            conflict.addQuery('type', 'Booked');
+            conflict.addQuery('u_start_date_time', '<=', endTime);
+            conflict.addQuery('u_end_date_time', '>=', startTime);
+            conflict.addNotNullQuery('u_start_date_time');
+            conflict.addNotNullQuery('u_end_date_time');
+            conflict.query();
+            if (conflict.hasNext()) {
+                return 'false';
+            }
+        }
+
+        return 'true';
+    },
+
+    type: 'TBABuddyAvailabilityAjax'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-11 05:27:39</sys_created_on>
+        <sys_id>92f384c93bdfcb50d14ef10f23e45a8d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>TBABuddyAvailabilityAjax</sys_name>
+        <sys_package display_value="Travel Buddy App" source="x_travel_buddy_app">d148fcc67302cb503700fb204ab8b713</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Buddy App">d148fcc67302cb503700fb204ab8b713</sys_scope>
+        <sys_update_name>sys_script_include_92f384c93bdfcb50d14ef10f23e45a8d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-11 05:42:46</sys_updated_on>
+    </sys_script_include>
+</record_update>
